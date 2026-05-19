@@ -1,0 +1,46 @@
+name: Daily AI Layoff Update
+
+on:
+  schedule:
+    # 每天 UTC 06:00（北京时间14:00）运行
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch news
+        env:
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+        run: python scripts/fetch_news.py
+
+      - name: Analyze with LLM
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/analyze.py
+
+      - name: Generate page
+        run: python scripts/generate_page.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ public/
+          git diff --staged --quiet || git commit -m "Daily update: $(date -u +%Y-%m-%d)"
+          git push
