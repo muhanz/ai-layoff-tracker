@@ -1,10 +1,35 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-19T22:29:15Z",
-    "total_confirmed": 0,
-    "total_estimated": 0,
+    "last_updated": "2026-05-19T22:34:27Z",
+    "total_confirmed": 31000,
+    "total_estimated": 31000,
     "last_calibration_date": ""
   },
-  "events": []
+  "events": [
+    {
+      "id": "meta_2026-05-19",
+      "company": "Meta",
+      "date": "2026-05-19",
+      "headcount": 8000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.firstpost.com/tech/meta-reshuffles-7000-workers-into-ai-teams-before-fresh-job-cuts-14012623.html"
+      ],
+      "last_updated": "2026-05-19",
+      "locked": false
+    },
+    {
+      "id": "tata_consultancy_services_2026-05-18",
+      "company": "Tata Consultancy Services",
+      "date": "2026-05-18",
+      "headcount": 23000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.newsx.com/india/tcs-layoffs-2026-tata-consultancy-services-cuts-23000-jobs-amid-ai-automation-bench-policy-concerns-it-sector-hiring-slowdown-221244/"
+      ],
+      "last_updated": "2026-05-19",
+      "locked": false
+    }
+  ]
 }
