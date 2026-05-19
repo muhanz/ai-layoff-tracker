@@ -3,7 +3,7 @@ import os
 from datetime import datetime
 from openai import OpenAI
 
-client = OpenAI()  # 自动读取 OPENAI_API_KEY 环境变量
+client = OpenAI()
 
 def analyze_news():
     """使用LLM从新闻中提取结构化裁员数据"""
@@ -14,55 +14,83 @@ def analyze_news():
         print("No new articles to analyze")
         return
     
+    print(f"Analyzing {len(articles)} articles...")
+    
     # 构建提示词
     news_text = "\n\n".join([
-        f"Title: {a['title']}\nDescription: {a.get('description', '')}\nSource: {a['source']['name']}\nURL: {a['url']}\nDate: {a['publishedAt']}"
+        f"Title: {a['title']}\nDescription: {a.get('description', '') or ''}\nSource: {a.get('source', {}).get('name', 'Unknown')}\nURL: {a.get('url', '')}\nDate: {a.get('publishedAt', '')}"
         for a in articles
     ])
     
-    prompt = f"""Analyze the following news articles about AI-related layoffs.
-For each DISTINCT layoff event, extract:
-- company: Company name
-- headcount: Number of people laid off (integer, 0 if unknown)
-- date: Date of announcement (YYYY-MM-DD)
-- ai_attributed: "confirmed" if company explicitly cited AI, "likely" if AI is implied, "unclear" otherwise
-- source_url: The news article URL
+    prompt = f"""You are analyzing news articles about AI-related layoffs.
 
-Rules:
-- Merge duplicate reports about the same event
-- Only include events where AI/automation is a factor
-- Return valid JSON array
+For each DISTINCT layoff event mentioned in the articles below, extract the following information.
 
-News articles:
-{news_text}
+IMPORTANT RULES:
+- Only include events where AI, automation, or "efficiency through technology" is mentioned as a factor
+- If the exact number of layoffs is not stated, estimate from percentage + company size if possible, otherwise use 0
+- If a company says it's "cutting jobs to invest in AI" or "restructuring for AI", that counts
+- Merge duplicate reports about the same company/event
+- Date format must be YYYY-MM-DD
 
-Return ONLY a JSON array of objects, no other text."""
+Return a JSON object with this exact structure:
+{{"layoff_events": [
+  {{
+    "company": "Company Name",
+    "headcount": 100,
+    "date": "2026-05-18",
+    "ai_attributed": "confirmed",
+    "source_url": "https://..."
+  }}
+]}}
+
+ai_attributed values:
+- "confirmed": company explicitly stated AI/automation as reason
+- "likely": company investing in AI while cutting jobs, or media analysis says AI-related
+- "unclear": layoffs happened at tech/AI company but reason not clearly AI
+
+If NO valid layoff events are found, return: {{"layoff_events": []}}
+
+NEWS ARTICLES:
+{news_text}"""
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.1,
         response_format={"type": "json_object"}
-    )
+     )
     
-    result = json.loads(response.choices[0].message.content)
-    new_events = result if isinstance(result, list) else result.get("events", [])
+    raw_response = response.choices[0].message.content
+    print(f"LLM response: {raw_response[:500]}")
+    
+    result = json.loads(raw_response)
+    new_events = result.get("layoff_events", [])
+    
+    print(f"Extracted {len(new_events)} events from LLM")
     
     # 加载现有数据库并去重合并
     with open("data/events.json", "r") as f:
         db = json.load(f)
     
-    existing_keys = {(e["company"], e["date"]) for e in db["events"]}
+    existing_keys = {(e["company"].lower(), e["date"]) for e in db["events"]}
     added = 0
     
     for event in new_events:
-        key = (event.get("company", ""), event.get("date", ""))
-        if key not in existing_keys and event.get("headcount", 0) > 0:
+        company = event.get("company", "").strip()
+        date = event.get("date", "")
+        headcount = event.get("headcount", 0)
+        
+        if not company or not date:
+            continue
+            
+        key = (company.lower(), date)
+        if key not in existing_keys:
             db["events"].append({
-                "id": f"{event['company']}_{event['date']}".replace(" ", "_").lower(),
-                "company": event["company"],
-                "date": event["date"],
-                "headcount": event["headcount"],
+                "id": f"{company}_{date}".replace(" ", "_").lower(),
+                "company": company,
+                "date": date,
+                "headcount": headcount,
                 "ai_attributed": event.get("ai_attributed", "unclear"),
                 "source_urls": [event.get("source_url", "")],
                 "last_updated": datetime.utcnow().strftime("%Y-%m-%d"),
@@ -70,6 +98,7 @@ Return ONLY a JSON array of objects, no other text."""
             })
             existing_keys.add(key)
             added += 1
+            print(f"  Added: {company} - {headcount} people on {date}")
     
     # 更新元数据
     db["metadata"]["last_updated"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -83,7 +112,7 @@ Return ONLY a JSON array of objects, no other text."""
     with open("data/events.json", "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
     
-    print(f"Added {added} new events. Total: {len(db['events'])} events.")
+    print(f"Added {added} new events. Total events: {len(db['events'])}. Total estimated: {db['metadata']['total_estimated']:,}")
 
 if __name__ == "__main__":
     analyze_news()
