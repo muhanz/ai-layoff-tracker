@@ -1,79 +1,120 @@
+#!/usr/bin/env python3
+"""
+LLM 分析脚本 - AI裁员追踪器
+============================
+使用 GPT-4o-mini 从抓取的新闻中提取结构化的裁员事件数据。
+
+环境变量：
+  OPENAI_API_KEY - OpenAI API Key
+"""
+
 import json
 import os
 from datetime import datetime
 from openai import OpenAI
 
-client = OpenAI()
 
 def analyze_news():
     """使用LLM从新闻中提取结构化裁员数据"""
-    with open("data/raw_news.json", "r") as f:
+    
+    # 检查API Key
+    if not os.environ.get("OPENAI_API_KEY"):
+        print("⚠️  OPENAI_API_KEY 未设置，跳过分析")
+        return
+    
+    client = OpenAI()
+    
+    # 读取抓取的新闻
+    raw_file = "data/raw_news.json"
+    if not os.path.exists(raw_file):
+        print("⚠️  raw_news.json 不存在，跳过分析")
+        return
+    
+    with open(raw_file, "r", encoding="utf-8") as f:
         articles = json.load(f)
     
     if not articles:
-        print("No new articles to analyze")
+        print("⚠️  没有新文章需要分析")
         return
     
-    print(f"Analyzing {len(articles)} articles...")
+    print(f"🤖 分析 {len(articles)} 篇文章...")
     
     # 构建提示词
     news_text = "\n\n".join([
-        f"Title: {a['title']}\nDescription: {a.get('description', '') or ''}\nSource: {a.get('source', {}).get('name', 'Unknown')}\nURL: {a.get('url', '')}\nDate: {a.get('publishedAt', '')}"
+        f"Title: {a.get('title', 'N/A')}\n"
+        f"Description: {a.get('description', '') or 'N/A'}\n"
+        f"Source: {a.get('source', {}).get('name', 'Unknown')}\n"
+        f"URL: {a.get('url', '')}\n"
+        f"Date: {a.get('publishedAt', '')}"
         for a in articles
     ])
     
-    prompt = f"""You are analyzing news articles about AI-related layoffs.
+    prompt = f"""You are analyzing news articles to find AI-related layoff events.
 
-For each DISTINCT layoff event mentioned in the articles below, extract the following information.
+TASK: Extract each DISTINCT layoff event where AI, automation, or technology replacement is a factor.
 
-IMPORTANT RULES:
-- Only include events where AI, automation, or "efficiency through technology" is mentioned as a factor
-- If the exact number of layoffs is not stated, estimate from percentage + company size if possible, otherwise use 0
-- If a company says it's "cutting jobs to invest in AI" or "restructuring for AI", that counts
-- Merge duplicate reports about the same company/event
-- Date format must be YYYY-MM-DD
+RULES:
+1. Only include actual layoff announcements (not predictions or opinion pieces)
+2. Each event must have a specific company name
+3. If exact headcount is not stated but percentage is given, estimate if possible, otherwise set to 0
+4. "AI-related" includes: company explicitly cites AI, company invests in AI while cutting, restructuring for automation
+5. Merge duplicate reports about the same company/event
+6. Use the article's publication date if the actual layoff date is unclear
 
-Return a JSON object with this exact structure:
+CLASSIFICATION:
+- "confirmed": Company explicitly stated AI/automation as reason for cuts
+- "likely": Company investing in AI while cutting jobs, or media analysis says AI-related
+- "unclear": Layoffs at tech company but AI connection not clearly stated
+
+RETURN FORMAT (strict JSON):
 {{"layoff_events": [
   {{
     "company": "Company Name",
     "headcount": 100,
-    "date": "2026-05-18",
+    "date": "2026-05-19",
     "ai_attributed": "confirmed",
-    "source_url": "https://..."
+    "source_url": "https://example.com/article",
+    "reason": "Brief explanation of why this is AI-related"
   }}
 ]}}
 
-ai_attributed values:
-- "confirmed": company explicitly stated AI/automation as reason
-- "likely": company investing in AI while cutting jobs, or media analysis says AI-related
-- "unclear": layoffs happened at tech/AI company but reason not clearly AI
+If NO valid AI-related layoff events are found, return: {{"layoff_events": []}}
 
-If NO valid layoff events are found, return: {{"layoff_events": []}}
-
-NEWS ARTICLES:
+NEWS ARTICLES TO ANALYZE:
 {news_text}"""
 
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.1,
-        response_format={"type": "json_object"}
-     )
-    
-    raw_response = response.choices[0].message.content
-    print(f"LLM response: {raw_response[:500]}")
-    
-    result = json.loads(raw_response)
-    new_events = result.get("layoff_events", [])
-    
-    print(f"Extracted {len(new_events)} events from LLM")
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.1,
+            response_format={"type": "json_object"}
+        )
+        
+        raw_response = response.choices[0].message.content
+        print(f"  LLM 返回 {len(raw_response)} 字符")
+        
+        result = json.loads(raw_response)
+        new_events = result.get("layoff_events", [])
+        
+        print(f"  提取到 {len(new_events)} 个事件")
+        for e in new_events:
+            print(f"    - {e.get('company')}: {e.get('headcount', '?')} 人 [{e.get('ai_attributed')}]")
+        
+    except Exception as e:
+        print(f"  ❌ LLM 调用失败: {e}")
+        return
     
     # 加载现有数据库并去重合并
-    with open("data/events.json", "r") as f:
+    db_file = "data/events.json"
+    if not os.path.exists(db_file):
+        print(f"  ❌ {db_file} 不存在，请先运行 import_historical_data.py")
+        return
+    
+    with open(db_file, "r", encoding="utf-8") as f:
         db = json.load(f)
     
-    existing_keys = {(e["company"].lower(), e["date"]) for e in db["events"]}
+    existing_keys = {(e["company"].lower().strip(), e["date"]) for e in db["events"]}
     added = 0
     
     for event in new_events:
@@ -83,36 +124,49 @@ NEWS ARTICLES:
         
         if not company or not date:
             continue
-            
+        
+        # 去重检查
         key = (company.lower(), date)
-        if key not in existing_keys:
-            db["events"].append({
-                "id": f"{company}_{date}".replace(" ", "_").lower(),
-                "company": company,
-                "date": date,
-                "headcount": headcount,
-                "ai_attributed": event.get("ai_attributed", "unclear"),
-                "source_urls": [event.get("source_url", "")],
-                "last_updated": datetime.utcnow().strftime("%Y-%m-%d"),
-                "locked": False
-            })
-            existing_keys.add(key)
-            added += 1
-            print(f"  Added: {company} - {headcount} people on {date}")
+        if key in existing_keys:
+            print(f"    ⏭️  跳过重复: {company} ({date})")
+            continue
+        
+        # 添加新事件
+        db["events"].append({
+            "id": f"{company}_{date}".replace(" ", "_").lower(),
+            "company": company,
+            "date": date,
+            "headcount": headcount,
+            "ai_attributed": event.get("ai_attributed", "unclear"),
+            "source_urls": [event.get("source_url", "")] if event.get("source_url") else [],
+            "note": event.get("reason", ""),
+            "last_updated": datetime.utcnow().strftime("%Y-%m-%d"),
+            "locked": False
+        })
+        existing_keys.add(key)
+        added += 1
+        print(f"    ✅ 新增: {company} - {headcount} 人 ({date})")
     
     # 更新元数据
     db["metadata"]["last_updated"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
     db["metadata"]["total_confirmed"] = sum(
         e["headcount"] for e in db["events"] if e["ai_attributed"] == "confirmed"
     )
+    db["metadata"]["total_likely"] = sum(
+        e["headcount"] for e in db["events"] if e["ai_attributed"] == "likely"
+    )
     db["metadata"]["total_estimated"] = sum(
         e["headcount"] for e in db["events"]
     )
     
-    with open("data/events.json", "w", encoding="utf-8") as f:
+    with open(db_file, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
     
-    print(f"Added {added} new events. Total events: {len(db['events'])}. Total estimated: {db['metadata']['total_estimated']:,}")
+    print(f"\n📊 结果: 新增 {added} 个事件")
+    print(f"   总事件数: {len(db['events'])}")
+    print(f"   总影响人数: {db['metadata']['total_estimated']:,}")
+    print(f"   其中 confirmed: {db['metadata']['total_confirmed']:,}")
+
 
 if __name__ == "__main__":
     analyze_news()

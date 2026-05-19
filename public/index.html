@@ -3,29 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI裁员追踪 - 全球警告</title>
+    <title>AI裁员追踪 - 全球实时警告</title>
     <meta name="description" content="自GPT-4发布以来，全球因AI被裁员的人数实时追踪。数据每日更新，来源可查。">
-    <meta property="og:title" content="AI裁员追踪 - 全球警告">
-    <meta property="og:description" content="自GPT-4发布以来，已有31,000人在AI相关裁员中失去工作。">
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:title" content="⚠️ AI裁员追踪 - 全球实时警告">
+    <meta property="og:description" content="自GPT-4发布以来的1162天内，已有230,716人在AI相关裁员中失去工作。">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="⚠️ AI裁员追踪 - 230,716人已受影响">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #ff4444;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 20px rgba(255, 68, 68, 0.3);
+        }
+        
+        .subtitle {
+            color: #888;
+            font-size: 1.1rem;
+        }
+        
+        .counter {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            border: 1px solid #331111;
+            border-radius: 12px;
+        }
+        
+        .number {
+            font-size: 4.5rem;
+            font-weight: 800;
+            color: #ff4444;
+            line-height: 1.1;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .number.secondary {
+            font-size: 2.5rem;
+            color: #ff8844;
+            margin-top: 1.5rem;
+        }
+        
+        .label {
+            color: #999;
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+        }
+        
+        .days-counter {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .meta {
+            text-align: center;
+            margin: 2rem 0;
+            color: #666;
+            font-size: 0.85rem;
+            line-height: 1.8;
+        }
+        
+        .sources {
+            color: #555;
+        }
+        
+        .recent {
+            margin-top: 3rem;
+        }
+        
+        .recent h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #ccc;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+        }
+        
+        thead {
+            background: #111;
+        }
+        
+        th {
+            padding: 0.75rem 0.5rem;
+            text-align: left;
+            color: #888;
+            font-weight: 600;
+            border-bottom: 1px solid #222;
+        }
+        
+        td {
+            padding: 0.6rem 0.5rem;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        tr:hover {
+            background: #111;
+        }
+        
+        .date-col { color: #666; white-space: nowrap; }
+        .company-col { font-weight: 500; color: #ddd; }
+        .number-col { font-variant-numeric: tabular-nums; color: #ff6666; font-weight: 600; }
+        
+        .badge {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        
+        .badge-confirmed { background: #3d1111; color: #ff6666; }
+        .badge-likely { background: #3d2e11; color: #ffaa44; }
+        .badge-unclear { background: #1a1a2e; color: #8888cc; }
+        
+        a { color: #4488cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1a1a1a;
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 2;
+            text-align: center;
+        }
+        
+        .methodology {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: #777;
+            line-height: 1.8;
+        }
+        
+        .methodology h3 {
+            color: #999;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 600px) {
+            .number { font-size: 3rem; }
+            .number.secondary { font-size: 1.8rem; }
+            h1 { font-size: 1.8rem; }
+            table { font-size: 0.75rem; }
+        }
+    </style>
 </head>
 <body>
     <main>
         <header>
-            <h1>⚠️ AI 裁员警告</h1>
-            <p class="subtitle">自 GPT-4 发布（2023年3月14日）以来</p>
+            <h1>&#9888;&#65039; AI 裁员警告</h1>
+            <p class="subtitle">自 GPT-4 发布（2023年3月14日）以来的全球追踪</p>
         </header>
         
         <section class="counter">
-            <div class="number">31,000</div>
-            <p class="label">人在AI相关裁员中失去工作（宽泛口径）</p>
-            <div class="number secondary">31,000</div>
+            <div class="number">230,716</div>
+            <p class="label">人在AI相关裁员中失去工作（综合口径）</p>
+            
+            <div class="number secondary">89,791</div>
             <p class="label">人被公司明确因AI裁员（保守口径）</p>
+            
+            <div class="days-counter">
+                1162 天 &middot; 43 起事件 &middot; 
+                平均每天 198 人
+            </div>
         </section>
         
         <section class="meta">
-            <p>覆盖 2 起裁员事件 · 最后更新：2026-05-19</p>
-            <p class="sources">数据来源：Challenger, Gray & Christmas · Layoffs.fyi · TrueUp.io · 公开新闻报道</p>
+            <p>最后更新：2026-05-19 &middot; 
+               Challenger报告累计（仅美国）：99,470 人</p>
+            <p class="sources">
+                数据来源：Challenger, Gray & Christmas &middot; Layoffs.fyi &middot; 
+                TrueUp.io &middot; 公开新闻报道
+            </p>
         </section>
         
         <section class="recent">
@@ -41,27 +226,167 @@
                     </tr>
                 </thead>
                 <tbody>
-        <tr>
-            <td>2026-05-19</td>
-            <td>Meta</td>
-            <td>8,000</td>
-            <td>🔴 confirmed</td>
-            <td><a href="https://www.firstpost.com/tech/meta-reshuffles-7000-workers-into-ai-teams-before-fresh-job-cuts-14012623.html" target="_blank">来源</a></td>
-        </tr>
-        <tr>
-            <td>2026-05-18</td>
-            <td>Tata Consultancy Services</td>
-            <td>23,000</td>
-            <td>🔴 confirmed</td>
-            <td><a href="https://www.newsx.com/india/tcs-layoffs-2026-tata-consultancy-services-cuts-23000-jobs-amid-ai-automation-bench-policy-concerns-it-sector-hiring-slowdown-221244/" target="_blank">来源</a></td>
-        </tr>
+            <tr>
+                <td class="date-col">2026-05-18</td>
+                <td class="company-col">AI21</td>
+                <td class="number-col">110</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.calcalistech.com/ctechnews/article/rjwumhukfx" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-15</td>
+                <td class="company-col">Kraken</td>
+                <td class="number-col">150</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.bloomberg.com/news/articles/2026-05-15/kraken-cuts-150-workers-after-deploying-ai-ipo-may-slip-to-2027" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-15</td>
+                <td class="company-col">Gambling.com</td>
+                <td class="number-col">140</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.gamblinginsider.com/news/160339/gambling-com-to-cut-25-of-jobs-in-ai-first-shift-as-q1-earnings-hurt-by-rising-costs" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-14</td>
+                <td class="company-col">Dune Analytics</td>
+                <td class="number-col">50</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.theblock.co/post/401322/crypto-data-firm-dune-cuts-25-of-staff-citing-ai-efficiencies" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-13</td>
+                <td class="company-col">LinkedIn</td>
+                <td class="number-col">875</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.reuters.com/business/world-at-work/linkedin-is-planning-lay-off-5-staff-latest-tech-sector-cuts-source-says-2026-05-13/" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-13</td>
+                <td class="company-col">Cisco</td>
+                <td class="number-col">4,000</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-12</td>
+                <td class="company-col">Walmart Tech</td>
+                <td class="number-col">1,000</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-11</td>
+                <td class="company-col">ZoomInfo</td>
+                <td class="number-col">600</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://thenextweb.com/news/zoominfo-beat-earnings-cut-600-jobs-and-lost-29-per-cent-of-its-stock-price-its-database-is-being-repriced-by-ai" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-11</td>
+                <td class="company-col">Phreesia</td>
+                <td class="number-col">220</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.streetinsider.com/Corporate+News/Phreesia+eliminates+220+positions+in+restructuring+plan/26468756.html" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-11</td>
+                <td class="company-col">GitLab</td>
+                <td class="number-col">100</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-08</td>
+                <td class="company-col">Truecaller</td>
+                <td class="number-col">70</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-08</td>
+                <td class="company-col">Staffbase</td>
+                <td class="number-col">176</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.saechsische.de/wirtschaft/regional/staffbase-streicht-jede-fuenfte-stelle-harter-einschnitt-bei-saechsischem-einhorn-FKVL5SIOTNCWXJMUEUFAGQUAHY.html" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-07</td>
+                <td class="company-col">Cloudflare</td>
+                <td class="number-col">1,100</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.wsj.com/business/earnings/cloudflare-to-slash-1-100-jobs-due-to-ai-driven-restructuring-plan-640f7b52" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-07</td>
+                <td class="company-col">Upwork</td>
+                <td class="number-col">150</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.marketwatch.com/story/upwork-to-cut-24-of-staff-in-restructuring-citing-evolving-nature-of-work-ab064f91" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-07</td>
+                <td class="company-col">DeepL</td>
+                <td class="number-col">250</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.bloomberg.com/news/articles/2026-05-07/google-translate-rival-deepl-announces-plans-to-cut-25-of-staff" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2026-05-07</td>
+                <td class="company-col">Bill Holdings</td>
+                <td class="number-col">709</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-10-27</td>
+                <td class="company-col">Amazon</td>
+                <td class="number-col">30,000</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-02-10</td>
+                <td class="company-col">Meta</td>
+                <td class="number-col">3,600</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://about.fb.com/news/2025/02/performance-based-exits/" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-02-04</td>
+                <td class="company-col">Workday</td>
+                <td class="number-col">1,750</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.workday.com/en-us/company/latest/newsroom/press-releases/press-release-details.html" target="_blank" rel="noopener">来源</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-01-28</td>
+                <td class="company-col">Salesforce</td>
+                <td class="number-col">1,000</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://www.bloomberg.com/news/articles/2025-01-28/salesforce-cuts-1000-jobs" target="_blank" rel="noopener">来源</a></td>
+            </tr>
                 </tbody>
             </table>
         </section>
         
+        <section class="methodology">
+            <h3>统计方法说明</h3>
+            <p>
+                <strong>confirmed</strong>（红色）= 公司在官方声明中明确提到AI/自动化是裁员原因<br>
+                <strong>likely</strong>（橙色）= 公司在大规模投资AI的同时裁员，或媒体分析认为与AI高度相关<br>
+                <strong>unclear</strong>（蓝色）= 科技公司裁员，可能与AI转型有关但未明确声明
+            </p>
+            <p style="margin-top: 0.8rem;">
+                本页面数据每日通过自动化脚本更新。美国数据每月使用 Challenger, Gray & Christmas 
+                官方报告进行校准。全球数据综合多个公开来源。由于统计口径差异，数字可能与单一来源有出入。
+            </p>
+        </section>
+        
         <footer>
-            <p>🔴 confirmed = 公司明确声明因AI裁员 · 🟡 likely = 媒体分析与AI高度相关 · ⚪ unclear = 可能相关但未确认</p>
-            <p>本页面数据每日自动更新。<a href="https://github.com/YOUR_USERNAME/ai-layoff-tracker">GitHub 源码与数据</a></p>
+            <p>本页面数据每日自动更新 &middot; 
+               <a href="https://github.com/YOUR_USERNAME/ai-layoff-tracker">GitHub 源码与完整数据</a></p>
+            <p>数据仅供参考，不构成任何投资或就业建议</p>
         </footer>
     </main>
 </body>
