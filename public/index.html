@@ -6,10 +6,10 @@
     <title>AI Layoff Tracker - Global Warning</title>
     <meta name="description" content="Tracking global job losses attributed to AI since the launch of GPT-4. Updated daily with verified sources.">
     <meta property="og:title" content="AI Layoff Tracker - Global Warning">
-    <meta property="og:description" content="Since GPT-4 launched 1171 days ago, 266,816 people have lost their jobs in AI-related layoffs.">
+    <meta property="og:description" content="Since GPT-4 launched 1171 days ago, 237,716 people have lost their jobs in AI-related layoffs.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Layoff Tracker - 266,816 jobs lost">
+    <meta name="twitter:title" content="AI Layoff Tracker - 237,716 jobs lost">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -149,6 +149,84 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
         }
+        .submit-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+        }
+        .submit-section h2 {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.5rem;
+        }
+        .submit-section > p {
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+        .form-row {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .form-row input {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #e0e0e0;
+            padding: 0.6rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            flex: 1;
+            min-width: 140px;
+        }
+        .form-row input:focus {
+            outline: none;
+            border-color: #444;
+        }
+        .submit-btn {
+            background: #ff4444;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 0.25rem;
+        }
+        .submit-btn:hover { background: #cc3333; }
+        .submit-btn:disabled { background: #555; cursor: not-allowed; }
+        .submit-success {
+            display: none;
+            padding: 1.5rem;
+            background: #0d1a0d;
+            border: 1px solid #1a3a1a;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .submit-success h3 { color: #44aa44; margin-bottom: 0.5rem; font-size: 1.1rem; }
+        .submit-success p { color: #666; font-size: 0.85rem; margin-bottom: 1rem; }
+        .follow-cta {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .follow-btn {
+            display: inline-block;
+            padding: 0.5rem 1.1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .follow-btn.instagram { background: #2a1a2e; color: #cc88ff; }
+        .follow-btn.instagram:hover { background: #3a1a4e; text-decoration: none; }
         @media (max-width: 600px) {
             .number { font-size: 3rem; }
             .number.secondary { font-size: 1.8rem; }
@@ -165,15 +243,15 @@
         </header>
         
         <section class="counter">
-            <div class="number">266,816</div>
+            <div class="number">237,716</div>
             <p class="label">people lost jobs in AI-related layoffs (broad estimate)</p>
             
-            <div class="number secondary">125,891</div>
+            <div class="number secondary">93,791</div>
             <p class="label">people explicitly laid off due to AI (conservative estimate)</p>
             
             <div class="days-counter">
-                1171 days &middot; 47 events &middot; 
-                ~227 people per day
+                1171 days &middot; 45 events &middot; 
+                ~203 people per day
             </div>
         </section>
         
@@ -199,34 +277,6 @@
                     </tr>
                 </thead>
                 <tbody>
-            <tr>
-                <td class="date-col">2026-05-27</td>
-                <td class="company-col">Cloudflare</td>
-                <td class="number-col">1,100</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-20</td>
-                <td class="company-col">Meta</td>
-                <td class="number-col">8,000</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-20</td>
-                <td class="company-col">HSBC</td>
-                <td class="number-col">20,000</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-19</td>
-                <td class="company-col">Standard Chartered</td>
-                <td class="number-col">7,000</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.timesnownews.com/business-economy/companies/standard-chartered-layoffs-why-banking-giant-is-planning-to-fire-over-7000-employees-article-154349900" target="_blank" rel="noopener">source</a></td>
-            </tr>
             <tr>
                 <td class="date-col">2026-05-18</td>
                 <td class="company-col">AI21</td>
@@ -339,6 +389,34 @@
                 <td><span class="badge badge-likely">likely</span></td>
                 <td><a href="https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878" target="_blank" rel="noopener">source</a></td>
             </tr>
+            <tr>
+                <td class="date-col">2026-04-01</td>
+                <td class="company-col">Block (Square/Cash App)</td>
+                <td class="number-col">4,000</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://block.xyz/inside/from-hierarchy-to-intelligence" target="_blank" rel="noopener">source</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-10-27</td>
+                <td class="company-col">Amazon</td>
+                <td class="number-col">30,000</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/" target="_blank" rel="noopener">source</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-09-01</td>
+                <td class="company-col">Oracle</td>
+                <td class="number-col">3,000</td>
+                <td><span class="badge badge-likely">likely</span></td>
+                <td><a href="https://www.businessinsider.com/oracle-layoffs-2025" target="_blank" rel="noopener">source</a></td>
+            </tr>
+            <tr>
+                <td class="date-col">2025-02-10</td>
+                <td class="company-col">Meta</td>
+                <td class="number-col">3,600</td>
+                <td><span class="badge badge-confirmed">confirmed</span></td>
+                <td><a href="https://about.fb.com/news/2025/02/performance-based-exits/" target="_blank" rel="noopener">source</a></td>
+            </tr>
                 </tbody>
             </table>
         </section>
@@ -357,11 +435,65 @@
             </p>
         </section>
         
+        <section class="submit-section">
+            <h2>Did we miss one?</h2>
+            <p>Know of an AI-related layoff not on this list? Submit it — we verify every entry before publishing.</p>
+            <form id="submit-form">
+                <div class="form-row">
+                    <input type="text" name="company" placeholder="Company name *" required>
+                    <input type="number" name="headcount" placeholder="Headcount *" min="1" required>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-row">
+                    <input type="url" name="source" placeholder="Source URL *" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="notes" placeholder="Notes (optional — quote from company, context, etc.)">
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Your email (optional — get notified as the flood rises)">
+                </div>
+                <button type="submit" class="submit-btn">Submit &rarr;</button>
+            </form>
+            <div class="submit-success" id="submit-success">
+                <h3>Thanks &mdash; we&apos;ll verify it.</h3>
+                <p>Verified submissions go live within 24 hours.</p>
+                <div class="follow-cta">
+                    <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener" class="follow-btn instagram">Follow @muhan.being on Instagram</a>
+                </div>
+            </div>
+        </section>
+
         <footer>
-            <p>Updated daily &middot; 
-               <a href="https://github.com/muhanz/ai-layoff-tracker">GitHub source &amp; full dataset</a></p>
+            <p>Updated daily &middot;
+               <a href="https://github.com/muhanz/ai-layoff-tracker">GitHub source &amp; full dataset</a> &middot;
+               <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener">@muhan.being</a></p>
             <p>Data is for informational purposes only. Not investment or employment advice.</p>
         </footer>
     </main>
+    <script>
+        document.getElementById('submit-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('.submit-btn');
+            btn.disabled = true;
+            btn.textContent = 'Submitting...';
+            try {
+                const res = await fetch('/api/submit', {
+                    method: 'POST',
+                    body: new FormData(e.target)
+                });
+                if (res.ok) {
+                    e.target.style.display = 'none';
+                    document.getElementById('submit-success').style.display = 'block';
+                } else {
+                    throw new Error('Server error');
+                }
+            } catch {
+                btn.disabled = false;
+                btn.textContent = 'Submit →';
+                alert('Something went wrong. Please try again.');
+            }
+        });
+    </script>
 </body>
 </html>

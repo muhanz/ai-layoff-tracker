@@ -210,6 +210,84 @@ def generate_html():
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
         }}
+        .submit-section {{
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+        }}
+        .submit-section h2 {{
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.5rem;
+        }}
+        .submit-section > p {{
+            color: #666;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }}
+        .form-row {{
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }}
+        .form-row input {{
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #e0e0e0;
+            padding: 0.6rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            flex: 1;
+            min-width: 140px;
+        }}
+        .form-row input:focus {{
+            outline: none;
+            border-color: #444;
+        }}
+        .submit-btn {{
+            background: #ff4444;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 0.25rem;
+        }}
+        .submit-btn:hover {{ background: #cc3333; }}
+        .submit-btn:disabled {{ background: #555; cursor: not-allowed; }}
+        .submit-success {{
+            display: none;
+            padding: 1.5rem;
+            background: #0d1a0d;
+            border: 1px solid #1a3a1a;
+            border-radius: 8px;
+            text-align: center;
+        }}
+        .submit-success h3 {{ color: #44aa44; margin-bottom: 0.5rem; font-size: 1.1rem; }}
+        .submit-success p {{ color: #666; font-size: 0.85rem; margin-bottom: 1rem; }}
+        .follow-cta {{
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }}
+        .follow-btn {{
+            display: inline-block;
+            padding: 0.5rem 1.1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-decoration: none;
+        }}
+        .follow-btn.instagram {{ background: #2a1a2e; color: #cc88ff; }}
+        .follow-btn.instagram:hover {{ background: #3a1a4e; text-decoration: none; }}
         @media (max-width: 600px) {{
             .number {{ font-size: 3rem; }}
             .number.secondary {{ font-size: 1.8rem; }}
@@ -278,12 +356,66 @@ def generate_html():
             </p>
         </section>
         
+        <section class="submit-section">
+            <h2>Did we miss one?</h2>
+            <p>Know of an AI-related layoff not on this list? Submit it — we verify every entry before publishing.</p>
+            <form id="submit-form">
+                <div class="form-row">
+                    <input type="text" name="company" placeholder="Company name *" required>
+                    <input type="number" name="headcount" placeholder="Headcount *" min="1" required>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-row">
+                    <input type="url" name="source" placeholder="Source URL *" required>
+                </div>
+                <div class="form-row">
+                    <input type="text" name="notes" placeholder="Notes (optional — quote from company, context, etc.)">
+                </div>
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="Your email (optional — get notified as the flood rises)">
+                </div>
+                <button type="submit" class="submit-btn">Submit &rarr;</button>
+            </form>
+            <div class="submit-success" id="submit-success">
+                <h3>Thanks &mdash; we&apos;ll verify it.</h3>
+                <p>Verified submissions go live within 24 hours.</p>
+                <div class="follow-cta">
+                    <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener" class="follow-btn instagram">Follow @muhan.being on Instagram</a>
+                </div>
+            </div>
+        </section>
+
         <footer>
-            <p>Updated daily &middot; 
-               <a href="https://github.com/muhanz/ai-layoff-tracker">GitHub source &amp; full dataset</a></p>
+            <p>Updated daily &middot;
+               <a href="https://github.com/muhanz/ai-layoff-tracker">GitHub source &amp; full dataset</a> &middot;
+               <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener">@muhan.being</a></p>
             <p>Data is for informational purposes only. Not investment or employment advice.</p>
         </footer>
     </main>
+    <script>
+        document.getElementById('submit-form').addEventListener('submit', async (e) => {{
+            e.preventDefault();
+            const btn = e.target.querySelector('.submit-btn');
+            btn.disabled = true;
+            btn.textContent = 'Submitting...';
+            try {{
+                const res = await fetch('/api/submit', {{
+                    method: 'POST',
+                    body: new FormData(e.target)
+                }});
+                if (res.ok) {{
+                    e.target.style.display = 'none';
+                    document.getElementById('submit-success').style.display = 'block';
+                }} else {{
+                    throw new Error('Server error');
+                }}
+            }} catch {{
+                btn.disabled = false;
+                btn.textContent = 'Submit →';
+                alert('Something went wrong. Please try again.');
+            }}
+        }});
+    </script>
 </body>
 </html>"""
     

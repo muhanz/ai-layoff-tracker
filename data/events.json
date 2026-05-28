@@ -1,10 +1,10 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-28T22:58:56Z",
-    "total_confirmed": 125891,
-    "total_estimated": 266816,
-    "total_likely": 140925,
+    "last_updated": "2026-05-28T23:21:15Z",
+    "total_confirmed": 93791,
+    "total_estimated": 237716,
+    "total_likely": 143925,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
     "challenger_cumulative_ai_cuts": 99470,
@@ -36,7 +36,7 @@
         "https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-back-office-jobs-that-ai-could-kill"
       ],
       "note": "CEO Arvind Krishna stated AI could replace 7,800 back-office jobs over 5 years",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -49,7 +49,7 @@
         "https://www.wsj.com/articles/chegg-cuts-4-of-workforce-after-chatgpt-hurts-growth-c0b9a7cc"
       ],
       "note": "Explicitly cited ChatGPT impact on business",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -62,7 +62,7 @@
         "https://www.bbc.com/news/business-65631168"
       ],
       "note": "Plan to cut 55,000 jobs by 2030, with up to 10,000 replaced by AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -75,7 +75,7 @@
         "https://blog.dropbox.com/topics/company/a-message-from-drew"
       ],
       "note": "CEO cited AI era requiring different skill mix",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -88,7 +88,7 @@
         "https://about.fb.com/news/2023/03/mark-zuckerberg-meta-year-of-efficiency/"
       ],
       "note": "Year of Efficiency, shifting resources to AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -101,7 +101,7 @@
         "https://blog.google/inside-google/message-ceo/january-update/"
       ],
       "note": "Restructuring to focus on AI priorities (announced before GPT-4 but layoffs continued)",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -114,7 +114,7 @@
         "https://blogs.microsoft.com/blog/2023/01/18/subject-focusing-on-our-short-and-long-term-opportunity/"
       ],
       "note": "Cut jobs while investing billions in OpenAI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -127,7 +127,7 @@
         "https://newsroom.spotify.com/2023-06-05/an-update-on-spotifys-plans/"
       ],
       "note": "Restructuring, later heavily invested in AI features",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -140,7 +140,7 @@
         "https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1"
       ],
       "note": "Replaced contract translators with AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -153,7 +153,7 @@
         "https://www.nytimes.com/2024/01/11/technology/google-layoffs.html"
       ],
       "note": "Multiple rounds throughout 2024, restructuring for AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -166,7 +166,7 @@
         "https://www.reuters.com/technology/sap-restructure-8000-roles-ai-push-2024-01-23/"
       ],
       "note": "Explicitly restructuring 8,000 roles in AI push",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -179,7 +179,7 @@
         "https://www.cnbc.com/2024/01/30/ups-to-cut-12000-jobs.html"
       ],
       "note": "Cited technology and automation efficiencies",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -192,7 +192,7 @@
         "https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1"
       ],
       "note": "Additional contractor cuts replaced by AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -205,7 +205,7 @@
         "https://www.theverge.com/2024/4/18/24133814/google-cut-hundreds-core-teams"
       ],
       "note": "Core team cuts, shifting to AI divisions",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -218,7 +218,7 @@
         "https://www.reuters.com/business/autos-transportation/tesla-lay-off-more-than-10-its-workforce-2024-04-15/"
       ],
       "note": "10% workforce cut while investing heavily in FSD/AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -231,7 +231,7 @@
         "https://www.aboutamazon.com/news/company-news/andy-jassy-update-on-amazon-layoffs-2024"
       ],
       "note": "Continued cuts, shifting to AI services",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -244,7 +244,7 @@
         "https://www.reuters.com/technology/klarna-says-ai-approach-warming-up-ipo-investors-2024-08-27/"
       ],
       "note": "CEO explicitly stated AI doing work of 700 employees",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -257,7 +257,7 @@
         "https://www.intuit.com/blog/news-social/intuit-ceo-sasan-goodarzi-shares-strategic-decisions/"
       ],
       "note": "Cut 10% to reinvest in AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -270,7 +270,7 @@
         "https://www.reuters.com/technology/cisco-cut-thousands-jobs-shift-focus-ai-2024-02-14/"
       ],
       "note": "Shift focus to AI and cybersecurity",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -283,7 +283,7 @@
         "https://www.reuters.com/technology/dell-cut-about-6650-jobs-2024-02-05/"
       ],
       "note": "Multiple rounds, reorganizing for AI-driven products",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -296,7 +296,7 @@
         "https://www.cnbc.com/2025/01/09/microsoft-lays-off-1900-activision-blizzard-xbox-employees.html"
       ],
       "note": "Gaming division cuts while investing in AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -309,7 +309,7 @@
         "https://www.theverge.com/2025/1/21/google-layoffs-2025"
       ],
       "note": "Continued restructuring for AI-first strategy",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -322,7 +322,7 @@
         "https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/"
       ],
       "note": "Largest single layoff wave, efficiency and AI investment",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -335,7 +335,7 @@
         "https://about.fb.com/news/2025/02/performance-based-exits/"
       ],
       "note": "Performance-based cuts, redirecting to AI teams",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -348,7 +348,7 @@
         "https://www.bloomberg.com/news/articles/2025-01-28/salesforce-cuts-1000-jobs"
       ],
       "note": "Cuts while launching Agentforce AI platform",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -361,7 +361,7 @@
         "https://www.workday.com/en-us/company/latest/newsroom/press-releases/press-release-details.html"
       ],
       "note": "8.5% cut to invest in AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -374,7 +374,7 @@
         "https://newsroom.spotify.com/"
       ],
       "note": "Continued efficiency cuts, AI-driven personalization",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -387,7 +387,7 @@
         "https://www.wsj.com/business/earnings/cloudflare-to-slash-1-100-jobs-due-to-ai-driven-restructuring-plan-640f7b52"
       ],
       "note": "Explicitly AI-Driven Restructuring Plan",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -400,7 +400,7 @@
         "https://www.reuters.com/business/world-at-work/linkedin-is-planning-lay-off-5-staff-latest-tech-sector-cuts-source-says-2026-05-13/"
       ],
       "note": "5% staff cut in AI-driven restructuring",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -413,7 +413,7 @@
         "https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html"
       ],
       "note": "Cutting jobs amid surging AI orders",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -426,7 +426,7 @@
         "https://www.marketwatch.com/story/upwork-to-cut-24-of-staff-in-restructuring-citing-evolving-nature-of-work-ab064f91"
       ],
       "note": "Citing evolving 'Nature of Work' (AI)",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -439,7 +439,7 @@
         "https://www.bloomberg.com/news/articles/2026-05-07/google-translate-rival-deepl-announces-plans-to-cut-25-of-staff"
       ],
       "note": "AI translation company restructuring",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -452,7 +452,7 @@
         "https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878"
       ],
       "note": "30% workforce cut",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -465,7 +465,7 @@
         "https://thenextweb.com/news/zoominfo-beat-earnings-cut-600-jobs-and-lost-29-per-cent-of-its-stock-price-its-database-is-being-repriced-by-ai"
       ],
       "note": "Database being repriced by AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -478,7 +478,7 @@
         "https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322"
       ],
       "note": "Combining global-tech and product teams",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -491,7 +491,7 @@
         "https://www.calcalistech.com/ctechnews/article/rjwumhukfx"
       ],
       "note": "60% workforce cut in strategic overhaul",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -504,7 +504,7 @@
         "https://www.bloomberg.com/news/articles/2026-05-15/kraken-cuts-150-workers-after-deploying-ai-ipo-may-slip-to-2027"
       ],
       "note": "Cuts after deploying AI",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -517,7 +517,7 @@
         "https://www.theblock.co/post/401322/crypto-data-firm-dune-cuts-25-of-staff-citing-ai-efficiencies"
       ],
       "note": "Citing AI efficiencies",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -530,7 +530,7 @@
         "https://www.gamblinginsider.com/news/160339/gambling-com-to-cut-25-of-jobs-in-ai-first-shift-as-q1-earnings-hurt-by-rising-costs"
       ],
       "note": "AI-First Shift",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -543,7 +543,7 @@
         "https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/"
       ],
       "note": "Slashes jobs amid market changes",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -556,7 +556,7 @@
         "https://www.saechsische.de/wirtschaft/regional/staffbase-streicht-jede-fuenfte-stelle-harter-einschnitt-bei-saechsischem-einhorn-FKVL5SIOTNCWXJMUEUFAGQUAHY.html"
       ],
       "note": "22% workforce cut",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -569,7 +569,7 @@
         "https://www.streetinsider.com/Corporate+News/Phreesia+eliminates+220+positions+in+restructuring+plan/26468756.html"
       ],
       "note": "Restructuring plan",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
@@ -582,60 +582,35 @@
         "https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era"
       ],
       "note": "Cut jobs to spend on growth in 'Agentic Era'",
-      "last_updated": "2026-05-19",
+      "last_updated": "2026-05-28",
       "locked": true
     },
     {
-      "id": "cloudflare_2026-05-27",
-      "company": "Cloudflare",
-      "date": "2026-05-27",
-      "headcount": 1100,
+      "id": "block_(square/cash_app)_2026-04-01",
+      "company": "Block (Square/Cash App)",
+      "date": "2026-04-01",
+      "headcount": 4000,
       "ai_attributed": "confirmed",
       "source_urls": [
-        "https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431"
+        "https://block.xyz/inside/from-hierarchy-to-intelligence",
+        "https://fortune.com/2026/04/17/twitter-cofounder-block-ceo-jack-dorsey-thought-process-laid-off-40-staff-ai/"
       ],
-      "note": "Cloudflare's CEO stated that AI is reshaping workplaces, leading to job cuts.",
+      "note": "CEO Jack Dorsey explicitly replaced middle management with AI intelligence layer; ~40% of staff. Co-published manifesto with Sequoia's Roelof Botha.",
       "last_updated": "2026-05-28",
-      "locked": false
+      "locked": true
     },
     {
-      "id": "meta_2026-05-20",
-      "company": "Meta",
-      "date": "2026-05-20",
-      "headcount": 8000,
-      "ai_attributed": "confirmed",
+      "id": "oracle_2025-09-01",
+      "company": "Oracle",
+      "date": "2025-09-01",
+      "headcount": 3000,
+      "ai_attributed": "likely",
       "source_urls": [
-        "https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html"
+        "https://www.businessinsider.com/oracle-layoffs-2025"
       ],
-      "note": "Meta is accelerating AI integration, resulting in significant layoffs.",
+      "note": "Ongoing restructuring as Oracle pivots to AI cloud services; multiple rounds through 2025",
       "last_updated": "2026-05-28",
-      "locked": false
-    },
-    {
-      "id": "standard_chartered_2026-05-19",
-      "company": "Standard Chartered",
-      "date": "2026-05-19",
-      "headcount": 7000,
-      "ai_attributed": "confirmed",
-      "source_urls": [
-        "https://www.timesnownews.com/business-economy/companies/standard-chartered-layoffs-why-banking-giant-is-planning-to-fire-over-7000-employees-article-154349900"
-      ],
-      "note": "Standard Chartered is cutting jobs as it accelerates AI adoption.",
-      "last_updated": "2026-05-28",
-      "locked": false
-    },
-    {
-      "id": "hsbc_2026-05-20",
-      "company": "HSBC",
-      "date": "2026-05-20",
-      "headcount": 20000,
-      "ai_attributed": "confirmed",
-      "source_urls": [
-        "https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html"
-      ],
-      "note": "HSBC's CEO indicated that AI advancements are reshaping the workforce, leading to job cuts.",
-      "last_updated": "2026-05-28",
-      "locked": false
+      "locked": true
     }
   ]
 }

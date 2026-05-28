@@ -168,6 +168,13 @@ HISTORICAL_EVENTS = [
     {"company": "GitLab", "headcount": 100, "date": "2026-05-11", "ai_attributed": "confirmed",
      "source_urls": ["https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era"],
      "note": "Cut jobs to spend on growth in 'Agentic Era'"},
+    {"company": "Block (Square/Cash App)", "headcount": 4000, "date": "2026-04-01", "ai_attributed": "confirmed",
+     "source_urls": ["https://block.xyz/inside/from-hierarchy-to-intelligence",
+                     "https://fortune.com/2026/04/17/twitter-cofounder-block-ceo-jack-dorsey-thought-process-laid-off-40-staff-ai/"],
+     "note": "CEO Jack Dorsey explicitly replaced middle management with AI intelligence layer; ~40% of staff. Co-published manifesto with Sequoia's Roelof Botha."},
+    {"company": "Oracle", "headcount": 3000, "date": "2025-09-01", "ai_attributed": "likely",
+     "source_urls": ["https://www.businessinsider.com/oracle-layoffs-2025"],
+     "note": "Ongoing restructuring as Oracle pivots to AI cloud services; multiple rounds through 2025"},
 ]
 
 # ============================================================
