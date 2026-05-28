@@ -1,9 +1,9 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-19T22:46:58Z",
-    "total_confirmed": 89791,
-    "total_estimated": 230716,
+    "last_updated": "2026-05-28T22:58:56Z",
+    "total_confirmed": 125891,
+    "total_estimated": 266816,
     "total_likely": 140925,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
@@ -584,6 +584,58 @@
       "note": "Cut jobs to spend on growth in 'Agentic Era'",
       "last_updated": "2026-05-19",
       "locked": true
+    },
+    {
+      "id": "cloudflare_2026-05-27",
+      "company": "Cloudflare",
+      "date": "2026-05-27",
+      "headcount": 1100,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431"
+      ],
+      "note": "Cloudflare's CEO stated that AI is reshaping workplaces, leading to job cuts.",
+      "last_updated": "2026-05-28",
+      "locked": false
+    },
+    {
+      "id": "meta_2026-05-20",
+      "company": "Meta",
+      "date": "2026-05-20",
+      "headcount": 8000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html"
+      ],
+      "note": "Meta is accelerating AI integration, resulting in significant layoffs.",
+      "last_updated": "2026-05-28",
+      "locked": false
+    },
+    {
+      "id": "standard_chartered_2026-05-19",
+      "company": "Standard Chartered",
+      "date": "2026-05-19",
+      "headcount": 7000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.timesnownews.com/business-economy/companies/standard-chartered-layoffs-why-banking-giant-is-planning-to-fire-over-7000-employees-article-154349900"
+      ],
+      "note": "Standard Chartered is cutting jobs as it accelerates AI adoption.",
+      "last_updated": "2026-05-28",
+      "locked": false
+    },
+    {
+      "id": "hsbc_2026-05-20",
+      "company": "HSBC",
+      "date": "2026-05-20",
+      "headcount": 20000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html"
+      ],
+      "note": "HSBC's CEO indicated that AI advancements are reshaping the workforce, leading to job cuts.",
+      "last_updated": "2026-05-28",
+      "locked": false
     }
   ]
 }
