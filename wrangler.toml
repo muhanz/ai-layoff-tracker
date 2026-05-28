@@ -7,4 +7,4 @@ directory = "./public"
 
 [[kv_namespaces]]
 binding = "SUBMISSIONS"
-id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+id = "620a98c11c0d40eab3c9f84c145a1d9e"
