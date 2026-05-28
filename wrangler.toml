@@ -1,0 +1,10 @@
+name = "ai-layoff-tracker"
+main = "src/worker.js"
+compatibility_date = "2026-01-01"
+
+[assets]
+directory = "./public"
+
+[[kv_namespaces]]
+binding = "SUBMISSIONS"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
