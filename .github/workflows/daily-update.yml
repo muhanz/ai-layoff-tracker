@@ -34,6 +34,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/analyze.py
 
+      - name: Check source links
+        run: python scripts/check_links.py
+
       - name: Generate page
         run: python scripts/generate_page.py
 
