@@ -397,6 +397,42 @@ def generate_html():
             .stat-jobs2 .stat-value {{ font-size: 2.2rem; }}
             .stat-gig .stat-value {{ font-size: 2.2rem; }}
         }}
+        .doomsday-hero {{
+            text-align: center;
+            padding: 3rem 1rem 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #1a0000;
+        }}
+        .dd-label {{
+            font-size: 0.7rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #ff4444;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }}
+        .dd-number {{
+            font-size: 6rem;
+            font-weight: 900;
+            color: #ff2222;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+            text-shadow: 0 0 60px rgba(255,34,34,0.3);
+            letter-spacing: -0.02em;
+        }}
+        .dd-sublabel {{
+            margin-top: 0.6rem;
+            font-size: 0.9rem;
+            color: #555;
+        }}
+        .dd-since {{
+            margin-top: 0.4rem;
+            font-size: 0.72rem;
+            color: #333;
+        }}
+        @media (max-width: 600px) {{
+            .dd-number {{ font-size: 3.5rem; }}
+        }}
         .projection-hero {{
             text-align: center;
             margin: 2rem 0;
@@ -876,7 +912,14 @@ def generate_html():
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
             <p class="subtitle">Community-verified &middot; sourced by public news announcements &middot; since GPT-4 launch (March 14, 2023)</p>
         </header>
-        
+
+        <section class="doomsday-hero">
+            <div class="dd-label">JOBS LOST DIRECTLY TO AI</div>
+            <div class="dd-number" id="dd-counter">{total_estimated:,}</div>
+            <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span></div>
+            <div class="dd-since">since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
+        </section>
+
         <section class="projection-hero">
             <div class="proj-eyebrow">&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs</div>
             <div class="proj-number">30,000,000</div>
@@ -1367,16 +1410,21 @@ def generate_html():
             const BASE = {total_estimated};
             const BASE_CONFIRMED = {total_confirmed};
             const BASE_TS = new Date('{last_updated}').getTime();
-            const PER_MS = {avg_per_day} / 86400000;
+            const PER_DAY = {avg_per_day};
+            const PER_MS = PER_DAY / 86400000;
             const CONFIRMED_RATIO = BASE_CONFIRMED / BASE;
             function fmt(n) {{ return Math.floor(n).toLocaleString('en-US'); }}
             function tick() {{
                 const elapsed = Date.now() - BASE_TS;
                 const current = BASE + elapsed * PER_MS;
-                const el = document.getElementById('live-counter');
+                ['live-counter','dd-counter'].forEach(id => {{
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = fmt(current);
+                }});
                 const el2 = document.getElementById('live-confirmed');
-                if (el) el.textContent = fmt(current);
                 if (el2) el2.textContent = fmt(current * CONFIRMED_RATIO);
+                const rate = document.getElementById('dd-rate');
+                if (rate) rate.textContent = '~' + PER_DAY.toLocaleString() + ' per day';
             }}
             tick();
             setInterval(tick, 1000);
