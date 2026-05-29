@@ -322,6 +322,130 @@
             .stat-jobs2 .stat-value { font-size: 2.2rem; }
             .stat-gig .stat-value { font-size: 2.2rem; }
         }
+        .projection-hero {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 3rem 2rem 2.5rem;
+            background: linear-gradient(180deg, #1a0000 0%, #0a0000 60%, #0a0a0a 100%);
+            border: 1px solid #3d1111;
+            border-radius: 12px;
+        }
+        .proj-eyebrow {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: #ff4444;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+        .proj-number {
+            font-size: 5.5rem;
+            font-weight: 900;
+            color: #ff2222;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+            text-shadow: 0 0 50px rgba(255,34,34,0.35);
+        }
+        .proj-label {
+            font-size: 1rem;
+            color: #888;
+            margin-top: 0.5rem;
+        }
+        .proj-source {
+            font-size: 0.7rem;
+            color: #3d1111;
+            margin-top: 0.4rem;
+            margin-bottom: 2rem;
+        }
+        .proj-vs {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            padding-top: 1.75rem;
+            border-top: 1px solid #2a0000;
+            flex-wrap: wrap;
+        }
+        .proj-vs-item {
+            text-align: center;
+            padding: 0 2rem;
+            border-right: 1px solid #1a0000;
+        }
+        .proj-vs-item:last-child { border-right: none; }
+        .proj-vs-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #ff6633;
+            font-variant-numeric: tabular-nums;
+        }
+        .proj-vs-label {
+            font-size: 0.68rem;
+            color: #555;
+            margin-top: 0.25rem;
+            line-height: 1.5;
+        }
+        @media (max-width: 600px) {
+            .proj-number { font-size: 3.5rem; }
+            .proj-vs-item { padding: 0.75rem 1rem; border-right: none; border-bottom: 1px solid #1a0000; width: 100%; }
+            .proj-vs-item:last-child { border-bottom: none; }
+        }
+        .pace-section {
+            margin-top: 3rem;
+        }
+        .pace-section h2 {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.3rem;
+        }
+        .pace-sub {
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 1.25rem;
+        }
+        .pace-row {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.6rem;
+        }
+        .pace-year-tag {
+            font-size: 0.78rem;
+            color: #666;
+            width: 3.5rem;
+            flex-shrink: 0;
+            text-align: right;
+        }
+        .pace-bar-wrap {
+            flex: 1;
+            background: #111;
+            border-radius: 3px;
+            height: 22px;
+            overflow: hidden;
+        }
+        .pace-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #3d1111, #ff4444);
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+        .pace-bar.record { background: linear-gradient(90deg, #4a0000, #ff2222); }
+        .pace-val {
+            font-size: 0.8rem;
+            color: #ff6666;
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+            width: 5.5rem;
+            flex-shrink: 0;
+        }
+        .pace-note {
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 0.75rem;
+            padding: 0.6rem 1rem;
+            background: #0d0d0d;
+            border-left: 3px solid #3d1111;
+            border-radius: 0 4px 4px 0;
+        }
+        .pace-note strong { color: #ff4444; }
         .ticker-wrap {
             width: 100%;
             background: #0f0000;
@@ -596,6 +720,27 @@
             <p class="subtitle">Community-verified · documented minimum · since GPT-4 launch (March 14, 2023)</p>
         </header>
         
+        <section class="projection-hero">
+            <div class="proj-eyebrow">&#9888; The Forecast — World Economic Forum, January 2025</div>
+            <div class="proj-number">92,000,000</div>
+            <p class="proj-label">jobs projected displaced globally by 2030</p>
+            <p class="proj-source">1,000+ employers &nbsp;&middot;&nbsp; 14 million workers surveyed &nbsp;&middot;&nbsp; 55 economies</p>
+            <div class="proj-vs">
+                <div class="proj-vs-item">
+                    <div class="proj-vs-value">300M</div>
+                    <div class="proj-vs-label">jobs &ldquo;exposed&rdquo; to AI<br>globally (Goldman Sachs)</div>
+                </div>
+                <div class="proj-vs-item">
+                    <div class="proj-vs-value">12M</div>
+                    <div class="proj-vs-label">Americans forced to switch<br>occupations by 2030 (McKinsey)</div>
+                </div>
+                <div class="proj-vs-item">
+                    <div class="proj-vs-value">30%</div>
+                    <div class="proj-vs-label">of all US work hours<br>automatable by 2030 (McKinsey)</div>
+                </div>
+            </div>
+        </section>
+
         <div class="dual-stat">
             <div class="stat-block stat-fear">
                 <div class="stat-label">PUBLIC FEAR SCORE</div>
@@ -636,18 +781,45 @@
         </div>
 
         <section class="counter">
+            <p class="label" style="margin-bottom:0.75rem;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:#555;">What we&apos;ve documented so far &darr;</p>
             <div class="number">370,816</div>
-            <p class="label">documented minimum — publicly reported AI-related job losses</p>
+            <p class="label">publicly reported AI-related job losses — documented minimum</p>
 
             <div class="number secondary">171,891</div>
             <p class="label">confirmed — company explicitly cited AI as the reason</p>
-            
+
             <div class="days-counter">
-                1172 days &middot; 55 events &middot; 
-                ~316 people per day
+                1172 days &middot; 55 events &middot;
+                ~316 people per day &middot; this is the floor, not the ceiling
             </div>
         </section>
-        
+
+        <section class="pace-section">
+            <h2>The Acceleration</h2>
+            <p class="pace-sub">U.S. employer-disclosed AI-attributed job cuts &mdash; Challenger, Gray &amp; Christmas (announced cuts only, likely undercounted)</p>
+            <div class="pace-row">
+                <span class="pace-year-tag">2023</span>
+                <div class="pace-bar-wrap"><div class="pace-bar" style="width:7.1%"></div></div>
+                <span class="pace-val">~3,900</span>
+            </div>
+            <div class="pace-row">
+                <span class="pace-year-tag">2024</span>
+                <div class="pace-bar-wrap"><div class="pace-bar" style="width:23.9%"></div></div>
+                <span class="pace-val">13,089</span>
+            </div>
+            <div class="pace-row">
+                <span class="pace-year-tag">2025</span>
+                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:100%"></div></div>
+                <span class="pace-val" style="color:#ff2222">54,836 &#9650;</span>
+            </div>
+            <div class="pace-row">
+                <span class="pace-year-tag">2026 Q1</span>
+                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:50.4%"></div></div>
+                <span class="pace-val">27,645</span>
+            </div>
+            <p class="pace-note"><strong>October 2025: 31,039 AI-attributed cuts in a single month</strong> &mdash; a record since tracking began. 2025 was 4.2&times; higher than 2024. These are only employer-announced cuts. Attrition and quiet eliminations are not counted.</p>
+        </section>
+
         <section class="meta">
             <p>Last updated: 2026-05-29 &middot;
                Challenger Report cumulative (US only): 99,470</p>
