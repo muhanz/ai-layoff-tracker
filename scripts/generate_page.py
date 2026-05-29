@@ -57,7 +57,15 @@ def generate_html():
         
         source_link = ""
         if e.get("source_urls") and e["source_urls"][0]:
-            source_link = f'<a href="{e["source_urls"][0]}" target="_blank" rel="noopener">source</a>'
+            url = e["source_urls"][0]
+            ls = (e.get("link_status") or {}).get(url, {})
+            if ls.get("alive") is False and ls.get("last_alive"):
+                source_link = (
+                    f'<a href="{url}" target="_blank" rel="noopener" style="color:#999">source</a>'
+                    f' <span style="color:#888;font-size:0.7rem" title="Link may be unavailable">⚠ last live: {ls["last_alive"]}</span>'
+                )
+            else:
+                source_link = f'<a href="{url}" target="_blank" rel="noopener">source</a>'
         
         headcount_str = f'{e["headcount"]:,}' if e["headcount"] > 0 else "N/A"
         
@@ -1466,6 +1474,7 @@ def generate_html():
                <a href="https://github.com/muhanz/ai-layoff-tracker">GitHub source &amp; full dataset</a> &middot;
                <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener">@muhan.being</a></p>
             <p>Data is for informational purposes only. Not investment or employment advice.</p>
+            <p style="margin-top:0.3rem;font-size:0.75rem;color:#777;">Source links are checked daily. A ⚠ "last live" date means the article was reachable then but has since moved or been removed — that's the internet, not us. All sources are also archived via the Wayback Machine (📦) for permanent access.</p>
         </footer>
     </main>
     <script>
@@ -1502,9 +1511,15 @@ def generate_html():
             let html = '';
             events.forEach(e => {{
                 const srcs = (e.source_urls || []).filter(u => u);
-                const srcLinks = srcs.map(u =>
-                    `<a href="${{u}}" target="_blank" rel="noopener">source</a> <a href="https://web.archive.org/web/${{u}}" target="_blank" rel="noopener" style="color:#555;font-size:0.7rem" title="Wayback Machine">📦</a>`
-                ).join(' &nbsp;');
+                const ls = e.link_status || {{}};
+                const srcLinks = srcs.map(u => {{
+                    const st = ls[u] || {{}};
+                    const dead = st.alive === false;
+                    const lastAlive = (dead && st.last_alive)
+                        ? ` <span style="color:#888;font-size:0.7rem" title="Link may be unavailable">⚠ last live: ${{st.last_alive}}</span>`
+                        : '';
+                    return `<a href="${{u}}" target="_blank" rel="noopener"${{dead ? ' style="color:#999"' : ''}}>source</a>${{lastAlive}} <a href="https://web.archive.org/web/${{u}}" target="_blank" rel="noopener" style="color:#555;font-size:0.7rem" title="Wayback Machine">📦</a>`;
+                }}).join(' &nbsp;');
                 const rowId = `row-${{e.company.replace(/\W/g,'').toLowerCase()}}-${{e.date}}`;
                 html += `<tr class="event-row" onclick="toggleDetail('${{rowId}}')" style="cursor:pointer">
                     <td class="date-col">${{e.date}}</td>
