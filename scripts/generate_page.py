@@ -417,8 +417,40 @@ def generate_html():
             color: #ff2222;
             line-height: 1;
             font-variant-numeric: tabular-nums;
-            text-shadow: 0 0 60px rgba(255,34,34,0.3);
             letter-spacing: -0.02em;
+            animation: dd-breathe 3s ease-in-out infinite;
+        }}
+        @keyframes dd-breathe {{
+            0%, 100% {{ text-shadow: 0 0 20px rgba(255,34,34,0.2), 0 0 60px rgba(255,34,34,0.05); }}
+            50% {{ text-shadow: 0 0 40px rgba(255,34,34,0.6), 0 0 100px rgba(255,34,34,0.2); }}
+        }}
+        .dd-number.dd-tick {{
+            animation: dd-flash 0.6s ease-out forwards;
+        }}
+        @keyframes dd-flash {{
+            0% {{ color: #ff2222; text-shadow: 0 0 20px rgba(255,34,34,0.3); }}
+            30% {{ color: #ffffff; text-shadow: 0 0 60px rgba(255,255,255,0.9), 0 0 120px rgba(255,34,34,0.8); }}
+            100% {{ color: #ff2222; animation: dd-breathe 3s ease-in-out infinite; }}
+        }}
+        .dd-live-badge {{
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ff2222;
+            color: #fff;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            padding: 3px 10px 3px 8px;
+            border-radius: 3px;
+            margin-bottom: 0.75rem;
+        }}
+        .dd-live-dot {{
+            width: 6px;
+            height: 6px;
+            background: #fff;
+            border-radius: 50%;
+            animation: blink 1s infinite;
         }}
         .dd-sublabel {{
             margin-top: 0.6rem;
@@ -914,6 +946,7 @@ def generate_html():
         </header>
 
         <section class="doomsday-hero">
+            <div class="dd-live-badge"><span class="dd-live-dot"></span>LIVE</div>
             <div class="dd-label">JOBS LOST DIRECTLY TO AI</div>
             <div class="dd-number" id="dd-counter">{total_estimated:,}</div>
             <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span></div>
@@ -1413,10 +1446,12 @@ def generate_html():
             const PER_DAY = {avg_per_day};
             const PER_MS = PER_DAY / 86400000;
             const CONFIRMED_RATIO = BASE_CONFIRMED / BASE;
+            let lastFloor = BASE;
             function fmt(n) {{ return Math.floor(n).toLocaleString('en-US'); }}
             function tick() {{
                 const elapsed = Date.now() - BASE_TS;
                 const current = BASE + elapsed * PER_MS;
+                const currentFloor = Math.floor(current);
                 ['live-counter','dd-counter'].forEach(id => {{
                     const el = document.getElementById(id);
                     if (el) el.textContent = fmt(current);
@@ -1425,6 +1460,17 @@ def generate_html():
                 if (el2) el2.textContent = fmt(current * CONFIRMED_RATIO);
                 const rate = document.getElementById('dd-rate');
                 if (rate) rate.textContent = '~' + PER_DAY.toLocaleString() + ' per day';
+                // Flash the doomsday counter when integer increments
+                if (currentFloor > lastFloor) {{
+                    const dd = document.getElementById('dd-counter');
+                    if (dd) {{
+                        dd.classList.remove('dd-tick');
+                        void dd.offsetWidth; // force reflow to restart animation
+                        dd.classList.add('dd-tick');
+                        setTimeout(() => dd.classList.remove('dd-tick'), 700);
+                    }}
+                    lastFloor = currentFloor;
+                }}
             }}
             tick();
             setInterval(tick, 1000);
