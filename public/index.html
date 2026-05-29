@@ -390,6 +390,74 @@
             font-size: 0.72rem;
             color: #333;
         }
+        .dd-progress-wrap {
+            margin-top: 1.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .dd-progress-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.68rem;
+            color: #555;
+            margin-bottom: 0.35rem;
+        }
+        .dd-progress-label strong { color: #ff8844; }
+        .dd-progress-track {
+            background: #111;
+            border-radius: 4px;
+            height: 10px;
+            overflow: hidden;
+            border: 1px solid #1a1a1a;
+        }
+        .dd-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3d1111, #ff8844);
+            border-radius: 4px;
+            transition: width 1s ease-out;
+        }
+        .dd-progress-note {
+            font-size: 0.65rem;
+            color: #333;
+            margin-top: 0.3rem;
+            text-align: center;
+        }
+        .voices-section {
+            margin-top: 3rem;
+        }
+        .voices-section h2 {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.25rem;
+        }
+        .voices-sub {
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 1.25rem;
+        }
+        .voice-row {
+            padding: 1.1rem 1.25rem;
+            border-left: 3px solid #2a1800;
+            background: #0d0d0d;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 0.75rem;
+        }
+        .voice-row.papal { border-left-color: #1a2a1a; }
+        .voice-row.yang { border-left-color: #1a1a2a; }
+        .voice-quote {
+            font-size: 0.88rem;
+            color: #bbb;
+            line-height: 1.7;
+            font-style: italic;
+            margin-bottom: 0.4rem;
+        }
+        .voice-attr {
+            font-size: 0.7rem;
+            color: #555;
+            font-style: normal;
+        }
+        .voice-attr strong { color: #777; }
         @media (max-width: 600px) {
             .dd-number { font-size: 3.5rem; }
         }
@@ -455,7 +523,7 @@
             line-height: 1.5;
         }
         @media (max-width: 600px) {
-            .proj-number { font-size: 3.5rem; }
+            .proj-number { font-size: clamp(1.8rem, 10vw, 3.5rem); }
             .proj-vs-item { padding: 0.75rem 1rem; border-right: none; border-bottom: 1px solid #1a0000; width: 100%; }
             .proj-vs-item:last-child { border-bottom: none; }
         }
@@ -884,6 +952,16 @@
             <div class="dd-number" id="dd-counter">482,386</div>
             <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span> &nbsp;&middot;&nbsp; <span style="color:#666">204,891 confirmed</span></div>
             <div class="dd-since">1172 days &nbsp;&middot;&nbsp; 62 events &nbsp;&middot;&nbsp; since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
+            <div class="dd-progress-wrap">
+                <div class="dd-progress-label">
+                    <span>est. true AI impact via 6.7&times; multiplier: ~3.2M</span>
+                    <strong>10.7% toward 30M by 2028</strong>
+                </div>
+                <div class="dd-progress-track">
+                    <div class="dd-progress-fill" style="width:10.7%"></div>
+                </div>
+                <div class="dd-progress-note">482,386 documented &times; 6.7 unlabeled multiplier = ~3.2M estimated &nbsp;&middot;&nbsp; target: 30M by 2028</div>
+            </div>
         </section>
 
         <section class="projection-hero">
@@ -1133,6 +1211,27 @@
                     </p>
                 </div>
             </details>
+        </section>
+
+        <section class="voices-section">
+            <h2>They All See It</h2>
+            <p class="voices-sub">World leaders, economists, and the people building it &mdash; all saying the same thing.</p>
+            <div class="voice-row yang">
+                <p class="voice-quote">&ldquo;We are in the third inning of a vast economic shift that is going to leave millions of Americans behind.&rdquo;</p>
+                <p class="voice-attr"><strong>Andrew Yang</strong> &mdash; 2018 presidential campaign &nbsp;&middot;&nbsp; <em style="color:#888">He was right.</em></p>
+            </div>
+            <div class="voice-row papal">
+                <p class="voice-quote">&ldquo;We would condemn humanity to a future without hope if we took away people&rsquo;s ability to make decisions about themselves and their lives by dooming them to depend on the choices of machines.&rdquo;</p>
+                <p class="voice-attr"><strong>Pope Francis</strong> &mdash; G7 Summit, June 14, 2024 &nbsp;&middot;&nbsp; <em style="color:#555">his last G7 before his death on April 21, 2025</em></p>
+            </div>
+            <div class="voice-row papal">
+                <p class="voice-quote">&ldquo;The pursuit of greater profits cannot justify choices that systematically sacrifice jobs, because the human person is an end, not a means.&rdquo;</p>
+                <p class="voice-attr"><strong>Pope Leo XIV</strong> &mdash; <em>Magnifica Humanitas</em>, May 25, 2026 &nbsp;&middot;&nbsp; <em style="color:#555">the new pope&rsquo;s first encyclical &mdash; entirely about AI</em></p>
+            </div>
+            <div class="voice-row">
+                <p class="voice-quote">&ldquo;Within the next one to five years, AI could handle tasks that represent 50% of entry-level white-collar work. The societal effects could be severe.&rdquo;</p>
+                <p class="voice-attr"><strong>Dario Amodei</strong> &mdash; CEO, Anthropic &nbsp;&middot;&nbsp; 2025</p>
+            </div>
         </section>
 
         <section class="evisceration-section" id="white-collar">
