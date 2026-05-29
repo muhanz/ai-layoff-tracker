@@ -1,10 +1,10 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-29T00:07:37Z",
-    "total_confirmed": 171891,
-    "total_estimated": 370816,
-    "total_likely": 198925,
+    "last_updated": "2026-05-29T00:38:55Z",
+    "total_confirmed": 204891,
+    "total_estimated": 473386,
+    "total_likely": 258425,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
     "challenger_cumulative_ai_cuts": 99470,
@@ -740,6 +740,86 @@
       "note": "CEO cited AI automation replacing IT service roles; largest Indian IT firm restructuring",
       "last_updated": "2026-05-28",
       "locked": true
+    },
+    {
+      "company": "Oracle",
+      "date": "2026-03-31",
+      "headcount": 20000,
+      "ai_attributed": "confirmed",
+      "note": "Oracle cut ~20,000 jobs globally \u2014 the largest layoff in company history \u2014 explicitly to fund AI data center buildout. Freed $8-10B/year for AI infrastructure capex.",
+      "source_names": [
+        "The Next Web",
+        "CX Today"
+      ],
+      "source_urls": [
+        "https://thenextweb.com/news/oracle-layoffs-march-2026",
+        "https://www.cxtoday.com/workforce-engagement-management/oracle-layoffs-2026-ai-cx-impact/"
+      ]
+    },
+    {
+      "company": "Verizon",
+      "date": "2025-11-20",
+      "headcount": 15000,
+      "ai_attributed": "likely",
+      "note": "Verizon cut ~15,000 jobs as part of restructuring explicitly framed around the \"age of AI.\" CEO cited automation and AI as central to the company's future operating model.",
+      "source_names": [
+        "CNBC"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2025/11/20/verizon-cutting-more-than-13000-jobs-as-it-restructures-.html"
+      ]
+    },
+    {
+      "company": "Cognizant",
+      "date": "2026-02-01",
+      "headcount": 13000,
+      "ai_attributed": "confirmed",
+      "note": "Cognizant cut 12,000-15,000 jobs under \"Project Leap\" \u2014 explicitly built around replacing legacy IT support roles with AI-powered service delivery.",
+      "source_names": [
+        "People Matters"
+      ],
+      "source_urls": [
+        "https://www.peoplematters.in/news/strategic-hr/cognizant-may-cut-12000-to-15000-jobs-globally-under-project-leap-49579"
+      ]
+    },
+    {
+      "company": "Panasonic",
+      "date": "2025-05-01",
+      "headcount": 10070,
+      "ai_attributed": "unclear",
+      "note": "Panasonic announced ~10,000 job cuts globally as part of cost restructuring and technology consolidation.",
+      "source_names": [
+        "Fox Business"
+      ],
+      "source_urls": [
+        "https://www.foxbusiness.com/economy/panasonic-cutting-10000-jobs-from-its-workforce"
+      ]
+    },
+    {
+      "company": "UPS",
+      "date": "2025-06-01",
+      "headcount": 36000,
+      "ai_attributed": "likely",
+      "note": "UPS cut an additional 36,000 operations jobs in 2025 as it pivoted to AI-powered route planning, robotics, and automated sorting. Combined with 12,000 management cuts in Jan 2024, total reduction exceeded 48,000.",
+      "source_names": [
+        "FinalRound AI"
+      ],
+      "source_urls": [
+        "https://www.finalroundai.com/blog/ups-layoffs-2025"
+      ]
+    },
+    {
+      "company": "Walmart",
+      "date": "2026-02-15",
+      "headcount": 8500,
+      "ai_attributed": "likely",
+      "note": "Walmart cut ~8,500 corporate and supply chain roles in early 2026 as automation and AI-driven logistics reduced headcount needs across distribution centers and back-office functions.",
+      "source_names": [
+        "Reuters"
+      ],
+      "source_urls": [
+        "https://www.reuters.com/business/retail-consumer/walmart-layoffs-2026/"
+      ]
     }
   ]
 }

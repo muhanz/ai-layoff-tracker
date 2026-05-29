@@ -897,7 +897,7 @@ def generate_html():
                Challenger Report cumulative (US only): {challenger_total:,}</p>
             <p class="sources">
                 Sources:
-                <a href="https://www.challengergray.com/blog/job-cuts-press-releases/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
+                <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
                 <a href="https://layoffs.fyi" target="_blank" rel="noopener">Layoffs.fyi</a> &middot;
                 <a href="https://trueup.io/layoffs" target="_blank" rel="noopener">TrueUp.io</a> &middot;
                 Public news reports &middot;
