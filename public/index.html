@@ -6,10 +6,10 @@
     <title>AI Layoff Tracker - Global Warning</title>
     <meta name="description" content="Tracking global job losses attributed to AI since the launch of GPT-4. Updated daily with verified sources.">
     <meta property="og:title" content="AI Layoff Tracker - Global Warning">
-    <meta property="og:description" content="Since GPT-4 launched 1171 days ago, 237,716 people have lost their jobs in AI-related layoffs.">
+    <meta property="og:description" content="Since GPT-4 launched 1172 days ago, 273,816 people have lost their jobs in AI-related layoffs.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Layoff Tracker - 237,716 jobs lost">
+    <meta name="twitter:title" content="AI Layoff Tracker - 273,816 jobs lost">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -149,6 +149,140 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
         }
+        .dual-stat {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .stat-block {
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-fear {
+            background: linear-gradient(135deg, #1a0a00 0%, #0a0a0a 100%);
+            border: 1px solid #3d2211;
+            position: relative;
+        }
+        .stat-jobs {
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            border: 1px solid #3d1111;
+        }
+        .stat-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin-bottom: 0.4rem;
+        }
+        .stat-fear .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ff8844;
+            line-height: 1;
+        }
+        .stat-jobs .stat-value {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ff4444;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+        }
+        .stat-sub {
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 0.3rem;
+        }
+        .stat-context {
+            font-size: 0.7rem;
+            color: #444;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+        .fear-compare {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.75rem;
+        }
+        .fc-item {
+            font-size: 0.65rem;
+            padding: 2px 7px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+        .fc-worse { background: #1a1a1a; color: #555; }
+        .fc-ai { background: #3d2211; color: #ff8844; font-weight: 700; }
+        .fc-better { background: #111; color: #444; }
+        @media (max-width: 600px) {
+            .dual-stat { grid-template-columns: 1fr; }
+            .stat-fear .stat-value { font-size: 2.2rem; }
+            .stat-jobs .stat-value { font-size: 1.8rem; }
+        }
+        .ticker-wrap {
+            width: 100%;
+            background: #0f0000;
+            border-top: 1px solid #3d1111;
+            border-bottom: 1px solid #3d1111;
+            padding: 0.6rem 0;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .ticker-live {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            background: #ff4444;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            z-index: 2;
+            white-space: nowrap;
+        }
+        .ticker-live::before {
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background: #fff;
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.2; }
+        }
+        .ticker-track {
+            display: flex;
+            white-space: nowrap;
+            animation: ticker-scroll 60s linear infinite;
+            padding-left: 90px;
+        }
+        .ticker-track:hover { animation-play-state: paused; }
+        @keyframes ticker-scroll {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 3rem;
+            font-size: 0.85rem;
+            color: #ff8888;
+        }
+        .ticker-company { color: #ffcccc; font-weight: 600; margin-right: 0.4rem; }
+        .ticker-count { color: #ff4444; font-weight: 700; margin-right: 0.4rem; }
+        .ticker-date { color: #666; font-size: 0.75rem; }
+        .ticker-sep { color: #3d1111; margin: 0 1.5rem; }
         .submit-section {
             margin-top: 3rem;
             padding: 2rem;
@@ -227,11 +361,130 @@
         }
         .follow-btn.instagram { background: #2a1a2e; color: #cc88ff; }
         .follow-btn.instagram:hover { background: #3a1a4e; text-decoration: none; }
+        .cta-section {
+            margin-top: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #0a0f1a 0%, #0a0a0a 100%);
+            border: 1px solid #1a2a3a;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .cta-pre {
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            color: #ff4444;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+        .cta-headline {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 1.25rem;
+        }
+        .cta-body {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        .cta-body em { color: #aaa; font-style: normal; font-weight: 500; }
+        .cta-mission {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 1.75rem;
+        }
+        .cta-mission strong { color: #888; }
+        .cta-actions {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            border-radius: 7px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+        .cta-btn:hover { opacity: 0.85; text-decoration: none; }
+        .cta-primary { background: #1a3a5a; color: #66aaff; }
+        .cta-secondary { background: #111; border: 1px solid #2a2a2a; color: #666; }
+        @media (max-width: 600px) {
+            .cta-headline { font-size: 1.2rem; }
+        }
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }
+        .controls-group {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+        .ctrl-btn {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #888;
+            padding: 0.4rem 0.85rem;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+        .ctrl-btn:hover { border-color: #444; color: #ccc; }
+        .ctrl-btn.active { background: #1a1a1a; border-color: #ff4444; color: #ff6666; font-weight: 600; }
+        .ctrl-divider { width: 1px; background: #222; margin: 0 0.25rem; align-self: stretch; }
+        .search-input {
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #e0e0e0;
+            padding: 0.4rem 0.75rem;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            font-family: inherit;
+            flex: 1;
+            min-width: 140px;
+            max-width: 220px;
+        }
+        .search-input:focus { outline: none; border-color: #444; }
+        .search-input::placeholder { color: #444; }
+        .row-count { color: #555; font-size: 0.75rem; margin-left: auto; white-space: nowrap; }
+        .event-row:hover td { background: #111; }
+        .event-row td { transition: background 0.1s; }
+        .detail-cell {
+            padding: 0.75rem 1rem !important;
+            background: #0d0d0d;
+            border-bottom: 1px solid #222;
+        }
+        .detail-note {
+            color: #aaa;
+            font-size: 0.82rem;
+            line-height: 1.6;
+            margin-bottom: 0.4rem;
+        }
+        .detail-sources {
+            font-size: 0.75rem;
+            color: #555;
+        }
+        .detail-sources a { color: #4488cc; }
+        .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         @media (max-width: 600px) {
             .number { font-size: 3rem; }
             .number.secondary { font-size: 1.8rem; }
             h1 { font-size: 1.8rem; }
             table { font-size: 0.75rem; }
+            .search-input { max-width: 100%; }
+            .row-count { display: none; }
         }
     </style>
 </head>
@@ -239,189 +492,96 @@
     <main>
         <header>
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
-            <p class="subtitle">Global tracking since GPT-4 launch (March 14, 2023)</p>
+            <p class="subtitle">Community-verified · documented minimum · since GPT-4 launch (March 14, 2023)</p>
         </header>
         
+        <div class="dual-stat">
+            <div class="stat-block stat-fear">
+                <div class="stat-label">PUBLIC FEAR SCORE</div>
+                <div class="stat-value">-20</div>
+                <div class="stat-sub">net favorability (NBC, Mar 2026)</div>
+                <div class="stat-context">57% say risks outweigh benefits &nbsp;·&nbsp; scale: -100 to +100</div>
+                <div class="fear-compare">
+                    <span class="fc-item fc-worse">Iran &minus;53</span>
+                    <span class="fc-item fc-worse">Dem. Party &minus;22</span>
+                    <span class="fc-item fc-ai">&#9654; AI &minus;20</span>
+                    <span class="fc-item fc-better">ICE &minus;18</span>
+                    <span class="fc-item fc-better">Trump &minus;12</span>
+                </div>
+            </div>
+            <div class="stat-block stat-jobs">
+                <div class="stat-label">JOBS LOST TO AI</div>
+                <div class="stat-value">273,816</div>
+                <div class="stat-sub">since GPT-4 launch · 1172 days</div>
+                <div class="stat-context">129,891 confirmed &nbsp;·&nbsp; ~233/day</div>
+            </div>
+        </div>
+
+        <div class="ticker-wrap">
+            <div class="ticker-live">🔴 LIVE</div>
+            <div class="ticker-track"><span class="ticker-item"><span class="ticker-company">Cloudflare</span><span class="ticker-count">▼ 1,100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 8,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">HSBC</span><span class="ticker-count">▼ 20,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Standard Chartered</span><span class="ticker-count">▼ 7,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">AI21</span><span class="ticker-count">▼ 110 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Kraken</span><span class="ticker-count">▼ 150 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Gambling.com</span><span class="ticker-count">▼ 140 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dune Analytics</span><span class="ticker-count">▼ 50 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">LinkedIn</span><span class="ticker-count">▼ 875 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cisco</span><span class="ticker-count">▼ 4,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Walmart Tech</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">ZoomInfo</span><span class="ticker-count">▼ 600 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">GitLab</span><span class="ticker-count">▼ 100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Phreesia</span><span class="ticker-count">▼ 220 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Truecaller</span><span class="ticker-count">▼ 70 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Staffbase</span><span class="ticker-count">▼ 176 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cloudflare</span><span class="ticker-count">▼ 1,100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Upwork</span><span class="ticker-count">▼ 150 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">DeepL</span><span class="ticker-count">▼ 250 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Bill Holdings</span><span class="ticker-count">▼ 709 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Block (Square/Cash App)</span><span class="ticker-count">▼ 4,000 jobs</span><span class="ticker-date">2026-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Amazon</span><span class="ticker-count">▼ 30,000 jobs</span><span class="ticker-date">2025-10</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Oracle</span><span class="ticker-count">▼ 3,000 jobs</span><span class="ticker-date">2025-09</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 3,600 jobs</span><span class="ticker-date">2025-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Workday</span><span class="ticker-count">▼ 1,750 jobs</span><span class="ticker-date">2025-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Salesforce</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Spotify</span><span class="ticker-count">▼ 1,500 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Microsoft</span><span class="ticker-count">▼ 1,900 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Klarna</span><span class="ticker-count">▼ 700 jobs</span><span class="ticker-date">2024-09</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Intuit</span><span class="ticker-count">▼ 1,800 jobs</span><span class="ticker-date">2024-07</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2024-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Tesla</span><span class="ticker-count">▼ 14,000 jobs</span><span class="ticker-date">2024-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cisco</span><span class="ticker-count">▼ 4,250 jobs</span><span class="ticker-date">2024-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dell</span><span class="ticker-count">▼ 12,500 jobs</span><span class="ticker-date">2024-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">UPS</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">SAP</span><span class="ticker-count">▼ 8,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Amazon</span><span class="ticker-count">▼ 18,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Duolingo</span><span class="ticker-count">▼ 10 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Duolingo</span><span class="ticker-count">▼ 26 jobs</span><span class="ticker-date">2023-12</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Chegg</span><span class="ticker-count">▼ 80 jobs</span><span class="ticker-date">2023-06</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Spotify</span><span class="ticker-count">▼ 600 jobs</span><span class="ticker-date">2023-06</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">BT Group</span><span class="ticker-count">▼ 55,000 jobs</span><span class="ticker-date">2023-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">IBM</span><span class="ticker-count">▼ 7,800 jobs</span><span class="ticker-date">2023-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dropbox</span><span class="ticker-count">▼ 500 jobs</span><span class="ticker-date">2023-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 10,000 jobs</span><span class="ticker-date">2023-03</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2023-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Microsoft</span><span class="ticker-count">▼ 10,000 jobs</span><span class="ticker-date">2023-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cloudflare</span><span class="ticker-count">▼ 1,100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 8,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">HSBC</span><span class="ticker-count">▼ 20,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Standard Chartered</span><span class="ticker-count">▼ 7,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">AI21</span><span class="ticker-count">▼ 110 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Kraken</span><span class="ticker-count">▼ 150 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Gambling.com</span><span class="ticker-count">▼ 140 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dune Analytics</span><span class="ticker-count">▼ 50 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">LinkedIn</span><span class="ticker-count">▼ 875 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cisco</span><span class="ticker-count">▼ 4,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Walmart Tech</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">ZoomInfo</span><span class="ticker-count">▼ 600 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">GitLab</span><span class="ticker-count">▼ 100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Phreesia</span><span class="ticker-count">▼ 220 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Truecaller</span><span class="ticker-count">▼ 70 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Staffbase</span><span class="ticker-count">▼ 176 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cloudflare</span><span class="ticker-count">▼ 1,100 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Upwork</span><span class="ticker-count">▼ 150 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">DeepL</span><span class="ticker-count">▼ 250 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Bill Holdings</span><span class="ticker-count">▼ 709 jobs</span><span class="ticker-date">2026-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Block (Square/Cash App)</span><span class="ticker-count">▼ 4,000 jobs</span><span class="ticker-date">2026-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Amazon</span><span class="ticker-count">▼ 30,000 jobs</span><span class="ticker-date">2025-10</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Oracle</span><span class="ticker-count">▼ 3,000 jobs</span><span class="ticker-date">2025-09</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 3,600 jobs</span><span class="ticker-date">2025-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Workday</span><span class="ticker-count">▼ 1,750 jobs</span><span class="ticker-date">2025-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Salesforce</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Spotify</span><span class="ticker-count">▼ 1,500 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Microsoft</span><span class="ticker-count">▼ 1,900 jobs</span><span class="ticker-date">2025-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Klarna</span><span class="ticker-count">▼ 700 jobs</span><span class="ticker-date">2024-09</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Intuit</span><span class="ticker-count">▼ 1,800 jobs</span><span class="ticker-date">2024-07</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 1,000 jobs</span><span class="ticker-date">2024-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Tesla</span><span class="ticker-count">▼ 14,000 jobs</span><span class="ticker-date">2024-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Cisco</span><span class="ticker-count">▼ 4,250 jobs</span><span class="ticker-date">2024-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dell</span><span class="ticker-count">▼ 12,500 jobs</span><span class="ticker-date">2024-02</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">UPS</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">SAP</span><span class="ticker-count">▼ 8,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Amazon</span><span class="ticker-count">▼ 18,000 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Duolingo</span><span class="ticker-count">▼ 10 jobs</span><span class="ticker-date">2024-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Duolingo</span><span class="ticker-count">▼ 26 jobs</span><span class="ticker-date">2023-12</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Chegg</span><span class="ticker-count">▼ 80 jobs</span><span class="ticker-date">2023-06</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Spotify</span><span class="ticker-count">▼ 600 jobs</span><span class="ticker-date">2023-06</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">BT Group</span><span class="ticker-count">▼ 55,000 jobs</span><span class="ticker-date">2023-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">IBM</span><span class="ticker-count">▼ 7,800 jobs</span><span class="ticker-date">2023-05</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Dropbox</span><span class="ticker-count">▼ 500 jobs</span><span class="ticker-date">2023-04</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Meta</span><span class="ticker-count">▼ 10,000 jobs</span><span class="ticker-date">2023-03</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Google</span><span class="ticker-count">▼ 12,000 jobs</span><span class="ticker-date">2023-01</span></span><span class="ticker-sep">|</span><span class="ticker-item"><span class="ticker-company">Microsoft</span><span class="ticker-count">▼ 10,000 jobs</span><span class="ticker-date">2023-01</span></span><span class="ticker-sep">|</span></div>
+        </div>
+
         <section class="counter">
-            <div class="number">237,716</div>
-            <p class="label">people lost jobs in AI-related layoffs (broad estimate)</p>
-            
-            <div class="number secondary">93,791</div>
-            <p class="label">people explicitly laid off due to AI (conservative estimate)</p>
+            <div class="number">273,816</div>
+            <p class="label">documented minimum — publicly reported AI-related job losses</p>
+
+            <div class="number secondary">129,891</div>
+            <p class="label">confirmed — company explicitly cited AI as the reason</p>
             
             <div class="days-counter">
-                1171 days &middot; 45 events &middot; 
-                ~203 people per day
+                1172 days &middot; 49 events &middot; 
+                ~233 people per day
             </div>
         </section>
         
         <section class="meta">
-            <p>Last updated: 2026-05-28 &middot; 
+            <p>Last updated: 2026-05-28 &middot;
                Challenger Report cumulative (US only): 99,470</p>
             <p class="sources">
-                Sources: Challenger, Gray &amp; Christmas &middot; Layoffs.fyi &middot; 
-                TrueUp.io &middot; Public news reports
+                Sources:
+                <a href="https://www.challengergray.com/blog/job-cuts-press-releases/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
+                <a href="https://layoffs.fyi" target="_blank" rel="noopener">Layoffs.fyi</a> &middot;
+                <a href="https://trueup.io/layoffs" target="_blank" rel="noopener">TrueUp.io</a> &middot;
+                Public news reports &middot;
+                <a href="#methodology">Methodology &darr;</a>
             </p>
         </section>
         
         <section class="recent">
-            <h2>Recent Events</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Company</th>
-                        <th>Headcount</th>
-                        <th>AI Attribution</th>
-                        <th>Source</th>
-                    </tr>
-                </thead>
-                <tbody>
-            <tr>
-                <td class="date-col">2026-05-18</td>
-                <td class="company-col">AI21</td>
-                <td class="number-col">110</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.calcalistech.com/ctechnews/article/rjwumhukfx" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-15</td>
-                <td class="company-col">Kraken</td>
-                <td class="number-col">150</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.bloomberg.com/news/articles/2026-05-15/kraken-cuts-150-workers-after-deploying-ai-ipo-may-slip-to-2027" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-15</td>
-                <td class="company-col">Gambling.com</td>
-                <td class="number-col">140</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.gamblinginsider.com/news/160339/gambling-com-to-cut-25-of-jobs-in-ai-first-shift-as-q1-earnings-hurt-by-rising-costs" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-14</td>
-                <td class="company-col">Dune Analytics</td>
-                <td class="number-col">50</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.theblock.co/post/401322/crypto-data-firm-dune-cuts-25-of-staff-citing-ai-efficiencies" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-13</td>
-                <td class="company-col">LinkedIn</td>
-                <td class="number-col">875</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.reuters.com/business/world-at-work/linkedin-is-planning-lay-off-5-staff-latest-tech-sector-cuts-source-says-2026-05-13/" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-13</td>
-                <td class="company-col">Cisco</td>
-                <td class="number-col">4,000</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-12</td>
-                <td class="company-col">Walmart Tech</td>
-                <td class="number-col">1,000</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-11</td>
-                <td class="company-col">ZoomInfo</td>
-                <td class="number-col">600</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://thenextweb.com/news/zoominfo-beat-earnings-cut-600-jobs-and-lost-29-per-cent-of-its-stock-price-its-database-is-being-repriced-by-ai" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-11</td>
-                <td class="company-col">Phreesia</td>
-                <td class="number-col">220</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.streetinsider.com/Corporate+News/Phreesia+eliminates+220+positions+in+restructuring+plan/26468756.html" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-11</td>
-                <td class="company-col">GitLab</td>
-                <td class="number-col">100</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-08</td>
-                <td class="company-col">Truecaller</td>
-                <td class="number-col">70</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-08</td>
-                <td class="company-col">Staffbase</td>
-                <td class="number-col">176</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.saechsische.de/wirtschaft/regional/staffbase-streicht-jede-fuenfte-stelle-harter-einschnitt-bei-saechsischem-einhorn-FKVL5SIOTNCWXJMUEUFAGQUAHY.html" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-07</td>
-                <td class="company-col">Cloudflare</td>
-                <td class="number-col">1,100</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.wsj.com/business/earnings/cloudflare-to-slash-1-100-jobs-due-to-ai-driven-restructuring-plan-640f7b52" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-07</td>
-                <td class="company-col">Upwork</td>
-                <td class="number-col">150</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.marketwatch.com/story/upwork-to-cut-24-of-staff-in-restructuring-citing-evolving-nature-of-work-ab064f91" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-07</td>
-                <td class="company-col">DeepL</td>
-                <td class="number-col">250</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://www.bloomberg.com/news/articles/2026-05-07/google-translate-rival-deepl-announces-plans-to-cut-25-of-staff" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-05-07</td>
-                <td class="company-col">Bill Holdings</td>
-                <td class="number-col">709</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2026-04-01</td>
-                <td class="company-col">Block (Square/Cash App)</td>
-                <td class="number-col">4,000</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://block.xyz/inside/from-hierarchy-to-intelligence" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2025-10-27</td>
-                <td class="company-col">Amazon</td>
-                <td class="number-col">30,000</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2025-09-01</td>
-                <td class="company-col">Oracle</td>
-                <td class="number-col">3,000</td>
-                <td><span class="badge badge-likely">likely</span></td>
-                <td><a href="https://www.businessinsider.com/oracle-layoffs-2025" target="_blank" rel="noopener">source</a></td>
-            </tr>
-            <tr>
-                <td class="date-col">2025-02-10</td>
-                <td class="company-col">Meta</td>
-                <td class="number-col">3,600</td>
-                <td><span class="badge badge-confirmed">confirmed</span></td>
-                <td><a href="https://about.fb.com/news/2025/02/performance-based-exits/" target="_blank" rel="noopener">source</a></td>
-            </tr>
-                </tbody>
-            </table>
+            <h2>Events</h2>
+            <div class="controls">
+                <div class="controls-group">
+                    <button class="ctrl-btn active" onclick="setSort('date')">Most Recent</button>
+                    <button class="ctrl-btn" onclick="setSort('headcount')">Largest</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <div class="controls-group">
+                    <button class="ctrl-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+                    <button class="ctrl-btn" data-filter="confirmed" onclick="setFilter('confirmed')">Confirmed</button>
+                    <button class="ctrl-btn" data-filter="likely" onclick="setFilter('likely')">Likely</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <input class="search-input" type="text" placeholder="Search company..." oninput="setSearch(this.value)">
+                <span class="row-count" id="row-count"></span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Company</th>
+                            <th>Headcount</th>
+                            <th>Attribution</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-tbody"></tbody>
+                </table>
+            </div>
         </section>
         
-        <section class="methodology">
+        <section class="methodology" id="methodology">
             <h3>Methodology</h3>
             <p>
                 <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs<br>
@@ -435,9 +595,28 @@
             </p>
         </section>
         
+        <section class="cta-section">
+            <div class="cta-inner">
+                <p class="cta-pre">The data is in. The flood is real.</p>
+                <h2 class="cta-headline">We don&apos;t have to argue about whether AI is taking jobs.<br>We can prove it. Now what?</h2>
+                <p class="cta-body">
+                    The question is no longer <em>if</em> — it&apos;s <em>what next.</em><br>
+                    We believe the answer is redesigning work for human flourishing:<br>
+                    not fighting the wave, but learning to navigate it.
+                </p>
+                <p class="cta-mission">
+                    <strong>Eudy&apos;s mission:</strong> Standardize work for human flourishing in the age of AI.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener" class="cta-btn cta-primary">Follow the journey &rarr;</a>
+                    <a href="https://eudy.co" target="_blank" rel="noopener" class="cta-btn cta-secondary">Learn about Eudy</a>
+                </div>
+            </div>
+        </section>
+
         <section class="submit-section">
             <h2>Did we miss one?</h2>
-            <p>Know of an AI-related layoff not on this list? Submit it — we verify every entry before publishing.</p>
+            <p>Heard about a layoff we haven&apos;t tracked? Is your company about to cut jobs because of AI? Give us an early warning — submit it here. Every verified entry goes live within 24 hours.</p>
             <form id="submit-form">
                 <div class="form-row">
                     <input type="text" name="company" placeholder="Company name *" required>
@@ -472,6 +651,68 @@
         </footer>
     </main>
     <script>
+        const ALL_EVENTS = [{"id": "ibm_2023-05-01", "company": "IBM", "date": "2023-05-01", "headcount": 7800, "ai_attributed": "confirmed", "source_urls": ["https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-back-office-jobs-that-ai-could-kill"], "note": "CEO Arvind Krishna stated AI could replace 7,800 back-office jobs over 5 years", "last_updated": "2026-05-19", "locked": true}, {"id": "chegg_2023-06-05", "company": "Chegg", "date": "2023-06-05", "headcount": 80, "ai_attributed": "confirmed", "source_urls": ["https://www.wsj.com/articles/chegg-cuts-4-of-workforce-after-chatgpt-hurts-growth-c0b9a7cc"], "note": "Explicitly cited ChatGPT impact on business", "last_updated": "2026-05-19", "locked": true}, {"id": "bt_group_2023-05-18", "company": "BT Group", "date": "2023-05-18", "headcount": 55000, "ai_attributed": "confirmed", "source_urls": ["https://www.bbc.com/news/business-65631168"], "note": "Plan to cut 55,000 jobs by 2030, with up to 10,000 replaced by AI", "last_updated": "2026-05-19", "locked": true}, {"id": "dropbox_2023-04-27", "company": "Dropbox", "date": "2023-04-27", "headcount": 500, "ai_attributed": "confirmed", "source_urls": ["https://blog.dropbox.com/topics/company/a-message-from-drew"], "note": "CEO cited AI era requiring different skill mix", "last_updated": "2026-05-19", "locked": true}, {"id": "meta_2023-03-14", "company": "Meta", "date": "2023-03-14", "headcount": 10000, "ai_attributed": "likely", "source_urls": ["https://about.fb.com/news/2023/03/mark-zuckerberg-meta-year-of-efficiency/"], "note": "Year of Efficiency, shifting resources to AI", "last_updated": "2026-05-19", "locked": true}, {"id": "google_2023-01-20", "company": "Google", "date": "2023-01-20", "headcount": 12000, "ai_attributed": "likely", "source_urls": ["https://blog.google/inside-google/message-ceo/january-update/"], "note": "Restructuring to focus on AI priorities (announced before GPT-4 but layoffs continued)", "last_updated": "2026-05-19", "locked": true}, {"id": "microsoft_2023-01-18", "company": "Microsoft", "date": "2023-01-18", "headcount": 10000, "ai_attributed": "likely", "source_urls": ["https://blogs.microsoft.com/blog/2023/01/18/subject-focusing-on-our-short-and-long-term-opportunity/"], "note": "Cut jobs while investing billions in OpenAI", "last_updated": "2026-05-19", "locked": true}, {"id": "spotify_2023-06-05", "company": "Spotify", "date": "2023-06-05", "headcount": 600, "ai_attributed": "likely", "source_urls": ["https://newsroom.spotify.com/2023-06-05/an-update-on-spotifys-plans/"], "note": "Restructuring, later heavily invested in AI features", "last_updated": "2026-05-19", "locked": true}, {"id": "duolingo_2023-12-05", "company": "Duolingo", "date": "2023-12-05", "headcount": 26, "ai_attributed": "confirmed", "source_urls": ["https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1"], "note": "Replaced contract translators with AI", "last_updated": "2026-05-19", "locked": true}, {"id": "google_2024-01-11", "company": "Google", "date": "2024-01-11", "headcount": 12000, "ai_attributed": "likely", "source_urls": ["https://www.nytimes.com/2024/01/11/technology/google-layoffs.html"], "note": "Multiple rounds throughout 2024, restructuring for AI", "last_updated": "2026-05-19", "locked": true}, {"id": "sap_2024-01-23", "company": "SAP", "date": "2024-01-23", "headcount": 8000, "ai_attributed": "confirmed", "source_urls": ["https://www.reuters.com/technology/sap-restructure-8000-roles-ai-push-2024-01-23/"], "note": "Explicitly restructuring 8,000 roles in AI push", "last_updated": "2026-05-19", "locked": true}, {"id": "ups_2024-01-30", "company": "UPS", "date": "2024-01-30", "headcount": 12000, "ai_attributed": "likely", "source_urls": ["https://www.cnbc.com/2024/01/30/ups-to-cut-12000-jobs.html"], "note": "Cited technology and automation efficiencies", "last_updated": "2026-05-19", "locked": true}, {"id": "duolingo_2024-01-08", "company": "Duolingo", "date": "2024-01-08", "headcount": 10, "ai_attributed": "confirmed", "source_urls": ["https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1"], "note": "Additional contractor cuts replaced by AI", "last_updated": "2026-05-19", "locked": true}, {"id": "google_2024-04-18", "company": "Google", "date": "2024-04-18", "headcount": 1000, "ai_attributed": "confirmed", "source_urls": ["https://www.theverge.com/2024/4/18/24133814/google-cut-hundreds-core-teams"], "note": "Core team cuts, shifting to AI divisions", "last_updated": "2026-05-19", "locked": true}, {"id": "tesla_2024-04-15", "company": "Tesla", "date": "2024-04-15", "headcount": 14000, "ai_attributed": "likely", "source_urls": ["https://www.reuters.com/business/autos-transportation/tesla-lay-off-more-than-10-its-workforce-2024-04-15/"], "note": "10% workforce cut while investing heavily in FSD/AI", "last_updated": "2026-05-19", "locked": true}, {"id": "amazon_2024-01-10", "company": "Amazon", "date": "2024-01-10", "headcount": 18000, "ai_attributed": "likely", "source_urls": ["https://www.aboutamazon.com/news/company-news/andy-jassy-update-on-amazon-layoffs-2024"], "note": "Continued cuts, shifting to AI services", "last_updated": "2026-05-19", "locked": true}, {"id": "klarna_2024-09-12", "company": "Klarna", "date": "2024-09-12", "headcount": 700, "ai_attributed": "confirmed", "source_urls": ["https://www.reuters.com/technology/klarna-says-ai-approach-warming-up-ipo-investors-2024-08-27/"], "note": "CEO explicitly stated AI doing work of 700 employees", "last_updated": "2026-05-19", "locked": true}, {"id": "intuit_2024-07-10", "company": "Intuit", "date": "2024-07-10", "headcount": 1800, "ai_attributed": "confirmed", "source_urls": ["https://www.intuit.com/blog/news-social/intuit-ceo-sasan-goodarzi-shares-strategic-decisions/"], "note": "Cut 10% to reinvest in AI", "last_updated": "2026-05-19", "locked": true}, {"id": "cisco_2024-02-14", "company": "Cisco", "date": "2024-02-14", "headcount": 4250, "ai_attributed": "likely", "source_urls": ["https://www.reuters.com/technology/cisco-cut-thousands-jobs-shift-focus-ai-2024-02-14/"], "note": "Shift focus to AI and cybersecurity", "last_updated": "2026-05-19", "locked": true}, {"id": "dell_2024-02-05", "company": "Dell", "date": "2024-02-05", "headcount": 12500, "ai_attributed": "likely", "source_urls": ["https://www.reuters.com/technology/dell-cut-about-6650-jobs-2024-02-05/"], "note": "Multiple rounds, reorganizing for AI-driven products", "last_updated": "2026-05-19", "locked": true}, {"id": "microsoft_2025-01-09", "company": "Microsoft", "date": "2025-01-09", "headcount": 1900, "ai_attributed": "likely", "source_urls": ["https://www.cnbc.com/2025/01/09/microsoft-lays-off-1900-activision-blizzard-xbox-employees.html"], "note": "Gaming division cuts while investing in AI", "last_updated": "2026-05-19", "locked": true}, {"id": "google_2025-01-21", "company": "Google", "date": "2025-01-21", "headcount": 1000, "ai_attributed": "confirmed", "source_urls": ["https://www.theverge.com/2025/1/21/google-layoffs-2025"], "note": "Continued restructuring for AI-first strategy", "last_updated": "2026-05-19", "locked": true}, {"id": "amazon_2025-10-27", "company": "Amazon", "date": "2025-10-27", "headcount": 30000, "ai_attributed": "likely", "source_urls": ["https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/"], "note": "Largest single layoff wave, efficiency and AI investment", "last_updated": "2026-05-19", "locked": true}, {"id": "meta_2025-02-10", "company": "Meta", "date": "2025-02-10", "headcount": 3600, "ai_attributed": "confirmed", "source_urls": ["https://about.fb.com/news/2025/02/performance-based-exits/"], "note": "Performance-based cuts, redirecting to AI teams", "last_updated": "2026-05-19", "locked": true}, {"id": "salesforce_2025-01-28", "company": "Salesforce", "date": "2025-01-28", "headcount": 1000, "ai_attributed": "confirmed", "source_urls": ["https://www.bloomberg.com/news/articles/2025-01-28/salesforce-cuts-1000-jobs"], "note": "Cuts while launching Agentforce AI platform", "last_updated": "2026-05-19", "locked": true}, {"id": "workday_2025-02-04", "company": "Workday", "date": "2025-02-04", "headcount": 1750, "ai_attributed": "confirmed", "source_urls": ["https://www.workday.com/en-us/company/latest/newsroom/press-releases/press-release-details.html"], "note": "8.5% cut to invest in AI", "last_updated": "2026-05-19", "locked": true}, {"id": "spotify_2025-01-15", "company": "Spotify", "date": "2025-01-15", "headcount": 1500, "ai_attributed": "likely", "source_urls": ["https://newsroom.spotify.com/"], "note": "Continued efficiency cuts, AI-driven personalization", "last_updated": "2026-05-19", "locked": true}, {"id": "cloudflare_2026-05-07", "company": "Cloudflare", "date": "2026-05-07", "headcount": 1100, "ai_attributed": "confirmed", "source_urls": ["https://www.wsj.com/business/earnings/cloudflare-to-slash-1-100-jobs-due-to-ai-driven-restructuring-plan-640f7b52"], "note": "Explicitly AI-Driven Restructuring Plan", "last_updated": "2026-05-19", "locked": true}, {"id": "linkedin_2026-05-13", "company": "LinkedIn", "date": "2026-05-13", "headcount": 875, "ai_attributed": "confirmed", "source_urls": ["https://www.reuters.com/business/world-at-work/linkedin-is-planning-lay-off-5-staff-latest-tech-sector-cuts-source-says-2026-05-13/"], "note": "5% staff cut in AI-driven restructuring", "last_updated": "2026-05-19", "locked": true}, {"id": "cisco_2026-05-13", "company": "Cisco", "date": "2026-05-13", "headcount": 4000, "ai_attributed": "confirmed", "source_urls": ["https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html"], "note": "Cutting jobs amid surging AI orders", "last_updated": "2026-05-19", "locked": true}, {"id": "upwork_2026-05-07", "company": "Upwork", "date": "2026-05-07", "headcount": 150, "ai_attributed": "confirmed", "source_urls": ["https://www.marketwatch.com/story/upwork-to-cut-24-of-staff-in-restructuring-citing-evolving-nature-of-work-ab064f91"], "note": "Citing evolving 'Nature of Work' (AI)", "last_updated": "2026-05-19", "locked": true}, {"id": "deepl_2026-05-07", "company": "DeepL", "date": "2026-05-07", "headcount": 250, "ai_attributed": "confirmed", "source_urls": ["https://www.bloomberg.com/news/articles/2026-05-07/google-translate-rival-deepl-announces-plans-to-cut-25-of-staff"], "note": "AI translation company restructuring", "last_updated": "2026-05-19", "locked": true}, {"id": "bill_holdings_2026-05-07", "company": "Bill Holdings", "date": "2026-05-07", "headcount": 709, "ai_attributed": "likely", "source_urls": ["https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878"], "note": "30% workforce cut", "last_updated": "2026-05-19", "locked": true}, {"id": "zoominfo_2026-05-11", "company": "ZoomInfo", "date": "2026-05-11", "headcount": 600, "ai_attributed": "confirmed", "source_urls": ["https://thenextweb.com/news/zoominfo-beat-earnings-cut-600-jobs-and-lost-29-per-cent-of-its-stock-price-its-database-is-being-repriced-by-ai"], "note": "Database being repriced by AI", "last_updated": "2026-05-19", "locked": true}, {"id": "walmart_tech_2026-05-12", "company": "Walmart Tech", "date": "2026-05-12", "headcount": 1000, "ai_attributed": "likely", "source_urls": ["https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322"], "note": "Combining global-tech and product teams", "last_updated": "2026-05-19", "locked": true}, {"id": "ai21_2026-05-18", "company": "AI21", "date": "2026-05-18", "headcount": 110, "ai_attributed": "confirmed", "source_urls": ["https://www.calcalistech.com/ctechnews/article/rjwumhukfx"], "note": "60% workforce cut in strategic overhaul", "last_updated": "2026-05-19", "locked": true}, {"id": "kraken_2026-05-15", "company": "Kraken", "date": "2026-05-15", "headcount": 150, "ai_attributed": "confirmed", "source_urls": ["https://www.bloomberg.com/news/articles/2026-05-15/kraken-cuts-150-workers-after-deploying-ai-ipo-may-slip-to-2027"], "note": "Cuts after deploying AI", "last_updated": "2026-05-19", "locked": true}, {"id": "dune_analytics_2026-05-14", "company": "Dune Analytics", "date": "2026-05-14", "headcount": 50, "ai_attributed": "confirmed", "source_urls": ["https://www.theblock.co/post/401322/crypto-data-firm-dune-cuts-25-of-staff-citing-ai-efficiencies"], "note": "Citing AI efficiencies", "last_updated": "2026-05-19", "locked": true}, {"id": "gambling.com_2026-05-15", "company": "Gambling.com", "date": "2026-05-15", "headcount": 140, "ai_attributed": "confirmed", "source_urls": ["https://www.gamblinginsider.com/news/160339/gambling-com-to-cut-25-of-jobs-in-ai-first-shift-as-q1-earnings-hurt-by-rising-costs"], "note": "AI-First Shift", "last_updated": "2026-05-19", "locked": true}, {"id": "truecaller_2026-05-08", "company": "Truecaller", "date": "2026-05-08", "headcount": 70, "ai_attributed": "likely", "source_urls": ["https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/"], "note": "Slashes jobs amid market changes", "last_updated": "2026-05-19", "locked": true}, {"id": "staffbase_2026-05-08", "company": "Staffbase", "date": "2026-05-08", "headcount": 176, "ai_attributed": "likely", "source_urls": ["https://www.saechsische.de/wirtschaft/regional/staffbase-streicht-jede-fuenfte-stelle-harter-einschnitt-bei-saechsischem-einhorn-FKVL5SIOTNCWXJMUEUFAGQUAHY.html"], "note": "22% workforce cut", "last_updated": "2026-05-19", "locked": true}, {"id": "phreesia_2026-05-11", "company": "Phreesia", "date": "2026-05-11", "headcount": 220, "ai_attributed": "likely", "source_urls": ["https://www.streetinsider.com/Corporate+News/Phreesia+eliminates+220+positions+in+restructuring+plan/26468756.html"], "note": "Restructuring plan", "last_updated": "2026-05-19", "locked": true}, {"id": "gitlab_2026-05-11", "company": "GitLab", "date": "2026-05-11", "headcount": 100, "ai_attributed": "confirmed", "source_urls": ["https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era"], "note": "Cut jobs to spend on growth in 'Agentic Era'", "last_updated": "2026-05-19", "locked": true}, {"id": "cloudflare_2026-05-27", "company": "Cloudflare", "date": "2026-05-27", "headcount": 1100, "ai_attributed": "confirmed", "source_urls": ["https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431"], "note": "Cloudflare's CEO stated that AI is reshaping workplaces, leading to job cuts.", "last_updated": "2026-05-28", "locked": false}, {"id": "meta_2026-05-20", "company": "Meta", "date": "2026-05-20", "headcount": 8000, "ai_attributed": "confirmed", "source_urls": ["https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html"], "note": "Meta is accelerating AI integration, resulting in significant layoffs.", "last_updated": "2026-05-28", "locked": false}, {"id": "standard_chartered_2026-05-19", "company": "Standard Chartered", "date": "2026-05-19", "headcount": 7000, "ai_attributed": "confirmed", "source_urls": ["https://www.timesnownews.com/business-economy/companies/standard-chartered-layoffs-why-banking-giant-is-planning-to-fire-over-7000-employees-article-154349900"], "note": "Standard Chartered is cutting jobs as it accelerates AI adoption.", "last_updated": "2026-05-28", "locked": false}, {"id": "hsbc_2026-05-20", "company": "HSBC", "date": "2026-05-20", "headcount": 20000, "ai_attributed": "confirmed", "source_urls": ["https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html"], "note": "HSBC's CEO indicated that AI advancements are reshaping the workforce, leading to job cuts.", "last_updated": "2026-05-28", "locked": false}, {"id": "block_(square/cash_app)_2026-04-01", "company": "Block (Square/Cash App)", "date": "2026-04-01", "headcount": 4000, "ai_attributed": "confirmed", "source_urls": ["https://block.xyz/inside/from-hierarchy-to-intelligence"], "note": "CEO Jack Dorsey explicitly replaced middle management with AI intelligence layer; ~40% of staff.", "last_updated": "2026-05-28", "locked": true}, {"id": "oracle_2025-09-01", "company": "Oracle", "date": "2025-09-01", "headcount": 3000, "ai_attributed": "likely", "source_urls": ["https://www.businessinsider.com/oracle-layoffs-2025"], "note": "Ongoing restructuring as Oracle pivots to AI cloud services.", "last_updated": "2026-05-28", "locked": true}];
+        let currentSort = 'date';
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        function setSort(s) {
+            currentSort = s;
+            document.querySelectorAll('.controls-group:first-child .ctrl-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderTable();
+        }
+        function setFilter(f) {
+            currentFilter = f;
+            document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-filter="' + f + '"]').classList.add('active');
+            renderTable();
+        }
+        function setSearch(v) {
+            currentSearch = v.toLowerCase();
+            renderTable();
+        }
+
+        function renderTable() {
+            let events = ALL_EVENTS.slice();
+            if (currentFilter !== 'all') events = events.filter(e => e.ai_attributed === currentFilter);
+            if (currentSearch) events = events.filter(e => e.company.toLowerCase().includes(currentSearch));
+            if (currentSort === 'date') events.sort((a, b) => b.date.localeCompare(a.date));
+            if (currentSort === 'headcount') events.sort((a, b) => b.headcount - a.headcount);
+
+            const badgeMap = { confirmed: 'badge-confirmed', likely: 'badge-likely', unclear: 'badge-unclear' };
+            let html = '';
+            events.forEach(e => {
+                const srcs = (e.source_urls || []).filter(u => u);
+                const srcLinks = srcs.map(u =>
+                    `<a href="${u}" target="_blank" rel="noopener">source</a> <a href="https://web.archive.org/web/${u}" target="_blank" rel="noopener" style="color:#555;font-size:0.7rem" title="Wayback Machine">📦</a>`
+                ).join(' &nbsp;');
+                const rowId = `row-${e.company.replace(/\W/g,'').toLowerCase()}-${e.date}`;
+                html += `<tr class="event-row" onclick="toggleDetail('${rowId}')" style="cursor:pointer">
+                    <td class="date-col">${e.date}</td>
+                    <td class="company-col">${e.company}</td>
+                    <td class="number-col">${e.headcount > 0 ? e.headcount.toLocaleString() : 'N/A'}</td>
+                    <td><span class="badge ${badgeMap[e.ai_attributed] || 'badge-unclear'}">${e.ai_attributed}</span></td>
+                    <td>${srcs.length ? srcLinks : '—'}</td>
+                </tr>
+                <tr class="event-detail" id="${rowId}" style="display:none">
+                    <td colspan="5" class="detail-cell">
+                        ${e.note ? `<p class="detail-note">${e.note}</p>` : ''}
+                        ${srcs.length > 1 ? `<p class="detail-sources">All sources: ${srcs.map(u => `<a href="${u}" target="_blank" rel="noopener">${u.replace(/https?:\/\/(www\.)?/,'').slice(0,60)}</a>`).join(' · ')}</p>` : ''}
+                    </td>
+                </tr>`;
+            });
+            document.getElementById('events-tbody').innerHTML = html || '<tr><td colspan="5" style="color:#555;text-align:center;padding:2rem">No results</td></tr>';
+            document.getElementById('row-count').textContent = events.length + ' events';
+        }
+
+        function toggleDetail(id) {
+            const row = document.getElementById(id);
+            if (row) row.style.display = row.style.display === 'none' ? 'table-row' : 'none';
+        }
+
+        renderTable();
+
         document.getElementById('submit-form').addEventListener('submit', async (e) => {
             e.preventDefault();
             const btn = e.target.querySelector('.submit-btn');
