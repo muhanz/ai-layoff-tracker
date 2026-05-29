@@ -1107,7 +1107,10 @@ def generate_html():
                             <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">Still below pre-2020 levels. Millions have exited the labor force entirely.</div>
                         </div>
                     </div>
-                    <p>When AI eliminates a role through attrition &mdash; the position just isn&rsquo;t posted when someone leaves &mdash; no one becomes &ldquo;unemployed.&rdquo; The headcount shrinks. The work disappears. The unemployment rate doesn&rsquo;t move. That&rsquo;s the measurement gap. The economy can shed millions of white-collar roles without the headline number flinching, right up until it does &mdash; all at once.</p>
+                    <p style="margin-bottom:0.75rem;">When AI eliminates a role through attrition &mdash; the position just isn&rsquo;t posted when someone leaves &mdash; no one becomes &ldquo;unemployed.&rdquo; The headcount shrinks. The work disappears. The unemployment rate doesn&rsquo;t move. That&rsquo;s the measurement gap. The economy can shed millions of white-collar roles without the headline number flinching, right up until it does &mdash; all at once.</p>
+                    <p style="padding:0.75rem;background:#1a1000;border:1px solid #2a1800;border-radius:6px;color:#888;">
+                        <strong style="color:#ff8844;">The immigration factor:</strong> The administration&rsquo;s crackdown has also artificially shrunk the labor supply &mdash; fewer people in the pool means the unemployment rate stays low even as private-sector hiring collapses. Fewer workers looking = lower U-3 rate, by definition. The &ldquo;jobless boom&rdquo; is partly a statistical artifact of a smaller denominator.
+                    </p>
                 </div>
             </details>
         </section>
