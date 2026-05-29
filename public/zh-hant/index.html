@@ -944,6 +944,45 @@
             .search-input { max-width: 100%; }
             .row-count { display: none; }
         }
+        .lang-switcher {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            z-index: 100;
+        }
+        .lang-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-decoration: none;
+            color: #444;
+            padding: 3px 8px;
+            border-radius: 3px;
+            transition: color 0.15s;
+        }
+        .lang-btn:hover { color: #aaa; text-decoration: none; }
+        .lang-btn.lang-active {
+            background: #cc1111;
+            color: #fff;
+            padding: 3px 9px 3px 7px;
+        }
+        .lang-btn.lang-active::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            background: #fff;
+            border-radius: 50%;
+            animation: blink 1s infinite;
+            flex-shrink: 0;
+        }
+        .lang-sep { display: none; }
     </style>
     <link rel="alternate" hreflang="en" href="https://layoffs.eudy.co/">
     <link rel="alternate" hreflang="zh-Hans" href="https://layoffs.eudy.co/zh-hans/">
