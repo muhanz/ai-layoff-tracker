@@ -1013,7 +1013,7 @@ def generate_html():
 
         <section class="jobs-section">
             <h2>So Where Are the New Jobs?</h2>
-            <p class="jobs-sub">U.S. added only 181,000 net new jobs in 2025 &mdash; the worst non-recession year since 2003 (Bloomberg / BLS). Strip out healthcare, and the rest of the economy net <em>lost</em> jobs.</p>
+            <p class="jobs-sub">The U.S. added 181,000 net new jobs in all of 2025 &mdash; the worst non-recession year since 2003. Healthcare alone added 713,000. <strong style="color:#aaa;">Strip out healthcare, and the rest of the American economy net lost jobs.</strong> So when someone says &ldquo;AI will create new jobs&rdquo; &mdash; we actually know what those jobs are. They&rsquo;re nursing jobs.</p>
             <div class="jobs-grid">
                 <div class="jobs-gaining">
                     <h3>&#9650; Gaining</h3>
@@ -1055,10 +1055,14 @@ def generate_html():
                 </div>
             </div>
             <div class="jobs-callout">
-                <strong>&ldquo;In many ways, 2025 was both a white-collar and a blue-collar jobs recession.&rdquo;</strong> &mdash; Economist Heather Long, Fortune<br>
-                Healthcare added 713,000 jobs in 2025 &mdash; more than the entire net U.S. total of 181,000.
-                The white-collar career path that a college degree was supposed to unlock is being automated away faster than any replacement is being created.
-                <a href="https://fortune.com/2026/01/09/jobs-report-december-health-care-federal-reserve/" target="_blank" rel="noopener" style="color:#444;font-size:0.72rem"> &nbsp;Fortune / BLS &rarr;</a>
+                <strong>&ldquo;In many ways, 2025 was both a white-collar and a blue-collar jobs recession.&rdquo;</strong> &mdash; Heather Long, economist, Fortune / BLS
+                <br><br>
+                The counterargument to AI displacement has always been: <em>&ldquo;new technology creates new jobs.&rdquo;</em>
+                That&rsquo;s true. We know exactly what those jobs are.
+                They&rsquo;re bedpan jobs. Nursing assistant jobs. Home health aide jobs.
+                Jobs that exist because America is aging &mdash; not because AI opened a new frontier of human creativity.
+                The white-collar career ladder &mdash; the one a college degree was supposed to unlock &mdash; is being sawed off from the bottom up.
+                <a href="https://fortune.com/2026/01/09/jobs-report-december-health-care-federal-reserve/" target="_blank" rel="noopener" style="color:#444;font-size:0.72rem">&nbsp; Source: Fortune / BLS &rarr;</a>
             </div>
         </section>
 
