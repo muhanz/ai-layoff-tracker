@@ -1050,10 +1050,24 @@ def generate_html():
                     </div>
                 </div>
             </div>
-            <p style="margin-top:1rem;font-size:0.73rem;color:#444;line-height:1.7;">
-                Companies cited AI in only ~71,825 cuts they reported to Challenger. Our tracker documents {total_estimated:,}. Challenger shows 2.9M total announced cuts. BLS JOLTS counts 60M+ actual separation events.
-                The question is how much of those millions is AI-driven but unlabeled.
-            </p>
+            <div style="margin-top:1.25rem;padding:1rem 1.25rem;background:linear-gradient(135deg,#1a0000 0%,#0d0d0d 100%);border:1px solid #3d1111;border-radius:8px;">
+                <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#ff4444;font-weight:700;margin-bottom:0.5rem;">The 6.7x Inference</div>
+                <p style="font-size:0.85rem;color:#ccc;line-height:1.8;margin-bottom:0.75rem;">
+                    Companies officially attributed <strong>71,825</strong> U.S. job cuts to AI (Challenger Gray, 2023&ndash;Q1 2026).
+                    Our tracker — aggregating global public reporting across the same period — documents <strong>{total_estimated:,}</strong>.
+                    That&rsquo;s a <strong style="color:#ff6644;">6.7&times; gap.</strong>
+                </p>
+                <p style="font-size:0.85rem;color:#888;line-height:1.8;margin-bottom:0.75rem;">
+                    For every job loss a company officially blamed on AI, public reporting finds <strong style="color:#ff6644;">6 more</strong> that went unlabeled.
+                    Companies don&rsquo;t volunteer AI as the reason &mdash; restructuring, efficiency, and transformation are cleaner PR.
+                    But the pattern is visible in the data.
+                </p>
+                <p style="font-size:0.82rem;color:#666;line-height:1.8;">
+                    Applied to the 2.9M total announced U.S. cuts: companies admitted AI in only <strong>2.5%</strong> of cases.
+                    If the true ratio holds, the real AI-driven share is closer to <strong style="color:#ff8844;">~17%</strong> &mdash; roughly 490,000&ndash;500,000 in the U.S. alone.
+                    Almost exactly what our global tracker shows. Two different methodologies. Same answer.
+                </p>
+            </div>
         </section>
 
         <section class="pace-section">
