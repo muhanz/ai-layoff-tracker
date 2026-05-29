@@ -1241,7 +1241,7 @@ def generate_html():
                 The white-collar career ladder &mdash; the one a college degree was supposed to unlock &mdash; is being sawed off from the bottom up.
                 <a href="https://fortune.com/2026/01/09/jobs-report-december-health-care-federal-reserve/" target="_blank" rel="noopener" style="color:#444;font-size:0.72rem">&nbsp; Source: Fortune / BLS &rarr;</a>
             </div>
-            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-top:0.75rem;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.75rem;margin-top:0.75rem;">
                 <div style="padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;text-align:center;">
                     <div style="font-size:1.8rem;font-weight:800;color:#ff6644;font-variant-numeric:tabular-nums;">4.4%</div>
                     <div style="font-size:0.72rem;color:#555;margin-top:0.25rem;line-height:1.5;">unemployment rate, Dec 2025<br><span style="color:#444">up from 4.0% in Jan 2025</span></div>
