@@ -76,12 +76,12 @@ def generate_html():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Layoff Tracker - Global Warning</title>
-    <meta name="description" content="Tracking global job losses attributed to AI since the launch of GPT-4. Updated daily with verified sources.">
+    <meta name="description" content="Tracking job losses directly attributed to AI since GPT-4 launched. The iceberg behind the 2.9M total announced U.S. cuts. Updated daily.">
     <meta property="og:title" content="AI Layoff Tracker - Global Warning">
-    <meta property="og:description" content="Since GPT-4 launched {days_since} days ago, {total_estimated:,} people have lost their jobs in AI-related layoffs.">
+    <meta property="og:description" content="Since GPT-4 launched {days_since} days ago, {total_estimated:,} jobs have been directly attributed to AI. Behind that: 2.9M total announced U.S. cuts. The iceberg is real.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Layoff Tracker - {total_estimated:,} jobs lost">
+    <meta name="twitter:title" content="AI Layoff Tracker - {total_estimated:,} jobs lost directly to AI">
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -910,7 +910,7 @@ def generate_html():
                 </div>
             </div>
             <div class="stat-block stat-jobs">
-                <div class="stat-label">JOBS LOST TO AI</div>
+                <div class="stat-label">JOBS LOST DIRECTLY TO AI</div>
                 <div class="stat-value">{total_estimated:,}</div>
                 <div class="stat-sub">since GPT-4 launch · {days_since} days</div>
                 <div class="stat-context">{total_confirmed:,} confirmed &nbsp;·&nbsp; ~{avg_per_day:,}/day</div>
@@ -936,7 +936,7 @@ def generate_html():
 
         <section class="counter">
             <div class="number">{total_estimated:,}</div>
-            <p class="label">AI-attributed job losses tracked &mdash; {days_since} days &middot; {event_count} events</p>
+            <p class="label">jobs lost directly to AI &mdash; {days_since} days &middot; {event_count} events</p>
 
             <div class="number secondary">{total_confirmed:,}</div>
             <p class="label">confirmed &mdash; company explicitly cited AI as the reason</p>
