@@ -680,6 +680,11 @@ def generate_html():
             overflow: hidden;
             margin-bottom: 2rem;
             position: relative;
+            animation: ticker-border-pulse 3s ease-in-out infinite;
+        }}
+        @keyframes ticker-border-pulse {{
+            0%, 100% {{ border-color: #3d1111; box-shadow: none; }}
+            50% {{ border-color: #7a2222; box-shadow: 0 0 12px rgba(255,34,34,0.15); }}
         }}
         .ticker-live {{
             position: absolute;
@@ -949,8 +954,8 @@ def generate_html():
             <div class="dd-live-badge"><span class="dd-live-dot"></span>LIVE</div>
             <div class="dd-label">JOBS LOST DIRECTLY TO AI</div>
             <div class="dd-number" id="dd-counter">{total_estimated:,}</div>
-            <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span></div>
-            <div class="dd-since">since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
+            <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span> &nbsp;&middot;&nbsp; <span style="color:#666">{total_confirmed:,} confirmed</span></div>
+            <div class="dd-since">{days_since} days &nbsp;&middot;&nbsp; {event_count} events &nbsp;&middot;&nbsp; since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
         </section>
 
         <section class="projection-hero">
@@ -1013,21 +1018,6 @@ def generate_html():
             <div class="ticker-track">{ticker_items}{ticker_items}</div>
         </div>
 
-        <section class="counter">
-            <div class="number" id="live-counter">{total_estimated:,}</div>
-            <p class="label">jobs lost directly to AI &mdash; and rising</p>
-
-            <div class="number secondary" id="live-confirmed">{total_confirmed:,}</div>
-            <p class="label">confirmed &mdash; company explicitly cited AI as the reason</p>
-
-            <div class="days-counter">
-                {days_since} days &middot; {event_count} events &middot; ~{avg_per_day:,}/day tracked
-                &nbsp;&middot;&nbsp;
-                <strong style="color:#ff6644">2,906,771</strong> total announced U.S. cuts same period (all reasons)
-                &nbsp;&middot;&nbsp;
-                <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener" style="color:#444;font-size:0.8rem">Challenger Gray &rarr;</a>
-            </div>
-        </section>
 
         <section style="margin: 2rem 0; padding: 1.5rem; background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 10px;">
             <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:1rem;">The Iceberg &mdash; Jan 2023 to Today</div>
@@ -1203,78 +1193,9 @@ def generate_html():
             </details>
         </section>
 
-        <section class="meta">
-            <p>Last updated: {last_updated[:10]} &middot;
-               Challenger Report cumulative (US only): {challenger_total:,}</p>
-            <p class="sources">
-                Sources:
-                <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
-                <a href="https://layoffs.fyi" target="_blank" rel="noopener">Layoffs.fyi</a> &middot;
-                <a href="https://trueup.io/layoffs" target="_blank" rel="noopener">TrueUp.io</a> &middot;
-                Public news reports &middot;
-                <a href="#methodology">Methodology &darr;</a>
-            </p>
-        </section>
-        
-        <section class="recent">
-            <h2>Events</h2>
-            <div class="controls">
-                <div class="controls-group">
-                    <button class="ctrl-btn active" onclick="setSort('date')">Most Recent</button>
-                    <button class="ctrl-btn" onclick="setSort('headcount')">Largest</button>
-                </div>
-                <div class="ctrl-divider"></div>
-                <div class="controls-group">
-                    <button class="ctrl-btn active" data-filter="all" onclick="setFilter('all')">All</button>
-                    <button class="ctrl-btn" data-filter="confirmed" onclick="setFilter('confirmed')">Confirmed</button>
-                    <button class="ctrl-btn" data-filter="likely" onclick="setFilter('likely')">Likely</button>
-                </div>
-                <div class="ctrl-divider"></div>
-                <input class="search-input" type="text" placeholder="Search company..." oninput="setSearch(this.value)">
-                <span class="row-count" id="row-count"></span>
-            </div>
-            <div class="table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Company</th>
-                            <th>Headcount</th>
-                            <th>Attribution</th>
-                            <th>Source</th>
-                        </tr>
-                    </thead>
-                    <tbody id="events-tbody"></tbody>
-                </table>
-            </div>
-        </section>
-        
-        <section class="methodology" id="methodology">
-            <h3>Methodology</h3>
-            <p>
-                <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs<br>
-                <strong>likely</strong> = Company investing heavily in AI while cutting jobs, or media analysis attributes cuts to AI<br>
-                <strong>unclear</strong> = Tech company layoffs that may be related to AI transformation but not explicitly stated
-            </p>
-            <p style="margin-top: 0.8rem;">
-                This page is updated daily via automated scripts. US data is calibrated monthly using
-                the official Challenger, Gray &amp; Christmas report. Global data is aggregated from multiple
-                public sources. Due to differences in methodology, numbers may differ from any single source.
-            </p>
-            <p style="margin-top: 0.8rem; color: #555;">
-                <strong style="color:#666">Why the real number is much higher:</strong>
-                Our tracker captures only public announcements of mass layoffs. The majority of AI displacement
-                happens invisibly — through attrition (roles not backfilled), contract non-renewals, reduced hours,
-                and quiet eliminations never reported in the press. The Federal Reserve Bank of St. Louis confirmed
-                that occupations with higher AI exposure showed statistically larger unemployment rate increases
-                from 2022–2025, a trend not visible in official layoff counts. The WEF projects 92 million jobs
-                displaced by 2030. Our {total_estimated:,} tracks what companies disclosed — the real number is far larger.
-            </p>
-        </section>
-        
         <section class="evisceration-section" id="white-collar">
             <h2>The Invisible Flood: White-Collar Evisceration</h2>
-            <p class="evis-sub">The counter above only captures public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
+            <p class="evis-sub">The numbers above only capture public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
             <div class="evis-grid">
                 <div class="evis-stat">
                     <div class="evis-stat-value">30%</div>
@@ -1308,10 +1229,6 @@ def generate_html():
             <p style="margin-top:0.85rem;font-size:0.76rem;color:#444;line-height:1.7;">
                 The class of 2025 entered the worst entry-level job market in a decade. The class of 2024 wasn&apos;t much better: only 55% had full-time work within six months of graduation (NACE). The promise of the college degree &mdash; work hard, graduate, get a career &mdash; is colliding with an economy where AI is absorbing entry-level tasks faster than employers are creating new roles.
             </p>
-            <p style="margin-top:1rem;font-size:0.76rem;color:#444;line-height:1.7;">
-                1.09M total U.S. job cuts through Oct 2025, up 65% year-over-year, concentrated in professional, managerial, and administrative roles.
-                White-collar job openings are at multi-year lows. The college degree &mdash; once the guaranteed ticket to a white-collar career &mdash; is being devalued faster than at any point in modern history.
-            </p>
         </section>
 
         <section class="cta-section">
@@ -1333,6 +1250,39 @@ def generate_html():
             </div>
         </section>
 
+        <section class="recent">
+            <h2>Events</h2>
+            <div class="controls">
+                <div class="controls-group">
+                    <button class="ctrl-btn active" onclick="setSort('date')">Most Recent</button>
+                    <button class="ctrl-btn" onclick="setSort('headcount')">Largest</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <div class="controls-group">
+                    <button class="ctrl-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+                    <button class="ctrl-btn" data-filter="confirmed" onclick="setFilter('confirmed')">Confirmed</button>
+                    <button class="ctrl-btn" data-filter="likely" onclick="setFilter('likely')">Likely</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <input class="search-input" type="text" placeholder="Search company..." oninput="setSearch(this.value)">
+                <span class="row-count" id="row-count"></span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Company</th>
+                            <th>Headcount</th>
+                            <th>Attribution</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-tbody"></tbody>
+                </table>
+            </div>
+        </section>
+        
         <section class="submit-section">
             <h2>Did we miss one?</h2>
             <p>Heard about a layoff we haven&apos;t tracked? Is your company about to cut jobs because of AI? Give us an early warning &mdash; submit it here. Every verified entry goes live within 24 hours. Or email us directly at <a href="mailto:hello@eudy.co">hello@eudy.co</a>.</p>
@@ -1364,6 +1314,31 @@ def generate_html():
                     If you&apos;re a company navigating AI-driven workforce changes, <a href="mailto:hello@eudy.co">reach out to Eudy &rarr;</a>
                 </p>
             </div>
+        </section>
+
+        <section class="methodology" id="methodology">
+            <h3>Methodology</h3>
+            <p>
+                <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs<br>
+                <strong>likely</strong> = Company investing heavily in AI while cutting jobs, or media analysis attributes cuts to AI<br>
+                <strong>unclear</strong> = Tech company layoffs that may be related to AI transformation but not explicitly stated
+            </p>
+            <p style="margin-top: 0.8rem;">
+                This page is updated daily. US data calibrated monthly using the Challenger, Gray &amp; Christmas report.
+                Last updated: {last_updated[:10]} &middot; Challenger cumulative AI cuts (US only): {challenger_total:,}
+            </p>
+            <p style="margin-top: 0.8rem; color: #555;">
+                <strong style="color:#666">Why the real number is much higher:</strong>
+                Our tracker captures only public announcements. The majority of AI displacement happens invisibly &mdash;
+                through attrition, contract non-renewals, and quiet eliminations never reported in the press.
+                Our {total_estimated:,} tracks what companies disclosed. The real number is far larger.
+            </p>
+            <p style="margin-top:0.5rem;font-size:0.78rem;color:#444;">
+                Sources: <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
+                <a href="https://layoffs.fyi" target="_blank" rel="noopener">Layoffs.fyi</a> &middot;
+                <a href="https://trueup.io/layoffs" target="_blank" rel="noopener">TrueUp.io</a> &middot;
+                Public news reports
+            </p>
         </section>
 
         <footer>
