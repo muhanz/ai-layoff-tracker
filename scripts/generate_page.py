@@ -871,7 +871,7 @@ def generate_html():
     <main>
         <header>
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
-            <p class="subtitle">Community-verified &middot; since GPT-4 launch (March 14, 2023)</p>
+            <p class="subtitle">Community-verified &middot; sourced by public news announcements &middot; since GPT-4 launch (March 14, 2023)</p>
         </header>
         
         <section class="projection-hero">
