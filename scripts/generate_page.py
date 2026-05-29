@@ -1058,28 +1058,28 @@ def generate_html():
 
         <section class="pace-section">
             <h2>The Acceleration</h2>
-            <p class="pace-sub">U.S. employer-disclosed AI-attributed job cuts &mdash; Challenger, Gray &amp; Christmas (announced cuts only, likely undercounted)</p>
+            <p class="pace-sub">AI-attributed job losses by year &mdash; our tracker (global, all publicly documented events)</p>
             <div class="pace-row">
                 <span class="pace-year-tag">2023</span>
-                <div class="pace-bar-wrap"><div class="pace-bar" style="width:7.1%"></div></div>
-                <span class="pace-val">~3,900</span>
+                <div class="pace-bar-wrap"><div class="pace-bar" style="width:81.7%"></div></div>
+                <span class="pace-val">115,006</span>
             </div>
             <div class="pace-row">
                 <span class="pace-year-tag">2024</span>
-                <div class="pace-bar-wrap"><div class="pace-bar" style="width:23.9%"></div></div>
-                <span class="pace-val">13,089</span>
+                <div class="pace-bar-wrap"><div class="pace-bar" style="width:84.7%"></div></div>
+                <span class="pace-val">119,260</span>
             </div>
             <div class="pace-row">
                 <span class="pace-year-tag">2025</span>
                 <div class="pace-bar-wrap"><div class="pace-bar record" style="width:100%"></div></div>
-                <span class="pace-val" style="color:#ff2222">54,836 &#9650;</span>
+                <span class="pace-val" style="color:#ff2222">140,820 &#9650;</span>
             </div>
             <div class="pace-row">
-                <span class="pace-year-tag">2026 Q1</span>
-                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:50.4%"></div></div>
-                <span class="pace-val">27,645</span>
+                <span class="pace-year-tag">2026 <span style="font-size:0.65rem;color:#444">Jan&ndash;May</span></span>
+                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:76.2%"></div></div>
+                <span class="pace-val" style="color:#ff2222">107,300 &#9650;</span>
             </div>
-            <p class="pace-note"><strong>October 2025: 31,039 AI-attributed cuts in a single month</strong> &mdash; a record since tracking began. 2025 was 4.2&times; higher than 2024. These are only employer-announced cuts. Attrition and quiet eliminations are not counted.</p>
+            <p class="pace-note"><strong>2026 is on pace for ~257,000</strong> &mdash; nearly 2&times; 2025, based on Jan&ndash;May alone. Challenger, Gray &amp; Christmas tracks a subset of these as U.S. employer-disclosed; our tracker aggregates global public reporting across all sources. The acceleration is real regardless of which lens you use.</p>
         </section>
 
         <section class="jobs-section">
