@@ -1027,10 +1027,57 @@ def generate_html():
             .search-input {{ max-width: 100%; }}
             .row-count {{ display: none; }}
         }}
+        /* Language switcher */
+        .lang-switcher {{
+            position: fixed;
+            top: 1rem;
+            right: 1.25rem;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: rgba(10,10,10,0.85);
+            border: 1px solid #222;
+            border-radius: 6px;
+            padding: 0.3rem 0.6rem;
+            backdrop-filter: blur(6px);
+        }}
+        .lang-btn {{
+            color: #666;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            padding: 0.1rem 0.15rem;
+        }}
+        .lang-btn:hover {{ color: #ccc; text-decoration: none; }}
+        .lang-btn.lang-active {{ color: #ff6666; }}
+        .lang-sep {{ color: #333; font-size: 0.7rem; }}
     </style>
+    <!-- hreflang for SEO — all 4 language versions -->
+    <link rel="alternate" hreflang="en" href="https://layoffs.eudy.co/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://layoffs.eudy.co/zh-hans/">
+    <link rel="alternate" hreflang="zh-Hant" href="https://layoffs.eudy.co/zh-hant/">
+    <link rel="alternate" hreflang="es" href="https://layoffs.eudy.co/es/">
+    <link rel="alternate" hreflang="x-default" href="https://layoffs.eudy.co/">
 </head>
 <body>
+    <!-- Language switcher — EN is active on the root English page -->
+    <nav class="lang-switcher">
+        <a href="/" class="lang-btn lang-active">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="/zh-hans/" class="lang-btn">简</a>
+        <span class="lang-sep">|</span>
+        <a href="/zh-hant/" class="lang-btn">繁</a>
+        <span class="lang-sep">|</span>
+        <a href="/es/" class="lang-btn">ES</a>
+    </nav>
     <main>
+    <!-- NOTE: To regenerate translated pages after running this script:
+         python scripts/generate_page.py            # regenerates public/index.html (EN)
+         Then run:  python scripts/generate_i18n.py  # regenerates zh-Hans, zh-Hant, ES pages
+         (generate_i18n.py reads public/index.html and applies translations)
+    -->
         <header>
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
             <p class="subtitle">Community-verified &middot; sourced by public news announcements &middot; since GPT-4 launch (March 14, 2023)</p>
