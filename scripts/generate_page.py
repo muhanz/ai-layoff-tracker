@@ -871,14 +871,14 @@ def generate_html():
     <main>
         <header>
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
-            <p class="subtitle">Community-verified · documented minimum · since GPT-4 launch (March 14, 2023)</p>
+            <p class="subtitle">Community-verified &middot; since GPT-4 launch (March 14, 2023)</p>
         </header>
         
         <section class="projection-hero">
             <div class="proj-eyebrow">&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs</div>
             <div class="proj-number">30,000,000</div>
             <p class="proj-label">U.S. jobs significantly disrupted by AI &mdash; by 2028</p>
-            <p class="proj-source">McKinsey: 40&ndash;50M Americans forced to shift roles by 2030 &nbsp;&middot;&nbsp; Goldman Sachs: 2 in 3 U.S. jobs have meaningful AI exposure</p>
+            <p class="proj-source">McKinsey: 40&ndash;50M Americans forced to shift roles by 2030 &nbsp;&middot;&nbsp; Goldman Sachs: 2 in 3 U.S. jobs have meaningful AI exposure &nbsp;&middot;&nbsp; 160M total U.S. workers</p>
             <div class="proj-vs">
                 <div class="proj-vs-item">
                     <div class="proj-vs-value">2 in 3</div>
@@ -935,17 +935,54 @@ def generate_html():
         </div>
 
         <section class="counter">
-            <p class="label" style="margin-bottom:0.75rem;font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase;color:#555;">What we&apos;ve documented so far &darr;</p>
             <div class="number">{total_estimated:,}</div>
-            <p class="label">publicly reported AI-related job losses — documented minimum</p>
+            <p class="label">AI-attributed job losses tracked &mdash; {days_since} days &middot; {event_count} events</p>
 
             <div class="number secondary">{total_confirmed:,}</div>
-            <p class="label">confirmed — company explicitly cited AI as the reason</p>
+            <p class="label">confirmed &mdash; company explicitly cited AI as the reason</p>
 
             <div class="days-counter">
-                {days_since} days &middot; {event_count} events &middot;
-                ~{avg_per_day:,} people per day &middot; this is the floor, not the ceiling
+                ~{avg_per_day:,} per day tracked &nbsp;&middot;&nbsp;
+                <strong style="color:#ff6644">2,906,771</strong> total announced U.S. cuts same period (all reasons) &nbsp;&middot;&nbsp;
+                <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener" style="color:#444;font-size:0.8rem">Challenger Gray &rarr;</a>
             </div>
+        </section>
+
+        <section style="margin: 2rem 0; padding: 1.5rem; background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 10px;">
+            <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:1rem;">The Iceberg &mdash; Jan 2023 to Today</div>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+                <div>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">
+                        <span style="font-size:0.8rem;color:#ff4444;font-weight:600;">AI-attributed (our tracker)</span>
+                        <span style="font-size:0.8rem;color:#ff4444;font-weight:700;font-variant-numeric:tabular-nums;">{total_estimated:,}</span>
+                    </div>
+                    <div style="background:#111;border-radius:3px;height:14px;overflow:hidden;">
+                        <div style="width:{round(total_estimated/2906771*100)}%;height:100%;background:linear-gradient(90deg,#3d1111,#ff4444);border-radius:3px;"></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">
+                        <span style="font-size:0.8rem;color:#888;">All announced U.S. cuts, all reasons <span style="color:#555;font-weight:400;">(Challenger Gray)</span></span>
+                        <span style="font-size:0.8rem;color:#888;font-weight:700;font-variant-numeric:tabular-nums;">2,906,771</span>
+                    </div>
+                    <div style="background:#111;border-radius:3px;height:14px;overflow:hidden;">
+                        <div style="width:100%;height:100%;background:#222;border-radius:3px;"></div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">
+                        <span style="font-size:0.8rem;color:#444;">Actual involuntary separations, BLS JOLTS <span style="color:#333;font-weight:400;">(all U.S. workers)</span></span>
+                        <span style="font-size:0.8rem;color:#444;font-weight:700;">60,000,000+</span>
+                    </div>
+                    <div style="background:#111;border-radius:3px;height:14px;overflow:hidden;">
+                        <div style="width:100%;height:100%;background:#1a1a1a;border-radius:3px;"></div>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top:1rem;font-size:0.73rem;color:#444;line-height:1.7;">
+                Companies cited AI in only ~71,825 cuts they reported to Challenger. Our tracker documents {total_estimated:,}. Challenger shows 2.9M total announced cuts. BLS JOLTS counts 60M+ actual separation events.
+                The question is how much of those millions is AI-driven but unlabeled.
+            </p>
         </section>
 
         <section class="pace-section">
@@ -1090,7 +1127,7 @@ def generate_html():
                 and quiet eliminations never reported in the press. The Federal Reserve Bank of St. Louis confirmed
                 that occupations with higher AI exposure showed statistically larger unemployment rate increases
                 from 2022–2025, a trend not visible in official layoff counts. The WEF projects 92 million jobs
-                displaced by 2030. Our {total_estimated:,} is the documented floor, not the ceiling.
+                displaced by 2030. Our {total_estimated:,} tracks what companies disclosed — the real number is far larger.
             </p>
         </section>
         
