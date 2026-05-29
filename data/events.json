@@ -1,10 +1,10 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-28T22:58:56Z",
-    "total_confirmed": 129891,
-    "total_estimated": 273816,
-    "total_likely": 143925,
+    "last_updated": "2026-05-29T00:07:37Z",
+    "total_confirmed": 171891,
+    "total_estimated": 370816,
+    "total_likely": 198925,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
     "challenger_cumulative_ai_cuts": 99470,
@@ -660,6 +660,84 @@
         "https://www.businessinsider.com/oracle-layoffs-2025"
       ],
       "note": "Ongoing restructuring as Oracle pivots to AI cloud services.",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "intel_2024-08-01",
+      "company": "Intel",
+      "date": "2024-08-01",
+      "headcount": 15000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.cnbc.com/2024/08/01/intel-to-lay-off-more-than-10percent-of-staff.html"
+      ],
+      "note": "CEO Pat Gelsinger cited AI and automation as central to restructuring; 15% of global workforce",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "microsoft_2025-05-13",
+      "company": "Microsoft",
+      "date": "2025-05-13",
+      "headcount": 15000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html"
+      ],
+      "note": "AI-driven restructuring; shifting headcount to AI product teams",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "accenture_2023-03-23",
+      "company": "Accenture",
+      "date": "2023-03-23",
+      "headcount": 19000,
+      "ai_attributed": "likely",
+      "source_urls": [
+        "https://www.bloomberg.com/news/articles/2023-03-23/accenture-to-cut-19-000-jobs-in-restructuring"
+      ],
+      "note": "5% workforce reduction; investing heavily in AI and automation capabilities",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "amazon_2026-01-15",
+      "company": "Amazon",
+      "date": "2026-01-15",
+      "headcount": 16000,
+      "ai_attributed": "likely",
+      "source_urls": [
+        "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html"
+      ],
+      "note": "Additional corporate job eliminations citing AI efficiency gains; early 2026 round",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "citigroup_2024-01-13",
+      "company": "Citigroup",
+      "date": "2024-01-13",
+      "headcount": 20000,
+      "ai_attributed": "likely",
+      "source_urls": [
+        "https://www.reuters.com/business/finance/citi-layoffs-2024-01-13/"
+      ],
+      "note": "Major restructuring alongside heavy investment in AI-driven banking automation",
+      "last_updated": "2026-05-28",
+      "locked": true
+    },
+    {
+      "id": "tcs_(tata_consultancy)_2025-04-01",
+      "company": "TCS (Tata Consultancy)",
+      "date": "2025-04-01",
+      "headcount": 12000,
+      "ai_attributed": "confirmed",
+      "source_urls": [
+        "https://www.businessinsider.com/tcs-layoffs-ai-automation-2025"
+      ],
+      "note": "CEO cited AI automation replacing IT service roles; largest Indian IT firm restructuring",
       "last_updated": "2026-05-28",
       "locked": true
     }

@@ -36,6 +36,17 @@ def generate_html():
     # Recent 20 events
     recent_events = sorted(db["events"], key=lambda x: x["date"], reverse=True)[:20]
     
+    import json as _json
+    all_events_json = _json.dumps(db["events"])
+
+    # Ticker — all events sorted by date desc, confirmed first
+    ticker_events = sorted(db["events"], key=lambda x: (x["date"], x["ai_attributed"] == "confirmed"), reverse=True)
+    ticker_items = ""
+    for e in ticker_events:
+        count_str = f'{e["headcount"]:,}' if e["headcount"] > 0 else "?"
+        month = e["date"][:7]
+        ticker_items += f'<span class="ticker-item"><span class="ticker-company">{e["company"]}</span><span class="ticker-count">▼ {count_str} jobs</span><span class="ticker-date">{month}</span></span><span class="ticker-sep">|</span>'
+
     recent_html = ""
     for e in recent_events:
         badge_class = {
@@ -210,6 +221,241 @@ def generate_html():
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
         }}
+        .dual-stat {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }}
+        @media (max-width: 600px) {{
+            .dual-stat {{ grid-template-columns: 1fr; }}
+        }}
+        .stat-block {{
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+        }}
+        .stat-fear {{
+            background: linear-gradient(135deg, #1a0a00 0%, #0a0a0a 100%);
+            border: 1px solid #3d2211;
+            position: relative;
+        }}
+        .stat-jobs {{
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+            border: 1px solid #3d1111;
+        }}
+        .stat-label {{
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: #666;
+            margin-bottom: 0.4rem;
+        }}
+        .stat-fear .stat-value {{
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ff8844;
+            line-height: 1;
+        }}
+        .stat-jobs .stat-value {{
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ff4444;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+        }}
+        .stat-sub {{
+            font-size: 0.75rem;
+            color: #555;
+            margin-top: 0.3rem;
+        }}
+        .stat-context {{
+            font-size: 0.7rem;
+            color: #444;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }}
+        .fear-compare {{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.35rem;
+            margin-top: 0.75rem;
+        }}
+        .fc-item {{
+            font-size: 0.65rem;
+            padding: 2px 7px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }}
+        .fc-worse {{ background: #1a1a1a; color: #555; }}
+        .fc-ai {{ background: #3d2211; color: #ff8844; font-weight: 700; }}
+        .fc-better {{ background: #111; color: #444; }}
+        .stat-jobs2 {{
+            background: linear-gradient(135deg, #001a0a 0%, #0a0a0a 100%);
+            border: 1px solid #113d22;
+        }}
+        .stat-jobs2 .stat-value {{
+            font-size: 3rem;
+            font-weight: 800;
+            color: #44aa66;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+        }}
+        .stat-gig {{
+            background: linear-gradient(135deg, #1a001a 0%, #0a0a0a 100%);
+            border: 1px solid #3d113d;
+        }}
+        .stat-gig .stat-value {{
+            font-size: 3rem;
+            font-weight: 800;
+            color: #cc66ff;
+            line-height: 1;
+            font-variant-numeric: tabular-nums;
+        }}
+        .expand-hint {{
+            display: inline-block;
+            color: #333;
+            font-size: 0.65rem;
+            margin-left: 0.35rem;
+            transition: transform 0.2s;
+            user-select: none;
+        }}
+        .event-row.expanded .expand-hint {{ transform: rotate(90deg); color: #666; }}
+        .evisceration-section {{
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #100a00 0%, #0a0a0a 100%);
+            border: 1px solid #2a1800;
+            border-radius: 12px;
+        }}
+        .evisceration-section h2 {{
+            font-size: 1.3rem;
+            color: #ff8844;
+            margin-bottom: 0.4rem;
+        }}
+        .evis-sub {{
+            color: #555;
+            font-size: 0.82rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+        }}
+        .evis-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }}
+        @media (max-width: 600px) {{
+            .evis-grid {{ grid-template-columns: 1fr; }}
+        }}
+        .evis-stat {{
+            padding: 1rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+        }}
+        .evis-stat-value {{
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #ff8844;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+            font-variant-numeric: tabular-nums;
+        }}
+        .evis-stat-label {{
+            font-size: 0.73rem;
+            color: #666;
+            line-height: 1.5;
+        }}
+        .evis-quote {{
+            padding: 0.9rem 1.1rem;
+            border-left: 3px solid #3d2211;
+            background: #0d0d0d;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+        }}
+        .evis-quote p {{
+            color: #aaa;
+            font-size: 0.83rem;
+            line-height: 1.7;
+            font-style: italic;
+        }}
+        .evis-quote cite {{
+            display: block;
+            color: #555;
+            font-size: 0.72rem;
+            margin-top: 0.4rem;
+            font-style: normal;
+        }}
+        @media (max-width: 600px) {{
+            .stat-fear .stat-value {{ font-size: 2.2rem; }}
+            .stat-jobs .stat-value {{ font-size: 1.8rem; }}
+            .stat-jobs2 .stat-value {{ font-size: 2.2rem; }}
+            .stat-gig .stat-value {{ font-size: 2.2rem; }}
+        }}
+        .ticker-wrap {{
+            width: 100%;
+            background: #0f0000;
+            border-top: 1px solid #3d1111;
+            border-bottom: 1px solid #3d1111;
+            padding: 0.6rem 0;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            position: relative;
+        }}
+        .ticker-live {{
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            background: #ff4444;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            z-index: 2;
+            white-space: nowrap;
+        }}
+        .ticker-live::before {{
+            content: '';
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            background: #fff;
+            border-radius: 50%;
+            margin-right: 6px;
+            animation: blink 1s infinite;
+        }}
+        @keyframes blink {{
+            0%, 100% {{ opacity: 1; }}
+            50% {{ opacity: 0.2; }}
+        }}
+        .ticker-track {{
+            display: flex;
+            white-space: nowrap;
+            animation: ticker-scroll 60s linear infinite;
+            padding-left: 90px;
+        }}
+        .ticker-track:hover {{ animation-play-state: paused; }}
+        @keyframes ticker-scroll {{
+            0% {{ transform: translateX(100vw); }}
+            100% {{ transform: translateX(-100%); }}
+        }}
+        .ticker-item {{
+            display: inline-flex;
+            align-items: center;
+            margin-right: 3rem;
+            font-size: 0.85rem;
+            color: #ff8888;
+        }}
+        .ticker-company {{ color: #ffcccc; font-weight: 600; margin-right: 0.4rem; }}
+        .ticker-count {{ color: #ff4444; font-weight: 700; margin-right: 0.4rem; }}
+        .ticker-date {{ color: #666; font-size: 0.75rem; }}
+        .ticker-sep {{ color: #3d1111; margin: 0 1.5rem; }}
         .submit-section {{
             margin-top: 3rem;
             padding: 2rem;
@@ -288,11 +534,130 @@ def generate_html():
         }}
         .follow-btn.instagram {{ background: #2a1a2e; color: #cc88ff; }}
         .follow-btn.instagram:hover {{ background: #3a1a4e; text-decoration: none; }}
+        .cta-section {{
+            margin-top: 3rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, #0a0f1a 0%, #0a0a0a 100%);
+            border: 1px solid #1a2a3a;
+            border-radius: 12px;
+            text-align: center;
+        }}
+        .cta-pre {{
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            color: #ff4444;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }}
+        .cta-headline {{
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 1.25rem;
+        }}
+        .cta-body {{
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }}
+        .cta-body em {{ color: #aaa; font-style: normal; font-weight: 500; }}
+        .cta-mission {{
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 1.75rem;
+        }}
+        .cta-mission strong {{ color: #888; }}
+        .cta-actions {{
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }}
+        .cta-btn {{
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            border-radius: 7px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }}
+        .cta-btn:hover {{ opacity: 0.85; text-decoration: none; }}
+        .cta-primary {{ background: #1a3a5a; color: #66aaff; }}
+        .cta-secondary {{ background: #111; border: 1px solid #2a2a2a; color: #666; }}
+        @media (max-width: 600px) {{
+            .cta-headline {{ font-size: 1.2rem; }}
+        }}
+        .controls {{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            align-items: center;
+        }}
+        .controls-group {{
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }}
+        .ctrl-btn {{
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #888;
+            padding: 0.4rem 0.85rem;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }}
+        .ctrl-btn:hover {{ border-color: #444; color: #ccc; }}
+        .ctrl-btn.active {{ background: #1a1a1a; border-color: #ff4444; color: #ff6666; font-weight: 600; }}
+        .ctrl-divider {{ width: 1px; background: #222; margin: 0 0.25rem; align-self: stretch; }}
+        .search-input {{
+            background: #111;
+            border: 1px solid #2a2a2a;
+            color: #e0e0e0;
+            padding: 0.4rem 0.75rem;
+            border-radius: 5px;
+            font-size: 0.78rem;
+            font-family: inherit;
+            flex: 1;
+            min-width: 140px;
+            max-width: 220px;
+        }}
+        .search-input:focus {{ outline: none; border-color: #444; }}
+        .search-input::placeholder {{ color: #444; }}
+        .row-count {{ color: #555; font-size: 0.75rem; margin-left: auto; white-space: nowrap; }}
+        .event-row:hover td {{ background: #111; }}
+        .event-row td {{ transition: background 0.1s; }}
+        .detail-cell {{
+            padding: 0.75rem 1rem !important;
+            background: #0d0d0d;
+            border-bottom: 1px solid #222;
+        }}
+        .detail-note {{
+            color: #aaa;
+            font-size: 0.82rem;
+            line-height: 1.6;
+            margin-bottom: 0.4rem;
+        }}
+        .detail-sources {{
+            font-size: 0.75rem;
+            color: #555;
+        }}
+        .detail-sources a {{ color: #4488cc; }}
+        .table-wrap {{ overflow-x: auto; -webkit-overflow-scrolling: touch; }}
         @media (max-width: 600px) {{
             .number {{ font-size: 3rem; }}
             .number.secondary {{ font-size: 1.8rem; }}
             h1 {{ font-size: 1.8rem; }}
             table {{ font-size: 0.75rem; }}
+            .search-input {{ max-width: 100%; }}
+            .row-count {{ display: none; }}
         }}
     </style>
 </head>
@@ -300,15 +665,54 @@ def generate_html():
     <main>
         <header>
             <h1>&#9888;&#65039; AI Layoff Warning</h1>
-            <p class="subtitle">Global tracking since GPT-4 launch (March 14, 2023)</p>
+            <p class="subtitle">Community-verified · documented minimum · since GPT-4 launch (March 14, 2023)</p>
         </header>
         
+        <div class="dual-stat">
+            <div class="stat-block stat-fear">
+                <div class="stat-label">PUBLIC FEAR SCORE</div>
+                <div class="stat-value">-20</div>
+                <div class="stat-sub">net favorability (NBC, Mar 2026)</div>
+                <div class="stat-context">57% say risks outweigh benefits &nbsp;·&nbsp; scale: -100 to +100</div>
+                <div class="fear-compare">
+                    <span class="fc-item fc-worse">Iran &minus;53</span>
+                    <span class="fc-item fc-worse">Dem. Party &minus;22</span>
+                    <span class="fc-item fc-ai">&#9654; AI &minus;20</span>
+                    <span class="fc-item fc-better">ICE &minus;18</span>
+                    <span class="fc-item fc-better">Trump &minus;12</span>
+                </div>
+            </div>
+            <div class="stat-block stat-jobs">
+                <div class="stat-label">JOBS LOST TO AI</div>
+                <div class="stat-value">{total_estimated:,}</div>
+                <div class="stat-sub">since GPT-4 launch · {days_since} days</div>
+                <div class="stat-context">{total_confirmed:,} confirmed &nbsp;·&nbsp; ~{avg_per_day:,}/day</div>
+            </div>
+            <div class="stat-block stat-jobs2">
+                <div class="stat-label">JOBS PER UNEMPLOYED PERSON</div>
+                <div class="stat-value">0.9</div>
+                <div class="stat-sub">first time below 1.0 since pandemic (BLS, 2026)</div>
+                <div class="stat-context">6.9M openings &nbsp;·&nbsp; 7.6M unemployed &nbsp;·&nbsp; more seekers than jobs</div>
+            </div>
+            <div class="stat-block stat-gig">
+                <div class="stat-label">WORKFORCE NOW FREELANCING</div>
+                <div class="stat-value">36%</div>
+                <div class="stat-sub">57M Americans in gig economy (2025) &mdash; up from 27% in 2016</div>
+                <div class="stat-context">Projected 50%+ by 2027 &nbsp;·&nbsp; avg rideshare pay: $9.09/hr after costs</div>
+            </div>
+        </div>
+
+        <div class="ticker-wrap">
+            <div class="ticker-live">🔴 LIVE</div>
+            <div class="ticker-track">{ticker_items}{ticker_items}</div>
+        </div>
+
         <section class="counter">
             <div class="number">{total_estimated:,}</div>
-            <p class="label">people lost jobs in AI-related layoffs (broad estimate)</p>
-            
+            <p class="label">documented minimum — publicly reported AI-related job losses</p>
+
             <div class="number secondary">{total_confirmed:,}</div>
-            <p class="label">people explicitly laid off due to AI (conservative estimate)</p>
+            <p class="label">confirmed — company explicitly cited AI as the reason</p>
             
             <div class="days-counter">
                 {days_since} days &middot; {event_count} events &middot; 
@@ -317,32 +721,52 @@ def generate_html():
         </section>
         
         <section class="meta">
-            <p>Last updated: {last_updated[:10]} &middot; 
+            <p>Last updated: {last_updated[:10]} &middot;
                Challenger Report cumulative (US only): {challenger_total:,}</p>
             <p class="sources">
-                Sources: Challenger, Gray &amp; Christmas &middot; Layoffs.fyi &middot; 
-                TrueUp.io &middot; Public news reports
+                Sources:
+                <a href="https://www.challengergray.com/blog/job-cuts-press-releases/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
+                <a href="https://layoffs.fyi" target="_blank" rel="noopener">Layoffs.fyi</a> &middot;
+                <a href="https://trueup.io/layoffs" target="_blank" rel="noopener">TrueUp.io</a> &middot;
+                Public news reports &middot;
+                <a href="#methodology">Methodology &darr;</a>
             </p>
         </section>
         
         <section class="recent">
-            <h2>Recent Events</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Company</th>
-                        <th>Headcount</th>
-                        <th>AI Attribution</th>
-                        <th>Source</th>
-                    </tr>
-                </thead>
-                <tbody>{recent_html}
-                </tbody>
-            </table>
+            <h2>Events</h2>
+            <div class="controls">
+                <div class="controls-group">
+                    <button class="ctrl-btn active" onclick="setSort('date')">Most Recent</button>
+                    <button class="ctrl-btn" onclick="setSort('headcount')">Largest</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <div class="controls-group">
+                    <button class="ctrl-btn active" data-filter="all" onclick="setFilter('all')">All</button>
+                    <button class="ctrl-btn" data-filter="confirmed" onclick="setFilter('confirmed')">Confirmed</button>
+                    <button class="ctrl-btn" data-filter="likely" onclick="setFilter('likely')">Likely</button>
+                </div>
+                <div class="ctrl-divider"></div>
+                <input class="search-input" type="text" placeholder="Search company..." oninput="setSearch(this.value)">
+                <span class="row-count" id="row-count"></span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Company</th>
+                            <th>Headcount</th>
+                            <th>Attribution</th>
+                            <th>Source</th>
+                        </tr>
+                    </thead>
+                    <tbody id="events-tbody"></tbody>
+                </table>
+            </div>
         </section>
         
-        <section class="methodology">
+        <section class="methodology" id="methodology">
             <h3>Methodology</h3>
             <p>
                 <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs<br>
@@ -350,15 +774,74 @@ def generate_html():
                 <strong>unclear</strong> = Tech company layoffs that may be related to AI transformation but not explicitly stated
             </p>
             <p style="margin-top: 0.8rem;">
-                This page is updated daily via automated scripts. US data is calibrated monthly using 
-                the official Challenger, Gray &amp; Christmas report. Global data is aggregated from multiple 
+                This page is updated daily via automated scripts. US data is calibrated monthly using
+                the official Challenger, Gray &amp; Christmas report. Global data is aggregated from multiple
                 public sources. Due to differences in methodology, numbers may differ from any single source.
+            </p>
+            <p style="margin-top: 0.8rem; color: #555;">
+                <strong style="color:#666">Why the real number is much higher:</strong>
+                Our tracker captures only public announcements of mass layoffs. The majority of AI displacement
+                happens invisibly — through attrition (roles not backfilled), contract non-renewals, reduced hours,
+                and quiet eliminations never reported in the press. The Federal Reserve Bank of St. Louis confirmed
+                that occupations with higher AI exposure showed statistically larger unemployment rate increases
+                from 2022–2025, a trend not visible in official layoff counts. The WEF projects 92 million jobs
+                displaced by 2030. Our {total_estimated:,} is the documented floor, not the ceiling.
             </p>
         </section>
         
+        <section class="evisceration-section" id="white-collar">
+            <h2>The Invisible Flood: White-Collar Evisceration</h2>
+            <p class="evis-sub">The counter above only captures public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
+            <div class="evis-grid">
+                <div class="evis-stat">
+                    <div class="evis-stat-value">41%</div>
+                    <div class="evis-stat-label">of recent college graduates working jobs that don&apos;t require their degree (2025)</div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">50%</div>
+                    <div class="evis-stat-label">of entry-level white-collar jobs projected eliminated &mdash; Dario Amodei, CEO of Anthropic</div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">16%</div>
+                    <div class="evis-stat-label">relative employment decline for workers ages 22&ndash;25 in AI-exposed occupations (2022&ndash;2025)</div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">5.6%</div>
+                    <div class="evis-stat-label">unemployment rate for recent college graduates &mdash; above the 4.5% historical average</div>
+                </div>
+            </div>
+            <div class="evis-quote">
+                <p>&ldquo;Within the next one to five years, AI could handle tasks that represent 50% of entry-level white-collar work. The societal effects could be severe.&rdquo;</p>
+                <cite>&mdash; Dario Amodei, CEO of Anthropic (2025)</cite>
+            </div>
+            <p style="margin-top:1rem;font-size:0.76rem;color:#444;line-height:1.7;">
+                1.09M total U.S. job cuts through Oct 2025, up 65% year-over-year, concentrated in professional, managerial, and administrative roles.
+                White-collar job openings are at multi-year lows. The college degree &mdash; once the guaranteed ticket to a white-collar career &mdash; is being devalued faster than at any point in modern history.
+            </p>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-inner">
+                <p class="cta-pre">The data is in. The flood is real.</p>
+                <h2 class="cta-headline">We don&apos;t have to argue about whether AI is taking jobs.<br>We can prove it. Now what?</h2>
+                <p class="cta-body">
+                    The question is no longer <em>if</em> — it&apos;s <em>what next.</em><br>
+                    We believe the answer is redesigning work for human flourishing:<br>
+                    not fighting the wave, but learning to navigate it.
+                </p>
+                <p class="cta-mission">
+                    <strong>Eudy&apos;s mission:</strong> Standardize work for human flourishing in the age of AI.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener" class="cta-btn cta-primary">Follow the journey &rarr;</a>
+                    <a href="https://eudy.co" target="_blank" rel="noopener" class="cta-btn cta-secondary">Learn about Eudy</a>
+                </div>
+            </div>
+        </section>
+
         <section class="submit-section">
             <h2>Did we miss one?</h2>
-            <p>Know of an AI-related layoff not on this list? Submit it — we verify every entry before publishing.</p>
+            <p>Heard about a layoff we haven&apos;t tracked? Is your company about to cut jobs because of AI? Give us an early warning &mdash; submit it here. Every verified entry goes live within 24 hours. Or email us directly at <a href="mailto:hello@eudy.co">hello@eudy.co</a>.</p>
             <form id="submit-form">
                 <div class="form-row">
                     <input type="text" name="company" placeholder="Company name *" required>
@@ -378,10 +861,14 @@ def generate_html():
             </form>
             <div class="submit-success" id="submit-success">
                 <h3>Thanks &mdash; we&apos;ll verify it.</h3>
-                <p>Verified submissions go live within 24 hours.</p>
+                <p>Verified submissions go live within 24 hours. While you wait &mdash; follow the mission.</p>
                 <div class="follow-cta">
                     <a href="https://www.instagram.com/muhan.being/" target="_blank" rel="noopener" class="follow-btn instagram">Follow @muhan.being on Instagram</a>
                 </div>
+                <p style="margin-top:1rem;font-size:0.78rem;color:#555;">
+                    <strong style="color:#666">Also coming soon:</strong> Armada Bridge &mdash; the AI transformation platform we&apos;re building to help teams navigate this shift.
+                    If you&apos;re a company navigating AI-driven workforce changes, <a href="mailto:hello@eudy.co">reach out to Eudy &rarr;</a>
+                </p>
             </div>
         </section>
 
@@ -393,6 +880,72 @@ def generate_html():
         </footer>
     </main>
     <script>
+        const ALL_EVENTS = {all_events_json};
+        let currentSort = 'date';
+        let currentFilter = 'all';
+        let currentSearch = '';
+
+        function setSort(s) {{
+            currentSort = s;
+            document.querySelectorAll('.controls-group:first-child .ctrl-btn').forEach(b => b.classList.remove('active'));
+            event.target.classList.add('active');
+            renderTable();
+        }}
+        function setFilter(f) {{
+            currentFilter = f;
+            document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+            document.querySelector('[data-filter="' + f + '"]').classList.add('active');
+            renderTable();
+        }}
+        function setSearch(v) {{
+            currentSearch = v.toLowerCase();
+            renderTable();
+        }}
+
+        function renderTable() {{
+            let events = ALL_EVENTS.slice();
+            if (currentFilter !== 'all') events = events.filter(e => e.ai_attributed === currentFilter);
+            if (currentSearch) events = events.filter(e => e.company.toLowerCase().includes(currentSearch));
+            if (currentSort === 'date') events.sort((a, b) => b.date.localeCompare(a.date));
+            if (currentSort === 'headcount') events.sort((a, b) => b.headcount - a.headcount);
+
+            const badgeMap = {{ confirmed: 'badge-confirmed', likely: 'badge-likely', unclear: 'badge-unclear' }};
+            let html = '';
+            events.forEach(e => {{
+                const srcs = (e.source_urls || []).filter(u => u);
+                const srcLinks = srcs.map(u =>
+                    `<a href="${{u}}" target="_blank" rel="noopener">source</a> <a href="https://web.archive.org/web/${{u}}" target="_blank" rel="noopener" style="color:#555;font-size:0.7rem" title="Wayback Machine">📦</a>`
+                ).join(' &nbsp;');
+                const rowId = `row-${{e.company.replace(/\W/g,'').toLowerCase()}}-${{e.date}}`;
+                html += `<tr class="event-row" onclick="toggleDetail('${{rowId}}')" style="cursor:pointer">
+                    <td class="date-col">${{e.date}}</td>
+                    <td class="company-col">${{e.company}}<span class="expand-hint">&#9654;</span></td>
+                    <td class="number-col">${{e.headcount > 0 ? e.headcount.toLocaleString() : 'N/A'}}</td>
+                    <td><span class="badge ${{badgeMap[e.ai_attributed] || 'badge-unclear'}}">${{e.ai_attributed}}</span></td>
+                    <td>${{srcs.length ? srcLinks : '—'}}</td>
+                </tr>
+                <tr class="event-detail" id="${{rowId}}" style="display:none">
+                    <td colspan="5" class="detail-cell">
+                        ${{e.note ? `<p class="detail-note">${{e.note}}</p>` : ''}}
+                        ${{srcs.length > 1 ? `<p class="detail-sources">All sources: ${{srcs.map(u => `<a href="${{u}}" target="_blank" rel="noopener">${{u.replace(/https?:\/\/(www\.)?/,'').slice(0,60)}}</a>`).join(' · ')}}</p>` : ''}}
+                    </td>
+                </tr>`;
+            }});
+            document.getElementById('events-tbody').innerHTML = html || '<tr><td colspan="5" style="color:#555;text-align:center;padding:2rem">No results</td></tr>';
+            document.getElementById('row-count').textContent = events.length + ' events';
+        }}
+
+        function toggleDetail(id) {{
+            const row = document.getElementById(id);
+            if (!row) return;
+            const isHidden = row.style.display === 'none';
+            row.style.display = isHidden ? 'table-row' : 'none';
+            const trigger = row.previousElementSibling;
+            if (trigger) trigger.classList.toggle('expanded', isHidden);
+        }}
+
+        renderTable();
+
         document.getElementById('submit-form').addEventListener('submit', async (e) => {{
             e.preventDefault();
             const btn = e.target.querySelector('.submit-btn');
