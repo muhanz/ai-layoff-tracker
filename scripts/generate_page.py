@@ -1064,6 +1064,52 @@ def generate_html():
                 The white-collar career ladder &mdash; the one a college degree was supposed to unlock &mdash; is being sawed off from the bottom up.
                 <a href="https://fortune.com/2026/01/09/jobs-report-december-health-care-federal-reserve/" target="_blank" rel="noopener" style="color:#444;font-size:0.72rem">&nbsp; Source: Fortune / BLS &rarr;</a>
             </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.75rem;margin-top:0.75rem;">
+                <div style="padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#ff6644;font-variant-numeric:tabular-nums;">4.4%</div>
+                    <div style="font-size:0.72rem;color:#555;margin-top:0.25rem;line-height:1.5;">unemployment rate, Dec 2025<br><span style="color:#444">up from 4.0% in Jan 2025</span></div>
+                </div>
+                <div style="padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#ff6644;font-variant-numeric:tabular-nums;">+583K</div>
+                    <div style="font-size:0.72rem;color:#555;margin-top:0.25rem;line-height:1.5;">more unemployed than<br>a year prior (Dec 2025)</div>
+                </div>
+                <div style="padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;text-align:center;">
+                    <div style="font-size:1.8rem;font-weight:800;color:#ff6644;">&#8679;</div>
+                    <div style="font-size:0.72rem;color:#555;margin-top:0.25rem;line-height:1.5;">long-term unemployment &amp;<br>involuntary part-time climbing</div>
+                </div>
+            </div>
+            <div style="margin-top:0.75rem;padding:0.9rem 1.1rem;border-left:3px solid #2a1800;background:#0d0d0d;border-radius:0 6px 6px 0;font-size:0.82rem;color:#777;font-style:italic;line-height:1.7;">
+                &ldquo;It&rsquo;s a slowly weakening job picture. Whatever metric you want to focus on, that story shows up.&rdquo;
+                <span style="display:block;margin-top:0.3rem;font-size:0.72rem;font-style:normal;color:#555;">&mdash; Heather Long, economist</span>
+            </div>
+            <details style="margin-top:1rem;">
+                <summary style="cursor:pointer;font-size:0.78rem;color:#555;padding:0.6rem 0;list-style:none;display:flex;align-items:center;gap:0.4rem;">
+                    <span style="color:#333;font-size:0.65rem;">&#9654;</span>
+                    Why the &ldquo;low unemployment&rdquo; argument doesn&rsquo;t hold up
+                </summary>
+                <div style="margin-top:0.75rem;padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;font-size:0.78rem;color:#666;line-height:1.9;">
+                    <p style="margin-bottom:0.75rem;color:#888;font-weight:600;">The headline unemployment rate (U-3) only counts people who looked for work in the last 4 weeks and couldn&rsquo;t find it. It misses everyone else.</p>
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.75rem;">
+                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
+                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">U-3: 4.4%</div>
+                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">The number you see in headlines. Only counts active job seekers.</div>
+                        </div>
+                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
+                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">U-6: ~8%+</div>
+                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">Includes part-timers who want full-time work + marginally attached workers.</div>
+                        </div>
+                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
+                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">Discouraged workers</div>
+                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">People who stopped looking entirely &mdash; not counted as unemployed at all.</div>
+                        </div>
+                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
+                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">Labor force participation</div>
+                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">Still below pre-2020 levels. Millions have exited the labor force entirely.</div>
+                        </div>
+                    </div>
+                    <p>When AI eliminates a role through attrition &mdash; the position just isn&rsquo;t posted when someone leaves &mdash; no one becomes &ldquo;unemployed.&rdquo; The headcount shrinks. The work disappears. The unemployment rate doesn&rsquo;t move. That&rsquo;s the measurement gap. The economy can shed millions of white-collar roles without the headline number flinching, right up until it does &mdash; all at once.</p>
+                </div>
+            </details>
         </section>
 
         <section class="meta">
