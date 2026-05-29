@@ -518,6 +518,88 @@ def generate_html():
             border-radius: 0 4px 4px 0;
         }}
         .pace-note strong {{ color: #ff4444; }}
+        .jobs-section {{
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 12px;
+        }}
+        .jobs-section h2 {{
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.3rem;
+        }}
+        .jobs-sub {{
+            font-size: 0.8rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }}
+        .jobs-grid {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }}
+        @media (max-width: 600px) {{ .jobs-grid {{ grid-template-columns: 1fr; }} }}
+        .jobs-gaining {{
+            padding: 1.25rem;
+            background: #0d1a0d;
+            border: 1px solid #1a3a1a;
+            border-radius: 8px;
+        }}
+        .jobs-gaining h3 {{
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #44aa66;
+            margin-bottom: 0.75rem;
+        }}
+        .jobs-losing {{
+            padding: 1.25rem;
+            background: #1a0d0d;
+            border: 1px solid #3a1a1a;
+            border-radius: 8px;
+        }}
+        .jobs-losing h3 {{
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #aa4444;
+            margin-bottom: 0.75rem;
+        }}
+        .jobs-row {{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            gap: 0.5rem;
+        }}
+        .jobs-row-label {{
+            font-size: 0.8rem;
+            color: #888;
+        }}
+        .jobs-row-val {{
+            font-size: 0.85rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }}
+        .val-green {{ color: #44aa66; }}
+        .val-red {{ color: #cc4444; }}
+        .val-grey {{ color: #666; }}
+        .jobs-callout {{
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            background: #0a0a0a;
+            border-left: 3px solid #44aa66;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.78rem;
+            color: #666;
+            line-height: 1.7;
+        }}
+        .jobs-callout strong {{ color: #888; }}
         .ticker-wrap {{
             width: 100%;
             background: #0f0000;
@@ -793,22 +875,22 @@ def generate_html():
         </header>
         
         <section class="projection-hero">
-            <div class="proj-eyebrow">&#9888; The Forecast — World Economic Forum, January 2025</div>
-            <div class="proj-number">92,000,000</div>
-            <p class="proj-label">jobs projected displaced globally by 2030</p>
-            <p class="proj-source">1,000+ employers &nbsp;&middot;&nbsp; 14 million workers surveyed &nbsp;&middot;&nbsp; 55 economies</p>
+            <div class="proj-eyebrow">&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs</div>
+            <div class="proj-number">30,000,000</div>
+            <p class="proj-label">U.S. jobs significantly disrupted by AI &mdash; by 2028</p>
+            <p class="proj-source">McKinsey: 40&ndash;50M Americans forced to shift roles by 2030 &nbsp;&middot;&nbsp; Goldman Sachs: 2 in 3 U.S. jobs have meaningful AI exposure</p>
             <div class="proj-vs">
                 <div class="proj-vs-item">
-                    <div class="proj-vs-value">300M</div>
-                    <div class="proj-vs-label">jobs &ldquo;exposed&rdquo; to AI<br>globally (Goldman Sachs)</div>
-                </div>
-                <div class="proj-vs-item">
-                    <div class="proj-vs-value">12M</div>
-                    <div class="proj-vs-label">Americans forced to switch<br>occupations by 2030 (McKinsey)</div>
+                    <div class="proj-vs-value">2 in 3</div>
+                    <div class="proj-vs-label">U.S. jobs have meaningful<br>AI exposure (Goldman Sachs)</div>
                 </div>
                 <div class="proj-vs-item">
                     <div class="proj-vs-value">30%</div>
-                    <div class="proj-vs-label">of all US work hours<br>automatable by 2030 (McKinsey)</div>
+                    <div class="proj-vs-label">of all U.S. work hours<br>automatable by 2030 (McKinsey)</div>
+                </div>
+                <div class="proj-vs-item">
+                    <div class="proj-vs-value">2028</div>
+                    <div class="proj-vs-label">two years away &mdash;<br>the inflection point</div>
                 </div>
             </div>
         </section>
@@ -890,6 +972,57 @@ def generate_html():
                 <span class="pace-val">27,645</span>
             </div>
             <p class="pace-note"><strong>October 2025: 31,039 AI-attributed cuts in a single month</strong> &mdash; a record since tracking began. 2025 was 4.2&times; higher than 2024. These are only employer-announced cuts. Attrition and quiet eliminations are not counted.</p>
+        </section>
+
+        <section class="jobs-section">
+            <h2>So Where Are the New Jobs?</h2>
+            <p class="jobs-sub">U.S. added only 181,000 net new jobs in 2025 &mdash; the worst non-recession year since 2003 (Bloomberg / BLS). Strip out healthcare, and the rest of the economy net <em>lost</em> jobs.</p>
+            <div class="jobs-grid">
+                <div class="jobs-gaining">
+                    <h3>&#9650; Gaining</h3>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Healthcare &amp; Social Assistance</span>
+                        <span class="jobs-row-val val-green">+713,000</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Government</span>
+                        <span class="jobs-row-val val-grey">+some</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Leisure &amp; Hospitality</span>
+                        <span class="jobs-row-val val-grey">marginal</span>
+                    </div>
+                </div>
+                <div class="jobs-losing">
+                    <h3>&#9660; Losing</h3>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Tech / Information sector</span>
+                        <span class="jobs-row-val val-red">&minus;342,000 from peak</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Professional &amp; Business Services</span>
+                        <span class="jobs-row-val val-red">net losses</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Federal Government (DOGE)</span>
+                        <span class="jobs-row-val val-red">&minus;277,000</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Manufacturing</span>
+                        <span class="jobs-row-val val-red">8+ months declining</span>
+                    </div>
+                    <div class="jobs-row">
+                        <span class="jobs-row-label">Finance &amp; Admin Support</span>
+                        <span class="jobs-row-val val-red">net losses</span>
+                    </div>
+                </div>
+            </div>
+            <div class="jobs-callout">
+                <strong>&ldquo;In many ways, 2025 was both a white-collar and a blue-collar jobs recession.&rdquo;</strong> &mdash; Economist Heather Long, Fortune<br>
+                Healthcare added 713,000 jobs in 2025 &mdash; more than the entire net U.S. total of 181,000.
+                The white-collar career path that a college degree was supposed to unlock is being automated away faster than any replacement is being created.
+                <a href="https://fortune.com/2026/01/09/jobs-report-december-health-care-federal-reserve/" target="_blank" rel="noopener" style="color:#444;font-size:0.72rem"> &nbsp;Fortune / BLS &rarr;</a>
+            </div>
         </section>
 
         <section class="meta">

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-05-29T00:38:55Z",
+    "last_updated": "2026-05-29T00:49:02Z",
     "total_confirmed": 204891,
-    "total_estimated": 473386,
+    "total_estimated": 482386,
     "total_likely": 258425,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
@@ -819,6 +819,21 @@
       ],
       "source_urls": [
         "https://www.reuters.com/business/retail-consumer/walmart-layoffs-2026/"
+      ]
+    },
+    {
+      "company": "Novo Nordisk",
+      "date": "2025-09-10",
+      "headcount": 9000,
+      "ai_attributed": "unclear",
+      "note": "Novo Nordisk cut 9,000 jobs (~11% of global workforce) due to GLP-1 market competition from Eli Lilly. No AI or automation cited as a reason. Included as part of broader white-collar workforce evisceration trend.",
+      "source_names": [
+        "BioPharma Dive",
+        "CNN Business"
+      ],
+      "source_urls": [
+        "https://www.biopharmadive.com/news/novo-nordisk-layoffs-restructuring-obesity-drug-competition/759748/",
+        "https://www.cnn.com/2025/09/10/business/novo-nordisk-layoffs-intl"
       ]
     }
   ]
