@@ -270,11 +270,14 @@
         }
         .evis-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 0.75rem;
             margin-bottom: 1rem;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 750px) {
+            .evis-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 500px) {
             .evis-grid { grid-template-columns: 1fr; }
         }
         .evis-stat {
@@ -1119,26 +1122,37 @@
             <p class="evis-sub">The counter above only captures public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
             <div class="evis-grid">
                 <div class="evis-stat">
-                    <div class="evis-stat-value">41%</div>
-                    <div class="evis-stat-label">of recent college graduates working jobs that don&apos;t require their degree (2025)</div>
+                    <div class="evis-stat-value">30%</div>
+                    <div class="evis-stat-label">of 2025 college graduates found a full-time job in their field &mdash; down from 41% in 2024. An 11-point collapse in a single year. <span style="color:#555">(Cengage Group)</span></div>
                 </div>
                 <div class="evis-stat">
-                    <div class="evis-stat-value">50%</div>
-                    <div class="evis-stat-label">of entry-level white-collar jobs projected eliminated &mdash; Dario Amodei, CEO of Anthropic</div>
+                    <div class="evis-stat-value">1 in 3</div>
+                    <div class="evis-stat-label">of 2025 graduates are unemployed and actively searching. The degree did not open the door. <span style="color:#555">(Cengage Group, 2025)</span></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">42%</div>
+                    <div class="evis-stat-label">of recent college graduates are working jobs that don&apos;t require their degree &mdash; near an all-time high. <span style="color:#555">(Federal Reserve Bank of NY, Q4 2025)</span></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">5.8%</div>
+                    <div class="evis-stat-label">unemployment rate for recent college graduates &mdash; one of the worst in a decade. Overall college-educated rate: 3.1%. <span style="color:#555">(BLS / NY Fed, Q1 2026)</span></div>
                 </div>
                 <div class="evis-stat">
                     <div class="evis-stat-value">16%</div>
                     <div class="evis-stat-label">relative employment decline for workers ages 22&ndash;25 in AI-exposed occupations (2022&ndash;2025)</div>
                 </div>
                 <div class="evis-stat">
-                    <div class="evis-stat-value">5.6%</div>
-                    <div class="evis-stat-label">unemployment rate for recent college graduates &mdash; above the 4.5% historical average</div>
+                    <div class="evis-stat-value">50%</div>
+                    <div class="evis-stat-label">of entry-level white-collar jobs projected eliminated &mdash; Dario Amodei, CEO of Anthropic</div>
                 </div>
             </div>
             <div class="evis-quote">
                 <p>&ldquo;Within the next one to five years, AI could handle tasks that represent 50% of entry-level white-collar work. The societal effects could be severe.&rdquo;</p>
                 <cite>&mdash; Dario Amodei, CEO of Anthropic (2025)</cite>
             </div>
+            <p style="margin-top:0.85rem;font-size:0.76rem;color:#444;line-height:1.7;">
+                The class of 2025 entered the worst entry-level job market in a decade. The class of 2024 wasn&apos;t much better: only 55% had full-time work within six months of graduation (NACE). The promise of the college degree &mdash; work hard, graduate, get a career &mdash; is colliding with an economy where AI is absorbing entry-level tasks faster than employers are creating new roles.
+            </p>
             <p style="margin-top:1rem;font-size:0.76rem;color:#444;line-height:1.7;">
                 1.09M total U.S. job cuts through Oct 2025, up 65% year-over-year, concentrated in professional, managerial, and administrative roles.
                 White-collar job openings are at multi-year lows. The college degree &mdash; once the guaranteed ticket to a white-collar career &mdash; is being devalued faster than at any point in modern history.
