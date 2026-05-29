@@ -935,15 +935,17 @@ def generate_html():
         </div>
 
         <section class="counter">
-            <div class="number">{total_estimated:,}</div>
-            <p class="label">jobs lost directly to AI &mdash; {days_since} days &middot; {event_count} events</p>
+            <div class="number" id="live-counter">{total_estimated:,}</div>
+            <p class="label">jobs lost directly to AI &mdash; and rising</p>
 
-            <div class="number secondary">{total_confirmed:,}</div>
+            <div class="number secondary" id="live-confirmed">{total_confirmed:,}</div>
             <p class="label">confirmed &mdash; company explicitly cited AI as the reason</p>
 
             <div class="days-counter">
-                ~{avg_per_day:,} per day tracked &nbsp;&middot;&nbsp;
-                <strong style="color:#ff6644">2,906,771</strong> total announced U.S. cuts same period (all reasons) &nbsp;&middot;&nbsp;
+                {days_since} days &middot; {event_count} events &middot; ~{avg_per_day:,}/day tracked
+                &nbsp;&middot;&nbsp;
+                <strong style="color:#ff6644">2,906,771</strong> total announced U.S. cuts same period (all reasons)
+                &nbsp;&middot;&nbsp;
                 <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener" style="color:#444;font-size:0.8rem">Challenger Gray &rarr;</a>
             </div>
         </section>
@@ -1338,6 +1340,26 @@ def generate_html():
             const trigger = row.previousElementSibling;
             if (trigger) trigger.classList.toggle('expanded', isHidden);
         }}
+
+        // Live counter — ticks up in real time based on avg daily rate
+        (function() {{
+            const BASE = {total_estimated};
+            const BASE_CONFIRMED = {total_confirmed};
+            const BASE_TS = new Date('{last_updated}').getTime();
+            const PER_MS = {avg_per_day} / 86400000;
+            const CONFIRMED_RATIO = BASE_CONFIRMED / BASE;
+            function fmt(n) {{ return Math.floor(n).toLocaleString('en-US'); }}
+            function tick() {{
+                const elapsed = Date.now() - BASE_TS;
+                const current = BASE + elapsed * PER_MS;
+                const el = document.getElementById('live-counter');
+                const el2 = document.getElementById('live-confirmed');
+                if (el) el.textContent = fmt(current);
+                if (el2) el2.textContent = fmt(current * CONFIRMED_RATIO);
+            }}
+            tick();
+            setInterval(tick, 1000);
+        }})();
 
         renderTable();
 
