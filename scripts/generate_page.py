@@ -1480,10 +1480,7 @@ def generate_html():
                 <p class="voice-quote">&ldquo;We are in the third inning of a vast economic shift that is going to leave millions of Americans behind.&rdquo;</p>
                 <p class="voice-attr"><strong>Andrew Yang</strong> &mdash; 2020 presidential campaign &nbsp;&middot;&nbsp; <em style="color:#888">He was right.</em></p>
             </div>
-            <div class="voice-row papal">
-                <p class="voice-quote">&ldquo;We would condemn humanity to a future without hope if we took away people&rsquo;s ability to make decisions about themselves and their lives by dooming them to depend on the choices of machines.&rdquo;</p>
-                <p class="voice-attr"><strong>Pope Francis</strong> &mdash; G7 Summit, June 14, 2024 &nbsp;&middot;&nbsp; <em style="color:#555">his last G7 before his death on April 21, 2025</em></p>
-            </div>
+
             <div class="voice-row papal">
                 <p class="voice-quote">&ldquo;The pursuit of greater profits cannot justify choices that systematically sacrifice jobs, because the human person is an end, not a means.&rdquo;</p>
                 <p class="voice-attr"><strong>Pope Leo XIV</strong> &mdash; <em>Magnifica Humanitas</em>, May 25, 2026 &nbsp;&middot;&nbsp; <em style="color:#555">the new pope&rsquo;s first encyclical &mdash; entirely about AI</em></p>
