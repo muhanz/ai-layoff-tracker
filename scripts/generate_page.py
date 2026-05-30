@@ -1055,6 +1055,93 @@ def generate_html():
         .lang-btn:hover {{ color: #ccc; text-decoration: none; }}
         .lang-btn.lang-active {{ color: #ff6666; }}
         .lang-sep {{ color: #333; font-size: 0.7rem; }}
+
+        /* ── Downstream / Second Wave section ─────────────────────────────── */
+        .downstream-section {{
+            margin-top: 3rem;
+        }}
+        .downstream-section h2 {{
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 0.25rem;
+        }}
+        .downstream-sub {{
+            font-size: 0.78rem;
+            color: #555;
+            margin-bottom: 1.25rem;
+        }}
+        .downstream-rust {{
+            padding: 1.25rem;
+            background: linear-gradient(135deg, #0d0d00, #0d0d0d);
+            border: 1px solid #2a2800;
+            border-radius: 8px;
+            margin-bottom: 1.25rem;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #888;
+        }}
+        .downstream-rust-label {{
+            font-size: 0.65rem;
+            letter-spacing: 0.08em;
+            color: #aa8800;
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+        }}
+        .downstream-grid {{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }}
+        @media (max-width: 600px) {{
+            .downstream-grid {{ grid-template-columns: 1fr; }}
+        }}
+        .downstream-stat {{
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            padding: 1rem;
+        }}
+        .ds-value {{
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ff8844;
+            font-variant-numeric: tabular-nums;
+            margin-bottom: 0.35rem;
+        }}
+        .ds-label {{
+            font-size: 0.78rem;
+            color: #888;
+            line-height: 1.5;
+            margin-bottom: 0.35rem;
+        }}
+        .ds-src {{
+            font-size: 0.65rem;
+            color: #444;
+        }}
+        .downstream-barista {{
+            padding: 1rem 1.25rem;
+            background: linear-gradient(135deg, #0a1800 0%, #0d0d0d 100%);
+            border: 1px solid #1a2800;
+            border-left: 3px solid #446622;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #888;
+            margin-bottom: 0.75rem;
+        }}
+        .downstream-barista strong {{ color: #88cc44; }}
+        .downstream-geo {{
+            padding: 1rem 1.25rem;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-left: 3px solid #223344;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.82rem;
+            line-height: 1.8;
+            color: #666;
+        }}
+        .downstream-geo strong {{ color: #888; }}
     </style>
     <!-- hreflang for SEO — all 4 language versions -->
     <link rel="alternate" hreflang="en" href="https://layoffs.eudy.co/">
@@ -1350,6 +1437,40 @@ def generate_html():
                     </p>
                 </div>
             </details>
+        </section>
+
+
+        <section class="downstream-section">
+            <h2>The Second Wave</h2>
+            <p class="downstream-sub">We document what companies announce. Nobody tracks what happens next &mdash; and what happens next is larger.</p>
+            <div class="downstream-rust">
+                <div class="downstream-rust-label">THIS ALREADY HAPPENED. IN SLOW MOTION.</div>
+                <p>When manufacturing left Ohio and Michigan in the 1980s, it took 20 years for the full damage to show. The steel mill closed, then the diner across from it, then the school tax base, then the hospital wing. Economists called it job multiplier collapse. 4.7 million manufacturing jobs vanished &mdash; and dragged an estimated 7&ndash;8 million more with them.</p>
+                <p style="margin-top:0.75rem">AI displacement is the same mechanism. Compressed into years, not decades. And it&rsquo;s not hitting Youngstown &mdash; it&rsquo;s hitting San Francisco, New York, Seattle, Austin, and Boston simultaneously.</p>
+            </div>
+            <div class="downstream-grid">
+                <div class="downstream-stat">
+                    <div class="ds-value">1.6&times;</div>
+                    <div class="ds-label">Service jobs lost downstream for every knowledge worker displaced</div>
+                    <div class="ds-src">EPI &mdash; historical manufacturing job multiplier</div>
+                </div>
+                <div class="downstream-stat">
+                    <div class="ds-value">5&ndash;7&times;</div>
+                    <div class="ds-label">Faster than the 1980s manufacturing collapse unfolded</div>
+                    <div class="ds-src">1980&ndash;2000: 20-year disruption &nbsp;&middot;&nbsp; AI window: 3&ndash;5 years</div>
+                </div>
+                <div class="downstream-stat">
+                    <div class="ds-value">0</div>
+                    <div class="ds-label">Government economic models that include AI-driven downstream job loss</div>
+                    <div class="ds-src">BLS has no AI displacement category</div>
+                </div>
+            </div>
+            <div class="downstream-barista">
+                <strong>The barista problem:</strong> The {total_estimated:,} jobs in this tracker are the ones whose companies issued press releases. For each of them, there are service workers &mdash; the lunch spots, dry cleaners, gyms, and Ubers near the office &mdash; whose customer base quietly vanished. Those jobs don&rsquo;t get a press release. They get a lease non-renewal.
+            </div>
+            <div class="downstream-geo">
+                <strong>The geography trap:</strong> Manufacturing displacement was regionally contained &mdash; you could point to Youngstown, Gary, Detroit. AI displacement is concentrated in the cities with the highest cost of living: SF, NYC, Seattle, Austin, Boston. The places that grew fastest on knowledge-worker salaries are now losing the income that made their housing math work. The real estate correction follows the labor correction. It already started.
+            </div>
         </section>
 
         <section class="voices-section">
