@@ -1006,12 +1006,12 @@
             <div class="dd-progress-wrap">
                 <div class="dd-progress-label">
                     <span>impacto real estimado de IA con multiplicador 6.7×: ~3.2M</span>
-                    <strong>10.7% hacia 30M para 2028</strong>
+                    <strong><span id="dd-pct-num">10.8</span>% hacia 30M para 2028</strong>
                 </div>
                 <div class="dd-progress-track">
-                    <div class="dd-progress-fill" style="width:10.7%"></div>
+                    <div class="dd-progress-fill" id="dd-progress-fill-bar" style="width:10.8%"></div>
                 </div>
-                <div class="dd-progress-note">482,386 documentados &times; multiplicador 6.7 sin etiquetar = ~3.2M estimados &nbsp;&middot;&nbsp; objetivo: 30M para 2028</div>
+                <div class="dd-progress-note">483,086 documentados &times; multiplicador 6.7 sin etiquetar = ~3.2M estimados &nbsp;&middot;&nbsp; objetivo: 30M para 2028</div>
             </div>
         </section>
 
@@ -1509,6 +1509,15 @@
         (function() {
             const BASE = 482386;
             const BASE_CONFIRMED = 204891;
+            
+            // Dynamic progress bar — recalculates from BASE each time file is updated
+            (function() {
+                var pct = Math.round(BASE * 6.7 / 30000000 * 1000) / 10;
+                var fill = document.getElementById('dd-progress-fill-bar');
+                var num  = document.getElementById('dd-pct-num');
+                if (fill) fill.style.width = pct + '%';
+                if (num)  num.textContent  = pct;
+            })();
             const BASE_TS = new Date('2026-05-29T00:49:02Z').getTime();
             const PER_DAY = 411;
             const PER_MS = PER_DAY / 86400000;
