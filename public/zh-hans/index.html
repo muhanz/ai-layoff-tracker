@@ -1006,12 +1006,12 @@
             <div class="dd-progress-wrap">
                 <div class="dd-progress-label">
                     <span>通过6.7倍乘数估算的真实AI影响：约320万</span>
-                    <strong>已达2028年3000万目标的10.7%</strong>
+                    <strong>已达2028年3000万目标的<span id="dd-pct-num">10.8</span>%</strong>
                 </div>
                 <div class="dd-progress-track">
-                    <div class="dd-progress-fill" style="width:10.7%"></div>
+                    <div class="dd-progress-fill" id="dd-progress-fill-bar" style="width:10.8%"></div>
                 </div>
-                <div class="dd-progress-note">482,386已记录 &times; 6.7未标注乘数 = 约320万估算 &nbsp;&middot;&nbsp; 目标：2028年达3000万</div>
+                <div class="dd-progress-note">483,086已记录 &times; 6.7未标注乘数 = 约324万估算 &nbsp;&middot;&nbsp; 目标：2028年达3000万</div>
             </div>
         </section>
 
@@ -1504,6 +1504,15 @@
         (function() {
             const BASE = 482386;
             const BASE_CONFIRMED = 204891;
+            
+            // Dynamic progress bar — recalculates from BASE each time file is updated
+            (function() {
+                var pct = Math.round(BASE * 6.7 / 30000000 * 1000) / 10;
+                var fill = document.getElementById('dd-progress-fill-bar');
+                var num  = document.getElementById('dd-pct-num');
+                if (fill) fill.style.width = pct + '%';
+                if (num)  num.textContent  = pct;
+            })();
             const BASE_TS = new Date('2026-05-29T00:49:02Z').getTime();
             const PER_DAY = 411;
             const PER_MS = PER_DAY / 86400000;
