@@ -3,7 +3,7 @@
     "start_date": "2023-03-14",
     "last_updated": "2026-05-29T07:25:21Z",
     "total_confirmed": 204891,
-    "total_estimated": 482386,
+    "total_estimated": 483086,
     "total_likely": 258425,
     "last_calibration_date": "2026-04-02",
     "calibration_source": "Challenger, Gray & Christmas March 2026 Report",
@@ -1243,6 +1243,22 @@
           "last_alive": "2026-05-29"
         }
       }
+    },
+    {
+      "company": "Coinbase",
+      "date": "2026-05-05",
+      "headcount": 700,
+      "ai_attributed": "yes",
+      "note": "Coinbase cut ~700 employees (14% of workforce). CEO Brian Armstrong explicitly cited AI acceleration as the driver — restructuring to 'AI-native pods' where single employees direct AI agents handling engineering, design, and product. 'Pure managers' replaced with 'player-coaches.' One of the clearest executive attributions of layoffs directly to AI transformation.",
+      "source_names": [
+        "CNBC",
+        "Fortune"
+      ],
+      "source_urls": [
+        "https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html",
+        "https://fortune.com/2026/05/05/coinbase-layoffs-14-of-employees-ai-tech-ai-job-anxiety-crypto/"
+      ],
+      "link_status": {}
     }
   ]
 }
