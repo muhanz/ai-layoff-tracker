@@ -32,6 +32,8 @@ def generate_html():
     start = datetime(2023, 3, 14)
     days_since = (datetime.utcnow() - start).days
     avg_per_day = total_estimated // max(days_since, 1)
+    pct_toward_30m = round((total_estimated * 6.7) / 30_000_000 * 100, 1)
+    estimated_millions = round(total_estimated * 6.7 / 1_000_000, 1)
     
     # Recent 20 events
     recent_events = sorted(db["events"], key=lambda x: x["date"], reverse=True)[:20]
@@ -1092,12 +1094,12 @@ def generate_html():
             <div class="dd-progress-wrap">
                 <div class="dd-progress-label">
                     <span>est. true AI impact via 6.7&times; multiplier: ~3.2M</span>
-                    <strong>10.7% toward 30M by 2028</strong>
+                    <strong>{pct_toward_30m}% toward 30M by 2028</strong>
                 </div>
                 <div class="dd-progress-track">
-                    <div class="dd-progress-fill" style="width:10.7%"></div>
+                    <div class="dd-progress-fill" style="width:{pct_toward_30m}%"></div>
                 </div>
-                <div class="dd-progress-note">{total_estimated:,} documented &times; 6.7 unlabeled multiplier = ~3.2M estimated &nbsp;&middot;&nbsp; target: 30M by 2028</div>
+                <div class="dd-progress-note">{total_estimated:,} documented &times; 6.7 unlabeled multiplier = ~{estimated_millions}M estimated &nbsp;&middot;&nbsp; target: 30M by 2028</div>
             </div>
         </section>
 
