@@ -1006,10 +1006,10 @@
             <div class="dd-progress-wrap">
                 <div class="dd-progress-label">
                     <span>通過6.7倍乘數估算的真實AI影響：約320萬</span>
-                    <strong>已達2028年3000萬目標的10.7%</strong>
+                    <strong>已達2028年3000萬目標的<span id="dd-pct-num">10.8</span>%</strong>
                 </div>
                 <div class="dd-progress-track">
-                    <div class="dd-progress-fill" style="width:10.7%"></div>
+                    <div class="dd-progress-fill" id="dd-progress-fill-bar" style="width:10.8%"></div>
                 </div>
                 <div class="dd-progress-note">482,386已記錄 &times; 6.7未標注乘數 = 約320萬估算 &nbsp;&middot;&nbsp; 目標：2028年達3000萬</div>
             </div>
@@ -1504,6 +1504,15 @@
         (function() {
             const BASE = 482386;
             const BASE_CONFIRMED = 204891;
+            
+            // Dynamic progress bar — recalculates from BASE each time file is updated
+            (function() {
+                var pct = Math.round(BASE * 6.7 / 30000000 * 1000) / 10;
+                var fill = document.getElementById('dd-progress-fill-bar');
+                var num  = document.getElementById('dd-pct-num');
+                if (fill) fill.style.width = pct + '%';
+                if (num)  num.textContent  = pct;
+            })();
             const BASE_TS = new Date('2026-05-29T00:49:02Z').getTime();
             const PER_DAY = 411;
             const PER_MS = PER_DAY / 86400000;
