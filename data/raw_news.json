@@ -1,5 +1,21 @@
 [
   {
+    "id": "54144fc1d28748ed069c4cbe96202c21",
+    "title": "Mass Layoffs At Uber: Here’s Why New President Cut 23% Of HR Team And Denies Any AI Role",
+    "description": "Uber cuts 23% of jobs in its People division under new president Jill Hazelbaker as part of restructuring. The company says layoffs affect less than 1% of the workforce and are not linked to AI.",
+    "content": "166\nUber has slashed 23% of its People division as the company seeks to streamline internal operations under new president Jill Hazelbaker. The revamp is part of a wider drive to simplify the way teams work across the organisation and improve efficie... [2479 chars]",
+    "url": "https://www.newsx.com/tech-and-auto/mass-layoffs-at-uber-heres-why-new-president-cut-23-of-hr-team-and-denies-any-ai-role-230048/",
+    "image": "https://www.newsx.com/wp-content/uploads/2026/06/1_39.jpg",
+    "publishedAt": "2026-06-03T23:47:23Z",
+    "lang": "en",
+    "source": {
+      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
+      "name": "NewsX",
+      "url": "https://www.newsx.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "cf845b0b2a63f43505249e710f33a21f",
     "title": "Meta to cut over 2,200 jobs in Menlo Park as AI restructuring accelerates",
     "description": "Meta has revealed details of major layoffs in Menlo Park and Playa Vista as the company restructures teams and increases investment in artificial intelligence.",
@@ -141,22 +157,6 @@
       "name": "News18",
       "url": "https://www.news18.com",
       "country": "in"
-    }
-  },
-  {
-    "id": "a14c517d93af7b429cb28fb88ede8ba5",
-    "title": "Nvidia Just Proved ‘AI Efficiency’ Is Fake as Layoffs Rise: ‘The Cost of Compute Is Far Beyond the Cost of Employees’",
-    "description": "Big corporations are using AI investment as an excuse to cut jobs. But according to Nvidia's VP of applied deep learning, the economics behind these mass layoffs don't add up.",
-    "content": "For the past couple of years, we’ve all been spoonfed the same narrative: AI is making companies leaner, faster, and more efficient. Investors were pretty keen to jump on the bandwagon, which is why valuations have skyrocketed and everybody in big te... [5797 chars]",
-    "url": "https://www.barchart.com/story/news/2021817/nvidia-just-proved-ai-efficiency-is-fake-as-layoffs-rise-the-cost-of-compute-is-far-beyond-the-cost-of-employees",
-    "image": "https://media.barchart.com/contributors-admin/common-images/images/Tech%20(Ecommerce%2C%20Social%20Media%2C%20etc.)/AI%20(artificial%20intelligence)/3D%20Graphics%20Concept%20Big%20Data%20Center%20by%20Gorodenkoff%20via%20Shutterstock.jpg",
-    "publishedAt": "2026-05-19T17:37:04Z",
-    "lang": "en",
-    "source": {
-      "id": "f81e0cedbddbe08e3058634e8bb4a56f",
-      "name": "Barchart",
-      "url": "https://www.barchart.com",
-      "country": "us"
     }
   }
 ]
