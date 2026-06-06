@@ -1,5 +1,37 @@
 [
   {
+    "id": "c00357056d2c70e7eebbbb68e19a4fb5",
+    "title": "Tech Layoffs: Google Is Cutting Jobs Again-Here’s Which Teams Were Affected This Time",
+    "description": "Google Cloud has reportedly cut jobs across cybersecurity and cloud teams as the tech giant shifts resources toward AI-focused growth., Companies, Times Now",
+    "content": "Google Layoffs: As Google Bets Bigger on AI, Another Round of Job Cuts Follows. (File Photo)\nGoogle has carried out a new round of layoffs within its Cloud division, affecting employees across several teams, including its renowned Threat Intelligence... [2709 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/tech-layoffs-google-is-cutting-jobs-againheres-which-teams-were-affected-this-time-article-154462748",
+    "image": "https://images.timesnownews.com/thumb/msid-154462748,width-1280,height-720,resizemode-75/154462748.jpg",
+    "publishedAt": "2026-06-05T06:14:16Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "254eef1ff2be90c5ce6282176087023b",
+    "title": "Google quietly cuts more jobs as AI spending rises across big tech",
+    "description": "Google has reportedly cut jobs across its Cloud division, including key cyber teams. The move adds to tech sector layoffs as companies weigh AI spending against headcount.",
+    "content": "There seems to be no end to layoffs in the tech industry. Every time a company announces job cuts, it often cites restructuring efforts aimed at improving efficiency. The assumption is that after a round of layoffs, operations will become leaner and ... [3276 chars]",
+    "url": "https://www.indiatoday.in/jobs/story/google-quietly-cuts-more-jobs-as-ai-spending-rises-across-big-tech-tchc-2922221-2026-06-05",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202606/google-has-received-a-power-distribution-license-for-its-upcoming-data-centre-in-visakhapatnam-074043251-16x9.jpg?VersionId=16rWVScuxSYTfKYMA8tNU5yaIRzM.F3M",
+    "publishedAt": "2026-06-05T04:16:02Z",
+    "lang": "en",
+    "source": {
+      "id": "c73686fdf0e30639d57eddaf7a77236e",
+      "name": "India Today",
+      "url": "https://www.indiatoday.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "54144fc1d28748ed069c4cbe96202c21",
     "title": "Mass Layoffs At Uber: Here’s Why New President Cut 23% Of HR Team And Denies Any AI Role",
     "description": "Uber cuts 23% of jobs in its People division under new president Jill Hazelbaker as part of restructuring. The company says layoffs affect less than 1% of the workforce and are not linked to AI.",
@@ -124,38 +156,6 @@
       "id": "3bd4bd306c42647825fa42989624c036",
       "name": "Livemint",
       "url": "https://www.livemint.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "5885f08d95f6007efb17550b893b6e47",
-    "title": "AI layoffs are ‘dumb’, says Google DeepMind chief Demis Hassabis",
-    "description": "While Amazon has cut 30,000 corporate roles in roughly six months and Meta has shed 8,000 jobs, both citing AI-driven productivity, Google DeepMind CEO Demis Hassabis is publicly calling that logic...",
-    "content": "While Amazon has cut 30,000 corporate roles in roughly six months and Meta has shed 8,000 jobs, both citing AI-driven productivity, Google DeepMind CEO Demis Hassabis is publicly calling that logic out.\nHis verdict: companies doing this lack imaginat... [1247 chars]",
-    "url": "https://www.thenews.com.pk/latest/1403190-httpswwwthreadscomcarnage4lifepostdxjvqk3itisxmtaqg0amqbbwvytbdo5jkl1xqtgyxerxqlfcos8meex-eywg-ai-layoffs-are-dumb-says-google-deepmind-chief-demis-hassabis",
-    "image": "https://www.thenews.com.pk/assets/uploads/2026-05-20/1403190_030457_updates.jpg",
-    "publishedAt": "2026-05-20T09:59:26Z",
-    "lang": "en",
-    "source": {
-      "id": "ab5c2ecaa19b1c4aaa371bd0c44b032c",
-      "name": "The News International",
-      "url": "https://www.thenews.com.pk",
-      "country": "pk"
-    }
-  },
-  {
-    "id": "4101d59fc3e38611129292ffda6a8293",
-    "title": "Meta Layoffs: 8,000 Jobs Cut Globally, 7,000 Employees Shifted To AI-Focused Roles",
-    "description": "Meta announces 8,000 global layoffs starting in Singapore, reassigns 7,000 staff to new AI roles as it accelerates artificial intelligence integration",
-    "content": "Meta to cut about 8,000 jobs globally starting from Singapore, reassign around 7,000 staff to new AI focused roles, affected employees were notified by a 4 AM HR email\nMeta Layoffs: Meta has announced plans to cut around 8,000 jobs globally as part o... [2547 chars]",
-    "url": "https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html",
-    "image": "https://images.news18.com/ibnlive/uploads/2026/04/TV_5831402_240426meta_1-1200x675.jpg",
-    "publishedAt": "2026-05-20T02:18:57Z",
-    "lang": "en",
-    "source": {
-      "id": "ca84296ef941bfa461f4239a2290cb99",
-      "name": "News18",
-      "url": "https://www.news18.com",
       "country": "in"
     }
   }
