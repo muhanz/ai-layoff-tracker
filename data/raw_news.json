@@ -1,5 +1,21 @@
 [
   {
+    "id": "25fb4f6c68829c7ec1cc9c383d13daa7",
+    "title": "Tech Layoffs: AI Has Already Cut More Jobs In 2026 Than The Last Two Years Combined",
+    "description": "May's tally of job cuts due to AI accounts for 40% of all layoffs announced in the month. This number was 7% in January.",
+    "content": "Artificial intelligence has claimed more tech jobs in the US in the first five months of 2026 than it did in the entirety of 2024 and 2025, according to data from outplacement firm Challenger Gray.\nAs the data suggests, US-based technology companies ... [1282 chars]",
+    "url": "https://www.ndtvprofit.com/technology/tech-layoffs-ai-has-already-cut-more-jobs-in-2026-than-the-last-two-years-combined-11601887",
+    "image": "https://c.ndtvimg.com/2026-06/mpu5isd_a_625x300_07_June_26.jpg?im=FeatureCrop,algorithm=dnn,width=1600,height=900",
+    "publishedAt": "2026-06-07T02:35:33Z",
+    "lang": "en",
+    "source": {
+      "id": "73aabc646bff1356a46223f250cc6b52",
+      "name": "NDTV Profit",
+      "url": "https://www.ndtvprofit.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "c00357056d2c70e7eebbbb68e19a4fb5",
     "title": "Tech Layoffs: Google Is Cutting Jobs Again; Check Which Teams Are Affected This Time",
     "description": "Google Cloud has reportedly cut jobs across cybersecurity and cloud teams as the tech giant shifts resources toward AI-focused growth., Companies, Times Now",
@@ -140,22 +156,6 @@
       "id": "63361c66f51ee0c82a5325ba1c7b8d06",
       "name": "The Financial Express",
       "url": "https://www.financialexpress.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "5ba51d91462dccae8a6bb48d70fb158f",
-    "title": "AI layoffs: Artificial Intelligence will destroy certain jobs says HSBC CEO, urges staff to ‘not resist the change’",
-    "description": "Amid AI job cuts, HSBC's CEO Georges Elhedery encouraged staff to adapt and not resist technological changes. The bank may cut 20,000 roles, focusing on non-client-facing positions, while AI advancements are reshaping the workforce across the banking sector.",
-    "content": "Bobins Vayalil Abraham\nBobins loves telling the human side of all stories, from the intersection of geopolitics, international relations, and conflicts around the world. In his nearly one-and-a-half-decade career as a journalist, Bobins has covered S... [1067 chars]",
-    "url": "https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/05/20/1600x900/logo/HSBC-CYBER-QUANTUM-0_1701842977355_1779287583993_0dd92e2d-76df-4620-b8d3-1ec9dad00379.JPG",
-    "publishedAt": "2026-05-20T14:43:57Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
