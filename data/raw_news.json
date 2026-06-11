@@ -1,5 +1,53 @@
 [
   {
+    "id": "ad0163c81649f54d0f20638f66366687",
+    "title": "China Inc Deploys ‘Quiet’ Layoffs As AI Adoption Outpaces Job Creation",
+    "description": "Chinese firms quietly cut jobs as AI tools replace roles, avoiding mass layoffs to maintain stability",
+    "content": "Beijing: Liu, a Hangzhou-based contractor at a large Chinese internet firm, says her employer began quietly firing contractors in March after it ordered staff to use AI tools including AI agent OpenClaw, which saw lightning-fast adoption in ​China th... [5926 chars]",
+    "url": "https://www.deccanchronicle.com/world/neighbours/china-inc-deploys-quiet-layoffs-as-ai-adoption-outpaces-job-creation-1962650",
+    "image": "https://www.deccanchronicle.com/h-upload/2026/03/12/2020732-chinatrain.jpg",
+    "publishedAt": "2026-06-10T13:16:40Z",
+    "lang": "en",
+    "source": {
+      "id": "214d496d625fc657723cf4da80cff8ce",
+      "name": "Deccan Chronicle",
+      "url": "https://www.deccanchronicle.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "0f58a183457166752d27c7392521171e",
+    "title": "Salesforce Layoffs: Why Software Giant Is Cutting Jobs Again Despite Its Big AI Push",
+    "description": "Salesforce Layoffs: Salesforce has cut more jobs across Agentforce, Mulesoft and Marketing Cloud as the software giant doubles down on AI growth., Companies, Times Now",
+    "content": "Salesforce Layoffs: Salesforce’s latest layoffs have raised fresh questions about its AI future. (File Photo)\nPhoto : iStock\nSalesforce Layoffs: Salesforce has conducted another round of layoffs, with employees across multiple business units affected... [2807 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/salesforce-layoffs-why-software-giant-is-cutting-jobs-again-despite-its-big-ai-push-article-154549355",
+    "image": "https://images.timesnownews.com/thumb/msid-154549355,width-1280,height-720,resizemode-75/154549355.jpg",
+    "publishedAt": "2026-06-10T06:23:45Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "310c074d6fa62e7905a6f7309b13c77b",
+    "title": "Salesforce layoff: Fresh round of job cuts hits AI and software teams",
+    "description": "Salesforce has initiated another round of layoffs affecting employees across its AI, software and business operations divisions. The move comes just months after the company cut nearly 1,000 jobs, underscoring how even major technology firms are continuing to reshape their workforces amid the AI transition.",
+    "content": "Salesforce has launched a fresh round of layoffs, impacting employees across several of its key businesses, including artificial intelligence, software integration and marketing technology. According to a California regulatory filing cited by Busines... [4015 chars]",
+    "url": "https://www.firstpost.com/tech/salesforce-layoff-fresh-round-of-job-cuts-hits-ai-and-software-teams-14020826.html",
+    "image": "https://images.firstpost.com/uploads/2026/04/AFP__20260225__2262985855__v1__HighRes__SalesforceToReportQuarterlyEarnings-2026-04-b925f1e6a703f949acd5167100f63d0c-1200x675.jpg?im=FitAndFill=(1200,675)",
+    "publishedAt": "2026-06-10T05:26:13Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "25fb4f6c68829c7ec1cc9c383d13daa7",
     "title": "Tech Layoffs: AI Has Already Cut More Jobs In 2026 Than The Last Two Years Combined",
     "description": "May's tally of job cuts due to AI accounts for 40% of all layoffs announced in the month. This number was 7% in January.",
@@ -109,54 +157,6 @@
       "name": "Los Angeles Times",
       "url": "https://www.latimes.com",
       "country": "us"
-    }
-  },
-  {
-    "id": "0311efb12632f3b4406af138aaa2aca1",
-    "title": "Cloudflare Layoffs: 'We Didn’t Cut Jobs Because We’re Struggling,' CEO Defends Job Cuts",
-    "description": "Cloudflare Layoffs: Cloudflare CEO Matthew Prince says AI is reshaping workplaces as the company cuts over 1,100 jobs amid major restructuring., Companies, Times Now",
-    "content": "Cloudflare CEO Matthew Prince (Image Source: Cloudflare)\nCloudflare CEO Matthew Prince has strongly defended the company’s recent decision to reduce its workforce by more than 1,100 employees, saying artificial intelligence is rapidly transforming ho... [3036 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431",
-    "image": "https://images.timesnownews.com/thumb/msid-154407431,width-1280,height-720,resizemode-75/154407431.jpg",
-    "publishedAt": "2026-05-27T07:30:09Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "3016b5401e47f1977740c857a4934505",
-    "title": "Software maker Intuit to cut 3,000 jobs, CEO says layoff has nothing to do with AI",
-    "description": "US software giant Intuit is laying off roughly 17 per cent of its global workforce, or around 3,000 workers. However, CEO Sasan Goodarzi insists that unlike other recent layoffs, Intuit’s decision had nothing to do with AI.",
-    "content": "On Wednesday, US software maker Intuit joined a long list of tech companies who have cut thousands of jobs in recent months. Intuit CEO Sasan Goodarzi informed employees that the company was cutting 3,000 jobs globally, or nearly 17 per cent of its g... [2223 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/software-maker-intuit-to-cut-3000-jobs-ceo-says-layoff-has-nothing-to-do-with-ai-tchc-2914758-2026-05-21",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202605/intuit-211923853-16x9_0.png?VersionId=kGBGcCyCzgQkUKurIRKE66cBFba9EJ3Q",
-    "publishedAt": "2026-05-21T03:22:22Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "867cc2375d41280d870602291406a1b9",
-    "title": "More than 1 lakh jobs cut across 147 companies as AI transforms the workforce: Inside Big Tech’s great reset",
-    "description": "More than 1 lakh tech workers lost jobs across 147 companies in 2026 as Meta, Amazon and others accelerate AI-driven restructuring and global layoffs.",
-    "content": "According to Layoffs.fyi, more than 111,173 tech employees have already lost their jobs across 147 companies this year, and the numbers continue to rise. The latest cuts came from Meta, where roughly 8,000 employees were reportedly laid off globally,... [4868 chars]",
-    "url": "https://www.financialexpress.com/business/news/more-than-1-lakh-jobs-cut-across-147-companies-as-ai-transforms-the-workforce-inside-big-techs-great-reset/4246614/",
-    "image": "https://images.financialexpressdigital.com/2026/05/Karankaranth-30.jpg",
-    "publishedAt": "2026-05-20T17:16:03Z",
-    "lang": "en",
-    "source": {
-      "id": "63361c66f51ee0c82a5325ba1c7b8d06",
-      "name": "The Financial Express",
-      "url": "https://www.financialexpress.com",
-      "country": "in"
     }
   }
 ]
