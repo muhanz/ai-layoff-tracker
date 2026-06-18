@@ -1,9 +1,25 @@
 [
   {
+    "id": "ae4488eb15c92eac90d40ac0a277c502",
+    "title": "After 8,000 layoffs, Meta CEO Mark Zuckerberg makes a 'confession' to employees; says: We don't expect more layoffs this ​year, but don't want to overpromise because...",
+    "description": "Tech News News: Meta CEO Mark Zuckerberg has a problem he can't memo his way out of. A month after Meta cut 8,000 jobs and reassigned another 7,000 people to AI work,.",
+    "content": "Meta CEO Mark Zuckerberg admits \"mistakes\" in AI overhaul memo, promises no more 2026 layoffs after 8,000 job cuts\nMeta CEO Mark Zuckerberg has a problem he can't memo his way out of. A month after Meta cut 8,000 jobs and reassigned another 7,000 peo... [4761 chars]",
+    "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-8000-layoffs-meta-ceo-mark-zuckerberg-makes-a-confession-to-employees-says-we-dont-expect-more-layoffs-this-year-but-dont-want-to-overpromise-because-/articleshow/131801066.cms",
+    "image": "https://static.toiimg.com/thumb/msid-131801066,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+    "publishedAt": "2026-06-17T13:04:00Z",
+    "lang": "en",
+    "source": {
+      "id": "9a9a0fb79c70bbf499d39baca94921ae",
+      "name": "Times of India",
+      "url": "https://timesofindia.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "f9c4e0583697c3a68e389093726f975d",
     "title": "Robinhood's note on 10% layoffs shows blaming AI isn't cutting it",
     "description": "Unlike many of his tech industry peers who have cut thousands of jobs citing the need to restructure to make the most of AI, Robinhood's CEO Vlad Tenev conspicuously made no mention of AI in his note about layoffs.",
-    "content": "It appears using AI as a cover story for cutting jobs is fast falling out of fashion.\nUnlike many of his tech industry peers who have cut thousands of jobs this year citing the need to restructure their teams to make the most of AI, Robinhood’s CEO V... [2273 chars]",
+    "content": "It appears using AI as a cover story for cutting jobs is fast falling out of fashion.\nUnlike many of his tech industry peers who have cut thousands of jobs this year citing the need to restructure their teams to make the most of AI, Robinhood’s CEO V... [2274 chars]",
     "url": "https://techcrunch.com/2026/06/16/robinhoods-note-on-10-layoffs-shows-blaming-ai-isnt-cutting-it/",
     "image": "https://techcrunch.com/wp-content/uploads/2021/01/robinhood-volatility.jpg?resize=1200,675",
     "publishedAt": "2026-06-16T14:50:09Z",
@@ -140,22 +156,6 @@
       "id": "63361c66f51ee0c82a5325ba1c7b8d06",
       "name": "The Financial Express",
       "url": "https://www.financialexpress.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "6c9f4466d54a5cd5475b0b7151eaaeaa",
-    "title": "AI Layoffs In Banks? Lenders To Cut 20% Jobs Over Next Few Years? Here's What Morgan Stanley Says",
-    "description": "European banks may be able to save 4-9% in total costs by deploying AI in their operations and eliminating certain roles in the coming years, the report stated.",
-    "content": "European banks may reduce their workforce by up to 20% over the next five years as companies increasingly adopt artificial intelligence, according to a report by Morgan Stanley analysts.\nThe report stated that AI could improve productivity by nearly ... [2631 chars]",
-    "url": "https://www.ndtvprofit.com/business/ai-layoffs-in-banks-lenders-to-cut-20-per-cent-jobs-over-next-few-years-here-is-what-morgan-stanley-says-11563560",
-    "image": "https://c.ndtvimg.com/2026-05/moprhuu_ai-pexels-_625x300_27_May_26.jpg?im=FitAndFill,algorithm=dnn,width=1600,height=900",
-    "publishedAt": "2026-05-29T10:23:51Z",
-    "lang": "en",
-    "source": {
-      "id": "73aabc646bff1356a46223f250cc6b52",
-      "name": "NDTV Profit",
-      "url": "https://www.ndtvprofit.com",
       "country": "in"
     }
   }
