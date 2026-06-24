@@ -1,5 +1,69 @@
 [
   {
+    "id": "554db703b098a5f1ec0e4fb748f8b3b0",
+    "title": "Oracle cut 21,000 jobs because of AI.",
+    "description": "That’s a workforce reduction of about 13 percent over the last 12 months, according to a disclosure filed Monday. And Oracle is hardly alone in at least partially attributing the cuts to AI advancements:\n> Worries are quickly mounting over job losses due to AI disruption, as 196 ‌tech ⁠companies laid off more than 119,800 employees so far this year, according to Layoffs.fyi.\n[Link: Oracle workforce shrinks by about 21,000 employees amid AI adoption | https://www.reuters.com/business/world-at-work/oracle-workforce-shrinks-by-about-13-2026-06-22/ | Reuters]",
+    "content": "T\nExternal Link\nOracle cut 21,000 jobs because of AI.\nThat’s a workforce reduction of about 13 percent over the last 12 months, according to a disclosure filed Monday. And Oracle is hardly alone in at least partially attributing the cuts to AI advanc... [695 chars]",
+    "url": "https://www.theverge.com/business/954330/oracle-cut-21000-jobs-because-of-ai",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
+    "publishedAt": "2026-06-23T07:50:04Z",
+    "lang": "en",
+    "source": {
+      "id": "cb749b89c7dc92dc2d517a49bb9a43ab",
+      "name": "The Verge",
+      "url": "https://www.theverge.com",
+      "country": "us"
+    }
+  },
+  {
+    "id": "8c654b69f6f248c83b5dbc721679c6a2",
+    "title": "AI Rewrites Oracle: 21,000 Jobs Cut As Cloud Wars Turn Fiercer, Tech Giants Double Down On Automation, Layoffs Signal New Rules; Will More People Lose Jobs To AI?",
+    "description": "Oracle cuts 21,000 jobs as AI reshapes the workforce, signaling a major shift in the tech industry. The company’s restructuring reflects rising severance costs, cloud competition, and rapid AI adoption, while global tech giants continue heavy investment in artificial intelligence despite widespread layoffs.",
+    "content": "3\nOracle Latoffs: Cuts 21,000 Jobs as AI Reshapes the Workforce- Oracle put out a pretty sharp, eye-catching shake-up of its workforce, cutting roughly 21,000 employees, close to 13% of its worldwide team, during fiscal 2026, even as artificial intel... [3771 chars]",
+    "url": "https://www.newsx.com/business/ai-rewrites-oracle-layoffs-21000-jobs-cut-as-cloud-wars-turn-fiercer-tech-giants-double-down-on-automation-layoffs-signal-new-rules-will-more-people-lose-jobs-to-ai-239614/",
+    "image": "https://www.newsx.com/wp-content/uploads/2026/06/oracle-layoff.jpg",
+    "publishedAt": "2026-06-23T04:49:27Z",
+    "lang": "en",
+    "source": {
+      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
+      "name": "NewsX",
+      "url": "https://www.newsx.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "ce8f5423906e89cff76f079a5c6d005b",
+    "title": "Oracle Layoffs: Tech Firm Cut 21,000 Jobs Last Year. Its Latest Filing Reveals Why",
+    "description": "Oracle Layoffs: Oracle disclosed a 21,000 employee reduction over the past year, citing AI adoption and restructuring amid heavy investments in AI infrastructure., Companies, Times Now",
+    "content": "Oracle Layoffs: Oracle's latest filing reveals a much larger workforce reduction than expected. (File Photo)\nOracle Layoffs: Oracle Corporation has revealed that its workforce shrank by 21,000 employees over the past year, highlighting the growing im... [2765 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/oracle-layoffs-tech-firm-cut-21000-jobs-last-year-its-latest-filing-reveals-why-article-154732089",
+    "image": "https://images.timesnownews.com/thumb/msid-154732089,width-1280,height-720,resizemode-75/154732089.jpg",
+    "publishedAt": "2026-06-23T04:37:31Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "62785525ef3007cc61649e6ccdcc2f6b",
+    "title": "Oracle confirms 21,000 layoffs due to AI, says more job cuts may happen",
+    "description": "Oracle cut about 21,000 jobs worldwide in fiscal 2026 as it accelerated its AI-led overhaul. The company said wider AI deployment has already reduced headcount and may lead to further cuts.",
+    "content": "Artificial intelligence is helping companies become more efficient. But for many workers, it is also becoming a source of uncertainty. Oracle is the latest example. The US technology giant cut about 21,000 jobs globally in fiscal 2026 as it reshapes ... [2355 chars]",
+    "url": "https://www.indiatoday.in/jobs/story/oracle-cut-21000-jobs-in-2026-amid-ai-adoption-says-more-job-cuts-possible-in-future-tchc-2932203-2026-06-23",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202606/oracle-had-around-162-000-full-time-employees-globally-as-of-may-2025--according-to-its-latest-regul-034655614-16x9.jpg?VersionId=hiFtpTYV.0AiP.m9.pB7pWgZFEA4KIge",
+    "publishedAt": "2026-06-23T02:34:00Z",
+    "lang": "en",
+    "source": {
+      "id": "c73686fdf0e30639d57eddaf7a77236e",
+      "name": "India Today",
+      "url": "https://www.indiatoday.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "ae4488eb15c92eac90d40ac0a277c502",
     "title": "After 8,000 layoffs, Meta CEO Mark Zuckerberg makes a 'confession' to employees; says: We don't expect more layoffs this ​year, but don't want to overpromise because...",
     "description": "Tech News News: Meta CEO Mark Zuckerberg has a problem he can't memo his way out of. A month after Meta cut 8,000 jobs and reassigned another 7,000 people to AI work,.",
@@ -92,70 +156,6 @@
       "id": "73aabc646bff1356a46223f250cc6b52",
       "name": "NDTV Profit",
       "url": "https://www.ndtvprofit.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "c00357056d2c70e7eebbbb68e19a4fb5",
-    "title": "Tech Layoffs: Google Is Cutting Jobs Again; Check Which Teams Are Affected This Time",
-    "description": "Google Cloud has reportedly cut jobs across cybersecurity and cloud teams as the tech giant shifts resources toward AI-focused growth., Companies, Times Now",
-    "content": "Google Layoffs: As Google Bets Bigger on AI, Another Round of Job Cuts Follows. (File Photo)\nGoogle has carried out a new round of layoffs within its Cloud division, affecting employees across several teams, including its renowned Threat Intelligence... [2709 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/tech-layoffs-google-is-cutting-jobs-againheres-which-teams-were-affected-this-time-article-154462748",
-    "image": "https://images.timesnownews.com/thumb/msid-154462748,width-1280,height-720,resizemode-75/154462748.jpg",
-    "publishedAt": "2026-06-05T06:14:16Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "254eef1ff2be90c5ce6282176087023b",
-    "title": "Google quietly cuts more jobs as AI spending rises across big tech",
-    "description": "Google has reportedly cut jobs across its Cloud division, including key cyber teams. The move adds to tech sector layoffs as companies weigh AI spending against headcount.",
-    "content": "There seems to be no end to layoffs in the tech industry. Every time a company announces job cuts, it often cites restructuring efforts aimed at improving efficiency. The assumption is that after a round of layoffs, operations will become leaner and ... [3276 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/google-quietly-cuts-more-jobs-as-ai-spending-rises-across-big-tech-tchc-2922221-2026-06-05",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202606/google-has-received-a-power-distribution-license-for-its-upcoming-data-centre-in-visakhapatnam-074043251-16x9.jpg?VersionId=16rWVScuxSYTfKYMA8tNU5yaIRzM.F3M",
-    "publishedAt": "2026-06-05T04:16:02Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "54144fc1d28748ed069c4cbe96202c21",
-    "title": "Mass Layoffs At Uber: Here’s Why New President Cut 23% Of HR Team And Denies Any AI Role",
-    "description": "Uber cuts 23% of jobs in its People division under new president Jill Hazelbaker as part of restructuring. The company says layoffs affect less than 1% of the workforce and are not linked to AI.",
-    "content": "166\nUber has slashed 23% of its People division as the company seeks to streamline internal operations under new president Jill Hazelbaker. The revamp is part of a wider drive to simplify the way teams work across the organisation and improve efficie... [2479 chars]",
-    "url": "https://www.newsx.com/tech-and-auto/mass-layoffs-at-uber-heres-why-new-president-cut-23-of-hr-team-and-denies-any-ai-role-230048/",
-    "image": "https://www.newsx.com/wp-content/uploads/2026/06/1_39.jpg",
-    "publishedAt": "2026-06-03T23:47:23Z",
-    "lang": "en",
-    "source": {
-      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
-      "name": "NewsX",
-      "url": "https://www.newsx.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "cf845b0b2a63f43505249e710f33a21f",
-    "title": "Meta to cut over 2,200 jobs in Menlo Park as AI restructuring accelerates",
-    "description": "Meta has revealed details of major layoffs in Menlo Park and Playa Vista as the company restructures teams and increases investment in artificial intelligence.",
-    "content": "AI investments driving workforce changes\nThe Facebook and Instagram parent company first announced plans to reduce around 8,000 jobs globally in May. CEO Mark Zuckerberg has said the cuts are aimed at improving efficiency and helping fund the company... [1791 chars]",
-    "url": "https://www.financialexpress.com/life/technology/meta-to-cut-over-2200-jobs-in-menlo-park-as-ai-restructuring-accelerates/4257195/",
-    "image": "https://images.financialexpressdigital.com/2026/05/meta-layoffs-vijaya-priya-joshi-husband-job-loss-linkedin-post-viral_20260525125247.jpg",
-    "publishedAt": "2026-06-02T12:34:33Z",
-    "lang": "en",
-    "source": {
-      "id": "63361c66f51ee0c82a5325ba1c7b8d06",
-      "name": "The Financial Express",
-      "url": "https://www.financialexpress.com",
       "country": "in"
     }
   }
