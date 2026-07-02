@@ -1,5 +1,85 @@
 [
   {
+    "id": "f34b2026de0c7bd76f30b14d9894022c",
+    "title": "Microsoft layoffs: Up to 5,500 jobs at risk as AI push sparks fresh H1-B debate",
+    "description": "US News: Microsoft is preparing to cut around 5,500 jobs in another round of layoffs as it continues shifting billions of dollars towards artificial intelligen.",
+    "content": "Microsoft plans thousands of job cuts, impacting less than 2.5% of workforce\nMicrosoft is preparing to cut around 5,500 jobs in another round of layoffs as it continues shifting billions of dollars towards artificial intelligence (AI), with the expec... [3138 chars]",
+    "url": "https://timesofindia.indiatimes.com/world/us/microsoft-layoffs-up-to-5500-jobs-at-risk-as-ai-push-sparks-fresh-h1-b-debate/articleshow/132118010.cms",
+    "image": "https://static.toiimg.com/thumb/msid-132118805,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+    "publishedAt": "2026-07-01T15:46:00Z",
+    "lang": "en",
+    "source": {
+      "id": "9a9a0fb79c70bbf499d39baca94921ae",
+      "name": "Times of India",
+      "url": "https://timesofindia.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "0176f30f1d245eaefc4409e12f68b0ce",
+    "title": "Microsoft to slash thousands of jobs as AI spending concerns fuel third major layoff round in a year: report",
+    "description": "Microsoft is reportedly planning yet another round of layoffs that will slash thousands of roles next week in an effort to cut costs, as concerns about out-of-control AI spending mount.",
+    "content": "Microsoft is reportedly planning yet another round of layoffs that will slash thousands of roles next week in an effort to cut costs, as concerns about out-of-control AI spending mount.\nLess than 2.5% of the company’s 220,000-person workforce – or fe... [2801 chars]",
+    "url": "https://nypost.com/2026/07/01/business/microsoft-to-slash-thousands-of-jobs-as-ai-spending-concerns-fuel-third-major-layoff-round-in-a-year-report/",
+    "image": "https://nypost.com/wp-content/uploads/sites/2/2026/07/crop-39854337.jpg?quality=75&strip=all&w=1200",
+    "publishedAt": "2026-07-01T15:12:32Z",
+    "lang": "en",
+    "source": {
+      "id": "95a96a1867c4dac6f720e9d08d4c1b96",
+      "name": "New York Post",
+      "url": "https://nypost.com",
+      "country": "us"
+    }
+  },
+  {
+    "id": "3c633ebac084b962e59995dc785c8738",
+    "title": "Microsoft Plans Job Cuts Next Week; Thousands Of People Likely To Be Impacted",
+    "description": "Microsoft is preparing to cut thousands of jobs across sales, consulting and its Xbox division, according to reports. The layoffs are expected to affect less than 2.5% of its global workforce. Some employees may be reassigned instead of being let go. The move comes as the company increases AI investments while focusing on cost control.",
+    "content": "Microsoft is preparing to announce job cuts next week that will affect thousands of roles across sales, consulting and its Xbox gaming division, according to a report by Business Insider citing people familiar with the situation. The cuts are expecte... [1903 chars]",
+    "url": "https://www.freepressjournal.in/tech/microsoft-plans-job-cuts-next-week-thousands-of-people-likely-to-be-impacted",
+    "image": "https://media.assettype.com/freepressjournal/2025-07-02/43e4kjlm/microsoft-layoff.jpg",
+    "publishedAt": "2026-07-01T04:37:26Z",
+    "lang": "en",
+    "source": {
+      "id": "7eeaf9a839918543cc708f2d331c3be4",
+      "name": "Free Press Journal",
+      "url": "https://www.freepressjournal.in",
+      "country": "in"
+    }
+  },
+  {
+    "id": "657d1575429078cd35a13f0e6cd27db3",
+    "title": "Microsoft to Announce Fresh Layoffs Impacting Thousands as AI Investment Surge Reshapes Workforce: Report",
+    "description": "Microsoft is reportedly planning to cut thousands of jobs across its sales, consulting and Xbox divisions as it ramps up AI investments.",
+    "content": "Microsoft Reportedly Preparing Smaller Layoffs Than Last Year\nThe layoffs are likely to affect less than 2.5% of Microsoft’s roughly 220,000-person global workforce. The company could announce the reductions as early as next week, though the timing m... [2221 chars]",
+    "url": "https://www.benzinga.com/markets/tech/26/06/60207103/microsoft-reportedly-plans-fresh-layoffs-impacting-thousands-as-ai-investment-reshapes-workforce",
+    "image": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/07/01/Microsoft-Logo-Displayed.jpg",
+    "publishedAt": "2026-07-01T03:09:13Z",
+    "lang": "en",
+    "source": {
+      "id": "d4e7f6a65e15620f4e4044691a99d0fd",
+      "name": "Benzinga",
+      "url": "https://www.benzinga.com",
+      "country": "us"
+    }
+  },
+  {
+    "id": "a45b315769d8e3fd5e2d052070fa531b",
+    "title": "Microsoft to cut thousands of jobs across sales, consulting and Xbox in fresh layoffs: Report",
+    "description": "Microsoft is reportedly preparing to cut fewer than 2.5 per cent of its global workforce, affecting thousands of employees across sales, consulting and Xbox, as the tech giant reins in costs amid heavy AI spending",
+    "content": "Microsoft is preparing another round of layoffs that will affect thousands of employees across its global workforce, including its Xbox gaming division, as the technology giant seeks to curb costs while continuing to invest heavily in artificial inte... [4190 chars]",
+    "url": "https://www.firstpost.com/business/microsoft-layoffs-xbox-sales-consulting-job-cuts-ai-spending-2026-14027853.html",
+    "image": "https://images.firstpost.com/uploads/2026/07/AFP__20250519__47CH4DK__v2__MidRes__MicrosoftBuildAnnualDevelopersConference-1-2026-07-a1d8a069af7c6fdd8023ba94a23960a6.jpg?im=FitAndFill=(1200,675)",
+    "publishedAt": "2026-07-01T00:11:28Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "fce40df03eb338604cf3ddfdcd1e62d3",
     "title": "Tech layoffs 2026 full list: Over 1 lakh jobs cut as AI reshapes workforce",
     "description": "AI-driven restructuring, cost-cutting and slowing global demand have made 2026 another difficult year for workers. Technology firms, software companies and even automakers have announced more than 1 lakh layoffs, with companies increasingly citing artificial intelligence, automation and business restructuring as reasons behind the sweeping job cuts.",
@@ -71,86 +151,6 @@
     "url": "https://www.timesnownews.com/business-economy/companies/oracle-layoffs-tech-firm-cut-21000-jobs-last-year-its-latest-filing-reveals-why-article-154732089",
     "image": "https://images.timesnownews.com/thumb/msid-154732089,width-1280,height-720,resizemode-75/154732089.jpg",
     "publishedAt": "2026-06-23T04:37:31Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "62785525ef3007cc61649e6ccdcc2f6b",
-    "title": "Oracle confirms 21,000 layoffs due to AI, says more job cuts may happen",
-    "description": "Oracle cut about 21,000 jobs worldwide in fiscal 2026 as it accelerated its AI-led overhaul. The company said wider AI deployment has already reduced headcount and may lead to further cuts.",
-    "content": "Artificial intelligence is helping companies become more efficient. But for many workers, it is also becoming a source of uncertainty. Oracle is the latest example. The US technology giant cut about 21,000 jobs globally in fiscal 2026 as it reshapes ... [2355 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/oracle-cut-21000-jobs-in-2026-amid-ai-adoption-says-more-job-cuts-possible-in-future-tchc-2932203-2026-06-23",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202606/oracle-had-around-162-000-full-time-employees-globally-as-of-may-2025--according-to-its-latest-regul-034655614-16x9.jpg?VersionId=hiFtpTYV.0AiP.m9.pB7pWgZFEA4KIge",
-    "publishedAt": "2026-06-23T02:34:00Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "ae4488eb15c92eac90d40ac0a277c502",
-    "title": "After 8,000 layoffs, Meta CEO Mark Zuckerberg makes a 'confession' to employees; says: We don't expect more layoffs this ​year, but don't want to overpromise because...",
-    "description": "Tech News News: Meta CEO Mark Zuckerberg has a problem he can't memo his way out of. A month after Meta cut 8,000 jobs and reassigned another 7,000 people to AI work,.",
-    "content": "Meta CEO Mark Zuckerberg admits \"mistakes\" in AI overhaul memo, promises no more 2026 layoffs after 8,000 job cuts\nMeta CEO Mark Zuckerberg has a problem he can't memo his way out of. A month after Meta cut 8,000 jobs and reassigned another 7,000 peo... [4761 chars]",
-    "url": "https://timesofindia.indiatimes.com/technology/tech-news/after-8000-layoffs-meta-ceo-mark-zuckerberg-makes-a-confession-to-employees-says-we-dont-expect-more-layoffs-this-year-but-dont-want-to-overpromise-because-/articleshow/131801066.cms",
-    "image": "https://static.toiimg.com/thumb/msid-131801066,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-    "publishedAt": "2026-06-17T13:04:00Z",
-    "lang": "en",
-    "source": {
-      "id": "9a9a0fb79c70bbf499d39baca94921ae",
-      "name": "Times of India",
-      "url": "https://timesofindia.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "f9c4e0583697c3a68e389093726f975d",
-    "title": "Robinhood's note on 10% layoffs shows blaming AI isn't cutting it",
-    "description": "Unlike many of his tech industry peers who have cut thousands of jobs citing the need to restructure to make the most of AI, Robinhood's CEO Vlad Tenev conspicuously made no mention of AI in his note about layoffs.",
-    "content": "It appears using AI as a cover story for cutting jobs is fast falling out of fashion.\nUnlike many of his tech industry peers who have cut thousands of jobs this year citing the need to restructure their teams to make the most of AI, Robinhood’s CEO V... [2274 chars]",
-    "url": "https://techcrunch.com/2026/06/16/robinhoods-note-on-10-layoffs-shows-blaming-ai-isnt-cutting-it/",
-    "image": "https://techcrunch.com/wp-content/uploads/2021/01/robinhood-volatility.jpg?resize=1200,675",
-    "publishedAt": "2026-06-16T14:50:09Z",
-    "lang": "en",
-    "source": {
-      "id": "732b46cdef66b68ee2fbc940e79f81de",
-      "name": "TechCrunch",
-      "url": "https://techcrunch.com",
-      "country": "us"
-    }
-  },
-  {
-    "id": "ad0163c81649f54d0f20638f66366687",
-    "title": "China Inc Deploys ‘Quiet’ Layoffs As AI Adoption Outpaces Job Creation",
-    "description": "Chinese firms quietly cut jobs as AI tools replace roles, avoiding mass layoffs to maintain stability",
-    "content": "Beijing: Liu, a Hangzhou-based contractor at a large Chinese internet firm, says her employer began quietly firing contractors in March after it ordered staff to use AI tools including AI agent OpenClaw, which saw lightning-fast adoption in ​China th... [5926 chars]",
-    "url": "https://www.deccanchronicle.com/world/neighbours/china-inc-deploys-quiet-layoffs-as-ai-adoption-outpaces-job-creation-1962650",
-    "image": "https://www.deccanchronicle.com/h-upload/2026/03/12/2020732-chinatrain.jpg",
-    "publishedAt": "2026-06-10T13:16:40Z",
-    "lang": "en",
-    "source": {
-      "id": "214d496d625fc657723cf4da80cff8ce",
-      "name": "Deccan Chronicle",
-      "url": "https://www.deccanchronicle.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "0f58a183457166752d27c7392521171e",
-    "title": "Salesforce Layoffs: Why Software Giant Is Cutting Jobs Again Despite Its Big AI Push",
-    "description": "Salesforce Layoffs: Salesforce has cut more jobs across Agentforce, Mulesoft and Marketing Cloud as the software giant doubles down on AI growth., Companies, Times Now",
-    "content": "Salesforce Layoffs: Salesforce’s latest layoffs have raised fresh questions about its AI future. (File Photo)\nPhoto : iStock\nSalesforce Layoffs: Salesforce has conducted another round of layoffs, with employees across multiple business units affected... [2807 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/salesforce-layoffs-why-software-giant-is-cutting-jobs-again-despite-its-big-ai-push-article-154549355",
-    "image": "https://images.timesnownews.com/thumb/msid-154549355,width-1280,height-720,resizemode-75/154549355.jpg",
-    "publishedAt": "2026-06-10T06:23:45Z",
     "lang": "en",
     "source": {
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
