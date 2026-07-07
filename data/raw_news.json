@@ -1,5 +1,85 @@
 [
   {
+    "id": "b440d89ab9e4fc8f8ae687aea8027546",
+    "title": "Microsoft lays off 4,800 as AI investments reshape business",
+    "description": "Microsoft layoffs see nearly 2.1 percent jobs cut as the company restructures its Xbox and commercial business to prioritise artificial intelligence investments.",
+    "content": "The Express Global Desk at indianexpress.com which delivers authoritative, verified, and context-driven coverage of key international developments shaping global politics, policy, and migration trends. The desk focuses on stories with direct relevanc... [1441 chars]",
+    "url": "https://indianexpress.com/article/world/microsoft-layoffs-4800-jobs-cut-xbox-commercial-ai-restructuring-10774405/",
+    "image": "https://images.indianexpress.com/2026/04/Microsoft-Reuters.jpg",
+    "publishedAt": "2026-07-06T15:51:37Z",
+    "lang": "en",
+    "source": {
+      "id": "6a3aad3dbb44ac873f72b594aaea22c4",
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "7bab5bd568f81781ee2a6ee1e01ce529",
+    "title": "Microsoft cuts 4,800 positions, insists jobs 'not being replaced by AI'",
+    "description": "Microsoft will cut about 4,800 jobs as it restructures around artificial intelligence, saying the layoffs are not the result of AI replacing workers.",
+    "content": "Microsoft said on Monday that it will eliminate roughly 4,800 jobs – or about 2.1% of its global workforce – as it restructures parts of the company to prioritize artificial intelligence investments and other long-term business goals.\nThe reductions ... [3195 chars]",
+    "url": "https://www.foxbusiness.com/fox-news-tech/microsoft-ai-layoffs-workforce-restructuring",
+    "image": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2024/02/0/0/Microsoft-Logo.jpg?ve=1&tl=1",
+    "publishedAt": "2026-07-06T15:13:43Z",
+    "lang": "en",
+    "source": {
+      "id": "1b97b25c0ec482f85326378f82f7f815",
+      "name": "Fox Business",
+      "url": "https://www.foxbusiness.com",
+      "country": "us"
+    }
+  },
+  {
+    "id": "c885ea4f27f103eba290c7b85af6527d",
+    "title": "Microsoft AI layoffs: 4,800 jobs cut",
+    "description": "Microsoft announces 4,800 job cuts, joining other tech giants in shifting investments towards AI infrastructure amid restructuring. Read more at straitstimes.com.",
+    "content": "WASHINGTON - Microsoft is cutting about 2.1 per cent of its workforce, or roughly 4,800 jobs, as the Windows maker restructures parts of its commercial and Xbox businesses, joining other tech titans in a wave of layoffs as they shift investments towa... [3019 chars]",
+    "url": "https://www.straitstimes.com/business/microsoft-joins-ai-driven-tech-layoff-wave-with-4800-job-cuts",
+    "image": "https://cassette.sphdigital.com.sg/image/straitstimes/0b5fb4672e4ef43127e9e3ef30d0cc98433193a216fc1eb9b1d1ada2459eab24",
+    "publishedAt": "2026-07-06T15:10:00Z",
+    "lang": "en",
+    "source": {
+      "id": "72bbcd9c095a3d51c97cdda7a97dba31",
+      "name": "The Straits Times",
+      "url": "https://www.straitstimes.com",
+      "country": "sg"
+    }
+  },
+  {
+    "id": "507388fe73ce7c625c0e6a515bdde7b9",
+    "title": "Microsoft lays off nearly 5,000 employees across Xbox, commercial sales",
+    "description": "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday — the latest in a series of layoffs that’s stoking fears of AI replacing jobs. The layoffs will hit Xbox and commercial sales the hardest.",
+    "content": "Microsoft cut around 4,800 roles, or 2.1% of its global workforce, on Monday — the latest in a series of layoffs that’s stoking fears that AI will replace people at companies.\nThe layoffs will hit Xbox and commercial sales the hardest, according to a... [3287 chars]",
+    "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/",
+    "image": "https://techcrunch.com/wp-content/uploads/2026/05/microsoft-logo.jpg?resize=1200,800",
+    "publishedAt": "2026-07-06T15:08:46Z",
+    "lang": "en",
+    "source": {
+      "id": "732b46cdef66b68ee2fbc940e79f81de",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com",
+      "country": "us"
+    }
+  },
+  {
+    "id": "fcea2dc97068f5ed500fb7cd981a1deb",
+    "title": "Microsoft to cut 4,800 jobs, latest AI-driven tech layoffs",
+    "description": "Microsoft is cutting about 2.1% of its workforce, or roughly 4,800 jobs, the latest in a wave of tech layoffs.",
+    "content": "Microsoft is cutting about 2.1% of its workforce, or roughly 4,800 jobs, the latest in a wave of tech layoffs as the Windows maker spends heavily on AI infrastructure and ​uses the technology to improve efficiency across its business.\nThe cuts will p... [2687 chars]",
+    "url": "https://www.nbcnews.com/business/consumer/microsoft-layoffs-xbox-gaming-rcna353019",
+    "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-07/260706-xbox-vl-1019a-41d097.jpg",
+    "publishedAt": "2026-07-06T14:26:46Z",
+    "lang": "en",
+    "source": {
+      "id": "77b86639d1384ac68141803ec5db27c0",
+      "name": "NBC News",
+      "url": "https://www.nbcnews.com",
+      "country": "us"
+    }
+  },
+  {
     "id": "f34b2026de0c7bd76f30b14d9894022c",
     "title": "Microsoft layoffs: Up to 5,500 jobs at risk as AI push sparks fresh H1-B debate",
     "description": "US News: Microsoft is preparing to cut around 5,500 jobs in another round of layoffs as it continues shifting billions of dollars towards artificial intelligen.",
@@ -76,86 +156,6 @@
       "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
       "name": "Firstpost",
       "url": "https://www.firstpost.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "fce40df03eb338604cf3ddfdcd1e62d3",
-    "title": "Tech layoffs 2026 full list: Over 1 lakh jobs cut as AI reshapes workforce",
-    "description": "AI-driven restructuring, cost-cutting and slowing global demand have made 2026 another difficult year for workers. Technology firms, software companies and even automakers have announced more than 1 lakh layoffs, with companies increasingly citing artificial intelligence, automation and business restructuring as reasons behind the sweeping job cuts.",
-    "content": "The wave of layoffs that swept through the tech industry over the past two years is far from over. More than 1 lakh technology jobs have already disappeared in 2026, making this another brutal year for the global tech workforce.\nFrom Microsoft and In... [4413 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/tech-layoffs-2026-full-list-over-1-lakh-jobs-cut-as-ai-reshapes-workforce-educ-2936437-2026-06-29",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202606/tech-layoffs-2026-full-list-over-1-lakh-jobs-cut-as-ai-reshapes-workforce-293048660-16x9_0.jpg?VersionId=7SDp6cTx.xp0Dcy8mcmd5oZlPT60usSw",
-    "publishedAt": "2026-06-29T12:11:37Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "51d76d57183e06498dee9f731e1cb981",
-    "title": "BAT Layoffs: Tobacco Giant To Cut 5,500 Jobs, Shift 3,500 Roles To Strategic Partners In Major Overhaul",
-    "description": "The move comes amid growing concerns that AI adoption could accelerate job reductions, particularly in administrative and back-office functions, as companies seek higher productivity and lower costs.",
-    "content": "In a bid to accelerate its artificial intelligence-led transformation strategy, British American Tobacco has announced a global workforce reduction of 5,500 jobs, according to reports.\nThe workforce reduction is part of BAT's \"Fit2Win\" programme, int... [1603 chars]",
-    "url": "https://www.ndtvprofit.com/business/work-british-american-tobacco-bat-layoffs-tobacco-giant-to-cut-5-500-jobs-shift-3-500-roles-to-strategic-partners-in-major-overhaul-11702005",
-    "image": "https://c.ndtvimg.com/2026-06/u58lvbj8_job_625x300_29_June_26.png?im=FeatureCrop,algorithm=dnn,width=1600,height=900",
-    "publishedAt": "2026-06-29T10:53:16Z",
-    "lang": "en",
-    "source": {
-      "id": "73aabc646bff1356a46223f250cc6b52",
-      "name": "NDTV Profit",
-      "url": "https://www.ndtvprofit.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "554db703b098a5f1ec0e4fb748f8b3b0",
-    "title": "Oracle cut 21,000 jobs because of AI.",
-    "description": "That’s a workforce reduction of about 13 percent over the last 12 months, according to a disclosure filed Monday. And Oracle is hardly alone in at least partially attributing the cuts to AI advancements:\n> Worries are quickly mounting over job losses due to AI disruption, as 196 ‌tech ⁠companies laid off more than 119,800 employees so far this year, according to Layoffs.fyi.\n[Link: Oracle workforce shrinks by about 21,000 employees amid AI adoption | https://www.reuters.com/business/world-at-work/oracle-workforce-shrinks-by-about-13-2026-06-22/ | Reuters]",
-    "content": "T\nExternal Link\nOracle cut 21,000 jobs because of AI.\nThat’s a workforce reduction of about 13 percent over the last 12 months, according to a disclosure filed Monday. And Oracle is hardly alone in at least partially attributing the cuts to AI advanc... [695 chars]",
-    "url": "https://www.theverge.com/business/954330/oracle-cut-21000-jobs-because-of-ai",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
-    "publishedAt": "2026-06-23T07:50:04Z",
-    "lang": "en",
-    "source": {
-      "id": "cb749b89c7dc92dc2d517a49bb9a43ab",
-      "name": "The Verge",
-      "url": "https://www.theverge.com",
-      "country": "us"
-    }
-  },
-  {
-    "id": "8c654b69f6f248c83b5dbc721679c6a2",
-    "title": "AI Rewrites Oracle: 21,000 Jobs Cut As Cloud Wars Turn Fiercer, Tech Giants Double Down On Automation, Layoffs Signal New Rules; Will More People Lose Jobs To AI?",
-    "description": "Oracle cuts 21,000 jobs as AI reshapes the workforce, signaling a major shift in the tech industry. The company’s restructuring reflects rising severance costs, cloud competition, and rapid AI adoption, while global tech giants continue heavy investment in artificial intelligence despite widespread layoffs.",
-    "content": "3\nOracle Latoffs: Cuts 21,000 Jobs as AI Reshapes the Workforce- Oracle put out a pretty sharp, eye-catching shake-up of its workforce, cutting roughly 21,000 employees, close to 13% of its worldwide team, during fiscal 2026, even as artificial intel... [3771 chars]",
-    "url": "https://www.newsx.com/business/ai-rewrites-oracle-layoffs-21000-jobs-cut-as-cloud-wars-turn-fiercer-tech-giants-double-down-on-automation-layoffs-signal-new-rules-will-more-people-lose-jobs-to-ai-239614/",
-    "image": "https://www.newsx.com/wp-content/uploads/2026/06/oracle-layoff.jpg",
-    "publishedAt": "2026-06-23T04:49:27Z",
-    "lang": "en",
-    "source": {
-      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
-      "name": "NewsX",
-      "url": "https://www.newsx.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "ce8f5423906e89cff76f079a5c6d005b",
-    "title": "Oracle Layoffs: Tech Firm Cut 21,000 Jobs Last Year. Its Latest Filing Reveals Why",
-    "description": "Oracle Layoffs: Oracle disclosed a 21,000 employee reduction over the past year, citing AI adoption and restructuring amid heavy investments in AI infrastructure., Companies, Times Now",
-    "content": "Oracle Layoffs: Oracle's latest filing reveals a much larger workforce reduction than expected. (File Photo)\nOracle Layoffs: Oracle Corporation has revealed that its workforce shrank by 21,000 employees over the past year, highlighting the growing im... [2765 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/oracle-layoffs-tech-firm-cut-21000-jobs-last-year-its-latest-filing-reveals-why-article-154732089",
-    "image": "https://images.timesnownews.com/thumb/msid-154732089,width-1280,height-720,resizemode-75/154732089.jpg",
-    "publishedAt": "2026-06-23T04:37:31Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
