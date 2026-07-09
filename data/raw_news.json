@@ -1,5 +1,21 @@
 [
   {
+    "id": "c04e236259d5f60ca3413738299b6b32",
+    "title": "Allianz layoffs: German insurance giant to cut up to 1,800 jobs amid growing use of AI",
+    "description": "Artificial intelligence is claiming another wave of white-collar jobs. German insurance giant Allianz plans to eliminate up to 1,800 positions in its travel insurance business over the next 12 to 18 months as it automates more customer service and claims work using AI. The planned cuts affect Allianz Partners, the company's travel insurance division, where",
+    "content": "Artificial intelligence is claiming another wave of white-collar jobs. German insurance giant Allianz plans to eliminate up to 1,800 positions in its travel insurance business over the next 12 to 18 months as it automates more customer service and cl... [2082 chars]",
+    "url": "https://techstartups.com/2026/07/08/allianz-layoffs-german-insurance-giant-to-cut-up-to-1800-jobs-amid-growing-use-of-ai/",
+    "image": "https://techstartups.com/wp-content/uploads/2026/07/Allianz-layoffs-960x547.jpg",
+    "publishedAt": "2026-07-08T16:32:47Z",
+    "lang": "en",
+    "source": {
+      "id": "a3b1ce1267ce02959f0b6a7bc018cec4",
+      "name": "TechStartups.com",
+      "url": "https://techstartups.com",
+      "country": "us"
+    }
+  },
+  {
     "id": "b440d89ab9e4fc8f8ae687aea8027546",
     "title": "Microsoft lays off 4,800 as AI investments reshape business",
     "description": "Microsoft layoffs see nearly 2.1 percent jobs cut as the company restructures its Xbox and commercial business to prioritise artificial intelligence investments.",
@@ -141,22 +157,6 @@
       "name": "Free Press Journal",
       "url": "https://www.freepressjournal.in",
       "country": "in"
-    }
-  },
-  {
-    "id": "657d1575429078cd35a13f0e6cd27db3",
-    "title": "Microsoft to Announce Fresh Layoffs Impacting Thousands as AI Investment Surge Reshapes Workforce: Report",
-    "description": "Microsoft is reportedly planning to cut thousands of jobs across its sales, consulting and Xbox divisions as it ramps up AI investments.",
-    "content": "Microsoft Reportedly Preparing Smaller Layoffs Than Last Year\nThe layoffs are likely to affect less than 2.5% of Microsoft’s roughly 220,000-person global workforce. The company could announce the reductions as early as next week, though the timing m... [2221 chars]",
-    "url": "https://www.benzinga.com/markets/tech/26/06/60207103/microsoft-reportedly-plans-fresh-layoffs-impacting-thousands-as-ai-investment-reshapes-workforce",
-    "image": "https://cdn.benzinga.com/cdn-cgi/image/width=1200,height=800,fit=crop/files/images/story/2026/07/01/Microsoft-Logo-Displayed.jpg",
-    "publishedAt": "2026-07-01T03:09:13Z",
-    "lang": "en",
-    "source": {
-      "id": "d4e7f6a65e15620f4e4044691a99d0fd",
-      "name": "Benzinga",
-      "url": "https://www.benzinga.com",
-      "country": "us"
     }
   }
 ]
