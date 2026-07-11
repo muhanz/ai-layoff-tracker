@@ -1,5 +1,21 @@
 [
   {
+    "id": "a2d934df818fe8acd0797340f06efa5d",
+    "title": "Fox News AI Newsletter: Microsoft cuts thousands of jobs",
+    "description": "Microsoft layoffs cut 4,800 jobs amid AI investments and OpenAI unveils ChatGPT Work to automate workplace tasks, in today's AI Newsletter.",
+    "content": "Welcome to Fox News' Artificial Intelligence newsletter with the latest AI technology advancements.\nIN TODAY'S NEWSLETTER:\n- Microsoft cuts 4,800 positions, insists jobs 'not being replaced by AI'\n- OpenAI unveils ChatGPT Work to automate workplace t... [2949 chars]",
+    "url": "https://www.foxnews.com/tech/ai-newsletter-microsoft-cuts-thousands-jobs",
+    "image": "https://static.foxnews.com/foxnews.com/content/uploads/2026/07/microsoft-ceo-satya-nadella.jpg",
+    "publishedAt": "2026-07-10T14:35:40Z",
+    "lang": "en",
+    "source": {
+      "id": "8da923084554b2821233d6c5c5f02c97",
+      "name": "Fox News",
+      "url": "https://www.foxnews.com",
+      "country": "us"
+    }
+  },
+  {
     "id": "c04e236259d5f60ca3413738299b6b32",
     "title": "Allianz layoffs: German insurance giant to cut up to 1,800 jobs amid growing use of AI",
     "description": "Artificial intelligence is claiming another wave of white-collar jobs. German insurance giant Allianz plans to eliminate up to 1,800 positions in its travel insurance business over the next 12 to 18 months as it automates more customer service and claims work using AI. The planned cuts affect Allianz Partners, the company's travel insurance division, where",
@@ -141,22 +157,6 @@
       "name": "New York Post",
       "url": "https://nypost.com",
       "country": "us"
-    }
-  },
-  {
-    "id": "3c633ebac084b962e59995dc785c8738",
-    "title": "Microsoft Plans Job Cuts Next Week; Thousands Of People Likely To Be Impacted",
-    "description": "Microsoft is preparing to cut thousands of jobs across sales, consulting and its Xbox division, according to reports. The layoffs are expected to affect less than 2.5% of its global workforce. Some employees may be reassigned instead of being let go. The move comes as the company increases AI investments while focusing on cost control.",
-    "content": "Microsoft is preparing to announce job cuts next week that will affect thousands of roles across sales, consulting and its Xbox gaming division, according to a report by Business Insider citing people familiar with the situation. The cuts are expecte... [1903 chars]",
-    "url": "https://www.freepressjournal.in/tech/microsoft-plans-job-cuts-next-week-thousands-of-people-likely-to-be-impacted",
-    "image": "https://media.assettype.com/freepressjournal/2025-07-02/43e4kjlm/microsoft-layoff.jpg",
-    "publishedAt": "2026-07-01T04:37:26Z",
-    "lang": "en",
-    "source": {
-      "id": "7eeaf9a839918543cc708f2d331c3be4",
-      "name": "Free Press Journal",
-      "url": "https://www.freepressjournal.in",
-      "country": "in"
     }
   }
 ]
