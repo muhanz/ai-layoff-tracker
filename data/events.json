@@ -1,7 +1,7 @@
 {
   "metadata": {
     "start_date": "2023-03-14",
-    "last_updated": "2026-07-16T08:09:28Z",
+    "last_updated": "2026-07-17T08:07:15Z",
     "total_confirmed": 241591,
     "total_estimated": 533286,
     "total_likely": 271925,
@@ -41,7 +41,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2023-05-01/ibm-to-pause-hiring-for-back-office-jobs-that-ai-could-kill": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-06-20"
         }
       }
@@ -61,7 +61,7 @@
       "link_status": {
         "https://www.wsj.com/articles/chegg-cuts-4-of-workforce-after-chatgpt-hurts-growth-c0b9a7cc": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -80,8 +80,8 @@
       "link_status": {
         "https://www.bbc.com/news/business-65631168": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -100,8 +100,8 @@
       "link_status": {
         "https://blog.dropbox.com/topics/company/a-message-from-drew": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -120,8 +120,8 @@
       "link_status": {
         "https://about.fb.com/news/2023/03/mark-zuckerberg-meta-year-of-efficiency/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -140,8 +140,8 @@
       "link_status": {
         "https://blog.google/inside-google/message-ceo/january-update/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -160,8 +160,8 @@
       "link_status": {
         "https://blogs.microsoft.com/blog/2023/01/18/subject-focusing-on-our-short-and-long-term-opportunity/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -180,7 +180,7 @@
       "link_status": {
         "https://newsroom.spotify.com/2023-06-05/an-update-on-spotifys-plans/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -199,7 +199,7 @@
       "link_status": {
         "https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -218,7 +218,7 @@
       "link_status": {
         "https://www.nytimes.com/2024/01/11/technology/google-layoffs.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -237,7 +237,7 @@
       "link_status": {
         "https://www.reuters.com/technology/sap-restructure-8000-roles-ai-push-2024-01-23/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -256,7 +256,7 @@
       "link_status": {
         "https://www.cnbc.com/2024/01/30/ups-to-cut-12000-jobs.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -275,7 +275,7 @@
       "link_status": {
         "https://www.businessinsider.com/duolingo-laid-off-workers-replaced-ai-2024-1": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -294,7 +294,7 @@
       "link_status": {
         "https://www.theverge.com/2024/4/18/24133814/google-cut-hundreds-core-teams": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -313,7 +313,7 @@
       "link_status": {
         "https://www.reuters.com/business/autos-transportation/tesla-lay-off-more-than-10-its-workforce-2024-04-15/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -332,7 +332,7 @@
       "link_status": {
         "https://www.aboutamazon.com/news/company-news/andy-jassy-update-on-amazon-layoffs-2024": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -351,7 +351,7 @@
       "link_status": {
         "https://www.reuters.com/technology/klarna-says-ai-approach-warming-up-ipo-investors-2024-08-27/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -370,7 +370,7 @@
       "link_status": {
         "https://www.intuit.com/blog/news-social/intuit-ceo-sasan-goodarzi-shares-strategic-decisions/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -389,7 +389,7 @@
       "link_status": {
         "https://www.reuters.com/technology/cisco-cut-thousands-jobs-shift-focus-ai-2024-02-14/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -408,7 +408,7 @@
       "link_status": {
         "https://www.reuters.com/technology/dell-cut-about-6650-jobs-2024-02-05/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -427,7 +427,7 @@
       "link_status": {
         "https://www.cnbc.com/2025/01/09/microsoft-lays-off-1900-activision-blizzard-xbox-employees.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -446,7 +446,7 @@
       "link_status": {
         "https://www.theverge.com/2025/1/21/google-layoffs-2025": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -465,8 +465,8 @@
       "link_status": {
         "https://www.statista.com/statistics/1127080/worldwide-tech-layoffs-covid-19-biggest/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -485,7 +485,7 @@
       "link_status": {
         "https://about.fb.com/news/2025/02/performance-based-exits/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -504,7 +504,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2025-01-28/salesforce-cuts-1000-jobs": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -523,8 +523,8 @@
       "link_status": {
         "https://www.workday.com/en-us/company/latest/newsroom/press-releases/press-release-details.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -543,8 +543,8 @@
       "link_status": {
         "https://newsroom.spotify.com/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -563,7 +563,7 @@
       "link_status": {
         "https://www.wsj.com/business/earnings/cloudflare-to-slash-1-100-jobs-due-to-ai-driven-restructuring-plan-640f7b52": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -582,7 +582,7 @@
       "link_status": {
         "https://www.reuters.com/business/world-at-work/linkedin-is-planning-lay-off-5-staff-latest-tech-sector-cuts-source-says-2026-05-13/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -601,8 +601,8 @@
       "link_status": {
         "https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -621,7 +621,7 @@
       "link_status": {
         "https://www.marketwatch.com/story/upwork-to-cut-24-of-staff-in-restructuring-citing-evolving-nature-of-work-ab064f91": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-07-01"
         }
       }
@@ -641,7 +641,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2026-05-07/google-translate-rival-deepl-announces-plans-to-cut-25-of-staff": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-06-20"
         }
       }
@@ -661,7 +661,7 @@
       "link_status": {
         "https://www.marketwatch.com/story/bill-holdings-to-cut-workforce-by-up-to-30-2e977878": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-07-01"
         }
       }
@@ -681,8 +681,8 @@
       "link_status": {
         "https://thenextweb.com/news/zoominfo-beat-earnings-cut-600-jobs-and-lost-29-per-cent-of-its-stock-price-its-database-is-being-repriced-by-ai": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -701,7 +701,7 @@
       "link_status": {
         "https://www.wsj.com/business/retail/walmart-layoffs-relocates-technology-jobs-23bbf322": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -720,8 +720,8 @@
       "link_status": {
         "https://www.calcalistech.com/ctechnews/article/rjwumhukfx": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -740,7 +740,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2026-05-15/kraken-cuts-150-workers-after-deploying-ai-ipo-may-slip-to-2027": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-06-20"
         }
       }
@@ -760,8 +760,8 @@
       "link_status": {
         "https://www.theblock.co/post/401322/crypto-data-firm-dune-cuts-25-of-staff-citing-ai-efficiencies": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -780,8 +780,8 @@
       "link_status": {
         "https://www.gamblinginsider.com/news/160339/gambling-com-to-cut-25-of-jobs-in-ai-first-shift-as-q1-earnings-hurt-by-rising-costs": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -800,8 +800,8 @@
       "link_status": {
         "https://techcrunch.com/2026/05/08/truecaller-slashes-70-jobs-amid-declining-ad-sales/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -820,7 +820,7 @@
       "link_status": {
         "https://www.saechsische.de/wirtschaft/regional/staffbase-streicht-jede-fuenfte-stelle-harter-einschnitt-bei-saechsischem-einhorn-FKVL5SIOTNCWXJMUEUFAGQUAHY.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -839,7 +839,7 @@
       "link_status": {
         "https://www.streetinsider.com/Corporate+News/Phreesia+eliminates+220+positions+in+restructuring+plan/26468756.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -858,7 +858,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2026-05-11/gitlab-says-will-cut-jobs-to-spend-on-growth-in-agentic-era": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-06-20"
         }
       }
@@ -878,8 +878,8 @@
       "link_status": {
         "https://www.timesnownews.com/business-economy/companies/cloudflare-layoffs-we-didnt-cut-jobs-because-were-struggling-ceo-defends-job-cuts-article-154407431": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -898,7 +898,7 @@
       "link_status": {
         "https://www.news18.com/business/economy/meta-layoffs-8000-jobs-cut-globally-7000-employees-shifted-to-ai-focused-roles-ws-l-10100856.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -917,8 +917,8 @@
       "link_status": {
         "https://www.timesnownews.com/business-economy/companies/standard-chartered-layoffs-why-banking-giant-is-planning-to-fire-over-7000-employees-article-154349900": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -937,8 +937,8 @@
       "link_status": {
         "https://www.livemint.com/companies/news/artificial-intelligence-will-destroy-certain-jobs-says-hsbc-ceo-urges-staff-to-not-resist-the-change-11779287451571.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -957,8 +957,8 @@
       "link_status": {
         "https://block.xyz/inside/from-hierarchy-to-intelligence": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -977,7 +977,7 @@
       "link_status": {
         "https://www.businessinsider.com/oracle-layoffs-2025": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -996,7 +996,7 @@
       "link_status": {
         "https://www.cnbc.com/2024/08/01/intel-to-lay-off-more-than-10percent-of-staff.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1015,8 +1015,8 @@
       "link_status": {
         "https://www.cnbc.com/2026/04/24/20k-job-cuts-at-meta-microsoft-raise-concern-of-ai-labor-crisis-.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1035,7 +1035,7 @@
       "link_status": {
         "https://www.bloomberg.com/news/articles/2023-03-23/accenture-to-cut-19-000-jobs-in-restructuring": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1054,8 +1054,8 @@
       "link_status": {
         "https://www.cnbc.com/2025/12/21/ai-job-cuts-amazon-microsoft-and-more-cite-ai-for-2025-layoffs.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1074,7 +1074,7 @@
       "link_status": {
         "https://www.reuters.com/business/finance/citi-layoffs-2024-01-13/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1093,7 +1093,7 @@
       "link_status": {
         "https://www.businessinsider.com/tcs-layoffs-ai-automation-2025": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1114,13 +1114,13 @@
       "link_status": {
         "https://thenextweb.com/news/oracle-layoffs-march-2026": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         },
         "https://www.cxtoday.com/workforce-engagement-management/oracle-layoffs-2026-ai-cx-impact/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1139,8 +1139,8 @@
       "link_status": {
         "https://www.cnbc.com/2025/11/20/verizon-cutting-more-than-13000-jobs-as-it-restructures-.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1159,8 +1159,8 @@
       "link_status": {
         "https://www.peoplematters.in/news/strategic-hr/cognizant-may-cut-12000-to-15000-jobs-globally-under-project-leap-49579": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1179,8 +1179,8 @@
       "link_status": {
         "https://www.foxbusiness.com/economy/panasonic-cutting-10000-jobs-from-its-workforce": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1199,8 +1199,8 @@
       "link_status": {
         "https://www.finalroundai.com/blog/ups-layoffs-2025": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1219,7 +1219,7 @@
       "link_status": {
         "https://www.reuters.com/business/retail-consumer/walmart-layoffs-2026/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1240,13 +1240,13 @@
       "link_status": {
         "https://www.biopharmadive.com/news/novo-nordisk-layoffs-restructuring-obesity-drug-competition/759748/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         },
         "https://www.cnn.com/2025/09/10/business/novo-nordisk-layoffs-intl": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1267,13 +1267,13 @@
       "link_status": {
         "https://www.cnbc.com/2026/05/05/coinbase-cuts-headcount-by-14percent-citing-ai-acceleration-the-shares-are-gaining.html": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         },
         "https://fortune.com/2026/05/05/coinbase-layoffs-14-of-employees-ai-tech-ai-job-anxiety-crypto/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1292,8 +1292,8 @@
       "link_status": {
         "https://www.latimes.com/business/story/2026-05-29/another-tech-company-says-it-will-cut-hundreds-of-jobs-amid-pivot-to-ai": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1312,8 +1312,8 @@
       "link_status": {
         "https://www.timesnownews.com/business-economy/companies/tech-layoffs-google-is-cutting-jobs-againheres-which-teams-were-affected-this-time-article-154462748": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1332,7 +1332,7 @@
       "link_status": {
         "https://www.financialexpress.com/life/technology/meta-to-cut-over-2200-jobs-in-menlo-park-as-ai-restructuring-accelerates/4257195/": {
           "alive": false,
-          "last_checked": "2026-07-16",
+          "last_checked": "2026-07-17",
           "last_alive": "2026-07-15"
         }
       }
@@ -1352,7 +1352,7 @@
       "link_status": {
         "https://www.firstpost.com/tech/salesforce-layoff-fresh-round-of-job-cuts-hits-ai-and-software-teams-14020826.html": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1371,7 +1371,7 @@
       "link_status": {
         "https://www.reuters.com/business/world-at-work/oracle-workforce-shrinks-by-about-13-2026-06-22/": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1390,7 +1390,7 @@
       "link_status": {
         "https://www.ndtvprofit.com/business/work-british-american-tobacco-bat-layoffs-tobacco-giant-to-cut-5-500-jobs-shift-3-500-roles-to-strategic-partners-in-major-overhaul-11702005": {
           "alive": false,
-          "last_checked": "2026-07-16"
+          "last_checked": "2026-07-17"
         }
       }
     },
@@ -1409,8 +1409,8 @@
       "link_status": {
         "https://timesofindia.indiatimes.com/technology/tech-news/after-8000-layoffs-meta-ceo-mark-zuckerberg-makes-a-confession-to-employees-says-we-dont-expect-more-layoffs-this-year-but-dont-want-to-overpromise-because-/articleshow/131801066.cms": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1429,8 +1429,8 @@
       "link_status": {
         "https://timesofindia.indiatimes.com/world/us/microsoft-layoffs-up-to-5500-jobs-at-risk-as-ai-push-sparks-fresh-h1-b-debate/articleshow/132118010.cms": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1449,8 +1449,8 @@
       "link_status": {
         "https://indianexpress.com/article/world/microsoft-layoffs-4800-jobs-cut-xbox-commercial-ai-restructuring-10774405/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     },
@@ -1469,8 +1469,8 @@
       "link_status": {
         "https://techstartups.com/2026/07/08/allianz-layoffs-german-insurance-giant-to-cut-up-to-1800-jobs-amid-growing-use-of-ai/": {
           "alive": true,
-          "last_checked": "2026-07-16",
-          "last_alive": "2026-07-16"
+          "last_checked": "2026-07-17",
+          "last_alive": "2026-07-17"
         }
       }
     }
