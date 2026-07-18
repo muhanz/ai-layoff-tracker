@@ -1,5 +1,21 @@
 [
   {
+    "id": "d9c96ef532105c7c9cb644f4c0a851ea",
+    "title": "US judge won't block Meta from laying off workers who filed AI discrimination lawsuit",
+    "description": "​​District Judge William Orrick in Oakland, California, in a written order said he would not stop Meta from carrying out the layoffs beginning July 22 while the merits of the workers' novel legal claims are decided in private arbitration. ​​The lawsuit filed on Monday claims that in selecting jobs to cut, Meta relied on AI tools that measured productivity and AI token usage, disadvantaging people who missed work because of medical conditions or to care for family members.",
+    "content": "Synopsis\n​​District Judge William Orrick in Oakland, California, in a written order said he would not stop Meta from carrying out the layoffs beginning July 22 while the merits of the workers' novel legal claims are decided in private arbitration. ​​... [4698 chars]",
+    "url": "https://economictimes.indiatimes.com/tech/technology/us-judge-wont-block-meta-from-laying-off-workers-who-filed-ai-discrimination-lawsuit/articleshow/132467051.cms",
+    "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-33068,resizemode-75,msid-132467051/tech/technology/us-judge-wont-block-meta-from-laying-off-workers-who-filed-ai-discrimination-lawsuit.jpg",
+    "publishedAt": "2026-07-17T17:38:34Z",
+    "lang": "en",
+    "source": {
+      "id": "5464668c1f0466950a0b2fab5249ec6c",
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "a2d934df818fe8acd0797340f06efa5d",
     "title": "Fox News AI Newsletter: Microsoft cuts thousands of jobs",
     "description": "Microsoft layoffs cut 4,800 jobs amid AI investments and OpenAI unveils ChatGPT Work to automate workplace tasks, in today's AI Newsletter.",
@@ -141,22 +157,6 @@
       "name": "Times of India",
       "url": "https://timesofindia.indiatimes.com",
       "country": "in"
-    }
-  },
-  {
-    "id": "0176f30f1d245eaefc4409e12f68b0ce",
-    "title": "Microsoft to slash thousands of jobs as AI spending concerns fuel third major layoff round in a year: report",
-    "description": "Microsoft is reportedly planning yet another round of layoffs that will slash thousands of roles next week in an effort to cut costs, as concerns about out-of-control AI spending mount.",
-    "content": "Microsoft is reportedly planning yet another round of layoffs that will slash thousands of roles next week in an effort to cut costs, as concerns about out-of-control AI spending mount.\nLess than 2.5% of the company’s 220,000-person workforce – or fe... [2801 chars]",
-    "url": "https://nypost.com/2026/07/01/business/microsoft-to-slash-thousands-of-jobs-as-ai-spending-concerns-fuel-third-major-layoff-round-in-a-year-report/",
-    "image": "https://nypost.com/wp-content/uploads/sites/2/2026/07/crop-39854337.jpg?quality=75&strip=all&w=1200",
-    "publishedAt": "2026-07-01T15:12:32Z",
-    "lang": "en",
-    "source": {
-      "id": "95a96a1867c4dac6f720e9d08d4c1b96",
-      "name": "New York Post",
-      "url": "https://nypost.com",
-      "country": "us"
     }
   }
 ]
