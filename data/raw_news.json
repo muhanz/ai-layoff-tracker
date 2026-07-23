@@ -1,5 +1,21 @@
 [
   {
+    "id": "c91bbb769ef8c2a97748910e209f18fb",
+    "title": "Amazon cuts jobs in AGI team as it sharpens AI focus and restructures division",
+    "description": "Amazon has cut jobs in its AGI team as it sharpens its AI focus. The company has not revealed the number of layoffs but says AI remains a top priority.",
+    "content": "Amazon has cut jobs in its Artificial General Intelligence (AGI) team. This is the latest round of smaller job cuts at the company after its much bigger layoffs earlier this year. The company did not say exactly how many employees lost their jobs.\nTh... [1539 chars]",
+    "url": "https://www.hindustantimes.com/world-news/us-news/amazon-cuts-jobs-in-agi-team-as-it-sharpens-ai-focus-and-restructures-division-101784741714424.html",
+    "image": "https://www.hindustantimes.com/ht-img/img/2026/07/22/550x309/AMAZON-INDIA-INVESTMENT-0_1784742407473_1784742416836_fa640d48-a801-4c0a-9083-efbbee8257cb.JPG",
+    "publishedAt": "2026-07-22T17:50:27Z",
+    "lang": "en",
+    "source": {
+      "id": "21468bec836de1ebb209ff6f78fbfe3e",
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "f2c42ed478ddd40867a6750432382745",
     "title": "Intel to cut jobs in Data Center and AI Group, company says: As part of our broader strategy to become a more ...",
     "description": "Tech News News: Intel has reportedly started a new round of layoffs, this time targeting its data center group. According to reports, Intel told employees in its data.",
@@ -141,22 +157,6 @@
       "name": "NBC News",
       "url": "https://www.nbcnews.com",
       "country": "us"
-    }
-  },
-  {
-    "id": "71ec60c985d356f38610c6c12ab80f2c",
-    "title": "Microsoft to cut 4,800 jobs as AI spending continues to rise",
-    "description": "The latest round of layoffs comes at a time when major technology companies are spending billions of dollars on AI infrastructure and facing growing pressure to show returns on those investments.",
-    "content": "Microsoft is laying off around 4,800 employees, or about 2.1% of its global workforce, as the company continues to invest heavily in artificial intelligence (AI) while looking for ways to improve efficiency across its business, reported Reuters.\nThe ... [3026 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/microsoft-to-cut-4800-jobs-as-ai-spending-continues-to-rise-bsc-2941900-2026-07-06",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/microsoft-layoffs-060640915-16x9_0.jpeg?VersionId=zUCwo_3tshI_0zA9Py7SG7eM0k5hArvv",
-    "publishedAt": "2026-07-06T14:08:36Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
     }
   }
 ]
