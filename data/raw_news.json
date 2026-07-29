@@ -1,5 +1,21 @@
 [
   {
+    "id": "727d8317a07cb83bfc150177b0366f7c",
+    "title": "Amazon layoffs: Why is it gutting Nova AI models for one system?",
+    "description": "Amazon has reportedly cut jobs, shut a research lab and is retiring most Nova AI models as it bets its resources on building one new frontier system.",
+    "content": "Three years after Andy Jassy told staff that Amazon would chase artificial general intelligence with the same urgency as its biggest rivals, the company is narrowing that ambition down to a single wager: one frontier model, built by one team, backed ... [4319 chars]",
+    "url": "https://www.livemint.com/companies/news/amazon-layoffs-why-is-it-gutting-nova-ai-models-for-one-system-11785247074815.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/07/28/1600x900/logo/USA-TRUMP-DATA-CENTERS-0_1785248080521_1785248097055_a8e566cb-9307-416f-90d9-d45c8a11b05f.JPG",
+    "publishedAt": "2026-07-28T14:51:12Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "ed5c73063f34a115afe6e07219321623",
     "title": "Amazon cuts jobs within artificial intelligence team",
     "description": "Amazon’s artificial general intelligence organization is the company’s latest target for workforce reductions even as the e-commerce giant continues to heavily invest in AI. On Thursday, an Amazon spokesperson confirmed the layoffs but declined to share specific details, including the number of layoffs and the types of roles cut. Over the last several years, Amazon has developed its own ...",
@@ -140,22 +156,6 @@
       "id": "8da923084554b2821233d6c5c5f02c97",
       "name": "Fox News",
       "url": "https://www.foxnews.com",
-      "country": "us"
-    }
-  },
-  {
-    "id": "c04e236259d5f60ca3413738299b6b32",
-    "title": "Allianz layoffs: German insurance giant to cut up to 1,800 jobs amid growing use of AI",
-    "description": "Artificial intelligence is claiming another wave of white-collar jobs. German insurance giant Allianz plans to eliminate up to 1,800 positions in its travel insurance business over the next 12 to 18 months as it automates more customer service and claims work using AI. The planned cuts affect Allianz Partners, the company's travel insurance division, where",
-    "content": "Artificial intelligence is claiming another wave of white-collar jobs. German insurance giant Allianz plans to eliminate up to 1,800 positions in its travel insurance business over the next 12 to 18 months as it automates more customer service and cl... [2082 chars]",
-    "url": "https://techstartups.com/2026/07/08/allianz-layoffs-german-insurance-giant-to-cut-up-to-1800-jobs-amid-growing-use-of-ai/",
-    "image": "https://techstartups.com/wp-content/uploads/2026/07/Allianz-layoffs-960x547.jpg",
-    "publishedAt": "2026-07-08T16:32:47Z",
-    "lang": "en",
-    "source": {
-      "id": "a3b1ce1267ce02959f0b6a7bc018cec4",
-      "name": "TechStartups.com",
-      "url": "https://techstartups.com",
       "country": "us"
     }
   }
