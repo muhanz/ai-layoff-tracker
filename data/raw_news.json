@@ -1,5 +1,21 @@
 [
   {
+    "id": "c918157ff29dced0dd0f9d721feaff0a",
+    "title": "Visa Layoffs: Why Payment Giant Plans To Fire Nearly 2,600 Employees",
+    "description": "Visa will cut about 2,600 jobs, mainly in tech and product teams, as it boosts efficiency, expands AI investments and focuses on future growth., Companies, Times Now",
+    "content": "Visa will eliminate nearly 7 per cent of its global workforce, affecting around 2,600 employees, as the payments giant moves to streamline operations and redirect resources toward future growth opportunities. The layoffs, confirmed by a company spoke... [4126 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/visa-layoffs-why-payment-giant-plans-to-fire-nearly-2600-employees-article-155206781",
+    "image": "https://images.timesnownews.com/thumb/msid-155206811,thumbsize-182082,width-1280,height-720,resizemode-75/155206811.jpg",
+    "publishedAt": "2026-07-29T05:11:55Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "727d8317a07cb83bfc150177b0366f7c",
     "title": "Amazon layoffs: Why is it gutting Nova AI models for one system?",
     "description": "Amazon has reportedly cut jobs, shut a research lab and is retiring most Nova AI models as it bets its resources on building one new frontier system.",
@@ -141,22 +157,6 @@
       "name": "The Economic Times",
       "url": "https://economictimes.indiatimes.com",
       "country": "in"
-    }
-  },
-  {
-    "id": "a2d934df818fe8acd0797340f06efa5d",
-    "title": "Fox News AI Newsletter: Microsoft cuts thousands of jobs",
-    "description": "Microsoft layoffs cut 4,800 jobs amid AI investments and OpenAI unveils ChatGPT Work to automate workplace tasks, in today's AI Newsletter.",
-    "content": "Welcome to Fox News' Artificial Intelligence newsletter with the latest AI technology advancements.\nIN TODAY'S NEWSLETTER:\n- Microsoft cuts 4,800 positions, insists jobs 'not being replaced by AI'\n- OpenAI unveils ChatGPT Work to automate workplace t... [2949 chars]",
-    "url": "https://www.foxnews.com/tech/ai-newsletter-microsoft-cuts-thousands-jobs",
-    "image": "https://static.foxnews.com/foxnews.com/content/uploads/2026/07/microsoft-ceo-satya-nadella.jpg",
-    "publishedAt": "2026-07-10T14:35:40Z",
-    "lang": "en",
-    "source": {
-      "id": "8da923084554b2821233d6c5c5f02c97",
-      "name": "Fox News",
-      "url": "https://www.foxnews.com",
-      "country": "us"
     }
   }
 ]
