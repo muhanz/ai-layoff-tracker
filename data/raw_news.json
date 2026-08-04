@@ -1,5 +1,21 @@
 [
   {
+    "id": "d4aa89b6283e94944420a2daae46f031",
+    "title": "Sridhar Vembu warns IT companies have stopped creating new jobs, AI costs are now out of control",
+    "description": "Zoho founder Sridhar Vembu has accepted that India’s IT sector, including Zoho, are not creating new jobs. Vembu says that all the funding is now going into AI investment. His comments come at a time when the industry is facing layoffs as companies try to cut costs elsewhere.",
+    "content": "India’s IT sector has grown for decades, becoming a key pillar for the economy and jobs. But Zoho founder Sridhar Vembu has claimed that AI has changed the IT sector, and now, no new jobs are being created. Instead, companies are going all-in on AI.\n... [3538 chars]",
+    "url": "https://www.indiatoday.in/technology/news/story/sridhar-vembu-warns-it-companies-have-stopped-creating-new-jobs-ai-costs-are-now-out-of-control-2962022-2026-08-03",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/zoho-founder-sridhar-vembu-29294243-16x9.jpg?VersionId=nAO1HfCD_6mEzvlvOj8niO08rvvAHQpx",
+    "publishedAt": "2026-08-03T03:02:34Z",
+    "lang": "en",
+    "source": {
+      "id": "c73686fdf0e30639d57eddaf7a77236e",
+      "name": "India Today",
+      "url": "https://www.indiatoday.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "c918157ff29dced0dd0f9d721feaff0a",
     "title": "Visa Layoffs: Why Payment Giant Plans To Fire Nearly 2,600 Employees",
     "description": "Visa will cut about 2,600 jobs, mainly in tech and product teams, as it boosts efficiency, expands AI investments and focuses on future growth., Companies, Times Now",
@@ -140,22 +156,6 @@
       "id": "9a9a0fb79c70bbf499d39baca94921ae",
       "name": "Times of India",
       "url": "https://timesofindia.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "d9c96ef532105c7c9cb644f4c0a851ea",
-    "title": "US judge won't block Meta from laying off workers who filed AI discrimination lawsuit",
-    "description": "​​District Judge William Orrick in Oakland, California, in a written order said he would not stop Meta from carrying out the layoffs beginning July 22 while the merits of the workers' novel legal claims are decided in private arbitration. ​​The lawsuit filed on Monday claims that in selecting jobs to cut, Meta relied on AI tools that measured productivity and AI token usage, disadvantaging people who missed work because of medical conditions or to care for family members.",
-    "content": "Synopsis\n​​District Judge William Orrick in Oakland, California, in a written order said he would not stop Meta from carrying out the layoffs beginning July 22 while the merits of the workers' novel legal claims are decided in private arbitration. ​​... [4698 chars]",
-    "url": "https://economictimes.indiatimes.com/tech/technology/us-judge-wont-block-meta-from-laying-off-workers-who-filed-ai-discrimination-lawsuit/articleshow/132467051.cms",
-    "image": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-33068,resizemode-75,msid-132467051/tech/technology/us-judge-wont-block-meta-from-laying-off-workers-who-filed-ai-discrimination-lawsuit.jpg",
-    "publishedAt": "2026-07-17T17:38:34Z",
-    "lang": "en",
-    "source": {
-      "id": "5464668c1f0466950a0b2fab5249ec6c",
-      "name": "The Economic Times",
-      "url": "https://economictimes.indiatimes.com",
       "country": "in"
     }
   }
