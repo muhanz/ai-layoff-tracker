@@ -1,5 +1,37 @@
 [
   {
+    "id": "860ca42e9b8768fd58a13f243ce20308",
+    "title": "Meta cut 8,000 jobs. CEO Mark Zuckerberg says AI is creating more work-but not inside Meta",
+    "description": "Meta's chief executive states artificial intelligence generates jobs via infrastructure demands. Thousands of corporate roles disappeared while construction jobs are emerging. The company plans significant investments in AI infrastructure for future growth. This expansion requires extensive data centers and specialized construction labor. Many employees faced layoffs during Meta's AI-focused restructuring.",
+    "content": "Synopsis\nMeta's chief executive states artificial intelligence generates jobs via infrastructure demands. Thousands of corporate roles disappeared while construction jobs are emerging. The company plans significant investments in AI infrastructure fo... [4440 chars]",
+    "url": "https://economictimes.indiatimes.com/news/international/global-trends/meta-cut-8000-jobs-zuckerberg-says-ai-is-creating-more-workbut-not-inside-meta/articleshow/132861760.cms",
+    "image": "https://img.etimg.com/thumb/msid-132862066,width-1200,height-630,imgsize-32958,overlay-economictimes/articleshow.jpg",
+    "publishedAt": "2026-08-04T13:12:00Z",
+    "lang": "en",
+    "source": {
+      "id": "5464668c1f0466950a0b2fab5249ec6c",
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "d328d1c0d02229d5c74cea06a8932a0c",
+    "title": "Inside Visa's India layoffs: AI push, surprise emails and deserted desks",
+    "description": "Visa sent layoff emails to employees in India before dawn as part of a global workforce cut. The move underscored how AI-led efficiency drives, cost controls and shifting workloads are reshaping jobs.",
+    "content": "For many Visa employees in India, the workday ended before it even began. In the early hours of July 29, several employees woke up to emails from the human resources team informing them that their jobs had been cut, according to a report by Livemint.... [3132 chars]",
+    "url": "https://www.indiatoday.in/jobs/story/why-did-visa-cut-2600-jobs-and-why-some-india-employees-caught-off-guard-busc-2963367-2026-08-04",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/visa-layoff-042519269-16x9_0.jpg?VersionId=cnIwsZnBQl_OVBlJM6tfAAjhtWsNnVvy",
+    "publishedAt": "2026-08-04T12:27:50Z",
+    "lang": "en",
+    "source": {
+      "id": "c73686fdf0e30639d57eddaf7a77236e",
+      "name": "India Today",
+      "url": "https://www.indiatoday.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "d4aa89b6283e94944420a2daae46f031",
     "title": "Sridhar Vembu warns IT companies have stopped creating new jobs, AI costs are now out of control",
     "description": "Zoho founder Sridhar Vembu has accepted that India’s IT sector, including Zoho, are not creating new jobs. Vembu says that all the funding is now going into AI investment. His comments come at a time when the industry is facing layoffs as companies try to cut costs elsewhere.",
@@ -124,38 +156,6 @@
       "id": "6a3aad3dbb44ac873f72b594aaea22c4",
       "name": "The Indian Express",
       "url": "https://indianexpress.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "c91bbb769ef8c2a97748910e209f18fb",
-    "title": "Amazon cuts jobs in AGI team as it sharpens AI focus and restructures division",
-    "description": "Amazon has cut jobs in its AGI team as it sharpens its AI focus. The company has not revealed the number of layoffs but says AI remains a top priority.",
-    "content": "Amazon has cut jobs in its Artificial General Intelligence (AGI) team. This is the latest round of smaller job cuts at the company after its much bigger layoffs earlier this year. The company did not say exactly how many employees lost their jobs.\nTh... [1539 chars]",
-    "url": "https://www.hindustantimes.com/world-news/us-news/amazon-cuts-jobs-in-agi-team-as-it-sharpens-ai-focus-and-restructures-division-101784741714424.html",
-    "image": "https://www.hindustantimes.com/ht-img/img/2026/07/22/550x309/AMAZON-INDIA-INVESTMENT-0_1784742407473_1784742416836_fa640d48-a801-4c0a-9083-efbbee8257cb.JPG",
-    "publishedAt": "2026-07-22T17:50:27Z",
-    "lang": "en",
-    "source": {
-      "id": "21468bec836de1ebb209ff6f78fbfe3e",
-      "name": "Hindustan Times",
-      "url": "https://www.hindustantimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "f2c42ed478ddd40867a6750432382745",
-    "title": "Intel to cut jobs in Data Center and AI Group, company says: As part of our broader strategy to become a more ...",
-    "description": "Tech News News: Intel has reportedly started a new round of layoffs, this time targeting its data center group. According to reports, Intel told employees in its data.",
-    "content": "Intel stock rises 4.84% as the company pushes major layoffs and restructuring in 2025; Citigroup raises price target to $24. Investors eye Q2 earnings for insights on whether Intel’s leaner approach will help the chipmaker regain market strength.\nInt... [4184 chars]",
-    "url": "https://timesofindia.indiatimes.com/technology/tech-news/intel-layoffs-intel-to-cut-jobs-in-data-center-and-ai-group-company-says-as-part-of-our-broader-strategy-to-become-a-more-/articleshow/132536364.cms",
-    "image": "https://static.toiimg.com/thumb/msid-132536381,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
-    "publishedAt": "2026-07-21T12:16:00Z",
-    "lang": "en",
-    "source": {
-      "id": "9a9a0fb79c70bbf499d39baca94921ae",
-      "name": "Times of India",
-      "url": "https://timesofindia.indiatimes.com",
       "country": "in"
     }
   }
