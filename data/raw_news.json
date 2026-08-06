@@ -1,5 +1,37 @@
 [
   {
+    "id": "07794324d8c6ac5e30fd40bf2468adf2",
+    "title": "Why more than 40 companies, including Amazon, Meta and Oracle, are cutting thousands of jobs: Check full list",
+    "description": "More than 40 companies, including Amazon, Meta, UPS and Walmart, have announced layoffs in 2026 as businesses cut costs, restructure and invest in AI. | Business News",
+    "content": "More than 40 companies have announced job cuts in 2026 so far. These layoffs are happening across many industries, including technology, media, finance, retail, healthcare, manufacturing, and consumer businesses. The layoffs show that companies are c... [1786 chars]",
+    "url": "https://www.hindustantimes.com/business/why-more-than-40-companies-including-amazon-meta-and-oracle-are-cutting-thousands-of-jobs-check-full-list-101785954691982.html",
+    "image": "https://www.hindustantimes.com/ht-img/img/2026/08/05/1600x900/logo/pexels-photo-9077350_1785955816821_1785955856242_4e8887c7-3669-44f0-aca6-3b5941e3ecaa.jpeg",
+    "publishedAt": "2026-08-05T19:04:13Z",
+    "lang": "en",
+    "source": {
+      "id": "21468bec836de1ebb209ff6f78fbfe3e",
+      "name": "Hindustan Times",
+      "url": "https://www.hindustantimes.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "1173a1e917f2dfcf1ec2440bf96ff58f",
+    "title": "Visa Cut 2600 Jobs Despite Strong Business: Is AI Becoming The Real Reason Behind Big Tech Layoffs?",
+    "description": "Visa has cut around 2,600 jobs globally despite strong business performance. Here's why the payments giant is betting on AI, how India is affected, and what it signals for the future of tech jobs.",
+    "content": "28\nThe payment industry has witnessed some of the biggest corporate layoffs this year, including Visa’s decision to cut about 2,600 jobs globally. But this story is different from many of the workforce cuts due to slowing business or declining profit... [4031 chars]",
+    "url": "https://www.newsx.com/business/visa-cut-2600-jobs-despite-strong-business-is-ai-becoming-the-real-reason-behind-big-tech-layoffs-257091/",
+    "image": "https://www.newsx.com/wp-content/uploads/2026/08/visa-lay-off.jpg",
+    "publishedAt": "2026-08-05T12:22:59Z",
+    "lang": "en",
+    "source": {
+      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
+      "name": "NewsX",
+      "url": "https://www.newsx.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "860ca42e9b8768fd58a13f243ce20308",
     "title": "Meta cut 8,000 jobs. CEO Mark Zuckerberg says AI is creating more work-but not inside Meta",
     "description": "Meta's chief executive states artificial intelligence generates jobs via infrastructure demands. Thousands of corporate roles disappeared while construction jobs are emerging. The company plans significant investments in AI infrastructure for future growth. This expansion requires extensive data centers and specialized construction labor. Many employees faced layoffs during Meta's AI-focused restructuring.",
@@ -124,38 +156,6 @@
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
       "name": "Times Now",
       "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "e6e1c4f40f25aa65559672c15359fdcd",
-    "title": "Uber layoffs: Company cuts 10% of customer service jobs as AI adoption grows",
-    "description": "Uber has cut 10% of jobs in its customer service division and asked some remote staff to relocate to office hubs. The move marks the company's clearest link yet between AI adoption, organisational simplification and workforce changes.",
-    "content": "Uber Technologies has cut 10% of jobs in its customer service division as the ride-hailing company expands its use of artificial intelligence (AI), simplifies operations and asks remote employees to relocate to office hubs, reported Bloomberg.\nThe la... [2703 chars]",
-    "url": "https://www.indiatoday.in/business/story/uber-layoffs-10-percent-customer-service-jobs-ai-adoption-job-cut-2954119-2026-07-23",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202607/uber-layoff-231447834-16x9_0.jpg?VersionId=xDs353rpB9ef2KX3cXW48LBRKoc.XLte",
-    "publishedAt": "2026-07-23T05:16:28Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "cd36e13a67d9263a58891f24a9cb93fd",
-    "title": "Amazon reduces AGI workforce as it doubles down on core AI projects",
-    "description": "Amazon has cut jobs in its artificial general intelligence group as part of its ongoing efforts to prioritize key AI initiatives, marking another round of workforce reductions since January's large-scale layoffs.",
-    "content": "Amazon on Wednesday cut jobs in its artificial general intelligence group, marking the latest in a series of smaller reductions across the company since a much larger one in January.\nArtificial general intelligence is a hypothetical ⁠AI ​system that ... [619 chars]",
-    "url": "https://indianexpress.com/article/technology/artificial-intelligence/amazon-reduces-agi-workforce-as-it-doubles-down-on-core-ai-projects-10799391/",
-    "image": "https://images.indianexpress.com/2026/04/Amazon-file-photo-express.jpg",
-    "publishedAt": "2026-07-23T02:36:28Z",
-    "lang": "en",
-    "source": {
-      "id": "6a3aad3dbb44ac873f72b594aaea22c4",
-      "name": "The Indian Express",
-      "url": "https://indianexpress.com",
       "country": "in"
     }
   }
