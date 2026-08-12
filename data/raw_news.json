@@ -1,5 +1,21 @@
 [
   {
+    "id": "f5bba6724b457fa4676d7e2b5e916865",
+    "title": "Survey finds AI adoption spurring shift in tech hiring from software to hardware",
+    "description": "Despite major layoffs, tech employment is stable even as Israeli software firms cut jobs amid AI advances, with hardware companies continuing to hire to meet demand for chips",
+    "content": "The wave of layoffs that has shaken Israel’s vaunted tech industry in recent weeks has sparked fears that artificial intelligence is curbing hiring and replacing jobs in the workplace. However, a survey published Tuesday indicated that AI is not a ha... [5570 chars]",
+    "url": "https://www.timesofisrael.com/survey-finds-ai-adoption-spurring-shift-in-tech-hiring-from-software-to-hardware/",
+    "image": "https://static-cdn.toi-media.com/www/uploads/2023/08/F201112GY05.jpg",
+    "publishedAt": "2026-08-11T18:52:08Z",
+    "lang": "en",
+    "source": {
+      "id": "5784855bc642514502eec4806fd222d1",
+      "name": "The Times of Israel",
+      "url": "https://www.timesofisrael.com",
+      "country": "is"
+    }
+  },
+  {
     "id": "ca96c6754541b32de8ab6f26f6b61e54",
     "title": "Salesforce Layoffs: 4th Job-Cut Round In A Year Sparks Fresh Questions Over AI’s Impact On Jobs",
     "description": "Salesforce plans to cut dozens of San Francisco jobs in October as AI reshapes its workforce, marking its fourth layoff round in under a year., Companies, Times Now",
@@ -141,22 +157,6 @@
       "name": "Livemint",
       "url": "https://www.livemint.com",
       "country": "in"
-    }
-  },
-  {
-    "id": "ed5c73063f34a115afe6e07219321623",
-    "title": "Amazon cuts jobs within artificial intelligence team",
-    "description": "Amazon’s artificial general intelligence organization is the company’s latest target for workforce reductions even as the e-commerce giant continues to heavily invest in AI. On Thursday, an Amazon spokesperson confirmed the layoffs but declined to share specific details, including the number of layoffs and the types of roles cut. Over the last several years, Amazon has developed its own ...",
-    "content": "By Alexis Weisend, The Seattle Times\nAmazon’s artificial general intelligence organization is the company’s latest target for workforce reductions even as the e-commerce giant continues to heavily invest in AI.\nOn Thursday, an Amazon spokesperson con... [1803 chars]",
-    "url": "https://www.courant.com/2026/07/24/amazon-cuts-jobs-within-artificial-intelligence-team-2/",
-    "image": "https://www.courant.com/wp-content/uploads/2026/07/202607231409MCT_____PHOTO____BIZ-AMZN-AI-JOB-CUTS-FILEPIC-GET.jpg?w=2000&h=1333",
-    "publishedAt": "2026-07-24T12:00:52Z",
-    "lang": "en",
-    "source": {
-      "id": "494f687bd1dfaa9f7b4a705c860671d0",
-      "name": "Hartford Courant",
-      "url": "https://www.courant.com",
-      "country": "us"
     }
   }
 ]
