@@ -1,5 +1,21 @@
 [
   {
+    "id": "c7e02f673dcf7c9e6e62ba88b68f7bd6",
+    "title": "Oracle plans to cut more jobs after 21,000 layoffs earlier this year: Report",
+    "description": "Oracle prepares for new job cuts amid AI infrastructure investment. Workforce shrank by 21,000 in fiscal 2026.",
+    "content": "The latest reported cuts follow a major reduction in Oracle's workforce during fiscal 2026. The company's employee count fell by around 21,000, or 13%, during the fiscal year that ended May 31.\nBy CNBCTV18.com\nOracle is said to be preparing for anoth... [2443 chars]",
+    "url": "https://www.cnbctv18.com/business/companies/oracle-plans-to-cut-more-jobs-after-21000-layoffs-earlier-this-year-report-19968269.htm",
+    "image": "https://images.cnbctv18.com/uploads/2026/07/oracle-1-2026-07-1ee80818fbc91680a7f96976b4ebef52.jpg?im=FitAndFill,width=1200,height=675",
+    "publishedAt": "2026-08-13T04:34:06Z",
+    "lang": "en",
+    "source": {
+      "id": "4bf882bd9fc07a7fc3ab723f04e4f261",
+      "name": "CNBC TV18",
+      "url": "https://www.cnbctv18.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "f5bba6724b457fa4676d7e2b5e916865",
     "title": "Survey finds AI adoption spurring shift in tech hiring from software to hardware",
     "description": "Despite major layoffs, tech employment is stable even as Israeli software firms cut jobs amid AI advances, with hardware companies continuing to hire to meet demand for chips",
@@ -140,22 +156,6 @@
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
       "name": "Times Now",
       "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "727d8317a07cb83bfc150177b0366f7c",
-    "title": "Amazon layoffs: Why is it gutting Nova AI models for one system?",
-    "description": "Amazon has reportedly cut jobs, shut a research lab and is retiring most Nova AI models as it bets its resources on building one new frontier system.",
-    "content": "Three years after Andy Jassy told staff that Amazon would chase artificial general intelligence with the same urgency as its biggest rivals, the company is narrowing that ambition down to a single wager: one frontier model, built by one team, backed ... [4319 chars]",
-    "url": "https://www.livemint.com/companies/news/amazon-layoffs-why-is-it-gutting-nova-ai-models-for-one-system-11785247074815.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/07/28/1600x900/logo/USA-TRUMP-DATA-CENTERS-0_1785248080521_1785248097055_a8e566cb-9307-416f-90d9-d45c8a11b05f.JPG",
-    "publishedAt": "2026-07-28T14:51:12Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
