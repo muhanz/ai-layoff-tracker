@@ -1,5 +1,37 @@
 [
   {
+    "id": "a0e3201bbc62689fa3291228f4945225",
+    "title": "Apple layoffs: iPhone maker to cut 200 jobs, half of it from a single product division",
+    "description": "Apple is undertaking significant workforce reductions, impacting over 200 roles within its Siri and Vision Pro divisions. This move, the company's most substantial since early 2024, signals a strategic pivot towards artificial intelligence and the development of new smart glasses, while addressing slower-than-expected adoption of the Vision Pro. The restructuring aims to reallocate resources to AI-powered features and updated technical requirements for Siri, with Apple committed to supporting affected employees through transition.",
+    "content": "Global tech giant Apple Inc is now looking to cut more than 200 jobs across multiple teams working on Siri and Vision Pro, according to Bloomberg. The recent step is the iPhone maker's first drastic move since its largest post-pandemic layoff wave in... [1875 chars]",
+    "url": "https://www.theweek.in/news/biz-tech/2026/08/22/apple-layoffs-iphone-maker-to-cut-200-jobs-half-of-it-from-a-single-product-division.html",
+    "image": "https://img.theweek.in/content/dam/week/week/news/biz-tech/images/2024/10/6/apple-ios-logo.jpg",
+    "publishedAt": "2026-08-22T09:45:33Z",
+    "lang": "en",
+    "source": {
+      "id": "7ba4ac19a3c25ba844bbd220fe4c860a",
+      "name": "THE WEEK",
+      "url": "https://www.theweek.in",
+      "country": "in"
+    }
+  },
+  {
+    "id": "499da3e457a93c9047906322aede61a7",
+    "title": "Apple Layoffs: Over 200 Jobs Cut Across Siri, Vision Pro Teams; Here's Why",
+    "description": "Apple is cutting more than 200 jobs across Siri, Vision Pro and software teams as it shifts resources towards AI and new device development., Companies, Times Now",
+    "content": "Apple is reshaping parts of its workforce as the technology giant places greater emphasis on artificial intelligence (AI) and upcoming hardware. More than 200 employees are reportedly affected by the latest restructuring, with job reductions spanning... [3892 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/apple-layoffs-over-200-jobs-cut-across-siri-vision-pro-teams-heres-why-article-155952359",
+    "image": "https://images.timesnownews.com/thumb/msid-155952400,thumbsize-122840,width-1280,height-720,resizemode-75/155952400.jpg",
+    "publishedAt": "2026-08-22T05:29:36Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "c7e02f673dcf7c9e6e62ba88b68f7bd6",
     "title": "Oracle plans to cut more jobs after 21,000 layoffs earlier this year: Report",
     "description": "Oracle prepares for new job cuts amid AI infrastructure investment. Workforce shrank by 21,000 in fiscal 2026.",
@@ -124,38 +156,6 @@
       "id": "c73686fdf0e30639d57eddaf7a77236e",
       "name": "India Today",
       "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "d4aa89b6283e94944420a2daae46f031",
-    "title": "Sridhar Vembu warns IT companies have stopped creating new jobs, AI costs are now out of control",
-    "description": "Zoho founder Sridhar Vembu has accepted that India’s IT sector, including Zoho, are not creating new jobs. Vembu says that all the funding is now going into AI investment. His comments come at a time when the industry is facing layoffs as companies try to cut costs elsewhere.",
-    "content": "India’s IT sector has grown for decades, becoming a key pillar for the economy and jobs. But Zoho founder Sridhar Vembu has claimed that AI has changed the IT sector, and now, no new jobs are being created. Instead, companies are going all-in on AI.\n... [3538 chars]",
-    "url": "https://www.indiatoday.in/technology/news/story/sridhar-vembu-warns-it-companies-have-stopped-creating-new-jobs-ai-costs-are-now-out-of-control-2962022-2026-08-03",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/zoho-founder-sridhar-vembu-29294243-16x9.jpg?VersionId=nAO1HfCD_6mEzvlvOj8niO08rvvAHQpx",
-    "publishedAt": "2026-08-03T03:02:34Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "c918157ff29dced0dd0f9d721feaff0a",
-    "title": "Visa Layoffs: Why Payment Giant Plans To Fire Nearly 2,600 Employees",
-    "description": "Visa will cut about 2,600 jobs, mainly in tech and product teams, as it boosts efficiency, expands AI investments and focuses on future growth., Companies, Times Now",
-    "content": "Visa will eliminate nearly 7 per cent of its global workforce, affecting around 2,600 employees, as the payments giant moves to streamline operations and redirect resources toward future growth opportunities. The layoffs, confirmed by a company spoke... [4126 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/visa-layoffs-why-payment-giant-plans-to-fire-nearly-2600-employees-article-155206781",
-    "image": "https://images.timesnownews.com/thumb/msid-155206811,thumbsize-182082,width-1280,height-720,resizemode-75/155206811.jpg",
-    "publishedAt": "2026-07-29T05:11:55Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
