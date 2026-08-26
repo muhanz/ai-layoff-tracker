@@ -1,5 +1,21 @@
 [
   {
+    "id": "f8705a6e596dc771e344583e08c7b964",
+    "title": "Tech layoffs 2026: More than 175,000 workers laid off as Apple, Microsoft, Oracle, Amazon, Meta, TikTok, Uber, LinkedIn and dozens of companies cut jobs amid AI boom",
+    "description": "Tech layoffs are accelerating in 2026 as big companies such as Apple, Microsoft, Oracle, Amazon, Meta, Linkedin, TikTok, Visa and dozens of other mega companies have announced slashing of jobs. Here's why AI, restructuring, cost-cutting and changing business priorities are reshaping the technology workforce. More than 175,000 technology workers had been laid off in 2026 by the middle of the year.",
+    "content": "Synopsis\nTech layoffs are accelerating in 2026 as big companies such as Apple, Microsoft, Oracle, Amazon, Meta, Linkedin, TikTok, Visa and dozens of other mega companies have announced slashing of jobs. Here's why AI, restructuring, cost-cutting and ... [15345 chars]",
+    "url": "https://economictimes.indiatimes.com/news/international/global-trends/tech-layoffs-2026-more-than-175000-workers-laid-off-as-apple-microsoft-oracle-amazon-meta-tiktok-uber-linkedin-and-dozens-of-companies-cut-jobs-amid-ai-boom/articleshow/133511127.cms",
+    "image": "https://img.etimg.com/thumb/msid-133511524,width-1200,height-630,imgsize-190788,overlay-economictimes/articleshow.jpg",
+    "publishedAt": "2026-08-25T12:50:00Z",
+    "lang": "en",
+    "source": {
+      "id": "5464668c1f0466950a0b2fab5249ec6c",
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "a0e3201bbc62689fa3291228f4945225",
     "title": "Apple layoffs: iPhone maker to cut 200 jobs, half of it from a single product division",
     "description": "Apple is undertaking significant workforce reductions, impacting over 200 roles within its Siri and Vision Pro divisions. This move, the company's most substantial since early 2024, signals a strategic pivot towards artificial intelligence and the development of new smart glasses, while addressing slower-than-expected adoption of the Vision Pro. The restructuring aims to reallocate resources to AI-powered features and updated technical requirements for Siri, with Apple committed to supporting affected employees through transition.",
@@ -140,22 +156,6 @@
       "id": "5464668c1f0466950a0b2fab5249ec6c",
       "name": "The Economic Times",
       "url": "https://economictimes.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "d328d1c0d02229d5c74cea06a8932a0c",
-    "title": "Inside Visa's India layoffs: AI push, surprise emails and deserted desks",
-    "description": "Visa sent layoff emails to employees in India before dawn as part of a global workforce cut. The move underscored how AI-led efficiency drives, cost controls and shifting workloads are reshaping jobs.",
-    "content": "For many Visa employees in India, the workday ended before it even began. In the early hours of July 29, several employees woke up to emails from the human resources team informing them that their jobs had been cut, according to a report by Livemint.... [3132 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/why-did-visa-cut-2600-jobs-and-why-some-india-employees-caught-off-guard-busc-2963367-2026-08-04",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/visa-layoff-042519269-16x9_0.jpg?VersionId=cnIwsZnBQl_OVBlJM6tfAAjhtWsNnVvy",
-    "publishedAt": "2026-08-04T12:27:50Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
       "country": "in"
     }
   }
