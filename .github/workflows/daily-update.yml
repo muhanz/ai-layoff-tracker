@@ -43,6 +43,9 @@ jobs:
       - name: Generate page
         run: python scripts/generate_page.py
 
+      - name: Generate translated pages
+        run: python scripts/generate_i18n.py
+
       - name: Regenerate OG image
         run: python scripts/generate_og_image.py
 

@@ -50,13 +50,14 @@ def build_switcher(active_code):
     return f'    <nav class="lang-switcher">\n{inner}\n    </nav>'
 
 
-def transform(base_html, lang_code, lang_attr, translations):
+def transform(base_html, lang_code, lang_attr, translations, regex_translations):
     """
     Apply all transformations to the English base HTML:
       1. Set <html lang="...">
       2. Replace hreflang block (already in base from generate_page.py)
       3. Swap lang switcher active item
       4. Apply UI string translations
+      5. Apply regex translations for strings that embed daily-changing numbers
     """
     html = base_html
 
@@ -78,7 +79,18 @@ def transform(base_html, lang_code, lang_attr, translations):
     for old, new in translations:
         html = html.replace(old, new)
 
+    # 5. Regex translations — the number is generated fresh each day, so it must
+    #    be captured and carried into the translation, never hardcoded in a key
+    for pattern, repl in regex_translations:
+        html = re.sub(pattern, repl, html)
+
     return html
+
+
+def _m_to_wan(m, template):
+    """Convert a captured '3.9' (millions) into '390' (万) inside template."""
+    wan = round(float(m.group(1)) * 100)
+    return template.format(wan=wan)
 
 
 # ─── Translation tables ──────────────────────────────────────────────────────
@@ -100,12 +112,8 @@ ZH_HANS = [
      '<div class="dd-live-badge"><span class="dd-live-dot"></span>实时</div>'),
     ('<div class="dd-label">JOBS LOST DIRECTLY TO AI</div>',
      '<div class="dd-label">直接因AI失去的工作岗位</div>'),
-    ("204,891 confirmed</span>", "204,891 已确认</span>"),
     ("scroll to see the full picture", "向下滚动查看全貌"),
     # progress bar
-    ("est. true AI impact via 6.7&times; multiplier: ~3.2M", "通过6.7倍乘数估算的真实AI影响：约320万"),
-    ("10.7% toward 30M by 2028", "已达2028年3000万目标的10.7%"),
-    ("documented &times; 6.7 unlabeled multiplier = ~3.2M estimated", "已记录 &times; 6.7未标注乘数 = 约320万估算"),
     ("target: 30M by 2028", "目标：2028年达3000万"),
     # projection
     ("&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs",
@@ -128,7 +136,6 @@ ZH_HANS = [
     ("scale: -100 to +100", "范围：-100到+100"),
     ("JOBS LOST DIRECTLY TO AI", "直接因AI流失的岗位"),
     ("since GPT-4 launch", "自GPT-4发布"),
-    ("confirmed &nbsp;·&nbsp; ~411/day", "已确认 &nbsp;·&nbsp; 约411/天"),
     ("JOBS PER UNEMPLOYED PERSON", "每名失业者对应职位数"),
     ("first time below 1.0 since pandemic (BLS, 2026)", "疫情以来首次低于1.0（BLS，2026）"),
     ("6.9M openings &nbsp;·&nbsp; 7.6M unemployed &nbsp;·&nbsp; more seekers than jobs",
@@ -171,6 +178,7 @@ ZH_HANS = [
      "我们不必再争论AI是否在抢工作。<br>我们能证明。那下一步呢？"),
     ("The question is no longer", "问题不再是"),
     ("it&#39;s", "而是"),
+    ("it&apos;s", "而是"),
     ("what next.", "下一步怎么办。"),
     ("We believe the answer is redesigning work for human flourishing:", "我们相信答案是重新设计工作以促进人类繁荣："),
     ("not fighting the wave, but learning to navigate it.", "不是与浪潮抗争，而是学会驾驭它。"),
@@ -226,7 +234,7 @@ ZH_HANS = [
     ("Data is for informational purposes only. Not investment or employment advice.",
      "数据仅供参考，不构成投资或就业建议。"),
     # JS
-    ("'No results'", "'暂无结果'"),
+    (">No results</td>", ">暂无结果</td>"),
     ("+ ' events'", "+ ' 个事件'"),
     ("'Submitting...'", "'提交中...'"),
     ("'Submit →'", "'提交 →'"),
@@ -245,11 +253,7 @@ ZH_HANT = [
      '<div class="dd-live-badge"><span class="dd-live-dot"></span>即時</div>'),
     ('<div class="dd-label">JOBS LOST DIRECTLY TO AI</div>',
      '<div class="dd-label">直接因AI失去的工作崗位</div>'),
-    ("204,891 confirmed</span>", "204,891 已確認</span>"),
     ("scroll to see the full picture", "向下捲動查看全貌"),
-    ("est. true AI impact via 6.7&times; multiplier: ~3.2M", "通過6.7倍乘數估算的真實AI影響：約320萬"),
-    ("10.7% toward 30M by 2028", "已達2028年3000萬目標的10.7%"),
-    ("documented &times; 6.7 unlabeled multiplier = ~3.2M estimated", "已記錄 &times; 6.7未標注乘數 = 約320萬估算"),
     ("target: 30M by 2028", "目標：2028年達3000萬"),
     ("&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs",
      "&#9888; 預測 &mdash; 麥肯錫全球研究院 &middot; 高盛"),
@@ -270,7 +274,6 @@ ZH_HANT = [
     ("scale: -100 to +100", "範圍：-100到+100"),
     ("JOBS LOST DIRECTLY TO AI", "直接因AI流失的崗位"),
     ("since GPT-4 launch", "自GPT-4發布"),
-    ("confirmed &nbsp;·&nbsp; ~411/day", "已確認 &nbsp;·&nbsp; 約411/天"),
     ("JOBS PER UNEMPLOYED PERSON", "每名失業者對應職位數"),
     ("first time below 1.0 since pandemic (BLS, 2026)", "疫情以來首次低於1.0（BLS，2026）"),
     ("6.9M openings &nbsp;·&nbsp; 7.6M unemployed &nbsp;·&nbsp; more seekers than jobs",
@@ -354,7 +357,7 @@ ZH_HANT = [
     ("GitHub source &amp; full dataset", "GitHub源碼及完整數據"),
     ("Data is for informational purposes only. Not investment or employment advice.",
      "數據僅供參考，不構成投資或就業建議。"),
-    ("'No results'", "'暫無結果'"),
+    (">No results</td>", ">暫無結果</td>"),
     ("+ ' events'", "+ ' 個事件'"),
     ("'Submitting...'", "'提交中...'"),
     ("'Submit →'", "'提交 →'"),
@@ -373,11 +376,7 @@ ES = [
      '<div class="dd-live-badge"><span class="dd-live-dot"></span>EN VIVO</div>'),
     ('<div class="dd-label">JOBS LOST DIRECTLY TO AI</div>',
      '<div class="dd-label">EMPLEOS PERDIDOS DIRECTAMENTE POR IA</div>'),
-    ("204,891 confirmed</span>", "204,891 confirmados</span>"),
     ("scroll to see the full picture", "desplázate para ver el panorama completo"),
-    ("est. true AI impact via 6.7&times; multiplier: ~3.2M", "impacto real estimado de IA con multiplicador 6.7×: ~3.2M"),
-    ("10.7% toward 30M by 2028", "10.7% hacia 30M para 2028"),
-    ("documented &times; 6.7 unlabeled multiplier = ~3.2M estimated", "documentados &times; multiplicador 6.7 sin etiquetar = ~3.2M estimados"),
     ("target: 30M by 2028", "objetivo: 30M para 2028"),
     ("&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs",
      "&#9888; El Pronóstico &mdash; McKinsey Global Institute &middot; Goldman Sachs"),
@@ -399,7 +398,6 @@ ES = [
     ("scale: -100 to +100", "escala: -100 a +100"),
     ("JOBS LOST DIRECTLY TO AI", "EMPLEOS PERDIDOS DIRECTAMENTE POR IA"),
     ("since GPT-4 launch", "desde el lanzamiento de GPT-4"),
-    ("confirmed &nbsp;·&nbsp; ~411/day", "confirmados &nbsp;·&nbsp; ~411/día"),
     ("JOBS PER UNEMPLOYED PERSON", "EMPLEOS POR PERSONA DESEMPLEADA"),
     ("first time below 1.0 since pandemic (BLS, 2026)", "primera vez por debajo de 1.0 desde la pandemia (BLS, 2026)"),
     ("6.9M openings &nbsp;·&nbsp; 7.6M unemployed &nbsp;·&nbsp; more seekers than jobs",
@@ -487,12 +485,50 @@ ES = [
     ("GitHub source &amp; full dataset", "Código fuente en GitHub y conjunto de datos completo"),
     ("Data is for informational purposes only. Not investment or employment advice.",
      "Los datos son solo para fines informativos. No son asesoramiento de inversión ni laboral."),
-    ("'No results'", "'Sin resultados'"),
+    (">No results</td>", ">Sin resultados</td>"),
     ("+ ' events'", "+ ' eventos'"),
     ("'Submitting...'", "'Enviando...'"),
     ("'Submit →'", "'Enviar →'"),
     ("'Something went wrong. Please try again.'", "'Algo salió mal. Por favor, inténtalo de nuevo.'"),
     ("' per day'", "' por día'"),
+]
+
+
+# ─── Regex translation tables ────────────────────────────────────────────────
+# For UI strings that embed numbers regenerated daily by generate_page.py
+# (total_confirmed, avg_per_day, pct_toward_30m, estimated_millions).
+# NEVER add these as exact-match strings above — the number changes every day
+# and the key silently stops matching (this froze the i18n pages at launch
+# values until 2026-08). Capture the number and re-insert it instead.
+
+ZH_HANS_RE = [
+    (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
+     lambda m: _m_to_wan(m, "通过6.7倍乘数估算的真实AI影响：约{wan}万")),
+    (r"([\d,]+) confirmed</span>", r"\1 已确认</span>"),
+    (r"([\d.]+)% toward 30M by 2028", r"已达2028年3000万目标的\1%"),
+    (r"documented &times; 6\.7 unlabeled multiplier = ~([\d.]+)M estimated",
+     lambda m: _m_to_wan(m, "已记录 &times; 6.7未标注乘数 = 约{wan}万估算")),
+    (r"confirmed &nbsp;·&nbsp; ~([\d,]+)/day", r"已确认 &nbsp;·&nbsp; 约\1/天"),
+]
+
+ZH_HANT_RE = [
+    (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
+     lambda m: _m_to_wan(m, "通過6.7倍乘數估算的真實AI影響：約{wan}萬")),
+    (r"([\d,]+) confirmed</span>", r"\1 已確認</span>"),
+    (r"([\d.]+)% toward 30M by 2028", r"已達2028年3000萬目標的\1%"),
+    (r"documented &times; 6\.7 unlabeled multiplier = ~([\d.]+)M estimated",
+     lambda m: _m_to_wan(m, "已記錄 &times; 6.7未標注乘數 = 約{wan}萬估算")),
+    (r"confirmed &nbsp;·&nbsp; ~([\d,]+)/day", r"已確認 &nbsp;·&nbsp; 約\1/天"),
+]
+
+ES_RE = [
+    (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
+     r"impacto real estimado de IA con multiplicador 6.7×: ~\1M"),
+    (r"([\d,]+) confirmed</span>", r"\1 confirmados</span>"),
+    (r"([\d.]+)% toward 30M by 2028", r"\1% hacia 30M para 2028"),
+    (r"documented &times; 6\.7 unlabeled multiplier = ~([\d.]+)M estimated",
+     r"documentados &times; multiplicador 6.7 sin etiquetar = ~\1M estimados"),
+    (r"confirmed &nbsp;·&nbsp; ~([\d,]+)/day", r"confirmados &nbsp;·&nbsp; ~\1/día"),
 ]
 
 
@@ -508,14 +544,14 @@ def main():
         base = f.read()
 
     targets = [
-        ("public/zh-hans/index.html", "zh-hans", "zh-Hans", ZH_HANS),
-        ("public/zh-hant/index.html", "zh-hant", "zh-Hant", ZH_HANT),
-        ("public/es/index.html",       "es",       "es",      ES),
+        ("public/zh-hans/index.html", "zh-hans", "zh-Hans", ZH_HANS, ZH_HANS_RE),
+        ("public/zh-hant/index.html", "zh-hant", "zh-Hant", ZH_HANT, ZH_HANT_RE),
+        ("public/es/index.html",       "es",       "es",      ES,      ES_RE),
     ]
 
-    for out_path, lang_code, lang_attr, translations in targets:
+    for out_path, lang_code, lang_attr, translations, regex_translations in targets:
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        result = transform(base, lang_code, lang_attr, translations)
+        result = transform(base, lang_code, lang_attr, translations, regex_translations)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(result)
         print(f"Generated: {out_path}")

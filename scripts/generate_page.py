@@ -1180,7 +1180,7 @@ def generate_html():
             <div class="dd-since">{days_since} days &nbsp;&middot;&nbsp; {event_count} events &nbsp;&middot;&nbsp; since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
             <div class="dd-progress-wrap">
                 <div class="dd-progress-label">
-                    <span>est. true AI impact via 6.7&times; multiplier: ~3.2M</span>
+                    <span>est. true AI impact via 6.7&times; multiplier: ~{estimated_millions}M</span>
                     <strong>{pct_toward_30m}% toward 30M by 2028</strong>
                 </div>
                 <div class="dd-progress-track">
