@@ -1,5 +1,21 @@
 [
   {
+    "id": "568be3d556a21a47a3366b586eb151db",
+    "title": "AI impact on employment: Artificial intelligence may cut jobs quietly without triggering mass layoffs, says new report",
+    "description": "The August 2026 Panorama Report reveals that AI may be subtly affecting employment in American industries by reducing job openings at a faster rate than layoffs.",
+    "content": "Sounak Mukhopadhyay\nSounak Mukhopadhyay covers trending news, sports and entertainment for LiveMint. His reporting focuses on fast-moving stories, box office performance, digital culture and major cricket developments. He combines real-time updates w... [1441 chars]",
+    "url": "https://www.livemint.com/ai/artificial-intelligence/ai-impact-on-employment-artificial-intelligence-may-cut-jobs-quietly-without-triggering-mass-layoffs-says-new-report-11787823969851.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/08/27/1600x900/logo/AI_job_1787824520176_1787824533475_6c0fee4c-2bcb-4ac5-8525-d45dc9838874.jpg",
+    "publishedAt": "2026-08-27T09:55:59Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "f8705a6e596dc771e344583e08c7b964",
     "title": "Tech layoffs 2026: More than 175,000 workers laid off as Apple, Microsoft, Oracle, Amazon, Meta, TikTok, Uber, LinkedIn and dozens of companies cut jobs amid AI boom",
     "description": "Tech layoffs are accelerating in 2026 as big companies such as Apple, Microsoft, Oracle, Amazon, Meta, Linkedin, TikTok, Visa and dozens of other mega companies have announced slashing of jobs. Here's why AI, restructuring, cost-cutting and changing business priorities are reshaping the technology workforce. More than 175,000 technology workers had been laid off in 2026 by the middle of the year.",
@@ -140,22 +156,6 @@
       "id": "90a6e6fbc82cfa821ac49fdb5c404789",
       "name": "NewsX",
       "url": "https://www.newsx.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "860ca42e9b8768fd58a13f243ce20308",
-    "title": "Meta cut 8,000 jobs. CEO Mark Zuckerberg says AI is creating more work-but not inside Meta",
-    "description": "Meta's chief executive states artificial intelligence generates jobs via infrastructure demands. Thousands of corporate roles disappeared while construction jobs are emerging. The company plans significant investments in AI infrastructure for future growth. This expansion requires extensive data centers and specialized construction labor. Many employees faced layoffs during Meta's AI-focused restructuring.",
-    "content": "Synopsis\nMeta's chief executive states artificial intelligence generates jobs via infrastructure demands. Thousands of corporate roles disappeared while construction jobs are emerging. The company plans significant investments in AI infrastructure fo... [4440 chars]",
-    "url": "https://economictimes.indiatimes.com/news/international/global-trends/meta-cut-8000-jobs-zuckerberg-says-ai-is-creating-more-workbut-not-inside-meta/articleshow/132861760.cms",
-    "image": "https://img.etimg.com/thumb/msid-132862066,width-1200,height-630,imgsize-32958,overlay-economictimes/articleshow.jpg",
-    "publishedAt": "2026-08-04T13:12:00Z",
-    "lang": "en",
-    "source": {
-      "id": "5464668c1f0466950a0b2fab5249ec6c",
-      "name": "The Economic Times",
-      "url": "https://economictimes.indiatimes.com",
       "country": "in"
     }
   }
