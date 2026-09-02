@@ -1,5 +1,21 @@
 [
   {
+    "id": "d3dd242bc148d8bd2d41b2a9bd7b22cc",
+    "title": "Oracle layoffs: Software company likely to cut 3,000 jobs in India. Where is the money moving?",
+    "description": "Oracle layoffs could impact up to to 10,000 employees globally, including 3,000 in India alone ahead of September quarter. Is the software company redirecting spending towards its AI infrastructure push?",
+    "content": "Oracle is reportedly planning a fresh round of job cuts that could affect up to 3,000 employees in India as the technology company redirects its spending before the start of the new quarter, according to a report by Moneycontrol citing officials fami... [5974 chars]",
+    "url": "https://www.livemint.com/companies/news/oracle-layoffs-software-company-likely-to-cut-3-000-jobs-in-india-where-is-the-money-moving-11788257212089.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/09/01/1600x900/logo/Gemini_Generated_Image_vv4uluvv4uluvv4u_1788258016079_1788258022704_9d2a4abc-cd3e-4dc6-a42e-2b5de00059dc.png",
+    "publishedAt": "2026-09-01T11:19:22Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "ebbe1459b9cafff7e6c519433d0ec22b",
     "title": "Oracle Layoffs: The September 1 '6 AM' Email Scare, AI Pivot Explained",
     "description": "Oracle employees are bracing for possible fresh layoffs on September 1 after around 21,000 jobs were cut. The company is simultaneously ramping up spending on AI, cloud computing and data centres, raising fresh concerns over job security.",
@@ -141,22 +157,6 @@
       "name": "The Times of Israel",
       "url": "https://www.timesofisrael.com",
       "country": "is"
-    }
-  },
-  {
-    "id": "ca96c6754541b32de8ab6f26f6b61e54",
-    "title": "Salesforce Layoffs: 4th Job-Cut Round In A Year Sparks Fresh Questions Over AI’s Impact On Jobs",
-    "description": "Salesforce plans to cut dozens of San Francisco jobs in October as AI reshapes its workforce, marking its fourth layoff round in under a year., Companies, Times Now",
-    "content": "Salesforce is preparing to eliminate dozens of jobs at its San Francisco operations, according to a formal notice submitted to state authorities in the US. The upcoming workforce reduction is scheduled to begin in October and marks another round of j... [3128 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/salesforce-layoffs-4th-job-cut-round-in-a-year-sparks-fresh-questions-over-ais-impact-on-jobs-article-155386418",
-    "image": "https://images.timesnownews.com/thumb/msid-155386490,thumbsize-2457143,width-1280,height-720,resizemode-75/155386490.jpg",
-    "publishedAt": "2026-08-08T12:05:58Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
-      "country": "in"
     }
   }
 ]
