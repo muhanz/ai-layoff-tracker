@@ -1,5 +1,21 @@
 [
   {
+    "id": "48ad96693a7c21a75bb91d5b514d6417",
+    "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026",
+    "description": "More than 128,000 tech jobs have been cut globally in 2026, surpassing last year's total, as companies including Oracle, Amazon, Dell and Uber restructure and boost AI spending",
+    "content": "More than 128,000 tech jobs have been cut globally in 2026, surpassing last year's total, as companies including Oracle, Amazon, Dell and Uber restructure and boost AI spending\nThe latest wave gathered pace in September, with more than 6,300 tech job... [8662 chars]",
+    "url": "https://www.business-standard.com/industry/news/global-tech-layoffs-2026-oracle-amazon-dell-uber-paypal-it-sector-job-cuts-126091100188_1.html",
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-01/31/thumb/fitandfill/1200X628/1706723271-0298.jpg",
+    "publishedAt": "2026-09-11T04:17:41Z",
+    "lang": "en",
+    "source": {
+      "id": "44d394a4e765f82b49b452e4302a72b0",
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "26b582d077df488b1c22bb2226f7d258",
     "title": "Tech Layoffs 2026: 6,300+ Jobs Lost in 10 Days as Uber, PayPal Cut Staff; Is AI to Blame?",
     "description": "Tech layoffs are rising again in 2026, with more than 6,300 jobs lost in days. Uber, PayPal and other major firms are cutting roles as AI, automation and cost pressures reshape the industry.",
@@ -140,22 +156,6 @@
       "id": "7ba4ac19a3c25ba844bbd220fe4c860a",
       "name": "THE WEEK",
       "url": "https://www.theweek.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "499da3e457a93c9047906322aede61a7",
-    "title": "Apple Layoffs: Over 200 Jobs Cut Across Siri, Vision Pro Teams; Here's Why",
-    "description": "Apple is cutting more than 200 jobs across Siri, Vision Pro and software teams as it shifts resources towards AI and new device development., Companies, Times Now",
-    "content": "Apple is reshaping parts of its workforce as the technology giant places greater emphasis on artificial intelligence (AI) and upcoming hardware. More than 200 employees are reportedly affected by the latest restructuring, with job reductions spanning... [3892 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/apple-layoffs-over-200-jobs-cut-across-siri-vision-pro-teams-heres-why-article-155952359",
-    "image": "https://images.timesnownews.com/thumb/msid-155952400,thumbsize-122840,width-1280,height-720,resizemode-75/155952400.jpg",
-    "publishedAt": "2026-08-22T05:29:36Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
