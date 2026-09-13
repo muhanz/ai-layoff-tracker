@@ -1,5 +1,21 @@
 [
   {
+    "id": "11f1c15649a47b451d622619fe075689",
+    "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees",
+    "description": "In the first 10 days of September, more than 5,000 tech jobs were cut, taking 2026 layoffs to 128,536 across 299 companies. Oracle, Amazon, Dell, Meta, Uber, PayPal and other major firms have announced workforce reductions this year.",
+    "content": "September saw a fresh wave of job cuts across the global technology industry, as companies restructured operations, reassessed workforce needs, and redirected costs towards investments in artificial intelligence (AI).\nAccording to data from Layoffs.f... [3948 chars]",
+    "url": "https://www.livemint.com/companies/news/tech-layoffs-2026-as-ai-takes-center-stage-heres-a-list-of-major-companies-that-laid-off-employees-11789203637160.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/09/12/1600x900/logo/Tech_giants_layoffs_uber_amazon_oracle_apple_1789204431741_c6f0d443-7229-4317-b4aa-6d2f6964cf86_1789204431973_8eebef21-707b-4bef-9cc3-917d701148d7_4a5a6e83-63d6-49c5-9c74-0e67dd5e3de4_3844cbb4-b554-4fbd-b54a-5e8cfc7d0158.jpg",
+    "publishedAt": "2026-09-12T09:24:50Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "48ad96693a7c21a75bb91d5b514d6417",
     "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026",
     "description": "More than 128,000 tech jobs have been cut globally in 2026, surpassing last year's total, as companies including Oracle, Amazon, Dell and Uber restructure and boost AI spending",
@@ -140,22 +156,6 @@
       "id": "5464668c1f0466950a0b2fab5249ec6c",
       "name": "The Economic Times",
       "url": "https://economictimes.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "a0e3201bbc62689fa3291228f4945225",
-    "title": "Apple layoffs: iPhone maker to cut 200 jobs, half of it from a single product division",
-    "description": "Apple is undertaking significant workforce reductions, impacting over 200 roles within its Siri and Vision Pro divisions. This move, the company's most substantial since early 2024, signals a strategic pivot towards artificial intelligence and the development of new smart glasses, while addressing slower-than-expected adoption of the Vision Pro. The restructuring aims to reallocate resources to AI-powered features and updated technical requirements for Siri, with Apple committed to supporting affected employees through transition.",
-    "content": "Global tech giant Apple Inc is now looking to cut more than 200 jobs across multiple teams working on Siri and Vision Pro, according to Bloomberg. The recent step is the iPhone maker's first drastic move since its largest post-pandemic layoff wave in... [1875 chars]",
-    "url": "https://www.theweek.in/news/biz-tech/2026/08/22/apple-layoffs-iphone-maker-to-cut-200-jobs-half-of-it-from-a-single-product-division.html",
-    "image": "https://img.theweek.in/content/dam/week/week/news/biz-tech/images/2024/10/6/apple-ios-logo.jpg",
-    "publishedAt": "2026-08-22T09:45:33Z",
-    "lang": "en",
-    "source": {
-      "id": "7ba4ac19a3c25ba844bbd220fe4c860a",
-      "name": "THE WEEK",
-      "url": "https://www.theweek.in",
       "country": "in"
     }
   }
