@@ -1,5 +1,21 @@
 [
   {
+    "id": "15190907e47febd6c7052a927baa1731",
+    "title": "Oracle Layoffs: ‘Woke Up To Find The Job Gone’ As 21,000 Jobs Are Cut, What’s Driving The Action?",
+    "description": "Oracle has launched another major layoff round, eliminating roles without warning as AI investment rises. Around 21,000 jobs were already cut, with India and Europe expected to follow.",
+    "content": "319\nOracle set off a fresh round of job losses on September 14, catching employees off guard in a manner strikingly similar to a round in March. Federated logins began failing around 4 am Eastern, Slack access dropped in waves soon after, and office ... [2113 chars]",
+    "url": "https://www.newsx.com/tech-and-auto/oracle-layoffs-woke-up-to-find-the-job-gone-as-21000-jobs-are-cut-whats-driving-the-action-271899/",
+    "image": "https://www.newsx.com/wp-content/uploads/2026/09/representative-image-2026-09-01t112726145.jpg",
+    "publishedAt": "2026-09-15T04:31:21Z",
+    "lang": "en",
+    "source": {
+      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
+      "name": "NewsX",
+      "url": "https://www.newsx.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "11f1c15649a47b451d622619fe075689",
     "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees",
     "description": "In the first 10 days of September, more than 5,000 tech jobs were cut, taking 2026 layoffs to 128,536 across 299 companies. Oracle, Amazon, Dell, Meta, Uber, PayPal and other major firms have announced workforce reductions this year.",
@@ -140,22 +156,6 @@
       "id": "3bd4bd306c42647825fa42989624c036",
       "name": "Livemint",
       "url": "https://www.livemint.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "f8705a6e596dc771e344583e08c7b964",
-    "title": "Tech layoffs 2026: More than 175,000 workers laid off as Apple, Microsoft, Oracle, Amazon, Meta, TikTok, Uber, LinkedIn and dozens of companies cut jobs amid AI boom",
-    "description": "Tech layoffs are accelerating in 2026 as big companies such as Apple, Microsoft, Oracle, Amazon, Meta, Linkedin, TikTok, Visa and dozens of other mega companies have announced slashing of jobs. Here's why AI, restructuring, cost-cutting and changing business priorities are reshaping the technology workforce. More than 175,000 technology workers had been laid off in 2026 by the middle of the year.",
-    "content": "Synopsis\nTech layoffs are accelerating in 2026 as big companies such as Apple, Microsoft, Oracle, Amazon, Meta, Linkedin, TikTok, Visa and dozens of other mega companies have announced slashing of jobs. Here's why AI, restructuring, cost-cutting and ... [15345 chars]",
-    "url": "https://economictimes.indiatimes.com/news/international/global-trends/tech-layoffs-2026-more-than-175000-workers-laid-off-as-apple-microsoft-oracle-amazon-meta-tiktok-uber-linkedin-and-dozens-of-companies-cut-jobs-amid-ai-boom/articleshow/133511127.cms",
-    "image": "https://img.etimg.com/thumb/msid-133511524,width-1200,height-630,imgsize-190788,overlay-economictimes/articleshow.jpg",
-    "publishedAt": "2026-08-25T12:50:00Z",
-    "lang": "en",
-    "source": {
-      "id": "5464668c1f0466950a0b2fab5249ec6c",
-      "name": "The Economic Times",
-      "url": "https://economictimes.indiatimes.com",
       "country": "in"
     }
   }
