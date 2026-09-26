@@ -1,5 +1,21 @@
 [
   {
+    "id": "c965a084aaee8e36d33b991fed7b4225",
+    "title": "Amazon seeks former employees for AI roles months after sweeping layoffs",
+    "description": "Amazon is contacting eligible former employees about returning to the company, including people with AI and machine-learning experience. The outreach comes after tens of thousands of jobs were cut across the business and as the company continues to reorganise its artificial intelligence operations.",
+    "content": "Amazon is turning to a familiar pool of talent as it expands its artificial intelligence ambitions, people who have already worked for the company. Former employees, including some affected by recent job cuts, are being approached about potential ope... [3891 chars]",
+    "url": "https://www.firstpost.com/tech/amazon-seeks-former-employees-for-ai-roles-months-after-sweeping-layoffs-14048319.html",
+    "image": "https://images.firstpost.com/uploads/2026/03/2026-03-03T141856Z_2_LYNXMPEM220VU_RTROPTP_4_AMAZON-INDIA-2026-03-a1091759f13a877d1f5f6b1b4d479343-1200x675.jpg?im=FitAndFill,width=1200,height=675",
+    "publishedAt": "2026-09-25T07:04:53Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "15190907e47febd6c7052a927baa1731",
     "title": "Oracle Layoffs: ‘Woke Up To Find The Job Gone’ As 21,000 Jobs Are Cut, What’s Driving The Action?",
     "description": "Oracle has launched another major layoff round, eliminating roles without warning as AI investment rises. Around 21,000 jobs were already cut, with India and Europe expected to follow.",
@@ -140,22 +156,6 @@
       "id": "da182982e3ceb53c6eb8df72aa2030c3",
       "name": "Indiatimes",
       "url": "https://www.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "568be3d556a21a47a3366b586eb151db",
-    "title": "AI impact on employment: Artificial intelligence may cut jobs quietly without triggering mass layoffs, says new report",
-    "description": "The August 2026 Panorama Report reveals that AI may be subtly affecting employment in American industries by reducing job openings at a faster rate than layoffs.",
-    "content": "Sounak Mukhopadhyay\nSounak Mukhopadhyay covers trending news, sports and entertainment for LiveMint. His reporting focuses on fast-moving stories, box office performance, digital culture and major cricket developments. He combines real-time updates w... [1441 chars]",
-    "url": "https://www.livemint.com/ai/artificial-intelligence/ai-impact-on-employment-artificial-intelligence-may-cut-jobs-quietly-without-triggering-mass-layoffs-says-new-report-11787823969851.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/08/27/1600x900/logo/AI_job_1787824520176_1787824533475_6c0fee4c-2bcb-4ac5-8525-d45dc9838874.jpg",
-    "publishedAt": "2026-08-27T09:55:59Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
