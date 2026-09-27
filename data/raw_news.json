@@ -1,5 +1,21 @@
 [
   {
+    "id": "a46a68d471ea42a9aceafefbb9a6e20a",
+    "title": "Oracle Layoffs Hit Cloud Division Despite Revenue Doubling to $7.4 Billion",
+    "description": "Oracle has laid off 546 employees in its America Cloud Infrastructure organisation, according to a document reviewed by Business Insider. The latest developments also show how jobs are being cut inside a business whose revenue has more than doubled even as the company dramatically increases spending on cloud and AI infrastructure.",
+    "content": "World 11 min ago\nThis is an AI assisted summary.\nOracle has laid off 546 employees in its America Cloud Infrastructure organisation, according to a document reviewed by Business Insider. The latest developments also show how jobs are being cut inside... [21736 chars]",
+    "url": "https://indianexpress.com/shorts/world/oracle-layoffs-cloud-infrastructure-ai-restructuring-job-cuts-10895293/",
+    "image": "https://images.indianexpress.com/2026/04/oracle_20260403064044.jpg",
+    "publishedAt": "2026-09-26T15:22:35Z",
+    "lang": "en",
+    "source": {
+      "id": "6a3aad3dbb44ac873f72b594aaea22c4",
+      "name": "The Indian Express",
+      "url": "https://indianexpress.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "c965a084aaee8e36d33b991fed7b4225",
     "title": "Amazon seeks former employees for AI roles months after sweeping layoffs",
     "description": "Amazon is contacting eligible former employees about returning to the company, including people with AI and machine-learning experience. The outreach comes after tens of thousands of jobs were cut across the business and as the company continues to reorganise its artificial intelligence operations.",
@@ -140,22 +156,6 @@
       "id": "5464668c1f0466950a0b2fab5249ec6c",
       "name": "The Economic Times",
       "url": "https://economictimes.indiatimes.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "36d549b1156f01fae4ffa18dd7ac044b",
-    "title": "Oracle layoffs could shock workers again: 30,000 more jobs may be at risk as the tech giant races to pay for its AI ambitions",
-    "description": "Oracle may cut between 20,000 and 30,000 jobs as it invests heavily in AI and data centre infrastructure. This follows a recent layoff wave affecting 30,000 employees, raising concerns about the timing and implications for workers.",
-    "content": "Oracle layoffs may be heading for another major round, with 20,000-30,000 jobs reportedly at risk around September 1. The possible cuts come as Oracle pours money into AI infrastructure, builds data centres, takes on debt and seeks billions in extra ... [7169 chars]",
-    "url": "https://www.indiatimes.com/trending/oracle-layoffs-could-shock-workers-again-30000-more-jobs-may-be-at-risk-as-the-tech-giant-races-to-pay-for-its-ai-ambitions/articleshow/133606536.html",
-    "image": "https://staticimg.publishstory.co/thumb/133606597.cms?imgsize=102668&width=1280&height=720&resizemode=8",
-    "publishedAt": "2026-08-30T02:49:00Z",
-    "lang": "en",
-    "source": {
-      "id": "da182982e3ceb53c6eb8df72aa2030c3",
-      "name": "Indiatimes",
-      "url": "https://www.indiatimes.com",
       "country": "in"
     }
   }
