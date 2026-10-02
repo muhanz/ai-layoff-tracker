@@ -1,5 +1,21 @@
 [
   {
+    "id": "af61376c4a32f96b8c853e8c0b7027d6",
+    "title": "Apple Shelves Plans To Lay Off 5,000 AppleCare Workers With AI Agents: All Details",
+    "description": "Apple has reportedly put on hold a plan to cut about 5,000 AppleCare jobs and shift more support work to AI agents. The company had considered using AI-powered phone and web agents to handle customer queries. AppleCare already uses generative AI for some calls, but the wider layoffs plan is currently stalled.",
+    "content": "Apple has put on hold a plan to lay off about 5,000 AppleCare customer support workers and shift a large part of their work to AI agents, according to a Bloomberg report. The company drew up the proposal over the summer. The latest report says Apple ... [2336 chars]",
+    "url": "https://www.freepressjournal.in/tech/apple-shelves-plans-to-lay-off-5000-applecare-workers-with-ai-agents-all-details",
+    "image": "https://media.assettype.com/freepressjournal/2026-10-01/ccwkga74/AppleCare",
+    "publishedAt": "2026-10-01T11:31:09Z",
+    "lang": "en",
+    "source": {
+      "id": "7eeaf9a839918543cc708f2d331c3be4",
+      "name": "Free Press Journal",
+      "url": "https://www.freepressjournal.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "a46a68d471ea42a9aceafefbb9a6e20a",
     "title": "Oracle Layoffs Hit Cloud Division Despite Revenue Doubling to $7.4 Billion",
     "description": "Oracle has laid off 546 employees in its America Cloud Infrastructure organisation, according to a document reviewed by Business Insider. The latest developments also show how jobs are being cut inside a business whose revenue has more than doubled even as the company dramatically increases spending on cloud and AI infrastructure.",
@@ -108,22 +124,6 @@
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
       "name": "Times Now",
       "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "d3dd242bc148d8bd2d41b2a9bd7b22cc",
-    "title": "Oracle layoffs: Software company likely to cut 3,000 jobs in India. Where is the money moving?",
-    "description": "Oracle layoffs could impact up to to 10,000 employees globally, including 3,000 in India alone ahead of September quarter. Is the software company redirecting spending towards its AI infrastructure push?",
-    "content": "Oracle is reportedly planning a fresh round of job cuts that could affect up to 3,000 employees in India as the technology company redirects its spending before the start of the new quarter, according to a report by Moneycontrol citing officials fami... [5974 chars]",
-    "url": "https://www.livemint.com/companies/news/oracle-layoffs-software-company-likely-to-cut-3-000-jobs-in-india-where-is-the-money-moving-11788257212089.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/09/01/1600x900/logo/Gemini_Generated_Image_vv4uluvv4uluvv4u_1788258016079_1788258022704_9d2a4abc-cd3e-4dc6-a42e-2b5de00059dc.png",
-    "publishedAt": "2026-09-01T11:19:22Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
