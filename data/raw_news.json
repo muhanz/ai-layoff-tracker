@@ -1,5 +1,37 @@
 [
   {
+    "id": "be01c7bbbf78f81d3900361b811db3d9",
+    "title": "HSBC Layoffs: Bank to cut half of UK wealth management jobs as AI use expands",
+    "description": "The proposed restructuring could see HSBC eliminate around half of its management and specialist positions in the UK wealth division, while the number of financial advisers could fall by nearly 70%, the report said",
+    "content": "HSBC Holdings Plc is planning significant job cuts across its UK wealth management business as the bank steps up its use of artificial intelligence to serve affluent customers more efficiently, according to a Bloomberg report citing people familiar w... [2338 chars]",
+    "url": "https://www.livemint.com/companies/news/hsbc-layoffs-bank-to-cut-half-of-uk-wealth-management-jobs-as-ai-use-expands-11791394722537.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/10/07/1600x900/logo/HSBC-HLDG-CFO--0_1791394768654_eJXh_1791394808297_ryzd_c40daf3a-17b5-4214-b8d2-97cd8e8bf0f1_xCPm.JPG",
+    "publishedAt": "2026-10-07T18:13:13Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "ebfc4d44bd18e05ceb414fe32b255bab",
+    "title": "HubSpot Layoffs: Tech Firm To Cut 660 Jobs Amid AI Restructuring",
+    "description": "HubSpot will cut 660 jobs as it restructures around Artificial Intelligence, with up to $75 million in costs while maintaining its 2026 financial guidance., Companies, Times Now",
+    "content": "The bulk of the restructuring costs is likely to be booked in the fourth quarter of fiscal 2026 (File Photo)\nPhoto : iStock\nHubSpot is set to eliminate around 660 positions, equivalent to about 7 per cent of its global workforce, as the software comp... [3022 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/hubspot-layoffs-tech-firm-to-cut-660-jobs-amid-ai-restructuring-article-156290857",
+    "image": "https://images.timesnownews.com/thumb/msid-156290980,thumbsize-182082,width-1280,height-720,resizemode-75/156290980.jpg",
+    "publishedAt": "2026-10-07T12:18:00Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "69137aeec022bb8a45f20001cf96844f",
     "title": "DNB Bank Layoffs: Norway's Biggest Bank To Cut 400 Jobs As AI Replaces Manual Tasks",
     "description": "Norway's biggest bank DNB will cut around 400 jobs as it expands AI agents across coding, technology and KYC operations, reshaping its workforce for a digital future.",
@@ -108,38 +140,6 @@
       "id": "44d394a4e765f82b49b452e4302a72b0",
       "name": "Business Standard",
       "url": "https://www.business-standard.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "26b582d077df488b1c22bb2226f7d258",
-    "title": "Tech Layoffs 2026: 6,300+ Jobs Lost in 10 Days as Uber, PayPal Cut Staff; Is AI to Blame?",
-    "description": "Tech layoffs are rising again in 2026, with more than 6,300 jobs lost in days. Uber, PayPal and other major firms are cutting roles as AI, automation and cost pressures reshape the industry.",
-    "content": "479\nThe tech industry of the world is once again witnessing another wave of massive layoffs in the year 2026. Over 6,300 jobs have been cut in the last few days, as per information available at Layoffs.fyi. These layoffs are taking place amid corpora... [1783 chars]",
-    "url": "https://www.newsx.com/tech-and-auto/tech-layoffs-2026-6300-jobs-lost-in-10-days-as-uber-paypal-cut-staff-is-ai-to-blame-269379/",
-    "image": "https://www.newsx.com/wp-content/uploads/2026/06/layoff.jpg",
-    "publishedAt": "2026-09-07T14:44:05Z",
-    "lang": "en",
-    "source": {
-      "id": "90a6e6fbc82cfa821ac49fdb5c404789",
-      "name": "NewsX",
-      "url": "https://www.newsx.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "7d4d9902bfaa92be2cf9e9d11675e5df",
-    "title": "Tech Layoffs 2026: Nearly 1,29,500 Jobs Lost As Apple, Uber, PayPal And Oracle Cut Jobs, Bet Big On AI",
-    "description": "Apple, Uber, PayPal and Oracle are reshaping their workforces as AI investment, cost-cutting, and restructuring drive a fresh wave of tech layoffs., Companies, Times Now",
-    "content": "The technology sector’s workforce reset is continuing as companies rethink their organisational structures, invest heavily in artificial intelligence (AI) and look for ways to improve efficiency. While AI is creating demand for new capabilities, it i... [4382 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/tech-layoffs-2026-nearly-129500-jobs-lost-as-apple-uber-paypal-and-oracle-cut-jobs-bet-big-on-ai-article-156101823",
-    "image": "https://images.timesnownews.com/thumb/msid-156102011,thumbsize-182082,width-1280,height-720,resizemode-75/156102011.jpg",
-    "publishedAt": "2026-09-07T08:00:48Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
