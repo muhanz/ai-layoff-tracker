@@ -1,5 +1,37 @@
 [
   {
+    "id": "e9dcad8f070f2d55ed3f7f50c9c2ffe4",
+    "title": "Amazon cuts around 1,000 jobs; India retail employees among those hit",
+    "description": "Amazon Layoffs: Amazon has cut nearly 1,000 white-collar jobs, affecting employees in India, the US and the UK. The layoffs mainly impact its Stores unit as the company expands its focus on AI",
+    "content": "Amazon has cut nearly 1,000 white-collar jobs, affecting employees in India, the US and the UK. The layoffs mainly impact its Stores unit as the company expands its focus on AI\nAmazon confirmed that it had eliminated around 1,000 roles, mainly within... [3759 chars]",
+    "url": "https://www.business-standard.com/companies/news/amazon-cuts-1000-jobs-retail-employees-in-india-impacted-stores-lay-offs-126100800168_1.html",
+    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-06/06/thumb/fitandfill/1200X628/1749192188-5886.JPG",
+    "publishedAt": "2026-10-08T03:42:09Z",
+    "lang": "en",
+    "source": {
+      "id": "44d394a4e765f82b49b452e4302a72b0",
+      "name": "Business Standard",
+      "url": "https://www.business-standard.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "2687fd8066bedeaf820d0c59118be3e5",
+    "title": "Amazon cuts nearly 1,000 jobs, retail employees in India impacted",
+    "description": "Amazon has cut fewer than 1,000 roles, mainly in its Stores business, affecting staff in India, the US and the UK. The layoffs come during a major sales push and extend a wider workforce reset tied to pandemic-era hiring and fresh AI investment.",
+    "content": "Amazon has conducted another round of layoffs globally. This time, the company said, it cut fewer than 1,000 jobs, largely in its retail teams across multiple countries, including India, the US, and the UK. These job cuts are part of Amazon’s broader... [2688 chars]",
+    "url": "https://www.indiatoday.in/jobs/story/amazon-cuts-nearly-1000-jobs-retail-employees-in-india-impacted-tchc-3012105-2026-10-08",
+    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202610/amazon-makes-fresh-job-cuts-across-teams-08381153-16x9.jpg?VersionId=rZ98xDC6uDSfv.Yxoyl__ZtjM2JGNCfB",
+    "publishedAt": "2026-10-08T02:48:11Z",
+    "lang": "en",
+    "source": {
+      "id": "c73686fdf0e30639d57eddaf7a77236e",
+      "name": "India Today",
+      "url": "https://www.indiatoday.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "be01c7bbbf78f81d3900361b811db3d9",
     "title": "HSBC Layoffs: Bank to cut half of UK wealth management jobs as AI use expands",
     "description": "The proposed restructuring could see HSBC eliminate around half of its management and specialist positions in the UK wealth division, while the number of financial advisers could fall by nearly 70%, the report said",
@@ -19,7 +51,7 @@
     "id": "ebfc4d44bd18e05ceb414fe32b255bab",
     "title": "HubSpot Layoffs: Tech Firm To Cut 660 Jobs Amid AI Restructuring",
     "description": "HubSpot will cut 660 jobs as it restructures around Artificial Intelligence, with up to $75 million in costs while maintaining its 2026 financial guidance., Companies, Times Now",
-    "content": "The bulk of the restructuring costs is likely to be booked in the fourth quarter of fiscal 2026 (File Photo)\nPhoto : iStock\nHubSpot is set to eliminate around 660 positions, equivalent to about 7 per cent of its global workforce, as the software comp... [3022 chars]",
+    "content": "HubSpot is set to eliminate around 660 positions, equivalent to about 7 per cent of its global workforce, as the software company reorganises its business to focus more closely on delivering AI-powered outcomes for customers. The workforce reduction ... [2078 chars]",
     "url": "https://www.timesnownews.com/business-economy/companies/hubspot-layoffs-tech-firm-to-cut-660-jobs-amid-ai-restructuring-article-156290857",
     "image": "https://images.timesnownews.com/thumb/msid-156290980,thumbsize-182082,width-1280,height-720,resizemode-75/156290980.jpg",
     "publishedAt": "2026-10-07T12:18:00Z",
@@ -124,22 +156,6 @@
       "id": "3bd4bd306c42647825fa42989624c036",
       "name": "Livemint",
       "url": "https://www.livemint.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "48ad96693a7c21a75bb91d5b514d6417",
-    "title": "From Oracle to Amazon: Tech giants drive global wave of layoffs in 2026",
-    "description": "More than 128,000 tech jobs have been cut globally in 2026, surpassing last year's total, as companies including Oracle, Amazon, Dell and Uber restructure and boost AI spending",
-    "content": "More than 128,000 tech jobs have been cut globally in 2026, surpassing last year's total, as companies including Oracle, Amazon, Dell and Uber restructure and boost AI spending\nThe latest wave gathered pace in September, with more than 6,300 tech job... [8662 chars]",
-    "url": "https://www.business-standard.com/industry/news/global-tech-layoffs-2026-oracle-amazon-dell-uber-paypal-it-sector-job-cuts-126091100188_1.html",
-    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2024-01/31/thumb/fitandfill/1200X628/1706723271-0298.jpg",
-    "publishedAt": "2026-09-11T04:17:41Z",
-    "lang": "en",
-    "source": {
-      "id": "44d394a4e765f82b49b452e4302a72b0",
-      "name": "Business Standard",
-      "url": "https://www.business-standard.com",
       "country": "in"
     }
   }
