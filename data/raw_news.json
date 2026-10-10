@@ -1,5 +1,21 @@
 [
   {
+    "id": "da6f86fef12808ef658bab46a1274ee9",
+    "title": "Flock is reportedly planning to cut 18 percent of its workers.",
+    "description": "The layoffs will impact around 270 employees and come as more states and local communities ban Flock’s automated license plate readers, according to a report from Reuters. Last month, Wired reported that Flock began offering employees voluntary buyouts as well.\n[Link: AI surveillance startup Flock Safety to cut several hundred jobs amid backlash, sources say | https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/ | Reuters]",
+    "content": "E\nExternal Link\nFlock is reportedly planning to cut 18 percent of its workers.\nThe layoffs will impact around 270 employees and come as more states and local communities ban Flock’s automated license plate readers, according to a report from Reuters.... [730 chars]",
+    "url": "https://www.theverge.com/policy/1008755/flock-is-reportedly-planning-to-cut-18-percent-of-its-workers",
+    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
+    "publishedAt": "2026-10-09T15:27:13Z",
+    "lang": "en",
+    "source": {
+      "id": "cb749b89c7dc92dc2d517a49bb9a43ab",
+      "name": "The Verge",
+      "url": "https://www.theverge.com",
+      "country": "us"
+    }
+  },
+  {
     "id": "e9dcad8f070f2d55ed3f7f50c9c2ffe4",
     "title": "Amazon cuts around 1,000 jobs; India retail employees among those hit",
     "description": "Amazon Layoffs: Amazon has cut nearly 1,000 white-collar jobs, affecting employees in India, the US and the UK. The layoffs mainly impact its Stores unit as the company expands its focus on AI",
@@ -140,22 +156,6 @@
       "id": "90a6e6fbc82cfa821ac49fdb5c404789",
       "name": "NewsX",
       "url": "https://www.newsx.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "11f1c15649a47b451d622619fe075689",
-    "title": "Tech layoffs 2026: As AI takes center stage, here's a list of major companies that laid off employees",
-    "description": "In the first 10 days of September, more than 5,000 tech jobs were cut, taking 2026 layoffs to 128,536 across 299 companies. Oracle, Amazon, Dell, Meta, Uber, PayPal and other major firms have announced workforce reductions this year.",
-    "content": "September saw a fresh wave of job cuts across the global technology industry, as companies restructured operations, reassessed workforce needs, and redirected costs towards investments in artificial intelligence (AI).\nAccording to data from Layoffs.f... [3948 chars]",
-    "url": "https://www.livemint.com/companies/news/tech-layoffs-2026-as-ai-takes-center-stage-heres-a-list-of-major-companies-that-laid-off-employees-11789203637160.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/09/12/1600x900/logo/Tech_giants_layoffs_uber_amazon_oracle_apple_1789204431741_c6f0d443-7229-4317-b4aa-6d2f6964cf86_1789204431973_8eebef21-707b-4bef-9cc3-917d701148d7_4a5a6e83-63d6-49c5-9c74-0e67dd5e3de4_3844cbb4-b554-4fbd-b54a-5e8cfc7d0158.jpg",
-    "publishedAt": "2026-09-12T09:24:50Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
