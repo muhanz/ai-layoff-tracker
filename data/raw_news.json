@@ -1,5 +1,37 @@
 [
   {
+    "id": "38033a5d5d28c9726ba830385a62143d",
+    "title": "Sridhar Vembu Warns Of Grim Software Jobs Outlook, Flags AI Cost Surge: 'Will Work Hard To Avoid Mass Layoffs'",
+    "description": "In a post on X, Vembu said Zoho had not increased its employee count for the past 18 months and had cut its marketing budget to control costs.",
+    "content": "Zoho founder Sridhar Vembu on Tuesday warned of a grim outlook for software jobs, citing rising artificial intelligence costs, higher server prices and geopolitical uncertainties. He said the company would work hard to avoid mass layoffs as it naviga... [2588 chars]",
+    "url": "https://www.ndtvprofit.com/business/zohos-sridhar-vembu-warns-of-grim-software-jobs-outlook-flags-ai-cost-surge-will-work-hard-to-avoid-mass-layoffs-12176541",
+    "image": "https://c.ndtvimg.com/2026-01/ssmsjhvo_sridhar-vembu_625x300_27_January_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1600,height=900",
+    "publishedAt": "2026-10-13T01:32:04Z",
+    "lang": "en",
+    "source": {
+      "id": "73aabc646bff1356a46223f250cc6b52",
+      "name": "NDTV Profit",
+      "url": "https://www.ndtvprofit.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "fc002cfa0ec8c29fa3ef8108b25a2b75",
+    "title": "AI Reshuffle: The Tech Jobs Being Cut vs The Ones Being Created",
+    "description": "Oracle has begun its second round of layoffs this year, with as many as 3,000 affected employees reportedly in India. Product engineering teams are among the worst hit. The cuts come after Oracle’s workforce fell by about 21,000, or 13 percent, in the year to May. Layoffs.fyi has counted 1,23,305 tech layoffs across 289 companies in 2026, as AI reshapes hiring.",
+    "content": "At 6 am, the email arrived. Oracle had begun its second round of layoffs this year. As many as 3,000 of those affected may be from India alone. Product engineering teams are reportedly among the worst hit. Oracle's workforce had already shrunk by abo... [2979 chars]",
+    "url": "https://www.freepressjournal.in/tech/ai-reshuffle-the-tech-jobs-being-cut-vs-the-ones-being-created",
+    "image": "https://media.assettype.com/freepressjournal/2026-10-12/szg089q1/amazon-microsoft-googl-oracle",
+    "publishedAt": "2026-10-12T10:11:55Z",
+    "lang": "en",
+    "source": {
+      "id": "7eeaf9a839918543cc708f2d331c3be4",
+      "name": "Free Press Journal",
+      "url": "https://www.freepressjournal.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "129f6f9342441a2f3c31479fc1ec3861",
     "title": "Oracle Layoffs and the Duties of an AI Landlord",
     "description": "Oracle’s AI infrastructure business is expanding rapidly even as jobs are cut, raising questions about workforce planning, operational risks and the people behind its growing cloud ambitions., Opinion - India, Times Now",
@@ -124,38 +156,6 @@
       "id": "7eeaf9a839918543cc708f2d331c3be4",
       "name": "Free Press Journal",
       "url": "https://www.freepressjournal.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "a46a68d471ea42a9aceafefbb9a6e20a",
-    "title": "Oracle Layoffs Hit Cloud Division Despite Revenue Doubling to $7.4 Billion",
-    "description": "Oracle has laid off 546 employees in its America Cloud Infrastructure organisation, according to a document reviewed by Business Insider. The latest developments also show how jobs are being cut inside a business whose revenue has more than doubled even as the company dramatically increases spending on cloud and AI infrastructure.",
-    "content": "World 11 min ago\nThis is an AI assisted summary.\nOracle has laid off 546 employees in its America Cloud Infrastructure organisation, according to a document reviewed by Business Insider. The latest developments also show how jobs are being cut inside... [21736 chars]",
-    "url": "https://indianexpress.com/shorts/world/oracle-layoffs-cloud-infrastructure-ai-restructuring-job-cuts-10895293/",
-    "image": "https://images.indianexpress.com/2026/04/oracle_20260403064044.jpg",
-    "publishedAt": "2026-09-26T15:22:35Z",
-    "lang": "en",
-    "source": {
-      "id": "6a3aad3dbb44ac873f72b594aaea22c4",
-      "name": "The Indian Express",
-      "url": "https://indianexpress.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "c965a084aaee8e36d33b991fed7b4225",
-    "title": "Amazon seeks former employees for AI roles months after sweeping layoffs",
-    "description": "Amazon is contacting eligible former employees about returning to the company, including people with AI and machine-learning experience. The outreach comes after tens of thousands of jobs were cut across the business and as the company continues to reorganise its artificial intelligence operations.",
-    "content": "Amazon is turning to a familiar pool of talent as it expands its artificial intelligence ambitions, people who have already worked for the company. Former employees, including some affected by recent job cuts, are being approached about potential ope... [3891 chars]",
-    "url": "https://www.firstpost.com/tech/amazon-seeks-former-employees-for-ai-roles-months-after-sweeping-layoffs-14048319.html",
-    "image": "https://images.firstpost.com/uploads/2026/03/2026-03-03T141856Z_2_LYNXMPEM220VU_RTROPTP_4_AMAZON-INDIA-2026-03-a1091759f13a877d1f5f6b1b4d479343-1200x675.jpg?im=FitAndFill,width=1200,height=675",
-    "publishedAt": "2026-09-25T07:04:53Z",
-    "lang": "en",
-    "source": {
-      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
-      "name": "Firstpost",
-      "url": "https://www.firstpost.com",
       "country": "in"
     }
   }
