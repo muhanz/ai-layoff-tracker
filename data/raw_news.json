@@ -1,5 +1,37 @@
 [
   {
+    "id": "e5cfa476f2aae985a483fd2cce45ccaf",
+    "title": "Kroger to cut 3,000 jobs in devastating layoffs across America as 143-year-old grocery store giant looks to AI instead",
+    "description": "KROGER is set to eliminate thousands of corporate roles and replace them with AI.\nCEO ​Greg Foran told employees on Monday that he plans to...",
+    "content": "KROGER is set to eliminate thousands of corporate roles and replace them with AI.\nCEO ​Greg Foran told employees on Monday that he plans to cut around 3,000 jobs over the next three years.\nAdvertisement\nThe grocer is looking to integrate AI into its ... [1109 chars]",
+    "url": "https://www.the-sun.com/money/17137923/kroger-cut-3000-jobs-devastating-layoffs-ai/",
+    "image": "https://www.the-sun.com/wp-content/uploads/sites/6/2026/10/newspress-collage-kwh6jto3e-1791887273403.jpg?quality=90&strip=all&1791872895&w=1920&h=1080&crop=1",
+    "publishedAt": "2026-10-13T11:21:06Z",
+    "lang": "en",
+    "source": {
+      "id": "df8898b40ea58da32bb50978f1d85cb3",
+      "name": "The Sun U.S Edition",
+      "url": "https://www.the-sun.com",
+      "country": "gb"
+    }
+  },
+  {
+    "id": "eb3514a8957bb4e6f2146b3e14f4c4dc",
+    "title": "Zoho Skips 2026 Salary Hikes As AI Costs Surge; Sridhar Vembu Says Outlook For Software Jobs Is ‘Grim’",
+    "description": "Zoho has cancelled its annual salary hike for employees in 2026, with co-founder Sridhar Vembu citing a four-fold rise in data-centre server prices and higher AI usage. The company has also cut marketing spending and has not increased its employee count for 18 months. Vembu said Zoho will work to avoid mass layoffs but called software jobs outlook “grim”.",
+    "content": "Zoho has cancelled its usual annual salary hike for employees in 2026, with co-founder and chief scientist Sridhar Vembu citing a sharp rise in AI-related infrastructure costs, rapid growth in AI usage and an uncertain business environment. Vembu sai... [2326 chars]",
+    "url": "https://www.freepressjournal.in/tech/zoho-skips-2026-salary-hikes-as-ai-costs-surge-sridhar-vembu-says-outlook-for-software-jobs-is-grim",
+    "image": "https://media.assettype.com/freepressjournal/2025-04-04/9odkf318/Untitled-design-2025-04-04T153529.833.jpg",
+    "publishedAt": "2026-10-13T06:48:29Z",
+    "lang": "en",
+    "source": {
+      "id": "7eeaf9a839918543cc708f2d331c3be4",
+      "name": "Free Press Journal",
+      "url": "https://www.freepressjournal.in",
+      "country": "in"
+    }
+  },
+  {
     "id": "38033a5d5d28c9726ba830385a62143d",
     "title": "Sridhar Vembu Warns Of Grim Software Jobs Outlook, Flags AI Cost Surge: 'Will Work Hard To Avoid Mass Layoffs'",
     "description": "In a post on X, Vembu said Zoho had not increased its employee count for the past 18 months and had cut its marketing budget to control costs.",
@@ -124,38 +156,6 @@
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
       "name": "Times Now",
       "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "69137aeec022bb8a45f20001cf96844f",
-    "title": "DNB Bank Layoffs: Norway's Biggest Bank To Cut 400 Jobs As AI Replaces Manual Tasks",
-    "description": "Norway's biggest bank DNB will cut around 400 jobs as it expands AI agents across coding, technology and KYC operations, reshaping its workforce for a digital future.",
-    "content": "Norway's biggest bank DNB is set to cut around 400 jobs as it steps up investments in artificial intelligence (AI), digital solutions and automation across its operations.\nThe job cuts will affect employees in DNB's Technology & Services unit and are... [2422 chars]",
-    "url": "https://www.ndtvprofit.com/world/dnb-bank-layoffs-norways-biggest-bank-to-cut-400-jobs-as-ai-replaces-manual-tasks-12147795",
-    "image": "https://c.ndtvimg.com/2026-10/gguqt4bc_dnb_625x300_06_October_26.jpg?im=FeatureCrop,algorithm=dnn,width=1600,height=900",
-    "publishedAt": "2026-10-06T16:35:35Z",
-    "lang": "en",
-    "source": {
-      "id": "73aabc646bff1356a46223f250cc6b52",
-      "name": "NDTV Profit",
-      "url": "https://www.ndtvprofit.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "af61376c4a32f96b8c853e8c0b7027d6",
-    "title": "Apple Shelves Plans To Lay Off 5,000 AppleCare Workers With AI Agents: All Details",
-    "description": "Apple has reportedly put on hold a plan to cut about 5,000 AppleCare jobs and shift more support work to AI agents. The company had considered using AI-powered phone and web agents to handle customer queries. AppleCare already uses generative AI for some calls, but the wider layoffs plan is currently stalled.",
-    "content": "Apple has put on hold a plan to lay off about 5,000 AppleCare customer support workers and shift a large part of their work to AI agents, according to a Bloomberg report. The company drew up the proposal over the summer. The latest report says Apple ... [2336 chars]",
-    "url": "https://www.freepressjournal.in/tech/apple-shelves-plans-to-lay-off-5000-applecare-workers-with-ai-agents-all-details",
-    "image": "https://media.assettype.com/freepressjournal/2026-10-01/ccwkga74/AppleCare",
-    "publishedAt": "2026-10-01T11:31:09Z",
-    "lang": "en",
-    "source": {
-      "id": "7eeaf9a839918543cc708f2d331c3be4",
-      "name": "Free Press Journal",
-      "url": "https://www.freepressjournal.in",
       "country": "in"
     }
   }
