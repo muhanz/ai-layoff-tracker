@@ -1,5 +1,21 @@
 [
   {
+    "id": "e7c33ff668775ffc877896d0f9716cd4",
+    "title": "37% corporate staff out: Largest US grocery giant announces historic layoffs, bets big on AI",
+    "description": "Kroger plans to cut 3,000 corporate jobs over three years as part of a major overhaul under CEO Greg Foran, focusing on cost-cutting, AI integration, and improved customer experience amidst economic pressures.",
+    "content": "The latest cuts are shaping up to be one of the biggest overhauls in the company’s 143-year history. Accounting for more than one-third, or 37%, of the grocery giant’s corporate jobs, the recently announced layoffs follow a previous round in June 202... [6365 chars]",
+    "url": "https://www.financialexpress.com/world-news/us-news/37-corporate-staff-out-largest-us-grocery-giant-announces-historic-layoffs-bets-big-on-ai/4360741/",
+    "image": "https://images.financialexpressdigital.com/2026/10/kroger-layoffs.jpg",
+    "publishedAt": "2026-10-14T06:37:18Z",
+    "lang": "en",
+    "source": {
+      "id": "63361c66f51ee0c82a5325ba1c7b8d06",
+      "name": "The Financial Express",
+      "url": "https://www.financialexpress.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "e5cfa476f2aae985a483fd2cce45ccaf",
     "title": "Kroger to cut 3,000 jobs in devastating layoffs across America as 143-year-old grocery store giant looks to AI instead",
     "description": "KROGER is set to eliminate thousands of corporate roles and replace them with AI.\nCEO ​Greg Foran told employees on Monday that he plans to...",
@@ -140,22 +156,6 @@
       "id": "3bd4bd306c42647825fa42989624c036",
       "name": "Livemint",
       "url": "https://www.livemint.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "ebfc4d44bd18e05ceb414fe32b255bab",
-    "title": "HubSpot Layoffs: Tech Firm To Cut 660 Jobs Amid AI Restructuring",
-    "description": "HubSpot will cut 660 jobs as it restructures around Artificial Intelligence, with up to $75 million in costs while maintaining its 2026 financial guidance., Companies, Times Now",
-    "content": "HubSpot is set to eliminate around 660 positions, equivalent to about 7 per cent of its global workforce, as the software company reorganises its business to focus more closely on delivering AI-powered outcomes for customers. The workforce reduction ... [2078 chars]",
-    "url": "https://www.timesnownews.com/business-economy/companies/hubspot-layoffs-tech-firm-to-cut-660-jobs-amid-ai-restructuring-article-156290857",
-    "image": "https://images.timesnownews.com/thumb/msid-156290980,thumbsize-182082,width-1280,height-720,resizemode-75/156290980.jpg",
-    "publishedAt": "2026-10-07T12:18:00Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
