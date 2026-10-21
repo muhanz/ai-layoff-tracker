@@ -1,5 +1,37 @@
 [
   {
+    "id": "c7fbbbebf14866675aac922de7c077f6",
+    "title": "Qualcomm to cut jobs globally as CEO pushes performance-focused layoffs",
+    "description": "Chipmaker Qualcomm will begin notifying employees of job cuts in November following annual performance reviews, as it seeks to strengthen its performance culture amid weak consumer electronics demand and a push into AI data centres.",
+    "content": "Qualcomm plans to cut jobs worldwide as part of a performance-focused restructuring initiative, according to an internal memo reviewed by Reuters.\nChief Executive Officer Cristiano Amon informed employees on Monday that the company would undertake a ... [2397 chars]",
+    "url": "https://www.firstpost.com/business/qualcomm-to-cut-jobs-globally-as-ceo-pushes-performance-focused-layoffs-14054116.html",
+    "image": "https://images.firstpost.com/uploads/2026/05/qualcomm-2026-05-a5fefe297e10fe6cc9b35052032c4a60.jpg?im=FitAndFill,width=1200,height=675",
+    "publishedAt": "2026-10-20T13:42:57Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "a3ef81bfc302564590718579e2306eae",
+    "title": "Qualcomm layoffs: Chipmaker to cut jobs globally from November after performance reviews",
+    "description": "Qualcomm will cut jobs globally after annual performance reviews, with notifications starting in November, CEO Cristiano Amon told employees in a memo reviewed by Reuters. The company has not disclosed the number of roles affected as it shifts focus towards AI data centres.",
+    "content": "Qualcomm will cut jobs across its global workforce as part of a performance-focused restructuring following its annual employee reviews, with notifications expected to begin in November, Reuters reported on Tuesday.\nThe report cited a memo from chief... [1951 chars]",
+    "url": "https://www.livemint.com/companies/news/qualcomm-layoffs-chipmaker-to-cut-jobs-globally-from-november-after-performance-reviews-11792499932423.html",
+    "image": "https://www.livemint.com/lm-img/img/2026/10/20/1600x900/logo/Qualcomm_1792500671183_6ags_1792500679164_d100_2535cb18-6619-48bd-ae4c-9d0453b2c59b_T7zu.png",
+    "publishedAt": "2026-10-20T12:52:08Z",
+    "lang": "en",
+    "source": {
+      "id": "3bd4bd306c42647825fa42989624c036",
+      "name": "Livemint",
+      "url": "https://www.livemint.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "e7c33ff668775ffc877896d0f9716cd4",
     "title": "37% corporate staff out: Largest US grocery giant announces historic layoffs, bets big on AI",
     "description": "Kroger plans to cut 3,000 corporate jobs over three years as part of a major overhaul under CEO Greg Foran, focusing on cost-cutting, AI integration, and improved customer experience amidst economic pressures.",
@@ -124,38 +156,6 @@
       "id": "44d394a4e765f82b49b452e4302a72b0",
       "name": "Business Standard",
       "url": "https://www.business-standard.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "2687fd8066bedeaf820d0c59118be3e5",
-    "title": "Amazon cuts nearly 1,000 jobs, retail employees in India impacted",
-    "description": "Amazon has cut fewer than 1,000 roles, mainly in its Stores business, affecting staff in India, the US and the UK. The layoffs come during a major sales push and extend a wider workforce reset tied to pandemic-era hiring and fresh AI investment.",
-    "content": "Amazon has conducted another round of layoffs globally. This time, the company said, it cut fewer than 1,000 jobs, largely in its retail teams across multiple countries, including India, the US, and the UK. These job cuts are part of Amazon’s broader... [2688 chars]",
-    "url": "https://www.indiatoday.in/jobs/story/amazon-cuts-nearly-1000-jobs-retail-employees-in-india-impacted-tchc-3012105-2026-10-08",
-    "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202610/amazon-makes-fresh-job-cuts-across-teams-08381153-16x9.jpg?VersionId=rZ98xDC6uDSfv.Yxoyl__ZtjM2JGNCfB",
-    "publishedAt": "2026-10-08T02:48:11Z",
-    "lang": "en",
-    "source": {
-      "id": "c73686fdf0e30639d57eddaf7a77236e",
-      "name": "India Today",
-      "url": "https://www.indiatoday.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "be01c7bbbf78f81d3900361b811db3d9",
-    "title": "HSBC Layoffs: Bank to cut half of UK wealth management jobs as AI use expands",
-    "description": "The proposed restructuring could see HSBC eliminate around half of its management and specialist positions in the UK wealth division, while the number of financial advisers could fall by nearly 70%, the report said",
-    "content": "HSBC Holdings Plc is planning significant job cuts across its UK wealth management business as the bank steps up its use of artificial intelligence to serve affluent customers more efficiently, according to a Bloomberg report citing people familiar w... [2338 chars]",
-    "url": "https://www.livemint.com/companies/news/hsbc-layoffs-bank-to-cut-half-of-uk-wealth-management-jobs-as-ai-use-expands-11791394722537.html",
-    "image": "https://www.livemint.com/lm-img/img/2026/10/07/1600x900/logo/HSBC-HLDG-CFO--0_1791394768654_eJXh_1791394808297_ryzd_c40daf3a-17b5-4214-b8d2-97cd8e8bf0f1_xCPm.JPG",
-    "publishedAt": "2026-10-07T18:13:13Z",
-    "lang": "en",
-    "source": {
-      "id": "3bd4bd306c42647825fa42989624c036",
-      "name": "Livemint",
-      "url": "https://www.livemint.com",
       "country": "in"
     }
   }
