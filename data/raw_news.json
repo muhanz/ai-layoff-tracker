@@ -1,5 +1,37 @@
 [
   {
+    "id": "824e4defd438eb3ea6b6f4be44ff3002",
+    "title": "AI Layoffs 2026: Barclays To Cut 5,000 Jobs By Year-End, Developers Among Most Hit",
+    "description": "1,000 roles have already gone, and the remaining 4,000 will follow before year-end. Around 60 percent of the cuts hit support functions, including developers.",
+    "content": "It's la la layoff season and ahead of Halloween, corporates have already started celebrating with heads rolling. The latest is British bank Barclays is axing 5,000 jobs. The financial institution blames it on artificial intelligence or AI or as Trump... [1779 chars]",
+    "url": "https://in.mashable.com/tech/115248/ai-layoffs-2026-barclays-to-cut-5000-jobs-by-year-end-developers-among-most-hit",
+    "image": "https://sm.mashable.com/mashable_in/seo/1/111909/111909_pw7n.jpg",
+    "publishedAt": "2026-10-22T12:41:49Z",
+    "lang": "en",
+    "source": {
+      "id": "e894895ef041ab9c6cb7fe7223531f53",
+      "name": "Mashable India",
+      "url": "https://in.mashable.com",
+      "country": "in"
+    }
+  },
+  {
+    "id": "ad3b3ee6ca0e27336096d3a03ab558dd",
+    "title": "Barclays To Cut 5,000 Jobs This Year As AI Drives Cost-Cutting Push",
+    "description": "This initiative is part of a modernization effort aimed at improving efficiency. Despite the layoffs, Barclays aims to invest in employee skill development and reported a profit of £2.3 billion for the last quarter., Companies, Times Now",
+    "content": "(Representational Image)\nPhoto : iStock\nBarclays on Thursday said it was ‌cutting around 5,000 jobs, or 5% of its workforce, this year, ⁠as it uses technology such as AI to reduce fixed costs and improve overall returns.\nOne thousand of ‌the ⁠cuts ar... [1813 chars]",
+    "url": "https://www.timesnownews.com/business-economy/companies/barclays-to-cut-5000-jobs-this-year-as-ai-drives-cost-cutting-push-article-156385304",
+    "image": "https://images.timesnownews.com/thumb/msid-156385307,thumbsize-60160,width-1280,height-720,resizemode-75/156385307.jpg",
+    "publishedAt": "2026-10-22T10:56:28Z",
+    "lang": "en",
+    "source": {
+      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
+      "name": "Times Now",
+      "url": "https://www.timesnownews.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "c7fbbbebf14866675aac922de7c077f6",
     "title": "Qualcomm to cut jobs globally as CEO pushes performance-focused layoffs",
     "description": "Chipmaker Qualcomm will begin notifying employees of job cuts in November following annual performance reviews, as it seeks to strengthen its performance culture amid weak consumer electronics demand and a push into AI data centres.",
@@ -124,38 +156,6 @@
       "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
       "name": "Times Now",
       "url": "https://www.timesnownews.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "da6f86fef12808ef658bab46a1274ee9",
-    "title": "Flock is reportedly planning to cut 18 percent of its workers.",
-    "description": "The layoffs will impact around 270 employees and come as more states and local communities ban Flock’s automated license plate readers, according to a report from Reuters. Last month, Wired reported that Flock began offering employees voluntary buyouts as well.\n[Link: AI surveillance startup Flock Safety to cut several hundred jobs amid backlash, sources say | https://www.reuters.com/business/ai-surveillance-startup-flock-safety-cut-several-hundred-jobs-amid-backlash-2026-10-09/ | Reuters]",
-    "content": "E\nExternal Link\nFlock is reportedly planning to cut 18 percent of its workers.\nThe layoffs will impact around 270 employees and come as more states and local communities ban Flock’s automated license plate readers, according to a report from Reuters.... [730 chars]",
-    "url": "https://www.theverge.com/policy/1008755/flock-is-reportedly-planning-to-cut-18-percent-of-its-workers",
-    "image": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/01/verge-placeholder_f212b3.png?quality=90&strip=all&crop=0,0.13712291199202,100,99.725754176016",
-    "publishedAt": "2026-10-09T15:27:13Z",
-    "lang": "en",
-    "source": {
-      "id": "cb749b89c7dc92dc2d517a49bb9a43ab",
-      "name": "The Verge",
-      "url": "https://www.theverge.com",
-      "country": "us"
-    }
-  },
-  {
-    "id": "e9dcad8f070f2d55ed3f7f50c9c2ffe4",
-    "title": "Amazon cuts around 1,000 jobs; India retail employees among those hit",
-    "description": "Amazon Layoffs: Amazon has cut nearly 1,000 white-collar jobs, affecting employees in India, the US and the UK. The layoffs mainly impact its Stores unit as the company expands its focus on AI",
-    "content": "Amazon has cut nearly 1,000 white-collar jobs, affecting employees in India, the US and the UK. The layoffs mainly impact its Stores unit as the company expands its focus on AI\nAmazon confirmed that it had eliminated around 1,000 roles, mainly within... [3759 chars]",
-    "url": "https://www.business-standard.com/companies/news/amazon-cuts-1000-jobs-retail-employees-in-india-impacted-stores-lay-offs-126100800168_1.html",
-    "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2025-06/06/thumb/fitandfill/1200X628/1749192188-5886.JPG",
-    "publishedAt": "2026-10-08T03:42:09Z",
-    "lang": "en",
-    "source": {
-      "id": "44d394a4e765f82b49b452e4302a72b0",
-      "name": "Business Standard",
-      "url": "https://www.business-standard.com",
       "country": "in"
     }
   }
