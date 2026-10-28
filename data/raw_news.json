@@ -1,5 +1,21 @@
 [
   {
+    "id": "f33d651148a1f624feb8386d81dd802d",
+    "title": "What is the difference between buyout & layoff as Microsoft offers buyout to 60,000 employees across India, US, UK & Canada?",
+    "description": "Microsoft buyout offer to 60,000 workers: Microsoft has introduced a Voluntary Exit Offer (VEO) for eligible employees in India, the US, Canada and the UK, with reports suggesting around 60,000 workers could qualify. The programme allows employees to leave voluntarily with financial support, unlike layoffs, where the company decides to cut jobs. The move comes as Microsoft ramps up AI investments while managing workforce costs.",
+    "content": "Synopsis\nMicrosoft buyout offer to 60,000 workers: Microsoft has introduced a Voluntary Exit Offer (VEO) for eligible employees in India, the US, Canada and the UK, with reports suggesting around 60,000 workers could qualify. The programme allows emp... [8704 chars]",
+    "url": "https://economictimes.indiatimes.com/news/new-updates/what-is-the-difference-between-buyout-layoff-as-microsoft-offers-buyout-to-60000-employees-across-india-us-uk-canada/articleshow/135226627.cms",
+    "image": "https://img.etimg.com/thumb/msid-135226836,width-1200,height-900,imgsize-40572,overlay-economictimes/articleshow.jpg",
+    "publishedAt": "2026-10-27T06:54:00Z",
+    "lang": "en",
+    "source": {
+      "id": "5464668c1f0466950a0b2fab5249ec6c",
+      "name": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "824e4defd438eb3ea6b6f4be44ff3002",
     "title": "AI Layoffs 2026: Barclays To Cut 5,000 Jobs By Year-End, Developers Among Most Hit",
     "description": "1,000 roles have already gone, and the remaining 4,000 will follow before year-end. Around 60 percent of the cuts hit support functions, including developers.",
@@ -140,22 +156,6 @@
       "id": "7eeaf9a839918543cc708f2d331c3be4",
       "name": "Free Press Journal",
       "url": "https://www.freepressjournal.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "129f6f9342441a2f3c31479fc1ec3861",
-    "title": "Oracle Layoffs and the Duties of an AI Landlord",
-    "description": "Oracle’s AI infrastructure business is expanding rapidly even as jobs are cut, raising questions about workforce planning, operational risks and the people behind its growing cloud ambitions., Opinion - India, Times Now",
-    "content": "When an employee loses their job at Oracle, the first thing to worry about is how to pay for the bills next month. The company's aspirations regarding artificial intelligence do not provide much reassurance while the family is making adjustments to i... [3498 chars]",
-    "url": "https://www.timesnownews.com/opinion/india/oracle-layoffs-and-the-duties-of-an-ai-landlord-article-156310321",
-    "image": "https://images.timesnownews.com/thumb/msid-156310318,thumbsize-127889,width-1280,height-720,resizemode-75/156310318.jpg",
-    "publishedAt": "2026-10-10T11:25:53Z",
-    "lang": "en",
-    "source": {
-      "id": "d708b971b2f5b1049778dcf0e6f9ef3e",
-      "name": "Times Now",
-      "url": "https://www.timesnownews.com",
       "country": "in"
     }
   }
