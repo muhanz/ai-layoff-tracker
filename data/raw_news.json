@@ -1,5 +1,37 @@
 [
   {
+    "id": "a6e721662bdd3a450d69711940ab48cd",
+    "title": "How Many Employees Has Amazon Laid Off This Year?",
+    "description": "Amazon has cut about 250 jobs in its devices and services unit, adding to a year-long of layoffs. Reports put the publicly disclosed 2026 total at roughly 17,250 roles, though the figure is a floor because Amazon does not publish a running total. The cuts come as Amazon pushes employees to use AI and restructure management layers across the company.",
+    "content": "Amazon cut around 250 jobs in its devices and services unit, adding to a year of steady layoffs. Reports put the publicly disclosed 2026 total at roughly 17,250 positions.\nHow the 2026 numbers add up for Amazon?\n- January: Amazon announced about 16,0... [1689 chars]",
+    "url": "https://www.freepressjournal.in/tech/how-many-employees-has-amazon-laid-off-this-year",
+    "image": "https://media.assettype.com/freepressjournal/2020-10/8d26e8b3-01a4-45ce-8a20-0f9c48a25e08/amazon_afp.jpg",
+    "publishedAt": "2026-10-29T07:51:54Z",
+    "lang": "en",
+    "source": {
+      "id": "7eeaf9a839918543cc708f2d331c3be4",
+      "name": "Free Press Journal",
+      "url": "https://www.freepressjournal.in",
+      "country": "in"
+    }
+  },
+  {
+    "id": "b362f8e31b5fb7b82a36227c620fb160",
+    "title": "Amazon layoffs: 250 jobs cut as tech giant reviews costs after new product launches",
+    "description": "Amazon has cut around 250 jobs in its devices and services unit to reduce costs and improve efficiency, focusing mainly on software development roles amid ongoing AI and cloud investments.",
+    "content": "The job cuts were announced on Wednesday and mainly affect software development roles, Reuters reported. An Amazon spokesperson confirmed the decision, saying, “We’ve made the difficult decision to eliminate a small number of roles.”\nSpeaking to Reut... [2999 chars]",
+    "url": "https://www.financialexpress.com/business/news/amazon-layoffs-250-jobs-cut-as-tech-giant-reviews-costs-after-new-product-launches/4371850/",
+    "image": "https://images.financialexpressdigital.com/2026/10/amazon_image_20261021073847.jpg",
+    "publishedAt": "2026-10-29T01:05:08Z",
+    "lang": "en",
+    "source": {
+      "id": "63361c66f51ee0c82a5325ba1c7b8d06",
+      "name": "The Financial Express",
+      "url": "https://www.financialexpress.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "30b7211910ecd0d830649577401bf902",
     "title": "Amazon cut about 250 jobs from its devices team just weeks after launching a bunch of new devices.",
     "description": "In the last 30 days Amazon has launched new tablets, a new Kindle, a picture frame, and multiple new Echo devices. Now the company is cutting around 250 positions from its devices and services team, though Reuters says they’re primarily focused on software development. Amazon did not confirm a reason for the layoffs, but developers are facing increased pressure from increasingly advanced AI coding tools.\n[Link: Amazon cuts more jobs, in devices unit, after flurry of product rollouts | https://www.reuters.com/business/world-at-work/amazon-cuts-more-jobs-devices-unit-after-flurry-product-rollouts-2026-10-28/ | Reuters]",
@@ -125,38 +157,6 @@
       "name": "The Sun U.S Edition",
       "url": "https://www.the-sun.com",
       "country": "gb"
-    }
-  },
-  {
-    "id": "eb3514a8957bb4e6f2146b3e14f4c4dc",
-    "title": "Zoho Skips 2026 Salary Hikes As AI Costs Surge; Sridhar Vembu Says Outlook For Software Jobs Is ‘Grim’",
-    "description": "Zoho has cancelled its annual salary hike for employees in 2026, with co-founder Sridhar Vembu citing a four-fold rise in data-centre server prices and higher AI usage. The company has also cut marketing spending and has not increased its employee count for 18 months. Vembu said Zoho will work to avoid mass layoffs but called software jobs outlook “grim”.",
-    "content": "Zoho has cancelled its usual annual salary hike for employees in 2026, with co-founder and chief scientist Sridhar Vembu citing a sharp rise in AI-related infrastructure costs, rapid growth in AI usage and an uncertain business environment. Vembu sai... [2326 chars]",
-    "url": "https://www.freepressjournal.in/tech/zoho-skips-2026-salary-hikes-as-ai-costs-surge-sridhar-vembu-says-outlook-for-software-jobs-is-grim",
-    "image": "https://media.assettype.com/freepressjournal/2025-04-04/9odkf318/Untitled-design-2025-04-04T153529.833.jpg",
-    "publishedAt": "2026-10-13T06:48:29Z",
-    "lang": "en",
-    "source": {
-      "id": "7eeaf9a839918543cc708f2d331c3be4",
-      "name": "Free Press Journal",
-      "url": "https://www.freepressjournal.in",
-      "country": "in"
-    }
-  },
-  {
-    "id": "38033a5d5d28c9726ba830385a62143d",
-    "title": "Sridhar Vembu Warns Of Grim Software Jobs Outlook, Flags AI Cost Surge: 'Will Work Hard To Avoid Mass Layoffs'",
-    "description": "In a post on X, Vembu said Zoho had not increased its employee count for the past 18 months and had cut its marketing budget to control costs.",
-    "content": "Zoho founder Sridhar Vembu on Tuesday warned of a grim outlook for software jobs, citing rising artificial intelligence costs, higher server prices and geopolitical uncertainties. He said the company would work hard to avoid mass layoffs as it naviga... [2588 chars]",
-    "url": "https://www.ndtvprofit.com/business/zohos-sridhar-vembu-warns-of-grim-software-jobs-outlook-flags-ai-cost-surge-will-work-hard-to-avoid-mass-layoffs-12176541",
-    "image": "https://c.ndtvimg.com/2026-01/ssmsjhvo_sridhar-vembu_625x300_27_January_26.jpeg?im=FeatureCrop,algorithm=dnn,width=1600,height=900",
-    "publishedAt": "2026-10-13T01:32:04Z",
-    "lang": "en",
-    "source": {
-      "id": "73aabc646bff1356a46223f250cc6b52",
-      "name": "NDTV Profit",
-      "url": "https://www.ndtvprofit.com",
-      "country": "in"
     }
   }
 ]
