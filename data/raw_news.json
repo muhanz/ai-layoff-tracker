@@ -1,5 +1,21 @@
 [
   {
+    "id": "c367a67037185b17961089a4fa3dd008",
+    "title": "Canva layoffs: Is the company preparing to cut jobs again in November?",
+    "description": "Canva employees are reportedly bracing for possible redundancies or a company-wide recruitment pause in November, as the design platform recalibrates its growth targets and steps up investment in artificial intelligence. The uncertainty follows earlier job cuts and comes as the company reworks its AI strategy amid intensifying competition.",
+    "content": "Canva's push to make artificial intelligence a bigger part of its business could come with further changes to its workforce. The Australian design software company is reportedly considering another round of redundancies or a freeze on new recruitment... [4178 chars]",
+    "url": "https://www.firstpost.com/tech/canva-layoffs-is-the-company-preparing-to-cut-jobs-again-in-november-14057316.html",
+    "image": "https://images.firstpost.com/uploads/2026/11/Canva-2026-11-1b55699b4861386f7a5b7fa77b09d813-1200x675.jpg?im=FitAndFill,width=1200,height=675",
+    "publishedAt": "2026-11-03T05:25:36Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "a6e721662bdd3a450d69711940ab48cd",
     "title": "How Many Employees Has Amazon Laid Off This Year?",
     "description": "Amazon has cut about 250 jobs in its devices and services unit, adding to a year-long of layoffs. Reports put the publicly disclosed 2026 total at roughly 17,250 roles, though the figure is a floor because Amazon does not publish a running total. The cuts come as Amazon pushes employees to use AI and restructure management layers across the company.",
@@ -141,22 +157,6 @@
       "name": "The Financial Express",
       "url": "https://www.financialexpress.com",
       "country": "in"
-    }
-  },
-  {
-    "id": "e5cfa476f2aae985a483fd2cce45ccaf",
-    "title": "Kroger to cut 3,000 jobs in devastating layoffs across America as 143-year-old grocery store giant looks to AI instead",
-    "description": "KROGER is set to eliminate thousands of corporate roles and replace them with AI.\nCEO ​Greg Foran told employees on Monday that he plans to...",
-    "content": "KROGER is set to eliminate thousands of corporate roles and replace them with AI.\nCEO ​Greg Foran told employees on Monday that he plans to cut around 3,000 jobs over the next three years.\nAdvertisement\nThe grocer is looking to integrate AI into its ... [1109 chars]",
-    "url": "https://www.the-sun.com/money/17137923/kroger-cut-3000-jobs-devastating-layoffs-ai/",
-    "image": "https://www.the-sun.com/wp-content/uploads/sites/6/2026/10/newspress-collage-kwh6jto3e-1791887273403.jpg?quality=90&strip=all&1791872895&w=1920&h=1080&crop=1",
-    "publishedAt": "2026-10-13T11:21:06Z",
-    "lang": "en",
-    "source": {
-      "id": "df8898b40ea58da32bb50978f1d85cb3",
-      "name": "The Sun U.S Edition",
-      "url": "https://www.the-sun.com",
-      "country": "gb"
     }
   }
 ]
