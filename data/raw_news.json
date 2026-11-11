@@ -1,5 +1,21 @@
 [
   {
+    "id": "6630b47c20a0a09a6749083b209e9a82",
+    "title": "Qantas layoffs: Australian airline to cut 850 jobs, shift work to India in AI overhaul",
+    "description": "Qantas is preparing to eliminate 850 jobs in Australia as part of a technology overhaul involving Accenture, with some corporate functions moving to teams based largely in India. The decision adds to a growing list of Australian companies restructuring their workforces amid rising investment in AI and automation.",
+    "content": "Australia's aviation industry is facing another round of job losses, this time at its national carrier. Qantas plans to shed around 850 positions in the country and move some of the work overseas as it partners with professional services firm Accentu... [3614 chars]",
+    "url": "https://www.firstpost.com/tech/qantas-layoffs-australian-airline-to-cut-850-jobs-shift-work-to-india-in-ai-overhaul-14058912.html",
+    "image": "https://images.firstpost.com/uploads/2026/11/Vanessa-Hudson-2026-11-5be0daf3a9ffa207f5355f2c1f8d8405-1200x675.jpg?im=FitAndFill,width=1200,height=675",
+    "publishedAt": "2026-11-10T04:24:00Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    }
+  },
+  {
     "id": "c367a67037185b17961089a4fa3dd008",
     "title": "Canva layoffs: Is the company preparing to cut jobs again in November?",
     "description": "Canva employees are reportedly bracing for possible redundancies or a company-wide recruitment pause in November, as the design platform recalibrates its growth targets and steps up investment in artificial intelligence. The uncertainty follows earlier job cuts and comes as the company reworks its AI strategy amid intensifying competition.",
@@ -140,22 +156,6 @@
       "id": "3bd4bd306c42647825fa42989624c036",
       "name": "Livemint",
       "url": "https://www.livemint.com",
-      "country": "in"
-    }
-  },
-  {
-    "id": "e7c33ff668775ffc877896d0f9716cd4",
-    "title": "37% corporate staff out: Largest US grocery giant announces historic layoffs, bets big on AI",
-    "description": "Kroger plans to cut 3,000 corporate jobs over three years as part of a major overhaul under CEO Greg Foran, focusing on cost-cutting, AI integration, and improved customer experience amidst economic pressures.",
-    "content": "The latest cuts are shaping up to be one of the biggest overhauls in the company’s 143-year history. Accounting for more than one-third, or 37%, of the grocery giant’s corporate jobs, the recently announced layoffs follow a previous round in June 202... [6365 chars]",
-    "url": "https://www.financialexpress.com/world-news/us-news/37-corporate-staff-out-largest-us-grocery-giant-announces-historic-layoffs-bets-big-on-ai/4360741/",
-    "image": "https://images.financialexpressdigital.com/2026/10/kroger-layoffs.jpg",
-    "publishedAt": "2026-10-14T06:37:18Z",
-    "lang": "en",
-    "source": {
-      "id": "63361c66f51ee0c82a5325ba1c7b8d06",
-      "name": "The Financial Express",
-      "url": "https://www.financialexpress.com",
       "country": "in"
     }
   }
