@@ -22,6 +22,9 @@ the appropriate active language highlighted.
 import os
 import re
 
+from i18n_audit import leftover
+from i18n_nodes import NodeTranslator
+
 
 # ─── Shared CSS and hreflang ────────────────────────────────────────────────
 
@@ -56,7 +59,7 @@ def transform(base_html, lang_code, lang_attr, translations, regex_translations)
       1. Set <html lang="...">
       2. Replace hreflang block (already in base from generate_page.py)
       3. Swap lang switcher active item
-      4. Apply UI string translations
+      4. Apply text-node translations, then the older UI string translations
       5. Apply regex translations for strings that embed daily-changing numbers
     """
     html = base_html
@@ -75,7 +78,13 @@ def transform(base_html, lang_code, lang_attr, translations, regex_translations)
         flags=re.DOTALL,
     )
 
-    # 4. UI string translations
+    # 4a. Text-node translations (scripts/i18n/<lang>.json). These run first, on
+    #     the English page, so a node is translated whole or not at all.
+    html = NodeTranslator(lang_code).apply(html)
+    for old, new in SCRIPT_STRINGS.get(lang_code, []):
+        html = html.replace(old, new)
+
+    # 4b. UI string translations
     for old, new in translations:
         html = html.replace(old, new)
 
@@ -501,7 +510,21 @@ ES = [
 # and the key silently stops matching (this froze the i18n pages at launch
 # values until 2026-08). Capture the number and re-insert it instead.
 
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+MONTHS_ES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+TO_DATE = r">to (" + "|".join(MONTHS) + r") (\d{1,2})<"
+
+
+def _to_date_zh(m):
+    return ">截至%d月%s日<" % (MONTHS.index(m.group(1)) + 1, m.group(2))
+
+
+def _to_date_es(m):
+    return ">al %s de %s<" % (m.group(2), MONTHS_ES[MONTHS.index(m.group(1))])
+
+
 ZH_HANS_RE = [
+    (TO_DATE, _to_date_zh),
     (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
      lambda m: _m_to_wan(m, "通过6.7倍乘数估算的真实AI影响：约{wan}万")),
     (r"([\d,]+) confirmed</span>", r"\1 已确认</span>"),
@@ -512,6 +535,7 @@ ZH_HANS_RE = [
 ]
 
 ZH_HANT_RE = [
+    (TO_DATE, _to_date_zh),
     (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
      lambda m: _m_to_wan(m, "通過6.7倍乘數估算的真實AI影響：約{wan}萬")),
     (r"([\d,]+) confirmed</span>", r"\1 已確認</span>"),
@@ -522,6 +546,7 @@ ZH_HANT_RE = [
 ]
 
 ES_RE = [
+    (TO_DATE, _to_date_es),
     (r"est\. true AI impact via 6\.7&times; multiplier: ~([\d.]+)M",
      r"impacto real estimado de IA con multiplicador 6.7×: ~\1M"),
     (r"([\d,]+) confirmed</span>", r"\1 confirmados</span>"),
@@ -530,6 +555,27 @@ ES_RE = [
      r"documentados &times; multiplicador 6.7 sin etiquetar = ~\1M estimados"),
     (r"confirmed &nbsp;·&nbsp; ~([\d,]+)/day", r"confirmados &nbsp;·&nbsp; ~\1/día"),
 ]
+
+
+# Strings that live inside a <script> (the K chart's hover label), where the
+# text-node pass does not look.
+SCRIPT_STRINGS = {
+    "zh-hans": [
+        ("Top 1% share of wealth: <b>", "最富1%的财富占比：<b>"),
+        ("Wage share of income: <b>", "工资占收入的比重：<b>"),
+        ("'not published yet'", "'尚未公布'"),
+    ],
+    "zh-hant": [
+        ("Top 1% share of wealth: <b>", "最富1%的財富占比：<b>"),
+        ("Wage share of income: <b>", "薪資占所得的比重：<b>"),
+        ("'not published yet'", "'尚未公布'"),
+    ],
+    "es": [
+        ("Top 1% share of wealth: <b>", "Riqueza en manos del 1% más rico: <b>"),
+        ("Wage share of income: <b>", "Salarios como parte del ingreso: <b>"),
+        ("'not published yet'", "'aún no publicado'"),
+    ],
+}
 
 
 # ─── Main ────────────────────────────────────────────────────────────────────
@@ -554,7 +600,9 @@ def main():
         result = transform(base, lang_code, lang_attr, translations, regex_translations)
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(result)
-        print(f"Generated: {out_path}")
+        still_english = len(leftover(result, base, lang_code))
+        note = f" ({still_english} text node(s) still in English; see scripts/i18n_audit.py)" if still_english else ""
+        print(f"Generated: {out_path}{note}")
 
     print("\nAll translated pages generated.")
     print("Remember: company names, dates, and notes stay in English by design.")
