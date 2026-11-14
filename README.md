@@ -45,10 +45,16 @@ python scripts/generate_page.py
 │   ├── import_historical_data.py # 一次性：导入历史基线数据
 │   ├── fetch_news.py             # 每日：抓取AI裁员新闻
 │   ├── analyze.py                # 每日：LLM分析提取事件
+│   ├── dedupe_events.py          # 每日：把同一轮裁员的重复报道合并为一个事件（保留所有来源）
+│   ├── k_gauge.py                # 每日：从 FRED 读取六项公开指标，计算“K 型指数”（0–100）
+│   ├── refresh_facts.py          # 每日：从 BLS / FRED 数据序列刷新 facts.json 中的官方统计数字（不使用模型）
+│   ├── page_sections.py          # 论证板块：失业率阶梯、资金流向、最强反驳、我们会改变看法的条件
 │   ├── generate_page.py          # 每日：生成静态HTML
 │   └── supplement_from_trueup.py # 可选：从TrueUp补充数据
 ├── data/
-│   └── events.json               # 裁员事件数据库
+│   ├── events.json               # 裁员事件数据库（merged_duplicates 记录被合并的重复报道）
+│   ├── k_gauge.json              # K 型指数：六项指标的当前值、历史最好/最差值与月度历史
+│   └── facts.json                # 页面引用的所有外部统计数据：数值、统计期、来源链接
 └── public/
     └── index.html                # 部署的静态页面
 ```

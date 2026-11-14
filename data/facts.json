@@ -1,0 +1,362 @@
+{
+  "as_of": "2026-11-14",
+  "how_to_update": "Change the value and its period together, and re-open the source. 'checked' records how each figure was confirmed. 'kept_by' says who keeps it current: 'series' is refreshed by scripts/refresh_facts.py in the daily job, 'report' is checked weekly against new editions and proposed in a pull request, 'manual' is prose a person rewrites, 'fixed' is history that does not change.",
+  "facts": {
+    "u3": {
+      "value": "4.1%",
+      "period": "Oct 2026",
+      "source": "BLS Table A-15",
+      "url": "https://www.bls.gov/news.release/empsit.t15.htm",
+      "checked": "primary page, read 2026-11-13",
+      "number": 4.1,
+      "kept_by": "series"
+    },
+    "u6": {
+      "value": "7.9%",
+      "period": "Oct 2026",
+      "source": "BLS Table A-15",
+      "url": "https://www.bls.gov/news.release/empsit.t15.htm",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "series"
+    },
+    "grad_underemp": {
+      "value": "42.5%",
+      "period": "2026 Q3",
+      "source": "New York Fed",
+      "url": "https://www.newyorkfed.org/research/college-labor-market",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "report"
+    },
+    "lfpr": {
+      "value": "61.9%",
+      "period": "Oct 2026",
+      "source": "BLS via FRED",
+      "url": "https://fred.stlouisfed.org/series/CIVPART",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "series"
+    },
+    "lfpr_feb2020": {
+      "value": "63.3%",
+      "period": "Feb 2020",
+      "source": "BLS via FRED",
+      "url": "https://fred.stlouisfed.org/series/CIVPART",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "fixed"
+    },
+    "prime_men_out": {
+      "value": "10.3%",
+      "period": "Oct 2026",
+      "source": "BLS series LNS11300061",
+      "url": "https://data.bls.gov/timeseries/LNS11300061?years_option=all_years",
+      "checked": "primary page, read 2026-11-13",
+      "note": "100 minus the 89.7% participation rate of men aged 25 to 54",
+      "kept_by": "series"
+    },
+    "prime_men_out_1950s": {
+      "value": "2%",
+      "period": "Sep 1954",
+      "source": "BLS series LNS11300061",
+      "url": "https://data.bls.gov/timeseries/LNS11300061?years_option=all_years",
+      "checked": "primary page, read 2026-11-13",
+      "note": "100 minus the 97.9% series peak",
+      "kept_by": "fixed"
+    },
+    "dc_construction": {
+      "value": "$96.5B",
+      "period": "Sep 2026, annual rate",
+      "source": "Census construction spending",
+      "url": "https://www.census.gov/construction/c30/xlsx/privsatime.xlsx",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "report"
+    },
+    "office_construction": {
+      "value": "$46.0B",
+      "period": "Sep 2026, annual rate",
+      "source": "Census construction spending",
+      "url": "https://www.census.gov/construction/c30/xlsx/privsatime.xlsx",
+      "checked": "primary page, read 2026-11-13",
+      "note": "private general office, excluding data centers",
+      "kept_by": "report"
+    },
+    "dc_vs_office_note": {
+      "value": "Data centers passed general office buildings in 2025 and have stayed ahead every month since September 2025.",
+      "period": "",
+      "source": "Census construction spending",
+      "url": "https://www.census.gov/construction/c30/xlsx/privsatime.xlsx",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "manual"
+    },
+    "capex_2026": {
+      "value": "~$730B",
+      "period": "2026 guidance as of Oct 2026",
+      "source": "company guidance, compiled by Walnut",
+      "url": "https://walnutinvest.com/stats/ai-capex-statistics",
+      "checked": "secondary source, 2026-11-13",
+      "note": "Amazon ~$220B, Alphabet $195-205B, Microsoft ~$170B, Meta $135-145B; midpoints summed. Company filings not opened: confirm before publishing.",
+      "kept_by": "report"
+    },
+    "capex_2026_scope": {
+      "value": "in 2026 capital spending planned by Amazon, Alphabet, Microsoft and Meta, up from $376B in 2025. Most of it is AI infrastructure.",
+      "period": "",
+      "source": "company guidance, compiled by Walnut",
+      "url": "https://walnutinvest.com/stats/ai-capex-statistics",
+      "checked": "secondary source, 2026-11-13",
+      "kept_by": "manual"
+    },
+    "office_admin_jobs": {
+      "value": "17.8M",
+      "period": "May 2025",
+      "source": "BLS occupational employment",
+      "url": "https://www.bls.gov/news.release/ocwage.t01.htm",
+      "checked": "primary page, read 2026-11-13",
+      "note": "17,753,430",
+      "kept_by": "report"
+    },
+    "csr_jobs": {
+      "value": "2.6M",
+      "period": "May 2025",
+      "source": "BLS occupational employment",
+      "url": "https://www.bls.gov/news.release/ocwage.t01.htm",
+      "checked": "primary page, read 2026-11-13",
+      "note": "2,595,750",
+      "kept_by": "report"
+    },
+    "insurance_jobs": {
+      "value": "2.9M",
+      "period": "Oct 2026",
+      "source": "BLS payroll survey",
+      "url": "https://data.bls.gov/timeseries/CES5552400001",
+      "checked": "primary page, read 2026-11-13",
+      "note": "2,917,800, preliminary",
+      "kept_by": "series"
+    },
+    "mck_hours": {
+      "value": "up to 30%",
+      "period": "by 2030",
+      "source": "McKinsey Global Institute, 2023",
+      "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "report"
+    },
+    "mck_transitions": {
+      "value": "12 million",
+      "period": "by 2030",
+      "source": "McKinsey Global Institute, 2023",
+      "url": "https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "report"
+    },
+    "gs_exposed": {
+      "value": "about two-thirds",
+      "period": "2023",
+      "source": "Goldman Sachs",
+      "url": "https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "report"
+    },
+    "wef_created": {
+      "value": "170 million",
+      "period": "by 2030",
+      "source": "World Economic Forum, Future of Jobs 2025",
+      "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "report"
+    },
+    "wef_displaced": {
+      "value": "92 million",
+      "period": "by 2030",
+      "source": "World Economic Forum, Future of Jobs 2025",
+      "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "report"
+    },
+    "wef_horizon": {
+      "value": "2030",
+      "period": "",
+      "source": "World Economic Forum, Future of Jobs 2025",
+      "url": "https://www.weforum.org/press/2025/01/future-of-jobs-report-2025-78-million-new-job-opportunities-by-2030-but-urgent-upskilling-needed-to-prepare-workforces/",
+      "checked": "search snippet only (primary site blocked), 2026-11-13",
+      "kept_by": "fixed"
+    },
+    "challenger_ai": {
+      "value": "193,226",
+      "period": "2023 to Oct 2026",
+      "source": "Challenger, Gray &amp; Christmas",
+      "url": "https://www.challengergray.com/blog/october-layoffs-at-three-year-low-seasonal-hiring-plans-up-26/",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "report"
+    },
+    "bfs_apps": {
+      "value": "about 500,000",
+      "period": "Oct 2026",
+      "source": "Census Business Formation Statistics",
+      "url": "https://fred.stlouisfed.org/series/BABATOTALSAUS",
+      "checked": "primary page, read 2026-11-13",
+      "note": "501,609; 2019 average 293,133 (+71%)",
+      "kept_by": "series"
+    },
+    "bfs_employer_note": {
+      "value": "Businesses that hire are growing about half as fast: the Census Bureau expects 5.6% of applications to become employers within a year, down from 6.9% in 2019.",
+      "period": "",
+      "source": "Census Business Formation Statistics",
+      "url": "https://fred.stlouisfed.org/series/BFPBF4QTOTALSAUS",
+      "checked": "primary page, read 2026-11-13",
+      "note": "27,867 projected employer formations of 501,609 applications; 20,145 of 293,133 in 2019 (+38% vs +71%)",
+      "kept_by": "manual"
+    },
+    "klarna": {
+      "value": "In May 2025 its chief executive said the cost focus had lowered quality, and the company began hiring people for customer service again.",
+      "period": "May 2025",
+      "source": "Entrepreneur, reporting a Bloomberg interview",
+      "url": "https://www.entrepreneur.com/business-news/klarna-ceo-reverses-course-by-hiring-more-humans-not-ai/491396",
+      "checked": "secondary source, 2026-11-13",
+      "kept_by": "manual"
+    },
+    "canaries": {
+      "value": "16%",
+      "period": "payroll data to Sep 2025",
+      "source": "Stanford Digital Economy Lab",
+      "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
+      "checked": "primary page, read 2026-11-13",
+      "note": "13% in the Aug 2025 version; 19% on a simpler measure in the Aug 2026 version. The authors call it descriptive, not causal.",
+      "kept_by": "report"
+    },
+    "jobs_2025": {
+      "value": "116,000",
+      "period": "Dec 2024 to Dec 2025",
+      "source": "BLS payroll survey",
+      "url": "https://data.bls.gov/timeseries/CES0000000001",
+      "checked": "primary page, read 2026-11-13",
+      "note": "181,000 at the Feb 2026 benchmark; 116,000 in current data",
+      "kept_by": "series"
+    },
+    "health_2025": {
+      "value": "387,000",
+      "period": "Dec 2024 to Dec 2025",
+      "source": "BLS payroll survey",
+      "url": "https://data.bls.gov/timeseries/CES6562000101",
+      "checked": "primary page, read 2026-11-13",
+      "note": "health care alone 387,200; health care and social assistance 686,100",
+      "kept_by": "series"
+    },
+    "health_social_2025": {
+      "value": "686,000",
+      "period": "Dec 2024 to Dec 2025",
+      "source": "BLS payroll survey",
+      "url": "https://data.bls.gov/timeseries/CES6562000001",
+      "checked": "primary page, read 2026-11-13",
+      "kept_by": "series"
+    },
+    "jobs_ex_health_2025": {
+      "value": "&minus;271,000",
+      "period": "Dec 2024 to Dec 2025",
+      "source": "BLS payroll survey",
+      "url": "https://data.bls.gov/timeseries/CES0000000001",
+      "checked": "primary page, read 2026-11-13",
+      "note": "116,000 total minus 387,200 in health care",
+      "kept_by": "series"
+    },
+    "ceo_statements": {
+      "checked": "primary page, read 2026-11-13 (Lutke: snippet)",
+      "items": [
+        {
+          "who": "Andy Jassy, Amazon",
+          "when": "June 2025",
+          "said": "told employees that generative AI will shrink Amazon&rsquo;s corporate workforce over the next few years.",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-ceo-andy-jassy-on-generative-ai"
+        },
+        {
+          "who": "Jim Farley, Ford",
+          "when": "June 2025",
+          "said": "said AI will replace half of white-collar workers in the United States.",
+          "url": "https://fortune.com/2025/07/05/ford-ceo-jim-farley-ai-white-collar-jobs-essential-economy-skilled-trade-jobs-shortage/"
+        },
+        {
+          "who": "Tobi L&uuml;tke, Shopify",
+          "when": "April 2025",
+          "said": "told teams to show that AI cannot do the work before asking for more headcount.",
+          "url": "https://www.hrdive.com/news/tech-ceos-show-why-ai-cant-do-the-job-or-we-wont-hire-more-people/745238/"
+        }
+      ],
+      "kept_by": "manual"
+    },
+    "mck35_demand": {
+      "value": "36 million",
+      "number": 36000000,
+      "period": "2026",
+      "source": "McKinsey Global Institute, Workforce in Motion",
+      "url": "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states",
+      "checked": "Fortune 2026-10-03 read in full plus search snippets; McKinsey page timed out, 2026-11-14",
+      "horizon": "by 2035",
+      "kept_by": "report"
+    },
+    "mck35_switch": {
+      "value": "11 million",
+      "number": 11000000,
+      "period": "2026",
+      "range": "6 to 16 million",
+      "source": "McKinsey Global Institute, Workforce in Motion",
+      "url": "https://www.mckinsey.com/mgi/our-research/workforce-in-motion-skills-and-pathways-to-future-jobs-in-the-united-states",
+      "checked": "Fortune 2026-10-03 read in full plus search snippets; McKinsey page timed out, 2026-11-14",
+      "horizon": "by 2035",
+      "kept_by": "report"
+    },
+    "mck35_created": {
+      "value": "about 41 million",
+      "period": "Oct 2026",
+      "source": "McKinsey Global Institute, via Fortune",
+      "url": "https://fortune.com/2026/10/03/ai-job-displacement-creation-new-careers-11-million-americans-workforce-mobility/",
+      "checked": "Fortune read 2026-11-14; one other outlet reports 40 million",
+      "kept_by": "report"
+    },
+    "gs_displaced": {
+      "value": "15 million",
+      "number": 15000000,
+      "share": "about 9%",
+      "period": "Oct 2026",
+      "source": "Goldman Sachs Research, via Fortune",
+      "url": "https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/",
+      "checked": "search snippet of the Fortune report plus two secondary summaries; Goldman note itself not read, 2026-11-14",
+      "horizon": "over about a decade",
+      "kept_by": "report"
+    },
+    "warn_unemp": {
+      "value": "10% to 20%",
+      "low": 10.0,
+      "high": 20.0,
+      "period": "May 2025",
+      "source": "Dario Amodei, via Axios",
+      "url": "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic",
+      "checked": "search snippets of the Axios interview and coverage, 2026-11-14",
+      "horizon": "within one to five years",
+      "kept_by": "fixed"
+    },
+    "unrate_2009": {
+      "value": "10.0%",
+      "number": 10.0,
+      "period": "Oct 2009",
+      "source": "BLS unemployment rate, via FRED",
+      "url": "https://fred.stlouisfed.org/series/UNRATE",
+      "checked": "primary data series, read 2026-11-14",
+      "kept_by": "fixed"
+    },
+    "unrate_2020": {
+      "value": "14.8%",
+      "number": 14.8,
+      "period": "Apr 2020",
+      "source": "BLS unemployment rate, via FRED",
+      "url": "https://fred.stlouisfed.org/series/UNRATE",
+      "checked": "primary data series, read 2026-11-14",
+      "kept_by": "fixed"
+    },
+    "unrate_1933": {
+      "value": "about 25%",
+      "number": 24.9,
+      "period": "1933",
+      "source": "Lebergott estimate, in Margo, Journal of Economic Perspectives",
+      "url": "https://fraser.stlouisfed.org/title/journal-economic-perspectives-1167/employment-unemployment-1930s-2391/fulltext",
+      "checked": "search snippet of the Margo table (24.9); other compilations give 25.2, 2026-11-14",
+      "kept_by": "fixed"
+    }
+  }
+}
