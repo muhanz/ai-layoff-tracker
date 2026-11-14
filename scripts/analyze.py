@@ -13,6 +13,8 @@ import os
 from datetime import datetime
 from openai import OpenAI
 
+from dedupe_events import is_repeat, recompute_totals
+
 
 def analyze_news():
     """使用LLM从新闻中提取结构化裁员数据"""
@@ -131,6 +133,16 @@ NEWS ARTICLES TO ANALYZE:
             print(f"    ⏭️  跳过重复: {company} ({date})")
             continue
         
+        # A different outlet reporting a round we already have is not a new event.
+        candidate = {"company": company, "date": date, "headcount": headcount}
+        try:
+            repeat = is_repeat(candidate, db)
+        except ValueError:
+            repeat = False
+        if repeat:
+            print(f"    ⏭️  Repeat report of an existing round, skipped: {company} ({date}, {headcount})")
+            continue
+
         # 添加新事件
         db["events"].append({
             "id": f"{company}_{date}".replace(" ", "_").lower(),
@@ -149,15 +161,7 @@ NEWS ARTICLES TO ANALYZE:
     
     # 更新元数据
     db["metadata"]["last_updated"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-    db["metadata"]["total_confirmed"] = sum(
-        e["headcount"] for e in db["events"] if e["ai_attributed"] == "confirmed"
-    )
-    db["metadata"]["total_likely"] = sum(
-        e["headcount"] for e in db["events"] if e["ai_attributed"] == "likely"
-    )
-    db["metadata"]["total_estimated"] = sum(
-        e["headcount"] for e in db["events"]
-    )
+    recompute_totals(db)
     
     with open(db_file, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)

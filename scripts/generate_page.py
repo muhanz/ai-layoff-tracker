@@ -9,6 +9,8 @@ import json
 import os
 from datetime import datetime
 
+import page_sections as ps
+
 
 def generate_html():
     """Generate static HTML warning page from data."""
@@ -32,8 +34,42 @@ def generate_html():
     start = datetime(2023, 3, 14)
     days_since = (datetime.utcnow() - start).days
     avg_per_day = total_estimated // max(days_since, 1)
-    pct_toward_30m = round((total_estimated * 6.7) / 30_000_000 * 100, 1)
-    estimated_millions = round(total_estimated * 6.7 / 1_000_000, 1)
+
+    # Argument sections. Outside statistics come from data/facts.json (sourced and dated).
+    facts = ps.load_facts()
+    extra_css = ps.EXTRA_CSS
+    hero_tiers = ps.hero_tiers_html(db)
+    depth_gauge = ps.depth_gauge_html(db, facts)
+    idx = ps.load_index()
+    k_gauge_hero = ps.k_gauge_hero_html(idx, facts)
+    ahead_hero = ps.ahead_hero_html(db, facts)
+    k_gauge_detail = ps.k_gauge_detail_html(idx, facts)
+    k_shape = ps.k_shape_html(idx)
+    summary_section = ps.summary_html(db, idx, facts)
+    di_sent = ps._component(idx, "sentiment")
+    di_open = ps._component(idx, "per_opening")
+    ch1 = ps.chapter_html(1, "ch-count", "What we can count",
+        "Start with what is on the record: announced cuts, one source each, sorted by how sure we are that AI was the reason.")
+    ch2 = ps.chapter_html(2, "ch-calm", "Why the official numbers look calm",
+        f"If the cuts are real, why is unemployment {facts.v('u3')}? Because of what that number leaves out.")
+    ch3 = ps.chapter_html(3, "ch-split", "Two economies",
+        "Whatever happens to the job count, the gains are already landing in one place.")
+    ch4 = ps.chapter_html(4, "ch-depth", "How deep this could go",
+        "What is counted so far is small next to what the forecasters expect.")
+    ch5 = ps.chapter_html(5, "ch-doubt", "The best case against us",
+        "A page like this should be argued with. These are the strongest replies we know.")
+    ch6 = ps.chapter_html(6, "ch-next", "What we do about it",
+        "None of this is an argument against AI. It is an argument about who it gets built for.")
+    ch_data = ps.chapter_html(0, "ch-data", "The data",
+        "Every event, the form to send us one we missed, and how we count.")
+    exposure_section = ps.exposure_html(facts)
+    attribution_gap = ps.attribution_gap_html(db, facts)
+    acceleration_section = ps.acceleration_html(db)
+    ladder_section = ps.ladder_html(facts)
+    money_section = ps.money_html(facts)
+    objections_section = ps.objections_html(facts)
+    change_mind_section = ps.change_our_mind_html(facts)
+    folded_count = len(db.get("merged_duplicates", []))
     
     # Recent 20 events
     recent_events = sorted(db["events"], key=lambda x: x["date"], reverse=True)[:20]
@@ -86,14 +122,14 @@ def generate_html():
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Layoff Tracker - Global Warning</title>
-    <meta name="description" content="Tracking job losses directly attributed to AI since GPT-4 launched. The iceberg behind the 2.9M total announced U.S. cuts. Updated daily.">
+    <meta name="description" content="Tracking AI-linked job cuts since GPT-4 launched, by how sure we are: confirmed, likely, unclear. Plus the hiring data that layoffs miss. Updated daily.">
     <meta property="og:title" content="AI Layoff Tracker - Global Warning">
-    <meta property="og:description" content="Since GPT-4 launched {days_since} days ago, {total_estimated:,} jobs have been directly attributed to AI. Behind that: 2.9M total announced U.S. cuts. The iceberg is real.">
+    <meta property="og:description" content="Since GPT-4 launched {days_since} days ago, {total_estimated:,} job cuts have been linked to AI in public reporting; in {total_confirmed:,} of them the company itself named AI.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://layoffs.eudy.co">
     <meta property="og:image" content="https://layoffs.eudy.co/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="AI Layoff Tracker - {total_estimated:,} jobs lost directly to AI">
+    <meta name="twitter:title" content="AI Layoff Tracker - {total_estimated:,} AI-linked job cuts tracked">
     <meta name="twitter:image" content="https://layoffs.eudy.co/og-image.png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C8VV4PTKJ5"></script>
     <script>
@@ -1142,7 +1178,7 @@ def generate_html():
             color: #666;
         }}
         .downstream-geo strong {{ color: #888; }}
-    </style>
+{extra_css}    </style>
     <!-- hreflang for SEO — all 4 language versions -->
     <link rel="alternate" hreflang="en" href="https://layoffs.eudy.co/">
     <link rel="alternate" hreflang="zh-Hans" href="https://layoffs.eudy.co/zh-hans/">
@@ -1174,89 +1210,32 @@ def generate_html():
 
         <section class="doomsday-hero">
             <div class="dd-live-badge"><span class="dd-live-dot"></span>LIVE</div>
-            <div class="dd-label">JOBS LOST DIRECTLY TO AI</div>
+            <div class="dd-label">AI-LINKED JOB CUTS WE CAN SOURCE</div>
             <div class="dd-number" id="dd-counter">{total_estimated:,}</div>
-            <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span> &nbsp;&middot;&nbsp; <span style="color:#666">{total_confirmed:,} confirmed</span></div>
-            <div class="dd-since">{days_since} days &nbsp;&middot;&nbsp; {event_count} events &nbsp;&middot;&nbsp; since March 14, 2023 &nbsp;&middot;&nbsp; scroll to see the full picture &darr;</div>
-            <div class="dd-progress-wrap">
-                <div class="dd-progress-label">
-                    <span>est. true AI impact via 6.7&times; multiplier: ~{estimated_millions}M</span>
-                    <strong>{pct_toward_30m}% toward 30M by 2028</strong>
-                </div>
-                <div class="dd-progress-track">
-                    <div class="dd-progress-fill" style="width:{pct_toward_30m}%"></div>
-                </div>
-                <div class="dd-progress-note">{total_estimated:,} documented &times; 6.7 unlabeled multiplier = ~{estimated_millions}M estimated &nbsp;&middot;&nbsp; target: 30M by 2028</div>
-            </div>
+            <div class="dd-sublabel">and counting &nbsp;&middot;&nbsp; <span id="dd-rate"></span> </div>
+            <div class="dd-since">{days_since} days &nbsp;&middot;&nbsp; {event_count} events &nbsp;&middot;&nbsp; since March 14, 2023 &nbsp;&middot;&nbsp; the argument in one minute is below &darr;</div>
+{hero_tiers}
+{ahead_hero}
+{k_gauge_hero}
         </section>
 
-        <section class="projection-hero">
-            <div class="proj-eyebrow">&#9888; The Forecast &mdash; McKinsey Global Institute &middot; Goldman Sachs</div>
-            <div class="proj-number">30,000,000</div>
-            <p class="proj-label">U.S. jobs significantly disrupted by AI &mdash; by 2028</p>
-            <p class="proj-source">McKinsey: 40&ndash;50M Americans forced to shift roles by 2030 &nbsp;&middot;&nbsp; Goldman Sachs: 2 in 3 U.S. jobs have meaningful AI exposure &nbsp;&middot;&nbsp; 160M total U.S. workers</p>
-            <div class="proj-vs">
-                <div class="proj-vs-item">
-                    <div class="proj-vs-value">2 in 3</div>
-                    <div class="proj-vs-label">U.S. jobs have meaningful<br>AI exposure (Goldman Sachs)</div>
-                </div>
-                <div class="proj-vs-item">
-                    <div class="proj-vs-value">30%</div>
-                    <div class="proj-vs-label">of all U.S. work hours<br>automatable by 2030 (McKinsey)</div>
-                </div>
-                <div class="proj-vs-item">
-                    <div class="proj-vs-value">2028</div>
-                    <div class="proj-vs-label">two years away &mdash;<br>the inflection point</div>
-                </div>
-            </div>
-        </section>
-
-        <div class="dual-stat">
-            <div class="stat-block stat-fear">
-                <div class="stat-label">PUBLIC FEAR SCORE</div>
-                <div class="stat-value">-20</div>
-                <div class="stat-sub">net favorability (NBC, Mar 2026)</div>
-                <div class="stat-context">57% say risks outweigh benefits &nbsp;·&nbsp; scale: -100 to +100</div>
-                <div class="fear-compare">
-                    <span class="fc-item fc-worse">Iran &minus;53</span>
-                    <span class="fc-item fc-worse">Dem. Party &minus;22</span>
-                    <span class="fc-item fc-ai">&#9654; AI &minus;20</span>
-                    <span class="fc-item fc-better">ICE &minus;18</span>
-                    <span class="fc-item fc-better">Trump &minus;12</span>
-                </div>
-            </div>
-            <div class="stat-block stat-jobs">
-                <div class="stat-label">JOBS LOST DIRECTLY TO AI</div>
-                <div class="stat-value">{total_estimated:,}</div>
-                <div class="stat-sub">since GPT-4 launch · {days_since} days</div>
-                <div class="stat-context">{total_confirmed:,} confirmed &nbsp;·&nbsp; ~{avg_per_day:,}/day</div>
-            </div>
-            <div class="stat-block stat-jobs2">
-                <div class="stat-label">JOBS PER UNEMPLOYED PERSON</div>
-                <div class="stat-value">0.9</div>
-                <div class="stat-sub">first time below 1.0 since pandemic (BLS, 2026)</div>
-                <div class="stat-context">6.9M openings &nbsp;·&nbsp; 7.6M unemployed &nbsp;·&nbsp; more seekers than jobs</div>
-            </div>
-            <div class="stat-block stat-gig">
-                <div class="stat-label">WORKFORCE NOW FREELANCING</div>
-                <div class="stat-value">36%</div>
-                <div class="stat-sub">57M Americans in gig economy (2025) &mdash; up from 27% in 2016</div>
-                <div class="stat-context">Projected 50%+ by 2027 &nbsp;·&nbsp; avg rideshare pay: $9.09/hr after costs</div>
-            </div>
-        </div>
+{summary_section}
 
         <div class="ticker-wrap">
             <div class="ticker-live">🔴 LIVE</div>
             <div class="ticker-track">{ticker_items}{ticker_items}</div>
         </div>
 
+{ch1}
+
+{acceleration_section}
 
         <section style="margin: 2rem 0; padding: 1.5rem; background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 10px;">
             <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:1rem;">The Iceberg &mdash; Jan 2023 to Today</div>
             <div style="display:flex;flex-direction:column;gap:0.75rem;">
                 <div>
                     <div style="display:flex;justify-content:space-between;margin-bottom:0.3rem;">
-                        <span style="font-size:0.8rem;color:#ff4444;font-weight:600;">AI-attributed (our tracker)</span>
+                        <span style="font-size:0.8rem;color:#ff4444;font-weight:600;">AI-linked, all tiers (our tracker, global)</span>
                         <span style="font-size:0.8rem;color:#ff4444;font-weight:700;font-variant-numeric:tabular-nums;">{total_estimated:,}</span>
                     </div>
                     <div style="background:#111;border-radius:3px;height:14px;overflow:hidden;">
@@ -1282,51 +1261,13 @@ def generate_html():
                     </div>
                 </div>
             </div>
-            <div style="margin-top:1.25rem;padding:1rem 1.25rem;background:linear-gradient(135deg,#1a0000 0%,#0d0d0d 100%);border:1px solid #3d1111;border-radius:8px;">
-                <div style="font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:#ff4444;font-weight:700;margin-bottom:0.5rem;">The 6.7x Inference</div>
-                <p style="font-size:0.85rem;color:#ccc;line-height:1.8;margin-bottom:0.75rem;">
-                    Companies officially attributed <strong>71,825</strong> U.S. job cuts to AI (Challenger Gray, 2023&ndash;Q1 2026).
-                    Our tracker — aggregating global public reporting across the same period — documents <strong>{total_estimated:,}</strong>.
-                    That&rsquo;s a <strong style="color:#ff6644;">6.7&times; gap.</strong>
-                </p>
-                <p style="font-size:0.85rem;color:#888;line-height:1.8;margin-bottom:0.75rem;">
-                    For every job loss a company officially blamed on AI, public reporting finds <strong style="color:#ff6644;">6 more</strong> that went unlabeled.
-                    Companies don&rsquo;t volunteer AI as the reason &mdash; restructuring, efficiency, and transformation are cleaner PR.
-                    But the pattern is visible in the data.
-                </p>
-                <p style="font-size:0.82rem;color:#666;line-height:1.8;">
-                    Applied to the 2.9M total announced U.S. cuts: companies admitted AI in only <strong>2.5%</strong> of cases.
-                    If the true ratio holds, the real AI-driven share is closer to <strong style="color:#ff8844;">~17%</strong> &mdash; roughly 490,000&ndash;500,000 in the U.S. alone.
-                    Almost exactly what our global tracker shows. Two different methodologies. Same answer.
-                </p>
+            <div style="margin-top:1.25rem;padding:1rem 1.25rem;background:linear-gradient(135deg,#1a0000 0%,#0d0d0d 100%);border:1px solid #3d1111;border-radius:8px;">{attribution_gap}
             </div>
         </section>
 
-        <section class="pace-section">
-            <h2>The Acceleration</h2>
-            <p class="pace-sub">AI-attributed job losses by year &mdash; our tracker (global, all publicly documented events)</p>
-            <div class="pace-row">
-                <span class="pace-year-tag">2023</span>
-                <div class="pace-bar-wrap"><div class="pace-bar" style="width:81.7%"></div></div>
-                <span class="pace-val">115,006</span>
-            </div>
-            <div class="pace-row">
-                <span class="pace-year-tag">2024</span>
-                <div class="pace-bar-wrap"><div class="pace-bar" style="width:84.7%"></div></div>
-                <span class="pace-val">119,260</span>
-            </div>
-            <div class="pace-row">
-                <span class="pace-year-tag">2025</span>
-                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:100%"></div></div>
-                <span class="pace-val" style="color:#ff2222">140,820 &#9650;</span>
-            </div>
-            <div class="pace-row">
-                <span class="pace-year-tag">2026 <span style="font-size:0.65rem;color:#444">Jan&ndash;May</span></span>
-                <div class="pace-bar-wrap"><div class="pace-bar record" style="width:76.2%"></div></div>
-                <span class="pace-val" style="color:#ff2222">107,300 &#9650;</span>
-            </div>
-            <p class="pace-note"><strong>2026 is on pace for ~257,000</strong> &mdash; nearly 2&times; 2025, based on Jan&ndash;May alone. Challenger, Gray &amp; Christmas tracks a subset of these as U.S. employer-disclosed; our tracker aggregates global public reporting across all sources. The acceleration is real regardless of which lens you use.</p>
-        </section>
+{ch2}
+
+{ladder_section}
 
         <section class="jobs-section">
             <h2>So Where Are the New Jobs?</h2>
@@ -1337,13 +1278,13 @@ def generate_html():
                 In 2026, we&rsquo;re actively shedding jobs &mdash; and now it&rsquo;s visible even in the headline numbers.
                 The AI displacement didn&rsquo;t start this. But it turned a slow leak into a flood.
             </div>
-            <p class="jobs-sub">The U.S. added 181,000 net new jobs in all of 2025 &mdash; the worst non-recession year since 2003. Healthcare alone added 713,000. <strong style="color:#aaa;">Strip out healthcare, and the rest of the American economy net lost jobs.</strong> So when someone says &ldquo;AI will create new jobs&rdquo; &mdash; we actually know what those jobs are. They&rsquo;re nursing jobs.</p>
+            <p class="jobs-sub">The U.S. added {facts.v('jobs_2025')} net new jobs in all of 2025 in current BLS data ({facts.src('jobs_2025')}). Health care alone added {facts.v('health_2025')}, and {facts.v('health_social_2025')} with social assistance. <strong style="color:#aaa;">Strip out healthcare, and the rest of the American economy net lost jobs.</strong> So when someone says &ldquo;AI will create new jobs&rdquo; &mdash; we actually know what those jobs are. They&rsquo;re nursing jobs.</p>
             <div class="jobs-grid">
                 <div class="jobs-gaining">
                     <h3>&#9650; Gaining</h3>
                     <div class="jobs-row">
                         <span class="jobs-row-label">Healthcare &amp; Social Assistance</span>
-                        <span class="jobs-row-val val-green">+713,000</span>
+                        <span class="jobs-row-val val-green">+{facts.v('health_social_2025')}</span>
                     </div>
                     <div class="jobs-row">
                         <span class="jobs-row-label">Government</span>
@@ -1406,39 +1347,93 @@ def generate_html():
                 &ldquo;It&rsquo;s a slowly weakening job picture. Whatever metric you want to focus on, that story shows up.&rdquo;
                 <span style="display:block;margin-top:0.3rem;font-size:0.72rem;font-style:normal;color:#555;">&mdash; Heather Long, economist</span>
             </div>
-            <details style="margin-top:1rem;">
-                <summary style="cursor:pointer;font-size:0.78rem;color:#555;padding:0.6rem 0;list-style:none;display:flex;align-items:center;gap:0.4rem;">
-                    <span style="color:#333;font-size:0.65rem;">&#9654;</span>
-                    Why the &ldquo;low unemployment&rdquo; argument doesn&rsquo;t hold up
-                </summary>
-                <div style="margin-top:0.75rem;padding:1rem;background:#0d0d0d;border:1px solid #1a1a1a;border-radius:8px;font-size:0.78rem;color:#666;line-height:1.9;">
-                    <p style="margin-bottom:0.75rem;color:#888;font-weight:600;">The headline unemployment rate (U-3) only counts people who looked for work in the last 4 weeks and couldn&rsquo;t find it. It misses everyone else.</p>
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.75rem;">
-                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
-                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">U-3: 4.4%</div>
-                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">The number you see in headlines. Only counts active job seekers.</div>
-                        </div>
-                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
-                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">U-6: ~8%+</div>
-                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">Includes part-timers who want full-time work + marginally attached workers.</div>
-                        </div>
-                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
-                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">Discouraged workers</div>
-                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">People who stopped looking entirely &mdash; not counted as unemployed at all.</div>
-                        </div>
-                        <div style="padding:0.6rem;background:#111;border-radius:6px;">
-                            <div style="color:#ff6644;font-weight:700;font-size:0.82rem;">Labor force participation</div>
-                            <div style="color:#555;font-size:0.7rem;margin-top:0.2rem;">Still below pre-2020 levels. Millions have exited the labor force entirely.</div>
-                        </div>
-                    </div>
-                    <p style="margin-bottom:0.75rem;">When AI eliminates a role through attrition &mdash; the position just isn&rsquo;t posted when someone leaves &mdash; no one becomes &ldquo;unemployed.&rdquo; The headcount shrinks. The work disappears. The unemployment rate doesn&rsquo;t move. That&rsquo;s the measurement gap. The economy can shed millions of white-collar roles without the headline number flinching, right up until it does &mdash; all at once.</p>
-                    <p style="padding:0.75rem;background:#1a1000;border:1px solid #2a1800;border-radius:6px;color:#888;">
-                        <strong style="color:#ff8844;">The immigration factor:</strong> The administration&rsquo;s crackdown has also artificially shrunk the labor supply &mdash; fewer people in the pool means the unemployment rate stays low even as private-sector hiring collapses. Fewer workers looking = lower U-3 rate, by definition. The &ldquo;jobless boom&rdquo; is partly a statistical artifact of a smaller denominator.
-                    </p>
-                </div>
-            </details>
         </section>
 
+        <section class="evisceration-section" id="white-collar">
+            <h2>The Invisible Flood: White-Collar Evisceration</h2>
+            <p class="evis-sub">The numbers above only capture public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
+            <div class="evis-grid">
+                <div class="evis-stat">
+                    <div class="evis-stat-value">30%</div>
+                    <div class="evis-stat-label">of 2025 college graduates found a full-time job in their field &mdash; down from 41% in 2024. An 11-point collapse in a single year. <a href="https://www.cengagegroup.com/news/press-releases/2025/cengage-group-2025-employability-report/" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Cengage Group</a></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">1 in 3</div>
+                    <div class="evis-stat-label">of 2025 graduates are unemployed and actively searching. The degree did not open the door. <a href="https://www.cengagegroup.com/news/press-releases/2025/cengage-group-2025-employability-report/" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Cengage Group, 2025</a></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">42%</div>
+                    <div class="evis-stat-label">of recent college graduates are working jobs that don&apos;t require their degree &mdash; near an all-time high. <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Federal Reserve Bank of NY, Q4 2025</a></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">5.8%</div>
+                    <div class="evis-stat-label">unemployment rate for recent college graduates &mdash; one of the worst in a decade. Overall college-educated rate: 3.1%. <span style="color:#555">(BLS / NY Fed, Q1 2026)</span></div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">16%</div>
+                    <div class="evis-stat-label">relative employment decline for workers ages 22&ndash;25 in the most AI-exposed occupations. Descriptive, not proof of cause. {facts.src('canaries')}</div>
+                </div>
+                <div class="evis-stat">
+                    <div class="evis-stat-value">50%</div>
+                    <div class="evis-stat-label">of entry-level white-collar jobs projected eliminated &mdash; Dario Amodei, CEO of Anthropic</div>
+                </div>
+            </div>
+            <div class="evis-quote">
+                <p>&ldquo;Within the next one to five years, AI could handle tasks that represent 50% of entry-level white-collar work. The societal effects could be severe.&rdquo;</p>
+                <cite>&mdash; Dario Amodei, CEO of Anthropic (2025)</cite>
+            </div>
+            <p style="margin-top:0.85rem;font-size:0.76rem;color:#444;line-height:1.7;">
+                The class of 2025 entered the worst entry-level job market in a decade. The class of 2024 wasn&apos;t much better: only 55% had full-time work within six months of graduation (NACE). The promise of the college degree &mdash; work hard, graduate, get a career &mdash; is colliding with an economy where AI is absorbing entry-level tasks faster than employers are creating new roles.
+            </p>
+        </section>
+
+{ch3}
+
+{k_shape}
+
+{k_gauge_detail}
+
+{money_section}
+
+        <div class="dual-stat">
+            <div class="stat-block stat-fear">
+                <div class="stat-label">PUBLIC FEAR SCORE</div>
+                <div class="stat-value">-20</div>
+                <div class="stat-sub">net favorability (NBC, Mar 2026)</div>
+                <div class="stat-context">57% say risks outweigh benefits &nbsp;·&nbsp; scale: -100 to +100</div>
+                <div class="fear-compare">
+                    <span class="fc-item fc-worse">Iran &minus;53</span>
+                    <span class="fc-item fc-worse">Dem. Party &minus;22</span>
+                    <span class="fc-item fc-ai">&#9654; AI &minus;20</span>
+                    <span class="fc-item fc-better">ICE &minus;18</span>
+                    <span class="fc-item fc-better">Trump &minus;12</span>
+                </div>
+            </div>
+            <div class="stat-block stat-jobs">
+                <div class="stat-label">CONSUMER SENTIMENT</div>
+                <div class="stat-value">{ps._fmt(di_sent)}</div>
+                <div class="stat-sub">University of Michigan &middot; {di_sent['period']}</div>
+                <div class="stat-context">record low {ps._fmt(di_sent, 'worst')} in {di_sent['worst_period']} &nbsp;·&nbsp; record high {ps._fmt(di_sent, 'best')} in {di_sent['best_period']}</div>
+            </div>
+            <div class="stat-block stat-jobs2">
+                <div class="stat-label">UNEMPLOYED PEOPLE PER JOB OPENING</div>
+                <div class="stat-value">{ps._fmt(di_open)}</div>
+                <div class="stat-sub">BLS via FRED &middot; {di_open['period']}</div>
+                <div class="stat-context">low was {ps._fmt(di_open, 'best')} in {di_open['best_period']} &nbsp;·&nbsp; above 1.0 means more seekers than jobs</div>
+            </div>
+            <div class="stat-block stat-gig">
+                <div class="stat-label">WORKFORCE NOW FREELANCING</div>
+                <div class="stat-value">36%</div>
+                <div class="stat-sub">57M Americans in gig economy (2025) &mdash; up from 27% in 2016</div>
+                <div class="stat-context">Projected 50%+ by 2027 &nbsp;·&nbsp; avg rideshare pay: $9.09/hr after costs</div>
+            </div>
+        </div>
+
+{ch4}
+
+{depth_gauge}
+
+{exposure_section}
 
         <section class="downstream-section">
             <h2>The Second Wave</h2>
@@ -1491,51 +1486,21 @@ def generate_html():
             </div>
         </section>
 
-        <section class="evisceration-section" id="white-collar">
-            <h2>The Invisible Flood: White-Collar Evisceration</h2>
-            <p class="evis-sub">The numbers above only capture public layoff announcements. The quiet displacement &mdash; attrition, contracts not renewed, roles automated away &mdash; never makes the news.</p>
-            <div class="evis-grid">
-                <div class="evis-stat">
-                    <div class="evis-stat-value">30%</div>
-                    <div class="evis-stat-label">of 2025 college graduates found a full-time job in their field &mdash; down from 41% in 2024. An 11-point collapse in a single year. <a href="https://www.cengagegroup.com/news/press-releases/2025/cengage-group-2025-employability-report/" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Cengage Group</a></div>
-                </div>
-                <div class="evis-stat">
-                    <div class="evis-stat-value">1 in 3</div>
-                    <div class="evis-stat-label">of 2025 graduates are unemployed and actively searching. The degree did not open the door. <a href="https://www.cengagegroup.com/news/press-releases/2025/cengage-group-2025-employability-report/" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Cengage Group, 2025</a></div>
-                </div>
-                <div class="evis-stat">
-                    <div class="evis-stat-value">42%</div>
-                    <div class="evis-stat-label">of recent college graduates are working jobs that don&apos;t require their degree &mdash; near an all-time high. <a href="https://www.newyorkfed.org/research/college-labor-market" target="_blank" rel="noopener" style="color:#555;text-decoration:underline;text-decoration-color:#333">Federal Reserve Bank of NY, Q4 2025</a></div>
-                </div>
-                <div class="evis-stat">
-                    <div class="evis-stat-value">5.8%</div>
-                    <div class="evis-stat-label">unemployment rate for recent college graduates &mdash; one of the worst in a decade. Overall college-educated rate: 3.1%. <span style="color:#555">(BLS / NY Fed, Q1 2026)</span></div>
-                </div>
-                <div class="evis-stat">
-                    <div class="evis-stat-value">16%</div>
-                    <div class="evis-stat-label">relative employment decline for workers ages 22&ndash;25 in AI-exposed occupations (2022&ndash;2025)</div>
-                </div>
-                <div class="evis-stat">
-                    <div class="evis-stat-value">50%</div>
-                    <div class="evis-stat-label">of entry-level white-collar jobs projected eliminated &mdash; Dario Amodei, CEO of Anthropic</div>
-                </div>
-            </div>
-            <div class="evis-quote">
-                <p>&ldquo;Within the next one to five years, AI could handle tasks that represent 50% of entry-level white-collar work. The societal effects could be severe.&rdquo;</p>
-                <cite>&mdash; Dario Amodei, CEO of Anthropic (2025)</cite>
-            </div>
-            <p style="margin-top:0.85rem;font-size:0.76rem;color:#444;line-height:1.7;">
-                The class of 2025 entered the worst entry-level job market in a decade. The class of 2024 wasn&apos;t much better: only 55% had full-time work within six months of graduation (NACE). The promise of the college degree &mdash; work hard, graduate, get a career &mdash; is colliding with an economy where AI is absorbing entry-level tasks faster than employers are creating new roles.
-            </p>
-        </section>
+{ch5}
+
+{objections_section}
+
+{change_mind_section}
+
+{ch6}
 
         <section class="cta-section">
             <div class="cta-inner">
-                <p class="cta-pre">The data is in. The flood is real.</p>
-                <h2 class="cta-headline">We don&apos;t have to argue about whether AI is taking jobs.<br>We can prove it. Now what?</h2>
+                <p class="cta-pre">AI will create enormous value. The open question is who shares in it.</p>
+                <h2 class="cta-headline">Left alone, a market rewards doing the work with fewer people.<br>What would work built for people look like?</h2>
                 <p class="cta-body">
-                    The question is no longer <em>if</em> — it&apos;s <em>what next.</em><br>
-                    We believe the answer is redesigning work for human flourishing:<br>
+                    That is the question Eudy exists to answer.<br>
+                    We believe it starts with redesigning work for human flourishing:<br>
                     not fighting the wave, but learning to navigate it.
                 </p>
                 <p class="cta-mission">
@@ -1547,6 +1512,8 @@ def generate_html():
                 </div>
             </div>
         </section>
+
+{ch_data}
 
         <section class="recent">
             <h2>Events</h2>
@@ -1617,7 +1584,7 @@ def generate_html():
         <section class="methodology" id="methodology">
             <h3>Methodology</h3>
             <p>
-                <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs<br>
+                <strong>confirmed</strong> = Company explicitly stated AI/automation as the reason for layoffs. This records what the company said. It does not prove AI did the work.<br>
                 <strong>likely</strong> = Company investing heavily in AI while cutting jobs, or media analysis attributes cuts to AI<br>
                 <strong>unclear</strong> = Tech company layoffs that may be related to AI transformation but not explicitly stated
             </p>
@@ -1625,11 +1592,18 @@ def generate_html():
                 This page is updated daily. US data calibrated monthly using the Challenger, Gray &amp; Christmas report.
                 Last updated: {last_updated[:10]} &middot; Challenger cumulative AI cuts (US only): {challenger_total:,}
             </p>
+            <p style="margin-top: 0.8rem;">
+                <strong>How we count:</strong> each layoff round is counted once. When several outlets report the same round on different days, or the same company reports the same number again within 120 days, the reports are folded into one event and every source link is kept. {folded_count} repeat reports are folded this way; the full list is in the dataset under <code>merged_duplicates</code>. The headline is the sum of all three tiers, and the split is shown beside it.
+            </p>
             <p style="margin-top: 0.8rem; color: #555;">
-                <strong style="color:#666">Why the real number is much higher:</strong>
+                <strong style="color:#666">Where this number is too high:</strong>
+                Companies sometimes cite AI for cuts that are really about cost or over-hiring. Likely and unclear events are our judgment, not the company&apos;s statement.
+            </p>
+            <p style="margin-top: 0.8rem; color: #555;">
+                <strong style="color:#666">Where it is too low:</strong>
                 Our tracker captures only public announcements. The majority of AI displacement happens invisibly &mdash;
                 through attrition, contract non-renewals, and quiet eliminations never reported in the press.
-                Our {total_estimated:,} tracks what companies disclosed. The real number is far larger.
+                Our {total_estimated:,} tracks what was announced. Hiring that never happened is not in it.
             </p>
             <p style="margin-top:0.5rem;font-size:0.78rem;color:#444;">
                 Sources: <a href="https://www.challengergray.com/blog/2025-year-end-challenger-report-highest-q4-layoffs-since-2008-lowest-ytd-hiring-since-2010/" target="_blank" rel="noopener">Challenger, Gray &amp; Christmas</a> &middot;
@@ -1718,7 +1692,7 @@ def generate_html():
             if (trigger) trigger.classList.toggle('expanded', isHidden);
         }}
 
-        // Live counter — ticks up in real time based on avg daily rate
+        // Headline counter — the documented total, with the average daily rate as a label
         (function() {{
             const BASE = {total_estimated};
             const BASE_CONFIRMED = {total_confirmed};
@@ -1730,7 +1704,9 @@ def generate_html():
             function fmt(n) {{ return Math.floor(n).toLocaleString('en-US'); }}
             function tick() {{
                 const elapsed = Date.now() - BASE_TS;
-                const current = BASE + elapsed * PER_MS;
+                // Show the documented total only. Extrapolating between daily updates made the
+                // headline drift above the sum of the tiers printed beside it.
+                const current = BASE;
                 const currentFloor = Math.floor(current);
                 ['live-counter','dd-counter'].forEach(id => {{
                     const el = document.getElementById(id);
