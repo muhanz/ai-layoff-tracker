@@ -1,0 +1,17 @@
+{
+ "zh-hans": {
+  "Tracking AI-linked job cuts since GPT-4 launched, by how sure we are: confirmed, likely, unclear. Plus the hiring data that layoffs miss. Updated daily.": "追踪GPT-4发布以来与AI相关的裁员，并按把握程度分为已确认、可能、不明确三档。另附裁员数字看不到的招聘数据。每日更新。",
+  "Since GPT-4 launched 1341 days ago, 547,016 job cuts have been linked to AI in public reporting; in 250,901 of them the company itself named AI.": "GPT-4发布 1341 天以来，公开报道中已有 547,016 个岗位裁减与AI相关；其中 250,901 个是公司自己点名AI。",
+  "AI Layoff Tracker - 547,016 AI-linked job cuts tracked": "AI裁员追踪 - 已追踪 547,016 个与AI相关的岗位裁减"
+ },
+ "zh-hant": {
+  "Tracking AI-linked job cuts since GPT-4 launched, by how sure we are: confirmed, likely, unclear. Plus the hiring data that layoffs miss. Updated daily.": "追蹤GPT-4發布以來與AI相關的裁員，並按把握程度分為已確認、可能、不明確三級。另附裁員數字看不到的徵才資料。每日更新。",
+  "Since GPT-4 launched 1341 days ago, 547,016 job cuts have been linked to AI in public reporting; in 250,901 of them the company itself named AI.": "GPT-4發布 1341 天以來，公開報導中已有 547,016 個職位裁減與AI相關；其中 250,901 個是公司自己點名AI。",
+  "AI Layoff Tracker - 547,016 AI-linked job cuts tracked": "AI裁員追蹤 - 已追蹤 547,016 個與AI相關的職位裁減"
+ },
+ "es": {
+  "Tracking AI-linked job cuts since GPT-4 launched, by how sure we are: confirmed, likely, unclear. Plus the hiring data that layoffs miss. Updated daily.": "Seguimiento de los despidos vinculados a la IA desde el lanzamiento de GPT-4, según qué tan seguros estamos: confirmado, probable, incierto. Además, los datos de contratación que los despidos no muestran. Actualizado a diario.",
+  "Since GPT-4 launched 1341 days ago, 547,016 job cuts have been linked to AI in public reporting; in 250,901 of them the company itself named AI.": "Desde el lanzamiento de GPT-4 hace 1341 días, 547,016 despidos se han vinculado a la IA en reportes públicos; en 250,901 de ellos la propia empresa nombró a la IA.",
+  "AI Layoff Tracker - 547,016 AI-linked job cuts tracked": "Rastreador de Despidos por IA - 547,016 despidos vinculados a la IA registrados"
+ }
+}

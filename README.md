@@ -49,6 +49,8 @@ python scripts/generate_page.py
 │   ├── k_gauge.py                # 每日：从 FRED 读取六项公开指标，计算“K 型指数”（0–100）
 │   ├── refresh_facts.py          # 每日：从 BLS / FRED 数据序列刷新 facts.json 中的官方统计数字（不使用模型）
 │   ├── page_sections.py          # 论证板块：失业率阶梯、资金流向、最强反驳、我们会改变看法的条件
+│   ├── i18n_nodes.py             # 按文本节点翻译页面；翻译表在 scripts/i18n/<语言>.json，每日变化的数字会自动带入译文
+│   ├── i18n_audit.py             # 检查译文页面上还有哪些文字仍是英文
 │   ├── generate_page.py          # 每日：生成静态HTML
 │   └── supplement_from_trueup.py # 可选：从TrueUp补充数据
 ├── data/
