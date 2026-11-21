@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "index": 55,
   "method": "Six public series from FRED. Each scored 0 (best reading on record) to 100 (worst reading on record). The index is their plain average.",
   "groups": {
@@ -124,10 +124,10 @@
       "group": "mood",
       "label": "Consumer sentiment",
       "blurb": "The University of Michigan survey of how households see their own finances and the economy.",
-      "value": 48.1,
+      "value": 48.0,
       "unit": "",
       "decimals": 1,
-      "period": "Sep 2026",
+      "period": "Oct 2026",
       "best": 112.0,
       "best_period": "Jan 2000",
       "worst": 44.8,
