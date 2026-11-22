@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "index": 55,
   "method": "Six public series from FRED. Each scored 0 (best reading on record) to 100 (worst reading on record). The index is their plain average.",
   "groups": {
