@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-14",
+  "as_of": "2026-11-16",
   "how_to_update": "Change the value and its period together, and re-open the source. 'checked' records how each figure was confirmed. 'kept_by' says who keeps it current: 'series' is refreshed by scripts/refresh_facts.py in the daily job, 'report' is checked weekly against new editions and proposed in a pull request, 'manual' is prose a person rewrites, 'fixed' is history that does not change.",
   "facts": {
     "u3": {
@@ -213,11 +213,11 @@
       "kept_by": "manual"
     },
     "canaries": {
-      "value": "16%",
-      "period": "payroll data to Sep 2025",
+      "value": "19%",
+      "period": "payroll data to Jun 2026",
       "source": "Stanford Digital Economy Lab",
-      "url": "https://digitaleconomy.stanford.edu/app/uploads/2026/08/Canaries_August2026.pdf",
-      "checked": "primary page, read 2026-11-13",
+      "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+      "checked": "weekly report check 2026-11-16: Stanford Digital Economy Lab, Canaries in the Coal Mine? Six Facts About the Recent Employment Effects of Artificial Intelligence, revised August 12, 2026",
       "note": "13% in the Aug 2025 version; 19% on a simpler measure in the Aug 2026 version. The authors call it descriptive, not causal.",
       "kept_by": "report"
     },
